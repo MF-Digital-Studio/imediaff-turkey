@@ -27,7 +27,7 @@ export default function BlogDetailClientPage({ post, allPosts }: { post: any, al
              unoptimized 
            />
            {/* Dark gradient overlay to ensure text readability */}
-           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
+           <div className="absolute inset-0 bg-black/55" />
         </div>
         
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 relative z-10 w-full">
@@ -35,11 +35,11 @@ export default function BlogDetailClientPage({ post, allPosts }: { post: any, al
              <div className="flex items-center gap-4 mb-6">
                 <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#FE9417] font-bold">{post.category}</span>
                 <span className="h-px w-5 bg-white/30" />
-                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#666666]">{post.date}</span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/80">{post.date}</span>
                 <span className="h-px w-5 bg-white/30" />
-                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#666666]">{post.readTime}</span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/80">{post.readTime}</span>
              </div>
-             <h1 className="font-display text-[clamp(2.5rem,5vw,5rem)] font-bold tracking-[-0.03em] leading-[1.05] text-[#111111]">
+             <h1 className="font-display text-[clamp(2.5rem,5vw,5rem)] font-bold tracking-[-0.03em] leading-[1.05] text-[#FFFFFF]">
                {post.title}
              </h1>
            </motion.div>

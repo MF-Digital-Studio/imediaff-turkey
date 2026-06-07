@@ -9,20 +9,20 @@ import { cn } from "@/lib/utils"
 
 const PILLARS = [
   {
-    title: "Strategic Precision",
-    description: "We match brands with the right influencers — not just the largest audiences. Every partnership is built around performance metrics, audience fit, and commission-based accountability across 4 active regions.",
+    title: "Stratejik Eşleştirme",
+    description: "Markaları doğru içerik üreticileriyle buluşturuyoruz — sadece en büyük kitlelerle değil. Her iş birliği performans metrikleri, kitle uyumu ve komisyon bazlı hesap verebilirlik üzerine inşa ediliyor.",
     icon: <Target className="w-6 h-6 text-black" strokeWidth={1.5} />,
     glowColor: "rgba(37,99,235,0.15)",
   },
   {
-    title: "Operational Speed",
-    description: "From application to first commission in days. Our TrendFam partnership infrastructure and streamlined onboarding means creators start earning fast — and brands see results faster.",
+    title: "Hızlı Operasyon",
+    description: "Başvurudan ilk komisyona kadar yalnızca birkaç gün. TrendFam altyapımız ve kolaylaştırılmış onboarding sürecimizle içerik üreticileri hızlıca kazanmaya başlıyor.",
     icon: <Zap className="w-6 h-6 text-black" strokeWidth={1.5} />,
     glowColor: "rgba(255,138,30,0.15)",
   },
   {
-    title: "Radical Transparency",
-    description: "Every influencer works under a clear 1-year contract. Every commission is tracked in real time via Influencer Center. Every payment is documented. No upfront fees, ever.",
+    title: "Tam Şeffaflık",
+    description: "Her içerik üreticisi net 1 yıllık sözleşmeyle çalışıyor. Her komisyon Influencer Center üzerinden anlık takip ediliyor. Her ödeme belgelenmiş. Hiçbir zaman ön ödeme yok.",
     icon: <ShieldCheck className="w-6 h-6 text-black" strokeWidth={1.5} />,
     glowColor: "rgba(255,189,30,0.15)",
   },
@@ -45,7 +45,7 @@ export default function GlobalValue() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
             <h2 className="font-sans text-[clamp(2.8rem,6vw,5.5rem)] font-bold text-black tracking-[-0.04em] leading-[0.95] mb-8">
-              Architects of Global Influence.
+              Etki Mimarları.
             </h2>
           </motion.div>
           <motion.p
@@ -54,7 +54,7 @@ export default function GlobalValue() {
             transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
             className="text-black/60 text-lg md:text-xl font-medium leading-relaxed max-w-3xl mx-auto"
           >
-            We don&apos;t just connect brands with creators; we build the infrastructure for regional dominance. iMediaff Global combines data-led strategy with cultural fluency to transform global ambition into local market share.
+            Markalarla içerik üreticilerini buluşturmanın ötesine geçiyoruz; Türkiye pazarında sürdürülebilir büyüme altyapısı kuruyoruz.
           </motion.p>
         </div>
 

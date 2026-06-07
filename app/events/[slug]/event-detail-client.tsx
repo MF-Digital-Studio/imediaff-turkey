@@ -10,8 +10,6 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
     <main className="min-h-screen bg-white text-[#111111]">
       {/* ── Header / Hero ── */}
       <section className="relative overflow-hidden bg-white text-[#111111] pt-32 pb-16 md:pt-40 md:pb-20 border-b border-[#E5E5E5]">
-        <div className="absolute inset-0 hero-grid-overlay opacity-30" />
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-[#FE9417]/10 to-transparent blur-[120px] rounded-full opacity-50 translate-x-1/2 -translate-y-1/2 pointer-events-none" />
         
         <div className="mx-auto max-w-[1200px] px-6 md:px-10 relative z-10">
           <motion.div

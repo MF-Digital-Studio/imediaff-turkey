@@ -38,9 +38,7 @@ export default function AffiliateProgramsPage() {
       <section
         className="relative min-h-[90vh] flex items-center pt-32 pb-20 border-b border-black/10 bg-white"
       >
-        {/* Subtle Grid Overlay */}
-        <div className="absolute inset-0 hero-grid-overlay opacity-5 pointer-events-none brightness-0" />
-
+        
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 w-full relative z-10">
           <div className="max-w-5xl">
             <motion.div {...fadeUp(0)}>
@@ -445,14 +443,14 @@ export default function AffiliateProgramsPage() {
                 background: 'linear-gradient(135deg, rgba(254,240,138,0.03) 0%, rgba(0,0,0,0.08) 100%), #0d0d0d'
               }}
             >
-              <div className="absolute top-4 right-6 font-mono text-[9px] uppercase tracking-[0.3em] text-white/20">NOON AFFILIATE PRO</div>
+              <div className="absolute top-4 right-6 font-mono text-[9px] uppercase tracking-[0.3em] text-[#888888]">NOON AFFILIATE PRO</div>
 
               <div className="space-y-6 mt-4">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-[#E5E5E5]">
                   <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
                   <span className="font-mono text-[10px] text-[#111111] tracking-wider uppercase font-bold">ACTIVE INTEGRATION</span>
                 </div>
-                <h3 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-white/95">
+                <h3 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-[#111111]">
                   High-converting <br />Noon revenue stack.
                 </h3>
               </div>

@@ -17,18 +17,12 @@ const FOOTER_LINKS = {
   ],
   Contact: [
     { label: "info@imediaff.com", href: "mailto:info@imediaff.com" },
-    { label: "+971 4 000 0000", href: "tel:+97140000000" },
-    { label: "Dubai, UAE", href: "/contact" },
-    { label: "Request Proposal", href: "/contact" },
+    { label: "İstanbul, Türkiye", href: "/contact" },
+    { label: "Teklif Al", href: "/contact" },
   ],
   Offices: [
     {
       label: "Istanbul HQ: Fikirtepe Mah. Hizirbey Cad. No:25/C Fortis Sinanli Yeni Kadikoy, G Block, D-Entrance, Floor: 1, D:06, 34720 Kadikoy/Istanbul",
-      href: "/contact",
-      isAddress: true
-    },
-    {
-      label: "Dubai Office: Sheikh Mohammed Bin Rashid Boulevard, Downtown Dubai Foundry",
       href: "/contact",
       isAddress: true
     }
@@ -45,8 +39,8 @@ export default function SiteFooter() {
     <footer className="relative border-t border-border bg-background">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-14 grid grid-cols-1 md:grid-cols-12 gap-10">
         <div className="md:col-span-3">
-          <Link href="/" className="font-display text-lg font-semibold tracking-tight text-[#111111]">imediaff<span className="text-[#FE9417]">.</span></Link>
-          <p className="mt-4 max-w-sm text-sm text-[#666666] leading-relaxed font-sans">A 360° digital agency connecting ambitious brands and world-class creators across Dubai and the MENA region.</p>
+          <Link href="/" className="font-display text-lg font-semibold tracking-tight text-[#111111]">imediaff Türkiye<span className="text-[#FE9417]">.</span></Link>
+          <p className="mt-4 max-w-sm text-sm text-[#666666] leading-relaxed font-sans">Türkiye'nin lider influencer ve dijital pazarlama ajansı — markalar ve içerik üreticilerini güçlü iş birlikleriyle buluşturuyoruz.</p>
           <div className="mt-6 flex flex-wrap gap-2">
             {SOCIAL.map((s) => (
               <a key={s.label} href={s.href} className="inline-flex items-center gap-2 border border-[#E5E5E5] px-3 py-1.5 text-xs font-mono tracking-widest text-[#666666] hover:border-[#E5E5E5] hover:text-[#111111] transition-colors">{s.label}<span aria-hidden>↗</span></a>
@@ -82,12 +76,11 @@ export default function SiteFooter() {
 
       <div className="border-t border-[#E5E5E5]">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <p className="font-mono text-[10px] uppercase tracking-widest text-[#888888]">© {new Date().getFullYear()} imediaff Global. All rights reserved.</p>
+          <p className="font-mono text-[10px] uppercase tracking-widest text-[#888888]">© {new Date().getFullYear()} imediaff Türkiye. Tüm hakları saklıdır.</p>
           <div className="flex items-center gap-6">
             <Link href="#" className="font-mono text-[10px] uppercase tracking-widest text-[#888888] hover:text-[#111111] transition-colors">KVKK / Privacy Policy</Link>
             <p className="font-mono font-bold text-[10px] uppercase tracking-widest text-[#888888]">Powered by MF Digital Studio</p>
           </div>
-          <p className="font-mono text-[10px] uppercase tracking-widest text-[#888888]">Dubai / Riyadh / London / Istanbul</p>
         </div>
       </div>
     </footer>

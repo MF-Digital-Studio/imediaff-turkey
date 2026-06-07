@@ -13,9 +13,6 @@ export default function EventsClientPage() {
     <main className="min-h-screen bg-white text-[#111111]">
       {/* ── Hero Section ── */}
       <section className="relative overflow-hidden bg-white text-[#111111] pt-32 pb-16 md:pt-48 md:pb-24 border-b border-[#E5E5E5]">
-        {/* Subtle grid & gradient atmosphere */}
-        <div className="absolute inset-0 hero-grid-overlay opacity-30" />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-[#FE9417]/10 to-transparent blur-[120px] rounded-full opacity-60 translate-x-1/3 -translate-y-1/3 pointer-events-none" />
         
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 relative z-10">
           <motion.div

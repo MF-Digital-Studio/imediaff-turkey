@@ -140,7 +140,7 @@ export default function BrandsClientPage() {
                 <div className="absolute top-0 inset-x-0 h-[1.5px] rounded-t-2xl bg-gradient-to-r from-[#FE9417] to-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-[#FE9417] mb-6">{card.num}</p>
                 <h3 className="font-display text-2xl font-bold text-[#111111] mb-4 tracking-tight">{card.title}</h3>
-                <p className="text-white/55 leading-relaxed text-sm font-medium">{card.desc}</p>
+                <p className="text-[#555555] leading-relaxed text-sm font-medium">{card.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -191,7 +191,7 @@ export default function BrandsClientPage() {
             <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-[#111111] text-balance mb-6">
               Activate Your Brand<br />Directly with Creators.
             </h2>
-            <p className="text-lg text-white/55 leading-relaxed font-sans max-w-2xl">
+            <p className="text-lg text-[#555555] leading-relaxed font-sans max-w-2xl">
               Through our exclusive Trendyol Brand Offers program, brands can run targeted influencer campaigns with custom commission rates and extended tracking windows.
             </p>
           </motion.div>
@@ -226,7 +226,7 @@ export default function BrandsClientPage() {
                 <div className="absolute top-0 inset-x-0 h-[1.5px] rounded-t-2xl bg-gradient-to-r from-[#FE9417] to-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-[#FE9417] mb-6">{card.num}</p>
                 <h3 className="font-display text-2xl font-bold text-[#111111] mb-4 tracking-tight">{card.title}</h3>
-                <p className="text-white/55 leading-relaxed text-sm font-medium">{card.desc}</p>
+                <p className="text-[#555555] leading-relaxed text-sm font-medium">{card.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -424,7 +424,7 @@ export default function BrandsClientPage() {
             <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-[#111111] text-balance mb-6">
               Built for Brands<br />Across Every Category.
             </h2>
-            <p className="text-lg text-white/55 leading-relaxed font-sans max-w-2xl">
+            <p className="text-lg text-[#555555] leading-relaxed font-sans max-w-2xl">
               From global e-commerce platforms to emerging lifestyle brands — iMediaff has the regional network and operational expertise to scale your presence.
             </p>
           </motion.div>

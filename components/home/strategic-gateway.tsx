@@ -7,45 +7,18 @@ import { motion, useInView } from "motion/react"
 
 const REGIONS = [
   {
-    city: "Istanbul",
-    role: "Headquarters",
+    city: "İstanbul",
+    role: "Genel Merkez",
     description:
-      "Creative strategy, legal advisory, and high-fidelity production hub. Home to our Turkey operations with 5,000+ influencer partners in the Trendyol affiliate network.",
+      "Yaratıcı strateji, hukuki danışmanlık ve yüksek kaliteli prodüksiyon merkezi. 5.000'den fazla influencer partneriyle Türkiye'nin lider Trendyol affiliate ajansı.",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10" aria-hidden>
         <circle cx="20" cy="20" r="14" stroke="currentColor" strokeWidth="1.2" />
         <path d="M20 6v28M6 20h28M9 12q5 4 11 2t11-2M9 28q5-4 11-2t11 2" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
       </svg>
     ),
-    stat: "HQ Since 2019",
-  },
-  {
-    city: "Dubai",
-    role: "Operations",
-    description:
-      "Regional headquarters for Gulf and MENA partnerships. Active TrendFam operations across KSA, UAE, and Kuwait — one of Trendyol's top 3 authorized global partner agencies.",
-    icon: (
-      <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10" aria-hidden>
-        <path d="M8 30h24M12 30V18l3-3 3 3v-6l2-2 2 2v-4l2-2 2 2V30M11 22h2M11 26h2M22 18h2M22 22h2M22 26h2" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-    stat: "Primary Market",
-  },
-  {
-    city: "CEE & Azerbaijan",
-    role: "Growth Markets",
-    description:
-      "Active since October 2024 across Romania, Poland, Bulgaria, Greece, and Azerbaijan — our fastest-growing affiliate markets. Performance-based TrendFam operations.",
-    icon: (
-      <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10" aria-hidden>
-        <rect x="8" y="14" width="24" height="14" rx="2" stroke="currentColor" strokeWidth="1.2" />
-        <path d="M14 14V10a6 6 0 0112 0v4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-        <circle cx="20" cy="21" r="2" stroke="currentColor" strokeWidth="1.2" />
-        <path d="M20 23v3" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-      </svg>
-    ),
-    stat: "Active Since Oct 2024",
-  },
+    stat: "2019'dan beri",
+  }
 ]
 
 // ─── MAIN COMPONENT ───────────────────────────────────────────────────────────
@@ -74,13 +47,13 @@ export default function StrategicGateway() {
             transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
           >
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-black/35 mb-5">
-              / Strategic Positioning
+              / Stratejik Konumlandırma
             </p>
 
             <h2 className="font-sans text-[clamp(2.4rem,5.5vw,4.8rem)] font-bold leading-[0.92] tracking-[-0.03em] text-black text-balance">
-              The Strategic Gateway{" "}
+              Türkiye'nin{" "}
               <br className="hidden md:block" />
-              to the{" "}
+              Dijital{" "}
               <span
                 style={{
                   backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
@@ -89,8 +62,10 @@ export default function StrategicGateway() {
                   backgroundClip: "text",
                 }}
               >
-                MENA Region.
+                Pazarında
               </span>
+              <br className="hidden md:block" />
+              Stratejik Güç.
             </h2>
           </motion.div>
 
@@ -105,13 +80,11 @@ export default function StrategicGateway() {
             <div className="w-10 h-[2px] bg-gradient-to-r from-[#FE9417] to-[#FF6B00] mb-7" />
 
             <p className="text-black/60 leading-relaxed text-[1.05rem] font-medium max-w-lg">
-              Bridging the gap between Western excellence and Middle Eastern market dynamics.
-              iMediaff Global acts as your operational anchor, providing the cultural fluency and
-              strategic infrastructure required for seamless market entry.
+              İstanbul merkezli operasyonlarımızla Türkiye'nin en dinamik markalarına ve içerik üreticilerine hizmet veriyoruz. KVKK uyumlu sözleşmeler, anlık performans takibi ve güçlü ajans desteğiyle yanınızdayız.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              {["Cultural Fluency", "Operational Depth", "Creator Networks", "Compliance Ready"].map((tag) => (
+              {["Yerel Uzmanlık", "Hızlı Operasyon", "Influencer Ağı", "Tam Uyum"].map((tag) => (
                 <span
                   key={tag}
                   className="inline-flex items-center gap-2 border border-black/10 rounded-full px-4 py-1.5 text-xs font-semibold text-black/60 tracking-wide"
@@ -125,17 +98,13 @@ export default function StrategicGateway() {
         </div>
 
         {/* ── REGION CARDS ──────────────────────────────────────────────── */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-2xl gap-6 md:gap-8">
           {REGIONS.map((region, i) => {
             const cityImages = [
-              "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=2071&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=2070&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=2070&auto=format&fit=crop"
+              "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=2071&auto=format&fit=crop"
             ]
             const cityAlts = [
-              "Istanbul city skyline",
-              "Dubai skyline at dusk",
-              "Central and Eastern Europe city landscape"
+              "Istanbul city skyline"
             ]
 
             return (

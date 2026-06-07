@@ -5,12 +5,12 @@ import { motion } from "motion/react"
 import { Sparkles, Target, Users, LineChart, Globe2, LayoutDashboard } from "lucide-react"
 
 const SERVICES = [
-  { icon: Users, title: "Affiliate Marketing Management", desc: "End-to-end TrendFam affiliate program management across CEE, Gulf, Turkey, and Azerbaijan. Onboarding, tracking, and payments." },
-  { icon: Globe2, title: "Influencer Partnerships", desc: "Structured matchmaking between brands and vetted influencers through 1-year performance contracts." },
-  { icon: Target, title: "Campaign Production", desc: "High-fidelity content and advertising production for brands scaling across MENA and beyond." },
-  { icon: LayoutDashboard, title: "Market Entry", desc: "Strategic entry into MENA, CEE, and Gulf markets with cultural fluency and operational infrastructure." },
-  { icon: Sparkles, title: "Legal & Financial Advisory", desc: "Contract architecture, tax compliance (KVKK/GDPR), and cross-border payment management." },
-  { icon: LineChart, title: "Creator Consultancy", desc: "1-on-1 advisory, webinars, campaign channel access, and performance analytics to maximize creator earnings." },
+  { icon: Users, title: "Affiliate Pazarlama Yönetimi", desc: "Trendyol TrendFam affiliate program yönetimi: onboarding, takip ve ödemeler." },
+  { icon: Globe2, title: "Influencer İş Birlikleri", desc: "Markalar ile doğrulanmış içerik üreticileri arasında 1 yıllık performans sözleşmeleriyle yapılandırılmış eşleştirme." },
+  { icon: Target, title: "Kampanya Prodüksiyonu", desc: "Türkiye pazarında ölçeklenen markalar için yüksek kaliteli içerik ve reklam prodüksiyonu." },
+  { icon: LayoutDashboard, title: "Pazar Stratejisi", desc: "Türkiye'de sürdürülebilir büyüme için veri odaklı strateji ve operasyonel altyapı." },
+  { icon: Sparkles, title: "Hukuki & Finansal Danışmanlık", desc: "Sözleşme mimarisi, KVKK uyumu ve ödeme yönetimi." },
+  { icon: LineChart, title: "İçerik Üretici Danışmanlığı", desc: "Birebir danışmanlık, webinarlar ve performans analitiğiyle içerik üreticilerinin kazancını maksimize ediyoruz." },
 ]
 
 export default function ServicesPreview() {
@@ -19,9 +19,9 @@ export default function ServicesPreview() {
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-24 md:py-32">
         <div className="flex items-end justify-between flex-wrap gap-6">
           <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-black/40">/ Services</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-black/40">/ Hizmetlerimiz</p>
             <h2 className="mt-4 font-sans text-[clamp(2.5rem,6vw,5rem)] font-bold leading-[0.95] tracking-[-0.03em] text-black text-balance max-w-3xl">
-              We turn attention into{" "}
+              Dikkati{" "}
               <span
                 style={{
                   backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
@@ -30,12 +30,13 @@ export default function ServicesPreview() {
                   backgroundClip: "text",
                 }}
               >
-                global growth
-              </span>.
+                büyümeye
+              </span>{" "}
+              dönüştürüyoruz.
             </h2>
           </div>
           <Link href="/services" className="group inline-flex items-center gap-2 border border-black/20 px-5 py-3 text-sm font-semibold text-black hover:border-[#FE9417] hover:text-[#FE9417] transition-colors">
-            View all services
+            Tüm hizmetleri gör
             <span aria-hidden className="transition-transform group-hover:translate-x-1">-&gt;</span>
           </Link>
         </div>
@@ -46,7 +47,7 @@ export default function ServicesPreview() {
               "/services/service-01.jpg",
               "/services/service-02.jpg",
               "/services/service-03.jpg",
-              "/services/service-04.jpg",
+              "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=2071&auto=format&fit=crop",
               "/services/service-05.jpg",
               "/services/service-06.jpg"
             ]
@@ -84,19 +85,19 @@ export default function ServicesPreview() {
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
                 />
 
-                {/* Default Gradient Overlay (rgba(0,0,0,0.92) at bottom) */}
+                {/* Default Gradient Overlay */}
                 <div 
                   className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0 z-10" 
                   style={{
-                    background: "linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.92) 100%)"
+                    background: "linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 50%, transparent 100%)"
                   }}
                 />
 
-                {/* Hover Gradient Overlay (rgba(0,0,0,0.75) at bottom) */}
+                {/* Hover Gradient Overlay */}
                 <div 
                   className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-10" 
                   style={{
-                    background: "linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.75) 100%)"
+                    background: "linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 50%, transparent 100%)"
                   }}
                 />
 
@@ -107,7 +108,7 @@ export default function ServicesPreview() {
                 >
                   {/* Service Number: small, muted white, top-left corner */}
                   <div>
-                    <p className="font-mono text-xs uppercase tracking-[0.4em] text-[#888888]">
+                    <p className="font-mono text-xs uppercase tracking-[0.4em] text-[#FE9417]">
                       {String(index + 1).padStart(2, "0")}
                     </p>
                   </div>
@@ -121,20 +122,20 @@ export default function ServicesPreview() {
 
                     {/* Title & Description: white/light gray */}
                     <div className="text-left flex flex-col justify-end w-full">
-                      <h3 className="font-sans text-2xl font-bold tracking-[-0.02em] text-[#111111] transform transition-transform duration-500 group-hover:-translate-y-1">
+                      <h3 className="font-sans text-2xl font-bold tracking-[-0.02em] text-[#FFFFFF] transform transition-transform duration-500 group-hover:-translate-y-1">
                         {service.title}
                       </h3>
                       
                       <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-out">
                         <div className="overflow-hidden">
                           <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-75 flex flex-col gap-3 pt-3">
-                            <p className="text-sm font-medium leading-relaxed text-[#666666]">
+                            <p className="text-sm font-medium leading-relaxed text-white/85">
                               {service.desc}
                             </p>
                             
                             {/* Accent Color link */}
-                            <div className="inline-flex items-center gap-1 text-sm font-bold text-blue-400 group-hover:text-blue-300 transition-colors">
-                              Learn more <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            <div className="inline-flex items-center gap-1 text-sm font-bold text-[#FE9417] group-hover:text-[#FF6B00] transition-colors">
+                              Daha fazla bilgi <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                             </div>
                           </div>
                         </div>

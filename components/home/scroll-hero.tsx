@@ -37,43 +37,10 @@ export default function ScrollHero() {
       className="relative h-[250vh] text-[#0F172A]"
       aria-label="Hero"
       style={{
-        background: 'radial-gradient(ellipse at top left, #BFDBFE 0%, transparent 50%), radial-gradient(ellipse at bottom right, #BBF7D0 0%, transparent 50%), radial-gradient(ellipse at top right, #DDD6FE 0%, transparent 40%), #F8FAFC'
+        background: '#FFFFFF'
       }}
     >
       <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center">
-
-        {/* ── Aurora/Mesh Background Effect (Light Theme) ── */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-          {/* Subtle Grid Overlay */}
-          <div className="absolute inset-0 hero-grid-overlay" />
-
-          {/* Orb 1 — Soft Blue */}
-          <div
-            className="absolute rounded-full w-[250px] h-[250px] md:w-[500px] md:h-[500px] blur-[40px] md:blur-[80px] animate-float-1 delay-0 top-[-50px] left-[-50px] md:left-[-100px]"
-            style={{
-              background: '#93C5FD',
-              opacity: 0.40,
-            }}
-          />
-
-          {/* Orb 2 — Soft Green */}
-          <div
-            className="absolute rounded-full w-[220px] h-[220px] md:w-[450px] md:h-[450px] blur-[40px] md:blur-[80px] animate-float-2 delay-2 bottom-[10%] right-[-50px] md:bottom-[15%] md:right-[-100px]"
-            style={{
-              background: '#86EFAC',
-              opacity: 0.35,
-            }}
-          />
-
-          {/* Orb 3 — Soft Violet */}
-          <div
-            className="absolute rounded-full w-[180px] h-[180px] md:w-[350px] md:h-[350px] blur-[35px] md:blur-[70px] animate-float-3 delay-4 top-[15%] right-[10%] md:right-[15%]"
-            style={{
-              background: '#C4B5FD',
-              opacity: 0.25,
-            }}
-          />
-        </div>
 
         {/* ── Layer B: The Global Map Anchor ── */}
         <motion.div
@@ -82,27 +49,7 @@ export default function ScrollHero() {
         >
           <div className="relative w-full max-w-[1400px] aspect-[16/9] md:aspect-video px-6 flex items-center justify-center">
 
-            {/* Minimalist World Map Silhouette with Soft Elliptical Edges */}
-            <motion.div
-              className="absolute inset-0 flex items-center justify-center"
-              style={{
-                maskImage: 'radial-gradient(ellipse 75% 65% at 50% 50%, black 40%, transparent 100%)',
-                WebkitMaskImage: 'radial-gradient(ellipse 75% 65% at 50% 50%, black 40%, transparent 100%)'
-              }}
-              initial={{ opacity: 0, scale: shouldReduceMotion ? 1 : 0.97 }}
-              animate={{ opacity: 0.1, scale: 1 }}
-              transition={{ duration: 1.5, delay: 0.2, ease: easeCustom }}
-            >
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
-                alt="World Map Silhouette"
-                className="w-full h-auto max-h-[80vh] object-contain"
-                style={{
-                  filter: 'grayscale(100%) brightness(0%)',
-                }}
-                draggable={false}
-              />
-            </motion.div>
+
 
             {/* Premium Ambient Accent Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full bg-gradient-to-r from-blue-500/20 to-emerald-500/20 blur-[130px] opacity-[0.10] pointer-events-none" />
@@ -144,7 +91,7 @@ export default function ScrollHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: easeCustom }}
           >
-            / Global Digital Authority
+            / Türkiye'nin Dijital Otoritesi
           </motion.p>
 
           <h1 className="font-display font-bold leading-[0.9] tracking-[-0.035em] text-balance text-[clamp(2.5rem,7vw,7rem)] max-w-6xl mx-auto pointer-events-auto">
@@ -154,7 +101,7 @@ export default function ScrollHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.3, ease: easeCustom }}
             >
-              Architecting
+              Türkiye'nin
             </motion.span>{" "}
             <br className="hidden md:block" />
             <motion.span
@@ -163,7 +110,7 @@ export default function ScrollHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.45, ease: easeCustom }}
             >
-              Extraordinary
+              En Güçlü
             </motion.span>{" "}
             <br className="hidden md:block" />
             <motion.span
@@ -172,7 +119,7 @@ export default function ScrollHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.6, ease: easeCustom }}
             >
-              Global Narratives
+              Influencer Ağı
             </motion.span>
           </h1>
 
@@ -182,7 +129,7 @@ export default function ScrollHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.0, delay: 0.8, ease: easeCustom }}
           >
-            A Dubai-headquartered influencer and affiliate marketing agency — one of Trendyol&apos;s top 3 global partner agencies, operating across MENA, CEE, Gulf, Turkey, and Azerbaijan.
+            Trendyol'un Türkiye'deki en büyük partner ajansı — 5.000'den fazla influencer ve Trendyol TrendFam affiliate programıyla markalar için gerçek, ölçülebilir büyüme.
           </motion.p>
 
           <motion.div
@@ -196,7 +143,7 @@ export default function ScrollHero() {
               className="group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold text-[#111111] transition-all hover:scale-105 bg-gradient-to-br from-[#FE9417] to-[#FF6B00] shadow-[0_4px_14px_0_rgba(37,99,235,0.2)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.4)]"
             >
               <span className="relative z-10 flex items-center gap-2">
-                Start a Project
+                Proje Başlat
                 <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
               </span>
             </Link>
@@ -205,7 +152,7 @@ export default function ScrollHero() {
               href="/talent"
               className="inline-flex items-center justify-center rounded-full border-2 border-[#0F172A] bg-transparent px-8 py-4 font-semibold text-[#0F172A] transition-all hover:bg-[#0F172A] hover:text-[#111111]"
             >
-              I am a Creator
+              Ben İçerik Üreticisiyim
             </Link>
           </motion.div>
         </motion.div>

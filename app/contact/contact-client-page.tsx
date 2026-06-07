@@ -549,7 +549,7 @@ export default function ContactClientPage() {
                           id="instagram-input"
                           type="text" 
                           placeholder="https://instagram.com/..."
-                          className={`${inputClass} placeholder:text-white/20`}
+                          className={`${inputClass} placeholder:text-[#888888]`}
                           value={formState.instagram}
                           onChange={(e) => setFormState({ ...formState, instagram: e.target.value })}
                         />
@@ -561,7 +561,7 @@ export default function ContactClientPage() {
                           id="tiktok-input"
                           type="text" 
                           placeholder="https://tiktok.com/@..."
-                          className={`${inputClass} placeholder:text-white/20`}
+                          className={`${inputClass} placeholder:text-[#888888]`}
                           value={formState.tiktok}
                           onChange={(e) => setFormState({ ...formState, tiktok: e.target.value })}
                         />
@@ -573,7 +573,7 @@ export default function ContactClientPage() {
                           id="youtube-input"
                           type="text" 
                           placeholder="https://youtube.com/..."
-                          className={`${inputClass} placeholder:text-white/20`}
+                          className={`${inputClass} placeholder:text-[#888888]`}
                           value={formState.youtube}
                           onChange={(e) => setFormState({ ...formState, youtube: e.target.value })}
                         />
@@ -622,7 +622,7 @@ export default function ContactClientPage() {
                             id="noon-instagram-input"
                             type="text" 
                             placeholder="https://instagram.com/..."
-                            className={`${inputClass} placeholder:text-white/20`}
+                            className={`${inputClass} placeholder:text-[#888888]`}
                             value={formState.instagram}
                             onChange={(e) => setFormState({ ...formState, instagram: e.target.value })}
                           />
@@ -634,7 +634,7 @@ export default function ContactClientPage() {
                             id="noon-tiktok-input"
                             type="text" 
                             placeholder="https://tiktok.com/@..."
-                            className={`${inputClass} placeholder:text-white/20`}
+                            className={`${inputClass} placeholder:text-[#888888]`}
                             value={formState.tiktok}
                             onChange={(e) => setFormState({ ...formState, tiktok: e.target.value })}
                           />
@@ -649,7 +649,7 @@ export default function ContactClientPage() {
                             id="noon-snapchat-input"
                             type="text" 
                             placeholder="https://snapchat.com/add/..."
-                            className={`${inputClass} placeholder:text-white/20`}
+                            className={`${inputClass} placeholder:text-[#888888]`}
                             value={formState.snapchat}
                             onChange={(e) => setFormState({ ...formState, snapchat: e.target.value })}
                           />
@@ -661,7 +661,7 @@ export default function ContactClientPage() {
                             id="noon-telegram-input"
                             type="text" 
                             placeholder="https://t.me/..."
-                            className={`${inputClass} placeholder:text-white/20`}
+                            className={`${inputClass} placeholder:text-[#888888]`}
                             value={formState.telegram}
                             onChange={(e) => setFormState({ ...formState, telegram: e.target.value })}
                           />
@@ -816,7 +816,7 @@ export default function ContactClientPage() {
                             type="email" 
                             required
                             placeholder="Used for your Trendyol account"
-                            className={`${inputClass} placeholder:text-white/20`}
+                            className={`${inputClass} placeholder:text-[#888888]`}
                             value={formState.trendyolEmail}
                             onChange={(e) => setFormState({ ...formState, trendyolEmail: e.target.value })}
                           />
@@ -835,7 +835,7 @@ export default function ContactClientPage() {
                             type="email" 
                             required
                             placeholder="For program communications"
-                            className={`${inputClass} placeholder:text-white/20`}
+                            className={`${inputClass} placeholder:text-[#888888]`}
                             value={formState.contactEmail}
                             onChange={(e) => setFormState({ ...formState, contactEmail: e.target.value })}
                           />
@@ -877,7 +877,7 @@ export default function ContactClientPage() {
                             id="trendyol-instagram-input"
                             type="text" 
                             placeholder="@username"
-                            className={`${inputClass} placeholder:text-white/20`}
+                            className={`${inputClass} placeholder:text-[#888888]`}
                             value={formState.instagram}
                             onChange={(e) => setFormState({ ...formState, instagram: e.target.value })}
                           />
@@ -895,7 +895,7 @@ export default function ContactClientPage() {
                             id="trendyol-snapchat-input"
                             type="text" 
                             placeholder="username"
-                            className={`${inputClass} placeholder:text-white/20`}
+                            className={`${inputClass} placeholder:text-[#888888]`}
                             value={formState.snapchat}
                             onChange={(e) => setFormState({ ...formState, snapchat: e.target.value })}
                           />
@@ -907,7 +907,7 @@ export default function ContactClientPage() {
                             id="trendyol-tiktok-input"
                             type="text" 
                             placeholder="@username"
-                            className={`${inputClass} placeholder:text-white/20`}
+                            className={`${inputClass} placeholder:text-[#888888]`}
                             value={formState.tiktok}
                             onChange={(e) => setFormState({ ...formState, tiktok: e.target.value })}
                           />

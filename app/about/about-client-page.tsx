@@ -254,14 +254,17 @@ export default function AboutClientPage() {
           />
         </motion.div>
 
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/55 z-10" />
+
         {/* Caption */}
-        <div className="absolute inset-0 flex items-end">
+        <div className="absolute inset-0 flex items-end z-20">
           <div className="mx-auto w-full max-w-[1600px] px-6 md:px-10 pb-12 md:pb-24">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#888888]">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#FE9417]">
               / Brand System
             </p>
-            <p className="mt-3 max-w-2xl font-display text-3xl font-bold leading-tight text-[#111111] md:text-5xl lg:text-6xl drop-shadow-2xl">
-              Built for visibility across cultures, platforms, and markets.
+            <p className="mt-3 max-w-2xl font-display text-3xl font-bold leading-tight text-[#FFFFFF] md:text-5xl lg:text-6xl drop-shadow-2xl">
+              Built for visibility across cultures, platforms, and <span className="text-[#FE9417]">markets.</span>
             </p>
           </div>
         </div>

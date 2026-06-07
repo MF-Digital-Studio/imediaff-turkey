@@ -8,25 +8,31 @@ import { useState, useEffect, useRef } from "react"
 function MarqueeSlice() {
   return (
     <span className="flex items-center gap-8 pr-8 md:gap-14 md:pr-14 shrink-0">
-      <span>GLOBAL GROWTH</span>
+      <span>TÜRKİYE'NİN LİDERİ</span>
       <span
         aria-hidden
         className="inline-block h-[0.22em] w-[0.22em] shrink-0"
         style={{ background: "linear-gradient(135deg, #FE9417, #FE9417)" }}
       />
-      <span>CREATORS</span>
+      <span>INFLUENCER GÜCÜ</span>
       <span
         aria-hidden
         className="inline-block h-[0.22em] w-[0.22em] shrink-0"
         style={{ background: "linear-gradient(135deg, #FE9417, #FE9417)" }}
       />
-      <span>MENA DOMINANCE</span>
+      <span>TRENDYOL ORTAĞI</span>
       <span
         aria-hidden
         className="inline-block h-[0.22em] w-[0.22em] shrink-0"
         style={{ background: "linear-gradient(135deg, #FE9417, #FE9417)" }}
       />
-      <span>STRATEGIC INFLUENCE</span>
+      <span>ÖLÇÜLEBILIR BÜYÜME</span>
+      <span
+        aria-hidden
+        className="inline-block h-[0.22em] w-[0.22em] shrink-0"
+        style={{ background: "linear-gradient(135deg, #FE9417, #FE9417)" }}
+      />
+      <span>STRATEJİK ETKİ</span>
       <span
         aria-hidden
         className="inline-block h-[0.22em] w-[0.22em] shrink-0"
@@ -101,22 +107,22 @@ export default function CtaStrip() {
           className="mx-auto max-w-[1600px] px-6 md:px-10 text-center relative z-10 flex flex-col items-center"
         >
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#555555] font-bold mb-6">
-            / Let us begin
+            / Başlayalım
           </p>
           
           <h2 className="font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance mb-6 text-[#111111]">
-            Architect your global <br className="hidden md:block" /> influence.
+            Türkiye'deki etkini <br className="hidden md:block" /> inşa edelim.
           </h2>
           
           <p className="max-w-2xl text-lg md:text-xl font-medium leading-relaxed text-[#555555] mb-10">
-            Transforming attention into regional dominance. From high-fidelity production to market entry in MENA, step into the future of brand scaling.
+            Dikkati büyümeye dönüştürüyoruz. Yüksek kaliteli prodüksiyondan Türkiye'nin lider influencer ağına — markanızın geleceğini birlikte şekillendirin.
           </p>
           
           <Link
             href="/contact"
             className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl"
           >
-            Start a Project
+            Proje Başlat
           </Link>
         </motion.div>
       </section>

@@ -271,7 +271,7 @@ function CapabilityCard({
         </h3>
 
         {/* Description */}
-        <p className="text-white/45 text-[0.93rem] leading-relaxed font-medium flex-1">
+        <p className="text-[#555555] text-[0.93rem] leading-relaxed font-medium flex-1">
           {cap.description}
         </p>
 

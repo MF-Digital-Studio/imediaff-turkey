@@ -11,19 +11,19 @@ type ManifestoSection = {
 
 const SECTIONS: ManifestoSection[] = [
   {
-    kicker: "01 - THE STRATEGIC HUB",
-    title: "We don't just reach regions. We bridge continents.",
-    body: "Strategically anchored in Istanbul and Dubai, iMediaff Global acts as the operational gateway for brands seeking to dominate the transcontinental corridor.",
+    kicker: "01 - STRATEJİK MERKEZ",
+    title: "Sadece ulaşmıyoruz. Gerçek bağlar kuruyoruz.",
+    body: "İstanbul'da stratejik olarak konumlanan imediaff Türkiye, Trendyol ekosisteminde markalar için büyüme altyapısı oluşturuyor.",
   },
   {
-    kicker: "02 - CULTURAL FLUENCY",
-    title: "We don't follow trends. We define regional relevance.",
-    body: "We master the complex cultural nuances and linguistic diversity of the GCC to ensure your brand becomes an authentic part of the local conversation.",
+    kicker: "02 - KÜLTÜREL ZEKA",
+    title: "Trendleri takip etmiyoruz. Türkiye'ye özgü trendler yaratıyoruz.",
+    body: "Türk tüketicisinin dinamiklerini ve kültürel bağlamını derinlemesine anlıyoruz. Markanızın yerel konuşmaların otantik bir parçası olmasını sağlıyoruz.",
   },
   {
-    kicker: "03 - REGIONAL GROWTH",
-    title: "We don't just track data. We engineer market share.",
-    body: "From Dubai to the world, we transform digital attention into scalable regional growth across the world's most dynamic markets.",
+    kicker: "03 - ÖLÇÜLEBILIR BÜYÜME",
+    title: "Sadece veri takip etmiyoruz. Pazar payı yaratıyoruz.",
+    body: "Trendyol'un Türkiye ağında dijital dikkati ölçülebilir büyümeye dönüştürüyoruz.",
   },
 ]
 
@@ -50,9 +50,9 @@ export default function StickyManifesto() {
               / Manifesto
             </p>
             <h2 className="mt-4 font-sans text-[clamp(2.5rem,7vw,6rem)] font-bold leading-[1.05] tracking-[-0.035em] text-balance max-w-4xl text-[#111111]">
-              What do we build?
+              Ne inşa ediyoruz?
               <br />
-              We build brands people{" "}
+              İnsanların konuştuğu{" "}
               <span
                 style={{
                   backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
@@ -61,12 +61,12 @@ export default function StickyManifesto() {
                   backgroundClip: "text",
                 }}
               >
-                talk about.
+                markalar inşa ediyoruz.
               </span>
             </h2>
           </div>
           <p className="max-w-md text-sm md:text-base text-[#888888] leading-relaxed font-medium">
-            A three-layer growth model from strategy to culture to measurable regional dominance.
+            Stratejiden kültüre ve ölçülebilir büyümeye uzanan üç aşamalı bir büyüme modeli.
           </p>
         </div>
       </div>
@@ -140,13 +140,12 @@ function ManifestoStackCard({
     >
       <div className="absolute inset-0 pointer-events-none z-10">
         <motion.div style={{ opacity: dimOpacity }} className="absolute inset-0 bg-white" />
-        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/80 to-transparent" />
       </div>
 
       <div className="relative z-20 mx-auto max-w-[1600px] w-full px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
         <div className="md:col-span-3 hidden md:block">
           <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FE9417]">{kicker}</p>
-          <p className="mt-4 font-sans text-[10rem] leading-none font-bold tracking-[-0.05em] text-white/10">
+          <p className="mt-4 font-sans text-[10rem] leading-none font-bold tracking-[-0.05em] text-[#111111]/5">
             {String(index + 1).padStart(2, "0")}
           </p>
         </div>
@@ -162,7 +161,7 @@ function ManifestoStackCard({
             {body}
           </p>
           <div className="mt-12 flex items-center gap-4">
-            <div className="h-[1px] flex-1 bg-white/10" />
+            <div className="h-[1px] flex-1 bg-[#E5E5E5]" />
             <p className="font-mono text-[10px] tracking-[0.2em] text-[#888888]">
               {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
             </p>

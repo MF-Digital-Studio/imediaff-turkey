@@ -18,14 +18,14 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "imediaff Global | 360° Digital Agency",
+  title: "imediaff Türkiye | 360° Dijital Ajans",
   description:
-    "imediaff Global connects world-class creators and ambitious brands across Dubai and the MENA region through strategy, creativity, and measurable growth.",
+    "imediaff Türkiye, markalar ve içerik üreticilerini Trendyol affiliate ağı üzerinden bir araya getiren Türkiye'nin lider influencer pazarlama ajansıdır.",
   generator: "v0.app",
   openGraph: {
-    title: "imediaff Global | 360° Digital Agency",
+    title: "imediaff Türkiye | 360° Dijital Ajans",
     description:
-      "The global hub for influencer power and 360° digital media execution across Dubai and MENA.",
+      "imediaff Türkiye, markalar ve içerik üreticilerini Trendyol affiliate ağı üzerinden bir araya getiren Türkiye'nin lider influencer pazarlama ajansıdır.",
     type: "website",
   },
   icons: {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport = {
-  themeColor: "#000000",
+  themeColor: "#FE9417",
   width: "device-width",
   initialScale: 1,
 }

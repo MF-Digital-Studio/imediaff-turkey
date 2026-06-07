@@ -13,13 +13,10 @@ const NAV_ITEMS = [
   { label: "Brands", href: "/brands" },
   { label: "Affiliate Programs", href: "/affiliate-programs" },
   {
-    label: "Talent",
+    label: "İçerik Üreticileri",
     href: "/talent",
     subItems: [
-      { label: "CEE Region", href: "/talent/cee", flags: "🇷🇴 🇵🇱 🇧🇬 🇬🇷" },
-      { label: "Gulf Region", href: "/talent/gulf", flags: "🇸🇦 🇦🇪 🇰🇼" },
-      { label: "Turkey", href: "/talent/turkey", flags: "🇹🇷" },
-      { label: "Azerbaijan", href: "/talent/azerbaijan", flags: "🇦🇿" }
+      { label: "Turkey", href: "/talent/turkey", flags: "🇹🇷" }
     ]
   },
   { label: "Events", href: "/events" },
@@ -166,7 +163,7 @@ export default function SiteNav() {
               {/* Fill layer */}
               <span className="absolute inset-0 bg-gradient-to-r from-[#FE9417] to-[#FF6B00] translate-y-full group-hover:translate-y-0 transition-transform duration-[250ms] ease-out -z-10" />
 
-              <span className="relative z-10 group-hover:text-[#111111] transition-colors duration-[250ms]">Request Proposal</span>
+              <span className="relative z-10 group-hover:text-[#111111] transition-colors duration-[250ms]">Teklif Al</span>
               <span aria-hidden className="relative z-10 group-hover:text-[#111111] transition-all group-hover:translate-x-1 duration-[250ms]">→</span>
             </Link>
 
@@ -294,7 +291,7 @@ export default function SiteNav() {
                   onClick={() => setOpen(false)}
                   className="inline-flex items-center justify-center gap-2 w-full py-4 text-base font-bold uppercase tracking-widest text-black bg-gradient-to-r from-[#FE9417] to-[#FF6B00] rounded-none transition-transform hover:scale-[1.02]"
                 >
-                  Request Proposal
+                  Teklif Al
                 </Link>
 
                 <div className="flex flex-wrap gap-x-6 gap-y-2">
@@ -306,7 +303,7 @@ export default function SiteNav() {
                 </div>
                 <div className="h-px w-full bg-white/10" />
                 <div className="font-mono text-xs uppercase tracking-widest text-[#888888]">
-                  IST · DXB · WY
+                  IST
                 </div>
               </motion.div>
             </div>

@@ -55,18 +55,18 @@ function ParallaxImage({
 
 export default function BrandsClientPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-white text-[#111111]">
 
       {/* ── Hero (Black Theme) ────────────────────────────────────────────────── */}
-      <section className="bg-black text-white pt-32 pb-16 md:pt-48 md:pb-24 border-b border-white/10 relative overflow-hidden">
-        <div className="pointer-events-none absolute right-0 top-0 w-full max-w-[800px] h-[800px] bg-gradient-to-bl from-[#2563EB]/10 to-transparent blur-[120px] rounded-full opacity-50 translate-x-1/3 -translate-y-1/3" />
+      <section className="bg-white text-[#111111] pt-32 pb-16 md:pt-48 md:pb-24 border-b border-[#E5E5E5] relative overflow-hidden">
+        <div className="pointer-events-none absolute right-0 top-0 w-full max-w-[800px] h-[800px] bg-gradient-to-bl from-[#FE9417]/10 to-transparent blur-[120px] rounded-full opacity-50 translate-x-1/3 -translate-y-1/3" />
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 relative z-10">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">/ Brand Partnerships</p>
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">/ Brand Partnerships</p>
             <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8.5rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance">
               International <br /> Authority.
             </h1>
-            <p className="mt-8 max-w-2xl text-lg md:text-xl text-white/60 leading-relaxed font-sans">
+            <p className="mt-8 max-w-2xl text-lg md:text-xl text-[#666666] leading-relaxed font-sans">
               iMediaff Global is one of Trendyol&apos;s top 3 authorized partner agencies worldwide — giving brands direct access to a vetted network of influencers across Turkey, CEE, Gulf, and Azerbaijan. We don&apos;t just run campaigns. We build performance-driven affiliate ecosystems that generate measurable revenue.
             </p>
           </motion.div>
@@ -74,7 +74,7 @@ export default function BrandsClientPage() {
       </section>
 
       {/* ── Success Metrics (Black Theme) ──────────────────────────────────────── */}
-      <section className="bg-black text-white py-16 md:py-24 border-b border-white/10">
+      <section className="bg-white text-[#111111] py-16 md:py-24 border-b border-[#E5E5E5]">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8">
             {METRICS.map((metric, i) => (
@@ -84,11 +84,11 @@ export default function BrandsClientPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-10% 0px" }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="flex flex-col border-l border-white/20 pl-6 md:pl-8"
+                className="flex flex-col border-l border-[#E5E5E5] pl-6 md:pl-8"
               >
-                <p className="font-mono text-xs uppercase tracking-[0.1em] text-white/40 mb-4">{metric.title}</p>
-                <h3 className="font-display text-5xl md:text-6xl font-bold tracking-[-0.02em] text-white mb-3">{metric.value}</h3>
-                <p className="text-sm md:text-base text-white/60 max-w-[200px]">{metric.desc}</p>
+                <p className="font-mono text-xs uppercase tracking-[0.1em] text-[#888888] mb-4">{metric.title}</p>
+                <h3 className="font-display text-5xl md:text-6xl font-bold tracking-[-0.02em] text-[#111111] mb-3">{metric.value}</h3>
+                <p className="text-sm md:text-base text-[#666666] max-w-[200px]">{metric.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -96,7 +96,7 @@ export default function BrandsClientPage() {
       </section>
 
       {/* ── Brand Advantage (Black Theme) ────────────────────────────────────── */}
-      <section className="bg-black text-white py-20 md:py-28 border-b border-white/10">
+      <section className="bg-white text-[#111111] py-20 md:py-28 border-b border-[#E5E5E5]">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -105,8 +105,8 @@ export default function BrandsClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-14 md:mb-20"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB] mb-5">/ Brand Advantage</p>
-            <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-white text-balance">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">/ Brand Advantage</p>
+            <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-[#111111] text-balance">
               What Brands Get<br />When They Work<br />With iMediaff.
             </h2>
           </motion.div>
@@ -135,11 +135,11 @@ export default function BrandsClientPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-10% 0px" }}
                 transition={{ duration: 0.6, delay: i * 0.12 }}
-                className="group relative flex flex-col p-8 md:p-10 rounded-2xl bg-white/[0.03] border border-white/[0.07] hover:border-white/20 hover:-translate-y-1 transition-all duration-500 overflow-hidden"
+                className="group relative flex flex-col p-8 md:p-10 rounded-2xl bg-white/[0.03] border border-white/[0.07] hover:border-[#E5E5E5] hover:-translate-y-1 transition-all duration-500 overflow-hidden"
               >
-                <div className="absolute top-0 inset-x-0 h-[1.5px] rounded-t-2xl bg-gradient-to-r from-[#2563EB] to-[#16A34A] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-white/25 mb-6">{card.num}</p>
-                <h3 className="font-display text-2xl font-bold text-white mb-4 tracking-tight">{card.title}</h3>
+                <div className="absolute top-0 inset-x-0 h-[1.5px] rounded-t-2xl bg-gradient-to-r from-[#FE9417] to-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-[#FE9417] mb-6">{card.num}</p>
+                <h3 className="font-display text-2xl font-bold text-[#111111] mb-4 tracking-tight">{card.title}</h3>
                 <p className="text-white/55 leading-relaxed text-sm font-medium">{card.desc}</p>
               </motion.div>
             ))}
@@ -150,10 +150,10 @@ export default function BrandsClientPage() {
       {/* ── Infinite Marquee (White Theme) ─────────────────────────────────────── */}
       <section className="bg-white text-black py-20 md:py-28 overflow-hidden border-b border-gray-200 relative">
         {/* Sunset glow behind the marquee (subtle for white bg) */}
-        <div className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 h-32 bg-gradient-to-br from-[#2563EB]/5 to-[#16A34A]/5 blur-3xl" />
+        <div className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 h-32 bg-gradient-to-br from-[#FE9417]/5 to-[#FF6B00]/5 blur-3xl" />
 
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 mb-12 relative z-10">
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">/ Trusted by Industry Leaders</p>
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">/ Trusted by Industry Leaders</p>
         </div>
 
         {/* Fading edge masks for white background */}
@@ -168,7 +168,7 @@ export default function BrandsClientPage() {
           >
             {[...ALL_BRANDS, ...ALL_BRANDS].map((brand, i) => (
               <div key={`${brand}-${i}`} className="group cursor-default whitespace-nowrap">
-                <span className="font-display text-3xl md:text-5xl font-bold tracking-tight lowercase text-black/20 transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#2563EB] group-hover:to-[#2563EB]">
+                <span className="font-display text-3xl md:text-5xl font-bold tracking-tight lowercase text-black/20 transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#FE9417] group-hover:to-[#FE9417]">
                   {brand}
                 </span>
               </div>
@@ -178,7 +178,7 @@ export default function BrandsClientPage() {
       </section>
 
       {/* ── Brand Offers Program (Black Theme) ──────────────────────────────── */}
-      <section className="bg-black text-white py-20 md:py-32 border-b border-white/10">
+      <section className="bg-white text-[#111111] py-20 md:py-32 border-b border-[#E5E5E5]">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -187,8 +187,8 @@ export default function BrandsClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-14 md:mb-20 max-w-4xl"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB] mb-5">/ Trendyol Brand Offers</p>
-            <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-white text-balance mb-6">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">/ Trendyol Brand Offers</p>
+            <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-[#111111] text-balance mb-6">
               Activate Your Brand<br />Directly with Creators.
             </h2>
             <p className="text-lg text-white/55 leading-relaxed font-sans max-w-2xl">
@@ -221,11 +221,11 @@ export default function BrandsClientPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-10% 0px" }}
                 transition={{ duration: 0.6, delay: i * 0.12 }}
-                className="group relative flex flex-col p-8 md:p-10 rounded-2xl bg-white/[0.03] border border-white/[0.07] hover:border-[#2563EB]/40 hover:-translate-y-1 transition-all duration-500 overflow-hidden"
+                className="group relative flex flex-col p-8 md:p-10 rounded-2xl bg-white/[0.03] border border-white/[0.07] hover:border-[#FE9417]/40 hover:-translate-y-1 transition-all duration-500 overflow-hidden"
               >
-                <div className="absolute top-0 inset-x-0 h-[1.5px] rounded-t-2xl bg-gradient-to-r from-[#2563EB] to-[#16A34A] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-white/25 mb-6">{card.num}</p>
-                <h3 className="font-display text-2xl font-bold text-white mb-4 tracking-tight">{card.title}</h3>
+                <div className="absolute top-0 inset-x-0 h-[1.5px] rounded-t-2xl bg-gradient-to-r from-[#FE9417] to-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-[#FE9417] mb-6">{card.num}</p>
+                <h3 className="font-display text-2xl font-bold text-[#111111] mb-4 tracking-tight">{card.title}</h3>
                 <p className="text-white/55 leading-relaxed text-sm font-medium">{card.desc}</p>
               </motion.div>
             ))}
@@ -239,7 +239,7 @@ export default function BrandsClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-14"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/40 mb-10">/ How It Works</p>
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#888888] mb-10">/ How It Works</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
@@ -259,11 +259,11 @@ export default function BrandsClientPage() {
                 },
               ].map((s, i) => (
                 <div key={s.step} className="flex flex-col">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 font-mono text-sm text-[#2563EB] mb-6">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#E5E5E5] font-mono text-sm text-[#FE9417] mb-6">
                     {s.step}
                   </div>
-                  <h4 className="font-display text-xl font-bold text-white mb-3">{s.title}</h4>
-                  <p className="text-sm text-white/50 leading-relaxed">{s.desc}</p>
+                  <h4 className="font-display text-xl font-bold text-[#111111] mb-3">{s.title}</h4>
+                  <p className="text-sm text-[#888888] leading-relaxed">{s.desc}</p>
                 </div>
               ))}
             </div>
@@ -271,7 +271,7 @@ export default function BrandsClientPage() {
 
           <Link
             href="/contact?type=brand"
-            className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#2563EB] to-[#16A34A] px-10 py-5 text-base font-bold text-white transition-transform hover:scale-105 shadow-xl"
+            className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] px-10 py-5 text-base font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl"
           >
             Submit a Campaign Brief ↗
           </Link>
@@ -290,11 +290,11 @@ export default function BrandsClientPage() {
               viewport={{ once: true, margin: "-10% 0px" }}
               transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
             >
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB] mb-6 font-bold">/ The MENA Gateway</p>
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-6 font-bold">/ The MENA Gateway</p>
               <h2 className="font-display text-[clamp(2.5rem,4.5vw,5rem)] font-bold tracking-[-0.03em] leading-[1.05] text-black mb-10">
                 Your Strategic <br /> Gateway to the <br /> MENA Region.
               </h2>
-              <div className="h-px w-full bg-gradient-to-br from-[#2563EB] to-[#16A34A] mb-10" />
+              <div className="h-px w-full bg-gradient-to-br from-[#FE9417] to-[#FF6B00] mb-10" />
               <p className="text-xl md:text-2xl text-gray-800 leading-relaxed font-sans mb-6">
                 We don't just run campaigns; we navigate cultures.
               </p>
@@ -326,7 +326,7 @@ export default function BrandsClientPage() {
       </section>
 
       {/* ── Section 2: Data-Led Creator Selection (Black Theme) ──────────────── */}
-      <section className="bg-black text-white py-20 md:py-32 border-b border-white/10 overflow-hidden">
+      <section className="bg-white text-[#111111] py-20 md:py-32 border-b border-[#E5E5E5] overflow-hidden">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
@@ -354,15 +354,15 @@ export default function BrandsClientPage() {
               transition={{ duration: 0.85, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
               className="order-1 lg:order-2"
             >
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB] mb-6">/ Data-Led Creator Selection</p>
-              <h2 className="font-display text-[clamp(2.5rem,4.5vw,5rem)] font-bold tracking-[-0.03em] leading-[1.05] text-white mb-10">
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-6">/ Data-Led Creator Selection</p>
+              <h2 className="font-display text-[clamp(2.5rem,4.5vw,5rem)] font-bold tracking-[-0.03em] leading-[1.05] text-[#111111] mb-10">
                 Proprietary Tech, <br /> Proven Creators.
               </h2>
-              <div className="h-px w-full bg-gradient-to-br from-[#2563EB] to-[#16A34A] mb-10" />
-              <p className="text-xl md:text-2xl text-white/80 leading-relaxed font-sans mb-6">
+              <div className="h-px w-full bg-gradient-to-br from-[#FE9417] to-[#FF6B00] mb-10" />
+              <p className="text-xl md:text-2xl text-[#555555] leading-relaxed font-sans mb-6">
                 Leveraging our database of 17,000+ verified influencers.
               </p>
-              <p className="text-lg text-white/60 leading-relaxed font-sans">
+              <p className="text-lg text-[#666666] leading-relaxed font-sans">
                 We use predictive analytics to match your brand with creators who don't just have followers—they have influence. It's an exact science designed for maximum conversion and authentic engagement.
               </p>
             </motion.div>
@@ -401,7 +401,7 @@ export default function BrandsClientPage() {
                 transition={{ duration: 0.6, delay: i * 0.15 }}
                 className="p-8 md:p-12 rounded-[2rem] bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="h-px w-12 bg-gradient-to-br from-[#2563EB] to-[#16A34A] mb-8" />
+                <div className="h-px w-12 bg-gradient-to-br from-[#FE9417] to-[#FF6B00] mb-8" />
                 <h3 className="font-display text-3xl font-bold text-black mb-4">{col.title}.</h3>
                 <p className="text-gray-600 leading-relaxed font-sans">{col.desc}</p>
               </motion.div>
@@ -411,7 +411,7 @@ export default function BrandsClientPage() {
       </section>
 
       {/* ── Who We Work With (Black Theme) ───────────────────────────────────── */}
-      <section className="bg-black text-white py-20 md:py-28 border-b border-white/10">
+      <section className="bg-white text-[#111111] py-20 md:py-28 border-b border-[#E5E5E5]">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -420,8 +420,8 @@ export default function BrandsClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-14"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB] mb-5">/ Brand Categories</p>
-            <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-white text-balance mb-6">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">/ Brand Categories</p>
+            <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-[#111111] text-balance mb-6">
               Built for Brands<br />Across Every Category.
             </h2>
             <p className="text-lg text-white/55 leading-relaxed font-sans max-w-2xl">
@@ -444,22 +444,22 @@ export default function BrandsClientPage() {
             ].map((cat) => (
               <span
                 key={cat}
-                className="inline-flex items-center gap-2 border border-white/15 rounded-full px-5 py-2.5 text-sm font-semibold text-white/70 hover:border-[#2563EB]/60 hover:text-white transition-all duration-300"
+                className="inline-flex items-center gap-2 border border-[#E5E5E5] rounded-full px-5 py-2.5 text-sm font-semibold text-[#666666] hover:border-[#FE9417]/60 hover:text-[#111111] transition-all duration-300"
               >
-                <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#2563EB] to-[#16A34A] flex-shrink-0" />
+                <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] flex-shrink-0" />
                 {cat}
               </span>
             ))}
           </motion.div>
 
-          <p className="text-sm text-white/30 font-mono">
+          <p className="text-sm text-[#FE9417] font-mono">
             Note: Electronics and global brand products are excluded from standard affiliate commission structures per Trendyol program rules.
           </p>
         </div>
       </section>
 
       {/* ── Final CTA (Sunset Gradient Theme) ─────────────────────────────────── */}
-      <section className="bg-gradient-to-br from-[#2563EB] to-[#16A34A] text-white py-24 md:py-36 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#FE9417] to-[#FF6B00] text-[#111111] py-24 md:py-36 relative overflow-hidden">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -467,18 +467,18 @@ export default function BrandsClientPage() {
           transition={{ duration: 0.8 }}
           className="mx-auto max-w-[1600px] px-6 md:px-10 text-center relative z-10"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/80 font-bold mb-6">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#555555] font-bold mb-6">
             / Scale your brand
           </p>
-          <h2 className="font-display text-[clamp(2.5rem,5.5vw,5.5rem)] font-bold tracking-[-0.03em] text-white mb-6 text-balance">
+          <h2 className="font-display text-[clamp(2.5rem,5.5vw,5.5rem)] font-bold tracking-[-0.03em] text-[#111111] mb-6 text-balance">
             Ready to Scale Your Brand<br />Across 4 Regions?
           </h2>
-          <p className="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto mb-10 font-sans">
+          <p className="text-lg text-[#555555] leading-relaxed max-w-2xl mx-auto mb-10 font-sans">
             Partner with iMediaff Global — one of Trendyol&apos;s top 3 authorized agencies. Access a vetted influencer network, custom brand offer campaigns, and full operational support across Turkey, CEE, Gulf, and Azerbaijan.
           </p>
           <Link
             href="/contact?type=brand"
-            className="inline-flex items-center justify-center rounded-full bg-black px-12 py-6 text-lg font-bold text-white transition-transform hover:scale-105 shadow-xl"
+            className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl"
           >
             Request a Brand Partnership ↗
           </Link>

@@ -29,10 +29,10 @@ export default function ClientMarquee() {
           {doubled.map((c, i) => (
             <span
               key={`${c}-${i}`}
-              className="font-sans text-4xl md:text-6xl font-bold tracking-[-0.03em] text-black/20 hover:text-black transition-colors duration-500 cursor-default"
+              className="font-sans text-4xl md:text-6xl font-bold tracking-[-0.03em] text-black/20 hover:text-[#FE9417] transition-colors duration-500 cursor-default"
             >
               {c}
-              <span className="text-[#2563EB]">.</span>
+              <span className="text-[#FE9417]">.</span>
             </span>
           ))}
         </div>

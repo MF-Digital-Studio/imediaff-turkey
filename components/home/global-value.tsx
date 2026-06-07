@@ -96,7 +96,7 @@ export default function GlobalValue() {
                 <div
                   className="absolute inset-0 rounded-2xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                   style={{
-                    background: "linear-gradient(135deg, #2563EB, #16A34A)",
+                    background: "linear-gradient(135deg, #FE9417, #FF6B00)",
                     padding: "1px",
                     WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
                     WebkitMaskComposite: "xor",

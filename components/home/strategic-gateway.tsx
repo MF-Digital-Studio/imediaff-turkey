@@ -83,7 +83,7 @@ export default function StrategicGateway() {
               to the{" "}
               <span
                 style={{
-                  backgroundImage: "linear-gradient(135deg, #2563EB 0%, #16A34A 100%)",
+                  backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -102,7 +102,7 @@ export default function StrategicGateway() {
             className="lg:pt-4"
           >
             {/* Magenta accent rule */}
-            <div className="w-10 h-[2px] bg-gradient-to-r from-[#2563EB] to-[#16A34A] mb-7" />
+            <div className="w-10 h-[2px] bg-gradient-to-r from-[#FE9417] to-[#FF6B00] mb-7" />
 
             <p className="text-black/60 leading-relaxed text-[1.05rem] font-medium max-w-lg">
               Bridging the gap between Western excellence and Middle Eastern market dynamics.
@@ -116,7 +116,7 @@ export default function StrategicGateway() {
                   key={tag}
                   className="inline-flex items-center gap-2 border border-black/10 rounded-full px-4 py-1.5 text-xs font-semibold text-black/60 tracking-wide"
                 >
-                  <span className="w-1 h-1 rounded-full bg-gradient-to-r from-[#2563EB] to-[#16A34A] flex-shrink-0" />
+                  <span className="w-1 h-1 rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] flex-shrink-0" />
                   {tag}
                 </span>
               ))}
@@ -158,7 +158,7 @@ export default function StrategicGateway() {
                 }}
               >
                 {/* Gradient top line — reveals on hover */}
-                <div className="absolute top-0 inset-x-0 h-[2px] rounded-t-2xl bg-gradient-to-br from-[#2563EB] to-[#16A34A] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
+                <div className="absolute top-0 inset-x-0 h-[2px] rounded-t-2xl bg-gradient-to-br from-[#FE9417] to-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
 
                 {/* Top Image */}
                 <div className="w-full h-[200px] relative overflow-hidden">
@@ -172,7 +172,7 @@ export default function StrategicGateway() {
                 {/* Padded Content Area */}
                 <div className="p-8 md:p-10 flex flex-col flex-grow">
                   {/* Icon */}
-                  <div className="mb-7 text-black/25 group-hover:text-black transition-colors duration-400">
+                  <div className="mb-7 text-black/25 group-hover:text-[#FE9417] transition-colors duration-400">
                     {region.icon}
                   </div>
 
@@ -195,7 +195,7 @@ export default function StrategicGateway() {
                   <div className="mt-8 flex items-center gap-2">
                     <span
                       className="w-1.5 h-1.5 rounded-full flex-shrink-0"
-                      style={{ background: "linear-gradient(90deg, #2563EB 0%, #2563EB 100%)" }}
+                      style={{ background: "linear-gradient(90deg, #FE9417 0%, #FE9417 100%)" }}
                     />
                     <span className="text-[11px] font-mono uppercase tracking-[0.3em] text-black/35">
                       {region.stat}

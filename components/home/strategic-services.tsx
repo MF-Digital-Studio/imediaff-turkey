@@ -32,7 +32,7 @@ export default function StrategicServices() {
   const inView = useInView(sectionRef, { once: true, margin: "-15% 0px" })
 
   return (
-    <section ref={sectionRef} className="relative bg-black py-24 md:py-32" aria-label="Strategic Services">
+    <section ref={sectionRef} className="relative bg-white py-24 md:py-32" aria-label="Strategic Services">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
         
         {/* Section Header */}
@@ -42,12 +42,12 @@ export default function StrategicServices() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="mb-16 md:mb-20"
         >
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/40 mb-4">
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#888888] mb-4">
             / Strategic Services
           </p>
-          <h2 className="font-sans text-[clamp(2.5rem,5vw,4.5rem)] font-bold leading-[0.95] tracking-[-0.03em] text-white max-w-3xl text-balance">
+          <h2 className="font-sans text-[clamp(2.5rem,5vw,4.5rem)] font-bold leading-[0.95] tracking-[-0.03em] text-[#111111] max-w-3xl text-balance">
             Driving global impact through <br />
-            <span className="text-white/30">precision</span> and <span className="text-white/30">scale.</span>
+            <span className="text-[#FE9417]">precision</span> and <span className="text-[#FE9417]">scale.</span>
           </h2>
         </motion.div>
 
@@ -59,7 +59,7 @@ export default function StrategicServices() {
               initial={{ opacity: 0, x: -30 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.15 + i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="group relative flex flex-col bg-white/[0.03] p-8 rounded-2xl border border-white/10 transition-all duration-500 hover:-translate-y-[5px] overflow-hidden"
+              className="group relative flex flex-col bg-white/[0.03] p-8 rounded-2xl border border-[#E5E5E5] transition-all duration-500 hover:-translate-y-[5px] overflow-hidden"
               style={{
                 boxShadow: "0 0 0 rgba(0,0,0,0)",
               }}
@@ -71,22 +71,22 @@ export default function StrategicServices() {
               }}
             >
               {/* Top Accent Line */}
-              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#2563EB] to-[#16A34A] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#FE9417] to-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
-              <div className="mb-8 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/[0.05] text-white group-hover:bg-white group-hover:text-black transition-colors duration-500">
+              <div className="mb-8 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/[0.05] text-[#111111] group-hover:bg-white group-hover:text-[#FE9417] transition-colors duration-500">
                 <service.icon strokeWidth={1.5} className="h-5 w-5" />
               </div>
 
-              <h3 className="font-sans text-xl font-bold text-white mb-4 tracking-tight">
+              <h3 className="font-sans text-xl font-bold text-[#111111] mb-4 tracking-tight">
                 {service.title}
               </h3>
               
-              <p className="text-white/60 leading-relaxed text-[0.95rem] font-medium">
+              <p className="text-[#666666] leading-relaxed text-[0.95rem] font-medium">
                 {service.description}
               </p>
               
               {/* Bottom Right Dot */}
-              <div className="absolute bottom-6 right-6 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#2563EB] to-[#16A34A] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute bottom-6 right-6 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.div>
           ))}
         </div>

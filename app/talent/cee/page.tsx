@@ -47,10 +47,10 @@ export default function CeePage() {
   return (
     <main className="bg-background text-foreground min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative pt-32 md:pt-48 pb-20 md:pb-32 overflow-hidden border-border bg-[#000000] border-b border-[#1a1a1a]">
+      <section className="relative pt-32 md:pt-48 pb-20 md:pb-32 overflow-hidden border-border bg-white border-b border-[#E5E5E5]">
         {/* Glow Effects */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#2563EB]/10 blur-[120px] rounded-full pointer-events-none" />
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#2563EB]/5 blur-[100px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#FE9417]/10 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#FE9417]/5 blur-[100px] rounded-full pointer-events-none" />
         
         <motion.div 
           initial={{ opacity: 0, y: 30 }} 
@@ -66,7 +66,7 @@ export default function CeePage() {
 
           <h1 className="font-display text-[clamp(3.5rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] max-w-5xl">
             Join the iMediaff <br />
-            <span className="bg-gradient-to-r from-[#2563EB] to-[#16A34A] bg-clip-text text-transparent">Talent Network</span>
+            <span className="bg-gradient-to-r from-[#FE9417] to-[#FF6B00] bg-clip-text text-transparent">Talent Network</span>
           </h1>
           <p className="mt-8 max-w-2xl text-lg md:text-xl text-muted-foreground leading-relaxed">
             We are a global agency headquartered in Dubai, connecting brands and influencers through performance-driven partnerships. We manage affiliate and influencer marketing processes professionally from end-to-end.
@@ -74,7 +74,7 @@ export default function CeePage() {
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Link 
               href="/contact?type=creator"
-              className="inline-flex h-14 items-center justify-center rounded-full bg-gradient-to-r from-[#2563EB] to-[#16A34A] px-8 font-semibold text-black transition-transform hover:scale-105 active:scale-95"
+              className="inline-flex h-14 items-center justify-center rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] px-8 font-semibold text-black transition-transform hover:scale-105 active:scale-95"
             >
               Apply as a Creator ↗
             </Link>
@@ -103,7 +103,7 @@ export default function CeePage() {
             </div>
           </div>
           <div className="relative">
-            <div className="absolute inset-0 bg-[#2563EB]/5 blur-3xl rounded-full" />
+            <div className="absolute inset-0 bg-[#FE9417]/5 blur-3xl rounded-full" />
             <div className="relative bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] backdrop-blur-xl p-10 rounded-3xl overflow-hidden">
               <div className="grid grid-cols-2 gap-6">
                 {[
@@ -113,7 +113,7 @@ export default function CeePage() {
                   { icon: Globe, label: "Global Reach" }
                 ].map((item, i) => (
                   <div key={i} className="flex flex-col items-center justify-center p-6 border border-[#e5e7eb] bg-[#ffffff] rounded-2xl text-center shadow-[0_1px_4px_rgba(0,0,0,0.04)]">
-                    <item.icon className="w-10 h-10 text-[#2563EB] mb-4" strokeWidth={1.5} />
+                    <item.icon className="w-10 h-10 text-[#FE9417] mb-4" strokeWidth={1.5} />
                     <span className="font-medium text-sm text-[#111827]">{item.label}</span>
                   </div>
                 ))}
@@ -124,7 +124,7 @@ export default function CeePage() {
       </section>
 
       {/* 3. ELIGIBILITY */}
-      <section className="py-24 border-border bg-[#111111] border-y border-[#1f1f1f]">
+      <section className="py-24 border-border bg-white border-y border-[#1f1f1f]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -144,9 +144,9 @@ export default function CeePage() {
               { icon: Globe, title: "CEE Region", desc: "Account registered in Romania, Poland, Bulgaria, or Greece" },
               { icon: Building2, title: "Agency Partner", desc: "Must apply through an authorized agency" }
             ].map((req, i) => (
-              <div key={i} className="bg-[#1a1a1a] border border-[#2a2a2a] shadow-[0_4px_24px_rgba(0,0,0,0.4)] p-8 rounded-2xl">
+              <div key={i} className="bg-[#F5F5F5] border border-[#E5E5E5] shadow-[0_4px_24px_rgba(0,0,0,0.4)] p-8 rounded-2xl">
                 <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mb-6">
-                  <req.icon className="w-6 h-6 text-[#2563EB]" />
+                  <req.icon className="w-6 h-6 text-[#FE9417]" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{req.title}</h3>
                 <p className="text-muted-foreground text-sm">{req.desc}</p>
@@ -154,8 +154,8 @@ export default function CeePage() {
             ))}
           </div>
 
-          <div className="mt-8 flex items-start gap-4 p-6 border border-[#2563EB]/30 bg-[#2563EB]/5 rounded-xl">
-            <ShieldAlert className="w-6 h-6 text-[#2563EB] shrink-0 mt-0.5" />
+          <div className="mt-8 flex items-start gap-4 p-6 border border-[#FE9417]/30 bg-[#FE9417]/5 rounded-xl">
+            <ShieldAlert className="w-6 h-6 text-[#FE9417] shrink-0 mt-0.5" />
             <p className="text-sm md:text-base text-foreground/80">
               <strong className="text-foreground">Note:</strong> Individual applications are not accepted. You must work with a Trendyol-listed agency to join the program.
             </p>
@@ -164,7 +164,7 @@ export default function CeePage() {
       </section>
 
       {/* 4. HOW IT WORKS */}
-      <section className="py-24 border-border bg-[#111111] border-y border-[#1f1f1f]">
+      <section className="py-24 border-border bg-white border-y border-[#1f1f1f]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -188,7 +188,7 @@ export default function CeePage() {
               { step: "04", title: "Access", desc: "Approved influencers gain access to Influencer Center in the Trendyol app." }
             ].map((step, i) => (
               <div key={i} className="relative z-10 flex flex-col items-center text-center">
-                <div className="w-20 h-20 rounded-full border-4 border-background bg-[#1a1a1a] border border-[#2a2a2a] shadow-[0_4px_24px_rgba(0,0,0,0.4)] flex items-center justify-center text-2xl font-display font-bold text-[#2563EB] mb-6 shadow-[0_0_30px_rgba(255,45,141,0.1)]">
+                <div className="w-20 h-20 rounded-full border-4 border-background bg-[#F5F5F5] border border-[#E5E5E5] shadow-[0_4px_24px_rgba(0,0,0,0.4)] flex items-center justify-center text-2xl font-display font-bold text-[#FE9417] mb-6 shadow-[0_0_30px_rgba(255,45,141,0.1)]">
                   {step.step}
                 </div>
                 <h3 className="text-xl font-bold mb-3">{step.title}</h3>
@@ -200,7 +200,7 @@ export default function CeePage() {
       </section>
 
       {/* 4.5. CREATING & SHARING LINKS */}
-      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
+      <section className="py-24 border-border bg-white border-b border-[#E5E5E5]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -220,22 +220,22 @@ export default function CeePage() {
               { icon: LinkIcon, step: "Step 3", title: "Generate Your Affiliate Link", desc: "Use the Influencer Center inside the Trendyol app to generate your unique affiliate link." },
               { icon: Share2, step: "Step 4", title: "Share on Social Media", desc: "Share your link across your social media accounts — Instagram, TikTok, YouTube, Snapchat, Twitter, or Facebook." }
             ].map((step, i) => (
-              <div key={i} className="border border-white/10 bg-white/5 p-8 rounded-2xl relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/5 blur-2xl rounded-full group-hover:bg-[#2563EB]/10 transition-colors" />
+              <div key={i} className="border border-[#E5E5E5] bg-white/5 p-8 rounded-2xl relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#FE9417]/5 blur-2xl rounded-full group-hover:bg-[#FE9417]/10 transition-colors" />
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-xs font-semibold mb-6">
                   {step.step}
                 </div>
-                <step.icon className="w-10 h-10 text-[#2563EB] mb-4" />
+                <step.icon className="w-10 h-10 text-[#FE9417] mb-4" />
                 <h3 className="text-xl font-bold mb-3">{step.title}</h3>
                 <p className="text-muted-foreground text-sm">{step.desc}</p>
               </div>
             ))}
           </div>
 
-          <div className="mt-10 flex items-start gap-4 p-6 border border-[#2563EB]/30 bg-[#2563EB]/5 rounded-xl">
-            <AlertTriangle className="w-6 h-6 text-[#2563EB] shrink-0 mt-0.5" />
+          <div className="mt-10 flex items-start gap-4 p-6 border border-[#FE9417]/30 bg-[#FE9417]/5 rounded-xl">
+            <AlertTriangle className="w-6 h-6 text-[#FE9417] shrink-0 mt-0.5" />
             <p className="text-sm md:text-base text-foreground/80">
-              <strong className="text-[#2563EB]">⚠️ Important:</strong> Only links generated through the Influencer Center are tracked and eligible for commission payouts.
+              <strong className="text-[#FE9417]">⚠️ Important:</strong> Only links generated through the Influencer Center are tracked and eligible for commission payouts.
             </p>
           </div>
         </motion.div>
@@ -251,7 +251,7 @@ export default function CeePage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-12">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">How You</span> <span className="text-[#0a0a0a]">Earn</span></h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#FE9417,#FF6B00)] bg-clip-text">How You</span> <span className="text-[#0a0a0a]">Earn</span></h2>
             <p className="text-xl text-[#4b5563]">Select a country to view specific commission models and earning details.</p>
           </div>
 
@@ -266,7 +266,7 @@ export default function CeePage() {
                   onClick={() => setActiveTab(countryKey)}
                   className={`px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${
                     isActive
-                      ? "bg-[#2563EB] text-white shadow-[0_4px_14px_rgba(37,99,235,0.3)] hover:scale-102"
+                      ? "bg-[#FE9417] text-[#111111] shadow-[0_4px_14px_rgba(37,99,235,0.3)] hover:scale-102"
                       : "bg-[#f3f4f6] text-[#4b5563] hover:bg-[#e5e7eb] hover:text-[#111827]"
                   }`}
                 >
@@ -292,8 +292,8 @@ export default function CeePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
             {/* In-link */}
             <div className="border border-[#e5e7eb] bg-[#f9fafb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 md:p-10 rounded-3xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/5 blur-3xl rounded-full" />
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#eff6ff] border border-[#bfdbfe] text-[#2563EB] text-sm font-semibold mb-6">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[#FE9417]/5 blur-3xl rounded-full" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#eff6ff] border border-[#bfdbfe] text-[#FE9417] text-sm font-semibold mb-6">
                 <LinkIcon className="w-4 h-4" /> {countryData[activeTab].inlinkRate} Commission Rate
               </div>
               <h3 className="text-3xl font-display font-bold mb-4 text-[#111827]">In-link</h3>
@@ -309,8 +309,8 @@ export default function CeePage() {
 
             {/* Out-link */}
             <div className="border border-[#e5e7eb] bg-[#f9fafb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 md:p-10 rounded-3xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/5 blur-3xl rounded-full" />
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#eff6ff] border border-[#bfdbfe] text-[#2563EB] text-sm font-semibold mb-6">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[#FE9417]/5 blur-3xl rounded-full" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#eff6ff] border border-[#bfdbfe] text-[#FE9417] text-sm font-semibold mb-6">
                 <ExternalLink className="w-4 h-4" /> {countryData[activeTab].outlinkRate} Commission Rate
               </div>
               <h3 className="text-3xl font-display font-bold mb-4 text-[#111827]">Out-link</h3>
@@ -327,24 +327,24 @@ export default function CeePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="flex items-center gap-4 bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-5 rounded-2xl">
-              <Clock className="w-8 h-8 text-[#2563EB]" />
+              <Clock className="w-8 h-8 text-[#FE9417]" />
               <div>
                 <p className="text-sm text-[#4b5563]">In-link tracking window</p>
-                <p className="text-xl font-bold text-[#2563EB]">24 hours</p>
+                <p className="text-xl font-bold text-[#FE9417]">24 hours</p>
               </div>
             </div>
             <div className="flex items-center gap-4 bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-5 rounded-2xl">
-              <Clock className="w-8 h-8 text-[#2563EB]" />
+              <Clock className="w-8 h-8 text-[#FE9417]" />
               <div>
                 <p className="text-sm text-[#4b5563]">Out-link tracking window</p>
-                <p className="text-xl font-bold text-[#2563EB]">12 hours</p>
+                <p className="text-xl font-bold text-[#FE9417]">12 hours</p>
               </div>
             </div>
             <div className="flex items-center gap-4 bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-5 rounded-2xl">
-              <Euro className="w-8 h-8 text-[#2563EB]" />
+              <Euro className="w-8 h-8 text-[#FE9417]" />
               <div>
                 <p className="text-sm text-[#4b5563]">Maximum earning</p>
-                <p className="text-xl font-bold text-[#2563EB]">{countryData[activeTab].maxEarning} <span className="text-sm font-normal text-[#4b5563]">/ transaction</span></p>
+                <p className="text-xl font-bold text-[#FE9417]">{countryData[activeTab].maxEarning} <span className="text-sm font-normal text-[#4b5563]">/ transaction</span></p>
               </div>
             </div>
           </div>
@@ -361,65 +361,65 @@ export default function CeePage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">Bonus</span> <span className="text-[#0a0a0a]">Opportunities</span></h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#FE9417,#FF6B00)] bg-clip-text">Bonus</span> <span className="text-[#0a0a0a]">Opportunities</span></h2>
             <p className="text-xl text-[#4b5563]">Explore additional program benefits based on eligibility criteria and campaign rules.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
-              <Gift className="w-10 h-10 text-[#2563EB] mb-6" />
+              <Gift className="w-10 h-10 text-[#FE9417] mb-6" />
               <h3 className="text-2xl font-bold mb-4 text-[#111827]">Welcome Bonus</h3>
               <p className="text-[#4b5563] mb-4">Jumpstart your journey with our sign-up incentives.</p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#16A34A] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6B00] shrink-0 mt-0.5" />
                   <span className="text-[#374151]">New members receive 100 coins.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#16A34A] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6B00] shrink-0 mt-0.5" />
                   <span className="text-[#374151]">Creators who share content within their first 14 days and generate 20 clicks may also qualify for an additional voucher worth 100 €.</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
-              <Users className="w-10 h-10 text-[#2563EB] mb-6" />
+              <Users className="w-10 h-10 text-[#FE9417] mb-6" />
               <h3 className="text-2xl font-bold mb-4 text-[#111827]">Referral Bonus</h3>
               <p className="text-[#4b5563] mb-4">Earn for every influencer you refer to the program based on their follower count:</p>
               <div className="overflow-x-auto border border-[#e5e7eb] rounded-lg">
                 <table className="w-full text-sm text-left border-collapse">
-                  <thead className="bg-[#2563EB] text-white">
+                  <thead className="bg-[#FE9417] text-[#111111]">
                     <tr>
                       <th className="px-4 py-3 font-semibold">Followers</th>
                       <th className="px-4 py-3 font-semibold">Bonus</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium">1,000,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€500</td></tr>
-                    <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-4 py-3 font-medium">500,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€300</td></tr>
-                    <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium">100,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€150</td></tr>
-                    <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-4 py-3 font-medium">50,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€50</td></tr>
-                    <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium rounded-bl-lg">10,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold rounded-br-lg">€25</td></tr>
+                    <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium">1,000,000+</td><td className="px-4 py-3 text-[#FE9417] font-bold">€500</td></tr>
+                    <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-4 py-3 font-medium">500,000+</td><td className="px-4 py-3 text-[#FE9417] font-bold">€300</td></tr>
+                    <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium">100,000+</td><td className="px-4 py-3 text-[#FE9417] font-bold">€150</td></tr>
+                    <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-4 py-3 font-medium">50,000+</td><td className="px-4 py-3 text-[#FE9417] font-bold">€50</td></tr>
+                    <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium rounded-bl-lg">10,000+</td><td className="px-4 py-3 text-[#FE9417] font-bold rounded-br-lg">€25</td></tr>
                   </tbody>
                 </table>
               </div>
             </div>
 
             <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
-              <Award className="w-10 h-10 text-[#2563EB] mb-4" />
+              <Award className="w-10 h-10 text-[#FE9417] mb-4" />
               <h3 className="text-xl font-bold mb-2 text-[#111827]">Performance Rewards</h3>
               <p className="text-[#4b5563] text-sm">Exclusive incentives unlocked as you grow and hit performance milestones within TrendFam.</p>
             </div>
 
             <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
-              <Tags className="w-10 h-10 text-[#2563EB] mb-4" />
+              <Tags className="w-10 h-10 text-[#FE9417] mb-4" />
               <h3 className="text-xl font-bold mb-2 text-[#111827]">Brand Bonus Campaigns</h3>
               <p className="text-[#4b5563] text-sm">Sellers on Trendyol occasionally run extra bonus campaigns to boost product promotion.</p>
             </div>
 
             <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl md:col-span-2">
               <div className="flex items-start md:items-center gap-6 flex-col md:flex-row">
-                <Coins className="w-12 h-12 text-[#2563EB] shrink-0" />
+                <Coins className="w-12 h-12 text-[#FE9417] shrink-0" />
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-[#111827]">Daily Coin Rewards</h3>
                   <p className="text-[#4b5563] text-sm">Earn additional coins by simply logging into the Trendyol app daily. Consistently engage to maximize your passive rewards.</p>
@@ -435,7 +435,7 @@ export default function CeePage() {
       </section>
 
       {/* 6.5. DISCOUNT CODES */}
-      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
+      <section className="py-24 border-border bg-white border-b border-[#E5E5E5]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -449,22 +449,22 @@ export default function CeePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl">
-              <Calendar className="w-10 h-10 text-[#2563EB] mb-6" />
+            <div className="border border-[#E5E5E5] bg-white/5 p-8 rounded-3xl">
+              <Calendar className="w-10 h-10 text-[#FE9417] mb-6" />
               <h3 className="text-xl font-bold mb-3">Monthly Code</h3>
               <p className="text-muted-foreground text-sm">
                 Each month, a unique discount code is available for you to share. For example, the code &apos;JANUARY&apos; is active throughout January.
               </p>
             </div>
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl">
-              <User className="w-10 h-10 text-[#2563EB] mb-6" />
+            <div className="border border-[#E5E5E5] bg-white/5 p-8 rounded-3xl">
+              <User className="w-10 h-10 text-[#FE9417] mb-6" />
               <h3 className="text-xl font-bold mb-3">Personalised Code</h3>
               <p className="text-muted-foreground text-sm">
                 Influencers with a large reach and high monthly click volume may receive an Instagram-exclusive personalised discount code from Trendyol (excluding Romania).
               </p>
             </div>
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl">
-              <Tag className="w-10 h-10 text-[#2563EB] mb-6" />
+            <div className="border border-[#E5E5E5] bg-white/5 p-8 rounded-3xl">
+              <Tag className="w-10 h-10 text-[#FE9417] mb-6" />
               <h3 className="text-xl font-bold mb-3">Campaign Codes</h3>
               <p className="text-muted-foreground text-sm">
                 During high-traffic shopping periods such as Black Friday or 11.11, extra discount codes are activated to maximise your earning potential.
@@ -473,10 +473,10 @@ export default function CeePage() {
           </div>
 
           {/* Romania-Specific Code & Campaign System */}
-          <div className="mt-10 p-8 border border-white/10 bg-white/5 rounded-3xl relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/5 blur-3xl rounded-full" />
-            <h3 className="text-2xl font-display font-bold text-white mb-4 flex items-center gap-3">
-              <Tags className="w-6 h-6 text-[#2563EB]" /> Romania Code & Campaign Model
+          <div className="mt-10 p-8 border border-[#E5E5E5] bg-white/5 rounded-3xl relative overflow-hidden group">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#FE9417]/5 blur-3xl rounded-full" />
+            <h3 className="text-2xl font-display font-bold text-[#111111] mb-4 flex items-center gap-3">
+              <Tags className="w-6 h-6 text-[#FE9417]" /> Romania Code & Campaign Model
             </h3>
             <p className="text-muted-foreground text-base leading-relaxed mb-4">
               Romania does not currently use personalized influencer codes. Instead, monthly campaign codes and brand-specific codes are shared regularly.
@@ -489,7 +489,7 @@ export default function CeePage() {
       </section>
 
       {/* 7. CONTENT GUIDELINES */}
-      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
+      <section className="py-24 border-border bg-white border-b border-[#E5E5E5]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -538,7 +538,7 @@ export default function CeePage() {
       </section>
 
       {/* 7.5. FAIR PLAY POLICY */}
-      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
+      <section className="py-24 border-border bg-white border-b border-[#E5E5E5]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -595,11 +595,11 @@ export default function CeePage() {
       </section>
 
       {/* 8. PARTNERSHIP & PAYMENT */}
-      <section className="py-24 relative overflow-hidden bg-[#000000] border-b border-[#1a1a1a]">
+      <section className="py-24 relative overflow-hidden bg-white border-b border-[#E5E5E5]">
         {/* Glow Effects */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-          <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] bg-[#2563EB]/5 blur-[120px] rounded-full" />
-          <div className="absolute -bottom-[20%] -right-[10%] w-[50%] h-[50%] bg-[#2563EB]/5 blur-[120px] rounded-full" />
+          <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] bg-[#FE9417]/5 blur-[120px] rounded-full" />
+          <div className="absolute -bottom-[20%] -right-[10%] w-[50%] h-[50%] bg-[#FE9417]/5 blur-[120px] rounded-full" />
         </div>
 
         <motion.div 
@@ -615,16 +615,16 @@ export default function CeePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-zinc-900/40 border border-white/10 p-10 rounded-3xl">
-              <FileText className="w-10 h-10 text-[#2563EB] mb-6" />
+            <div className="bg-[#F5F5F5] border border-[#E5E5E5] p-10 rounded-3xl">
+              <FileText className="w-10 h-10 text-[#FE9417] mb-6" />
               <h3 className="text-2xl font-bold mb-4">1-Year Contracts</h3>
               <p className="text-muted-foreground leading-relaxed">
                 We work with influencers on 1-year contracts. This structure is designed to protect both parties and ensure long-term, stable collaboration.
               </p>
             </div>
             
-            <div className="bg-zinc-900/40 border border-white/10 p-10 rounded-3xl">
-              <CalendarDays className="w-10 h-10 text-[#2563EB] mb-6" />
+            <div className="bg-[#F5F5F5] border border-[#E5E5E5] p-10 rounded-3xl">
+              <CalendarDays className="w-10 h-10 text-[#FE9417] mb-6" />
               <h3 className="text-2xl font-bold mb-4">Payment Cycle</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Payments are made by Trendyol to the agency on a 30-day cycle. For example, December earnings are transferred in the first week of February — directly to your IBAN account in Euros.
@@ -635,8 +635,8 @@ export default function CeePage() {
       </section>
 
       {/* 9. CTA SECTION */}
-      <section className="py-32 relative overflow-hidden bg-[#000000] border-b border-[#1a1a1a]">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#2563EB]/10 pointer-events-none" />
+      <section className="py-32 relative overflow-hidden bg-white border-b border-[#E5E5E5]">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#FE9417]/10 pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -650,7 +650,7 @@ export default function CeePage() {
           </p>
           <Link 
             href="/contact?type=creator"
-            className="inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-[#2563EB] to-[#16A34A] px-10 text-lg font-bold text-black transition-all hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(37,99,235,0.4)]"
+            className="inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] px-10 text-lg font-bold text-black transition-all hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(37,99,235,0.4)]"
           >
             Join the Creator Network ↗
           </Link>

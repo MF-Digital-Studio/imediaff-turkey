@@ -13,8 +13,8 @@ const CAPABILITIES = [
       "Engineering high-conversion creator roadmaps that align with your brand's global DNA — from talent selection to content architecture.",
     glow: "rgba(37,99,235,0.22)",
     glowHover: "rgba(37,99,235,0.45)",
-    accentFrom: "#2563EB",
-    accentTo: "#2563EB",
+    accentFrom: "#FE9417",
+    accentTo: "#FE9417",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" className="w-7 h-7" aria-hidden>
         <circle cx="16" cy="11" r="5" stroke="currentColor" strokeWidth="1.3" />
@@ -30,8 +30,8 @@ const CAPABILITIES = [
       "Your strategic gateway to the Dubai and MENA markets, ensuring cultural fluency and rapid scaling through established regional networks.",
     glow: "rgba(255,138,30,0.20)",
     glowHover: "rgba(255,138,30,0.42)",
-    accentFrom: "#2563EB",
-    accentTo: "#2563EB",
+    accentFrom: "#FE9417",
+    accentTo: "#FE9417",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" className="w-7 h-7" aria-hidden>
         <circle cx="16" cy="16" r="11" stroke="currentColor" strokeWidth="1.3" />
@@ -47,8 +47,8 @@ const CAPABILITIES = [
       "End-to-end execution of multi-platform campaigns with transparent, real-time reporting and performance guarantees built in.",
     glow: "rgba(255,189,30,0.18)",
     glowHover: "rgba(255,189,30,0.38)",
-    accentFrom: "#2563EB",
-    accentTo: "#2563EB",
+    accentFrom: "#FE9417",
+    accentTo: "#FE9417",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" className="w-7 h-7" aria-hidden>
         <rect x="4" y="4" width="24" height="24" rx="4" stroke="currentColor" strokeWidth="1.3" />
@@ -64,8 +64,8 @@ const CAPABILITIES = [
       "Expert advisory on digital expansion, tax-efficient structures, and legal contract architecture across international jurisdictions.",
     glow: "rgba(37,99,235,0.20)",
     glowHover: "rgba(37,99,235,0.42)",
-    accentFrom: "#2563EB",
-    accentTo: "#2563EB",
+    accentFrom: "#FE9417",
+    accentTo: "#FE9417",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" className="w-7 h-7" aria-hidden>
         <path d="M16 4L4 10v6c0 7 5.4 13 12 14 6.6-1 12-7 12-14v-6L16 4z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" />
@@ -92,9 +92,9 @@ function LiteParticleCanvas() {
   const rafRef = useRef<number>(0)
 
   const PALETTE = [
-    { dot: "#2563EB", glow: "rgba(37,99,235," },
-    { dot: "#2563EB", glow: "rgba(255,138,30," },
-    { dot: "#2563EB", glow: "rgba(255,189,30," },
+    { dot: "#FE9417", glow: "rgba(37,99,235," },
+    { dot: "#FE9417", glow: "rgba(255,138,30," },
+    { dot: "#FE9417", glow: "rgba(255,189,30," },
   ]
 
   const mkP = useCallback((w: number, h: number): LiteParticle => {
@@ -255,18 +255,18 @@ function CapabilityCard({
       >
         {/* Index + Icon row */}
         <div className="flex items-start justify-between mb-8">
-          <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/25">
+          <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FE9417]">
             {cap.index}
           </span>
           <div
-            className="text-white/30 transition-all duration-300 group-hover:text-white group-hover:scale-110 group-hover:-translate-y-0.5"
+            className="text-[#FE9417] transition-all duration-300 group-hover:text-[#111111] group-hover:scale-110 group-hover:-translate-y-0.5"
           >
             {cap.icon}
           </div>
         </div>
 
         {/* Title */}
-        <h3 className="font-sans text-[1.4rem] md:text-[1.55rem] font-bold text-white leading-tight tracking-tight mb-4">
+        <h3 className="font-sans text-[1.4rem] md:text-[1.55rem] font-bold text-[#111111] leading-tight tracking-tight mb-4">
           {cap.title}
         </h3>
 
@@ -294,7 +294,7 @@ export default function GlobalCapabilities() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-black"
+      className="relative overflow-hidden bg-white"
       aria-label="Global Capabilities"
     >
 
@@ -321,14 +321,14 @@ export default function GlobalCapabilities() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/30 mb-5">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FE9417] mb-5">
               / Capabilities
             </p>
-            <h2 className="font-sans text-[clamp(2.4rem,5vw,4.5rem)] font-bold text-white leading-[0.92] tracking-[-0.03em] text-balance">
+            <h2 className="font-sans text-[clamp(2.4rem,5vw,4.5rem)] font-bold text-[#111111] leading-[0.92] tracking-[-0.03em] text-balance">
               Built to{" "}
               <span
                 style={{
-                  backgroundImage: "linear-gradient(135deg, #2563EB 0%, #16A34A 100%)",
+                  backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -344,7 +344,7 @@ export default function GlobalCapabilities() {
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="max-w-sm text-[0.95rem] text-white/40 leading-relaxed font-medium md:text-right"
+            className="max-w-sm text-[0.95rem] text-[#888888] leading-relaxed font-medium md:text-right"
           >
             Four integrated service verticals, designed for brands operating at the intersection of
             global ambition and regional precision.

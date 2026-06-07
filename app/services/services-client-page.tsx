@@ -73,22 +73,22 @@ const PROCESS = [
 
 export default function ServicesClientPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-white text-[#111111]">
       {/* ── Hero Section (Black Theme) ── */}
-      <section className="bg-black text-white border-b border-white/10 pt-32 pb-16 md:pt-48 md:pb-24">
+      <section className="bg-white text-[#111111] border-b border-[#E5E5E5] pt-32 pb-16 md:pt-48 md:pb-24">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
             / Capabilities
           </p>
           <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance">
             Not just growth,<br />transformation.
           </h1>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/60 md:text-xl">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#666666] md:text-xl">
             From affiliate program management to creative production and legal advisory — iMediaff Global delivers end-to-end solutions for brands and creators across Turkey, CEE, Gulf, and Azerbaijan.
           </p>
         </motion.div>
@@ -104,7 +104,7 @@ export default function ServicesClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-16 md:mb-32 text-center md:text-left"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
               / Integrated Capabilities
             </p>
             <h2 className="mt-5 font-display text-[clamp(2.5rem,6vw,5.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-black">
@@ -162,7 +162,7 @@ export default function ServicesClientPage() {
                     transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
                     className={`w-[90%] md:w-1/2 lg:w-5/12 -mt-20 md:mt-0 relative z-20 rounded-[2rem] bg-white/80 backdrop-blur-2xl border border-gray-200 p-8 md:p-14 shadow-xl ${isEven ? "md:-ml-24 lg:-ml-32" : "md:-mr-24 lg:-mr-32"}`}
                   >
-                    <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB] mb-6 font-bold">
+                    <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-6 font-bold">
                       / {String(i + 1).padStart(2, '0')}
                     </p>
                     <h3 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold tracking-[-0.03em] text-black mb-6 leading-[1.05]">
@@ -175,7 +175,7 @@ export default function ServicesClientPage() {
                     <div className="flex flex-col gap-5">
                       {service.features.map(feat => (
                         <div key={feat} className="flex items-center gap-4 group/feat">
-                          <div className="h-px w-6 bg-gray-300 transition-all duration-300 group-hover/feat:w-10 group-hover/feat:bg-gradient-to-r group-hover/feat:from-[#2563EB] group-hover/feat:to-[#2563EB]" />
+                          <div className="h-px w-6 bg-gray-300 transition-all duration-300 group-hover/feat:w-10 group-hover/feat:bg-gradient-to-r group-hover/feat:from-[#FE9417] group-hover/feat:to-[#FE9417]" />
                           <span className="font-mono text-[11px] md:text-xs uppercase tracking-[0.15em] text-gray-600 font-medium transition-colors duration-300 group-hover/feat:text-black">
                             {feat}
                           </span>
@@ -191,7 +191,7 @@ export default function ServicesClientPage() {
       </section>
 
       {/* ── 5-Step Process (Black Theme) ── */}
-      <section className="bg-black text-white border-b border-white/10 py-16 md:py-28">
+      <section className="bg-white text-[#111111] border-b border-[#E5E5E5] py-16 md:py-28">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -201,10 +201,10 @@ export default function ServicesClientPage() {
             className="mb-14 md:mb-20 flex flex-col md:flex-row md:items-end justify-between gap-6"
           >
             <div>
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
                 / Clear Timeline
               </p>
-              <h2 className="mt-5 font-display text-[clamp(2rem,5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-white">
+              <h2 className="mt-5 font-display text-[clamp(2rem,5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-[#111111]">
                 Operational <br /> Excellence.
               </h2>
             </div>
@@ -222,17 +222,17 @@ export default function ServicesClientPage() {
               >
                 {/* Connecting line for desktop */}
                 {i < PROCESS.length - 1 && (
-                  <div className="hidden md:block absolute top-6 left-12 w-full h-[1px] bg-white/10 group-hover:bg-[#2563EB]/50 transition-colors duration-500" />
+                  <div className="hidden md:block absolute top-6 left-12 w-full h-[1px] bg-white/10 group-hover:bg-[#FE9417]/50 transition-colors duration-500" />
                 )}
                 
-                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-black font-mono text-sm text-[#2563EB] transition-colors duration-500 group-hover:border-[#2563EB] group-hover:text-[#2563EB] mb-6">
+                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-[#E5E5E5] bg-white font-mono text-sm text-[#FE9417] transition-colors duration-500 group-hover:border-[#FE9417] group-hover:text-[#FE9417] mb-6">
                   {step.step}
                 </div>
                 
-                <h3 className="font-display text-xl font-bold text-white mb-3">
+                <h3 className="font-display text-xl font-bold text-[#111111] mb-3">
                   {step.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-white/50">
+                <p className="text-sm leading-relaxed text-[#888888]">
                   {step.description}
                 </p>
               </motion.div>
@@ -242,7 +242,7 @@ export default function ServicesClientPage() {
       </section>
 
       {/* ── Final CTA (Sunset Gradient Theme) ── */}
-      <section className="bg-gradient-to-br from-[#2563EB] to-[#16A34A] text-white py-24 md:py-36 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#FE9417] to-[#FF6B00] text-[#111111] py-24 md:py-36 relative overflow-hidden">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -250,15 +250,15 @@ export default function ServicesClientPage() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto max-w-[1600px] px-6 md:px-10 text-center relative z-10"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/80 font-bold mb-6">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#555555] font-bold mb-6">
             / Expand your reach
           </p>
-          <h2 className="font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance mb-10 text-white">
+          <h2 className="font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance mb-10 text-[#111111]">
             Build measurable <br className="hidden md:block" /> momentum.
           </h2>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center rounded-full bg-black px-12 py-6 text-lg font-bold text-white transition-transform hover:scale-105 shadow-xl"
+            className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl"
           >
             Start Pilot
           </Link>

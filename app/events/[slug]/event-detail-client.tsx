@@ -7,11 +7,11 @@ import { EventItem } from "@/lib/events"
 
 export default function EventDetailClient({ event }: { event: EventItem }) {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-white text-[#111111]">
       {/* ── Header / Hero ── */}
-      <section className="relative overflow-hidden bg-black text-white pt-32 pb-16 md:pt-40 md:pb-20 border-b border-white/10">
+      <section className="relative overflow-hidden bg-white text-[#111111] pt-32 pb-16 md:pt-40 md:pb-20 border-b border-[#E5E5E5]">
         <div className="absolute inset-0 hero-grid-overlay opacity-30" />
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-[#2563EB]/10 to-transparent blur-[120px] rounded-full opacity-50 translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-[#FE9417]/10 to-transparent blur-[120px] rounded-full opacity-50 translate-x-1/2 -translate-y-1/2 pointer-events-none" />
         
         <div className="mx-auto max-w-[1200px] px-6 md:px-10 relative z-10">
           <motion.div
@@ -21,25 +21,25 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
           >
             <Link
               href="/events"
-              className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-white/50 hover:text-white transition-colors mb-10"
+              className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-[#888888] hover:text-[#111111] transition-colors mb-10"
             >
               <span>←</span> Back to Events
             </Link>
 
             <div className="flex flex-wrap items-center gap-4 mb-6">
-              <span className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-white">
+              <span className="inline-flex items-center rounded-full border border-[#E5E5E5] bg-white/5 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-[#111111]">
                 {event.category}
               </span>
-              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#2563EB]">
+              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#FE9417]">
                 / {event.region}
               </span>
             </div>
 
-            <h1 className="font-display text-[clamp(2.5rem,6vw,5.5rem)] font-bold tracking-tight text-balance leading-[1.05] text-white mb-8">
+            <h1 className="font-display text-[clamp(2.5rem,6vw,5.5rem)] font-bold tracking-tight text-balance leading-[1.05] text-[#111111] mb-8">
               {event.title}
             </h1>
 
-            <div className="flex flex-wrap items-center gap-x-8 gap-y-4 font-sans text-white/70">
+            <div className="flex flex-wrap items-center gap-x-8 gap-y-4 font-sans text-[#666666]">
               <div className="flex items-center gap-2">
                 <span className="text-xl">📅</span>
                 <span className="font-medium">{event.date}</span>
@@ -54,13 +54,13 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
       </section>
 
       {/* ── Cover Image ── */}
-      <section className="bg-black py-10 md:py-16 relative z-10 border-b border-white/10">
+      <section className="bg-white py-10 md:py-16 relative z-10 border-b border-[#E5E5E5]">
         <div className="mx-auto max-w-[1200px] px-6 md:px-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative aspect-[16/9] w-full overflow-hidden rounded-[2rem] border border-white/10"
+            className="relative aspect-[16/9] w-full overflow-hidden rounded-[2rem] border border-[#E5E5E5]"
           >
             <Image
               src={event.coverImage}
@@ -74,7 +74,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
       </section>
 
       {/* ── Content & Stats ── */}
-      <section className="bg-black py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24">
         <div className="mx-auto max-w-[1200px] px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
             {/* Main Content */}
@@ -87,7 +87,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
               >
                 {/* Parse the description and add paragraphs. Simple split by \n\n */}
                 {event.description.split("\n\n").map((paragraph, index) => (
-                  <p key={index} className="text-lg md:text-xl text-white/80 leading-relaxed mb-6 font-sans">
+                  <p key={index} className="text-lg md:text-xl text-[#555555] leading-relaxed mb-6 font-sans">
                     {paragraph}
                   </p>
                 ))}
@@ -102,17 +102,17 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-10% 0px" }}
                   transition={{ duration: 0.6 }}
-                  className="flex flex-col gap-8 sticky top-32 p-8 rounded-2xl bg-white/[0.03] border border-white/10"
+                  className="flex flex-col gap-8 sticky top-32 p-8 rounded-2xl bg-white/[0.03] border border-[#E5E5E5]"
                 >
-                  <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#2563EB] border-b border-white/10 pb-4">
+                  <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#FE9417] border-b border-[#E5E5E5] pb-4">
                     Key Metrics
                   </p>
                   {event.stats.map((stat, idx) => (
                     <div key={idx} className="flex flex-col">
-                      <p className="font-display text-4xl md:text-5xl font-bold bg-gradient-to-br from-[#2563EB] to-[#16A34A] bg-clip-text text-transparent mb-2">
+                      <p className="font-display text-4xl md:text-5xl font-bold bg-gradient-to-br from-[#FE9417] to-[#FF6B00] bg-clip-text text-transparent mb-2">
                         {stat.prefix}{stat.value}{stat.suffix}
                       </p>
-                      <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/50">
+                      <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[#888888]">
                         {stat.label}
                       </p>
                     </div>
@@ -126,7 +126,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
 
       {/* ── Gallery Section (Optional) ── */}
       {event.gallery && event.gallery.length > 0 && (
-        <section className="bg-black py-16 md:py-24 border-t border-white/10">
+        <section className="bg-white py-16 md:py-24 border-t border-[#E5E5E5]">
           <div className="mx-auto max-w-[1200px] px-6 md:px-10">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
@@ -135,13 +135,13 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
               transition={{ duration: 0.7 }}
               className="mb-12 md:mb-16"
             >
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB] font-bold mb-4">
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] font-bold mb-4">
                 / Gallery
               </p>
-              <h2 className="font-display text-3xl md:text-5xl font-bold tracking-tight text-white mb-6">
+              <h2 className="font-display text-3xl md:text-5xl font-bold tracking-tight text-[#111111] mb-6">
                 Event Gallery
               </h2>
-              <p className="text-lg text-white/60 font-sans max-w-2xl">
+              <p className="text-lg text-[#666666] font-sans max-w-2xl">
                 A visual archive of selected moments from this event. Replace these placeholders with final event images.
               </p>
             </motion.div>
@@ -154,7 +154,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-10% 0px" }}
                   transition={{ duration: 0.6 }}
-                  className="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden rounded-2xl md:rounded-[2rem] border border-white/10 group"
+                  className="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden rounded-2xl md:rounded-[2rem] border border-[#E5E5E5] group"
                 >
                   <Image
                     src={event.gallery[0]}
@@ -177,7 +177,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true, margin: "-10% 0px" }}
                       transition={{ duration: 0.5, delay: idx * 0.1 }}
-                      className="relative aspect-[4/3] w-full overflow-hidden rounded-xl md:rounded-2xl border border-white/10 group bg-white/5"
+                      className="relative aspect-[4/3] w-full overflow-hidden rounded-xl md:rounded-2xl border border-[#E5E5E5] group bg-white/5"
                     >
                       <Image
                         src={image}
@@ -186,7 +186,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
                         className="object-cover transition-transform duration-[1200ms] group-hover:scale-105"
                         unoptimized
                       />
-                      <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
+                      <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-500" />
                     </motion.div>
                   ))}
                 </div>
@@ -197,7 +197,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
       )}
 
       {/* ── CTA ── */}
-      <section className="bg-gradient-to-br from-[#2563EB] to-[#16A34A] text-white py-24 md:py-32">
+      <section className="bg-gradient-to-br from-[#FE9417] to-[#FF6B00] text-[#111111] py-24 md:py-32">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -205,15 +205,15 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
           transition={{ duration: 0.8 }}
           className="mx-auto max-w-[1200px] px-6 md:px-10 text-center"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/80 font-bold mb-6">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#555555] font-bold mb-6">
             / Partnership
           </p>
-          <h2 className="font-display text-[clamp(2.5rem,5vw,5rem)] font-bold tracking-[-0.03em] text-white mb-10 text-balance">
+          <h2 className="font-display text-[clamp(2.5rem,5vw,5rem)] font-bold tracking-[-0.03em] text-[#111111] mb-10 text-balance">
             Interested in future collaborations?
           </h2>
           <Link
             href="/contact?type=brand"
-            className="inline-flex items-center justify-center rounded-full bg-black px-12 py-6 text-lg font-bold text-white transition-transform hover:scale-105 shadow-xl"
+            className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl"
           >
             Request Proposal ↗
           </Link>

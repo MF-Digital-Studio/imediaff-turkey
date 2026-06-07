@@ -123,10 +123,10 @@ export default function AboutClientPage() {
   const brandY = useTransform(scrollYProgress, [0, 1], [-100, 100])
 
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-white text-[#111111]">
 
       {/* ── Hero ── */}
-      <section className="bg-black text-white border-b border-white/10 pt-32 pb-14 md:pt-40 md:pb-20">
+      <section className="bg-white text-[#111111] border-b border-[#E5E5E5] pt-32 pb-14 md:pt-40 md:pb-20">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -134,16 +134,16 @@ export default function AboutClientPage() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/40">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#888888]">
             / About
           </p>
-          <h1 className="mt-6 font-display text-[clamp(3rem,11vw,11rem)] font-bold leading-[0.85] tracking-[-0.05em] text-balance text-white">
+          <h1 className="mt-6 font-display text-[clamp(3rem,11vw,11rem)] font-bold leading-[0.85] tracking-[-0.05em] text-balance text-[#111111]">
             Global Vision.
           </h1>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/50 md:text-xl">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#888888] md:text-xl">
             imediaff Global connects brands and creators through a unified strategic model built for market relevance, cultural fluency, and measurable growth.
           </p>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/40 md:text-lg">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#888888] md:text-lg">
             As one of Trendyol&apos;s top 3 global partner agencies, we manage affiliate and influencer marketing operations across Turkey, CEE, Gulf, and Azerbaijan — delivering structured, transparent, and performance-based partnerships.
           </p>
         </motion.div>
@@ -158,7 +158,7 @@ export default function AboutClientPage() {
           transition={{ duration: 0.7 }}
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
             / Regional Power
           </p>
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -171,7 +171,7 @@ export default function AboutClientPage() {
                 transition={{ duration: 0.55, delay: index * 0.08 }}
                 className="border border-gray-200 bg-white p-8 md:p-10 shadow-sm transition-shadow hover:shadow-md rounded-2xl"
               >
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#2563EB]">
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#FE9417]">
                   {item.region}
                 </p>
                 <h2 className="mt-4 font-display text-3xl font-bold tracking-[-0.03em] text-black">
@@ -187,7 +187,7 @@ export default function AboutClientPage() {
       </section>
 
       {/* ── Legacy of Influence (Black Theme) ── */}
-      <section className="bg-black text-white py-16 md:py-28 relative z-10">
+      <section className="bg-white text-[#111111] py-16 md:py-28 relative z-10">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -195,19 +195,19 @@ export default function AboutClientPage() {
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 0.7 }}
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
               / Heritage
             </p>
-            <h2 className="mt-6 font-display text-[clamp(2.5rem,7vw,6.5rem)] font-bold leading-[0.88] tracking-[-0.045em] text-balance text-white">
+            <h2 className="mt-6 font-display text-[clamp(2.5rem,7vw,6.5rem)] font-bold leading-[0.88] tracking-[-0.045em] text-balance text-[#111111]">
               A Legacy of<br />Global Influence.
             </h2>
-            <p className="mt-6 max-w-3xl text-base leading-relaxed text-white/50 md:text-lg">
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-[#888888] md:text-lg">
               Rooted in the powerhouse of the Turkish digital landscape, imediaff has evolved into a strategic gateway for the MENA region. We operate with a network of 10,000+ verified influencers, delivering 360° growth solutions.
             </p>
           </motion.div>
 
           {/* Metrics */}
-          <div className="mt-16 grid grid-cols-1 gap-px border border-white/10 bg-white/10 sm:grid-cols-3">
+          <div className="mt-16 grid grid-cols-1 gap-px border border-[#E5E5E5] bg-white/10 sm:grid-cols-3">
             {METRICS.map((m, i) => (
               <motion.div
                 key={m.label}
@@ -215,17 +215,17 @@ export default function AboutClientPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="bg-black px-8 py-10 md:px-12 md:py-14"
+                className="bg-white px-8 py-10 md:px-12 md:py-14"
               >
                 <p
-                  className="font-display font-bold leading-none tracking-[-0.05em] text-white"
+                  className="font-display font-bold leading-none tracking-[-0.05em] text-[#111111]"
                   style={{ fontSize: "clamp(3rem, 8vw, 7rem)" }}
                 >
-                  <span className="bg-gradient-to-br from-[#2563EB] to-[#16A34A] bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-br from-[#FE9417] to-[#FF6B00] bg-clip-text text-transparent">
                     {m.value}
                   </span>
                 </p>
-                <p className="mt-3 font-mono text-xs uppercase tracking-[0.25em] text-white/40">
+                <p className="mt-3 font-mono text-xs uppercase tracking-[0.25em] text-[#888888]">
                   {m.label}
                 </p>
               </motion.div>
@@ -237,7 +237,7 @@ export default function AboutClientPage() {
       {/* ── Brand Visual Divider (Immersive Section Break) ── */}
       <section
         ref={brandRef}
-        className="relative w-full aspect-[2/1] min-h-[400px] max-h-[1000px] overflow-hidden bg-black text-white"
+        className="relative w-full aspect-[2/1] min-h-[400px] max-h-[1000px] overflow-hidden bg-white text-[#111111]"
       >
         <motion.div style={{ y: brandY }} className="absolute inset-0 scale-[1.2]">
           <Image
@@ -257,10 +257,10 @@ export default function AboutClientPage() {
         {/* Caption */}
         <div className="absolute inset-0 flex items-end">
           <div className="mx-auto w-full max-w-[1600px] px-6 md:px-10 pb-12 md:pb-24">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/50">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#888888]">
               / Brand System
             </p>
-            <p className="mt-3 max-w-2xl font-display text-3xl font-bold leading-tight text-white md:text-5xl lg:text-6xl drop-shadow-2xl">
+            <p className="mt-3 max-w-2xl font-display text-3xl font-bold leading-tight text-[#111111] md:text-5xl lg:text-6xl drop-shadow-2xl">
               Built for visibility across cultures, platforms, and markets.
             </p>
           </div>
@@ -268,7 +268,7 @@ export default function AboutClientPage() {
       </section>
 
       {/* ── Global Capabilities / Four Pillars (Black Theme) ── */}
-      <section className="bg-black text-white py-16 md:py-28 relative z-10">
+      <section className="bg-white text-[#111111] py-16 md:py-28 relative z-10">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -276,15 +276,15 @@ export default function AboutClientPage() {
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 0.7 }}
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
               / Global Capabilities
             </p>
-            <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-white">
+            <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-[#111111]">
               Four Pillars of<br />Digital Excellence.
             </h2>
           </motion.div>
 
-          <div className="mt-14 grid grid-cols-1 gap-px border border-white/10 bg-white/10 md:grid-cols-2 rounded-2xl overflow-hidden">
+          <div className="mt-14 grid grid-cols-1 gap-px border border-[#E5E5E5] bg-white/10 md:grid-cols-2 rounded-2xl overflow-hidden">
             {CAPABILITIES.map((cap, i) => (
               <motion.div
                 key={cap.index}
@@ -292,16 +292,16 @@ export default function AboutClientPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="group relative bg-black px-8 py-10 transition-colors duration-300 hover:bg-white/[0.03] md:px-10 md:py-12"
+                className="group relative bg-white px-8 py-10 transition-colors duration-300 hover:bg-white/[0.03] md:px-10 md:py-12"
               >
-                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-br from-[#2563EB] to-[#16A34A] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
+                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-br from-[#FE9417] to-[#FF6B00] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#FE9417]">
                   {cap.index}
                 </p>
-                <h3 className="mt-4 font-display text-2xl font-bold tracking-[-0.03em] text-white md:text-3xl">
+                <h3 className="mt-4 font-display text-2xl font-bold tracking-[-0.03em] text-[#111111] md:text-3xl">
                   {cap.title}
                 </h3>
-                <p className="mt-3 max-w-sm text-sm leading-relaxed text-white/50">
+                <p className="mt-3 max-w-sm text-sm leading-relaxed text-[#888888]">
                   {cap.description}
                 </p>
               </motion.div>
@@ -311,7 +311,7 @@ export default function AboutClientPage() {
       </section>
 
       {/* ── How We Work (Black Theme) ── */}
-      <section className="bg-black text-white py-16 md:py-28 relative z-10 border-t border-white/10">
+      <section className="bg-white text-[#111111] py-16 md:py-28 relative z-10 border-t border-[#E5E5E5]">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -320,10 +320,10 @@ export default function AboutClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-14 md:mb-20"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
               / How We Work
             </p>
-            <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-white">
+            <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-[#111111]">
               A transparent,{"\u00A0"}<br />performance-driven{"\u00A0"}model.
             </h2>
           </motion.div>
@@ -365,13 +365,13 @@ export default function AboutClientPage() {
                 className="relative flex flex-col group"
               >
                 {i < 4 && (
-                  <div className="hidden md:block absolute top-6 left-12 w-full h-[1px] bg-white/10 group-hover:bg-[#2563EB]/50 transition-colors duration-500" />
+                  <div className="hidden md:block absolute top-6 left-12 w-full h-[1px] bg-white/10 group-hover:bg-[#FE9417]/50 transition-colors duration-500" />
                 )}
-                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-black font-mono text-sm text-[#2563EB] transition-colors duration-500 group-hover:border-[#2563EB] group-hover:text-[#2563EB] mb-6">
+                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-[#E5E5E5] bg-white font-mono text-sm text-[#FE9417] transition-colors duration-500 group-hover:border-[#FE9417] group-hover:text-[#FE9417] mb-6">
                   {item.step}
                 </div>
-                <h3 className="font-display text-xl font-bold text-white mb-3">{item.title}</h3>
-                <p className="text-sm leading-relaxed text-white/50">{item.desc}</p>
+                <h3 className="font-display text-xl font-bold text-[#111111] mb-3">{item.title}</h3>
+                <p className="text-sm leading-relaxed text-[#888888]">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -379,8 +379,8 @@ export default function AboutClientPage() {
       </section>
 
       {/* ── Core Services (Black Theme) ── */}
-      <section className="bg-black text-white pb-16 md:pb-28 relative overflow-hidden z-10">
-        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#2563EB]/10 to-[#16A34A]/10 blur-[100px] rounded-full opacity-50" />
+      <section className="bg-white text-[#111111] pb-16 md:pb-28 relative overflow-hidden z-10">
+        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#FE9417]/10 to-[#FF6B00]/10 blur-[100px] rounded-full opacity-50" />
 
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 relative z-10">
           <motion.div
@@ -390,10 +390,10 @@ export default function AboutClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-14 md:mb-20"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
               / Core Expertise
             </p>
-            <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-white">
+            <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-[#111111]">
               End-to-End <br className="hidden md:block" /> Digital Mastery.
             </h2>
           </motion.div>
@@ -408,18 +408,18 @@ export default function AboutClientPage() {
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 className={`group relative overflow-hidden rounded-2xl bg-white/[0.03] backdrop-blur-md p-[1px] transition-all duration-500 ${i % 3 === 1 ? 'lg:translate-y-12' : i % 3 === 2 ? 'lg:translate-y-24' : ''}`}
               >
-                <div className="absolute inset-0 bg-white/10 transition-colors duration-500 group-hover:bg-gradient-to-r group-hover:from-[#2563EB] group-hover:via-[#FA1702] group-hover:to-[#2563EB]" />
+                <div className="absolute inset-0 bg-white/10 transition-colors duration-500 group-hover:bg-gradient-to-r group-hover:from-[#FE9417] group-hover:via-[#FE9417] group-hover:to-[#FE9417]" />
 
                 <div className="relative flex flex-col h-full bg-black/90 backdrop-blur-md rounded-[15px] p-8 md:p-10">
-                  <div className="absolute -right-12 -top-12 w-48 h-48 bg-white/[0.02] rounded-full blur-2xl group-hover:bg-gradient-to-br group-hover:from-[#2563EB]/20 group-hover:to-[#2563EB]/20 transition-colors duration-700" />
+                  <div className="absolute -right-12 -top-12 w-48 h-48 bg-white/[0.02] rounded-full blur-2xl group-hover:bg-gradient-to-br group-hover:from-[#FE9417]/20 group-hover:to-[#FE9417]/20 transition-colors duration-700" />
 
                   <div className="relative z-10 flex flex-col h-full">
                     <div className="mb-10 relative inline-flex h-20 w-20 items-center justify-center transition-transform duration-500 group-hover:scale-110">
-                      <div className="absolute inset-0 rounded-2xl bg-white/[0.04] ring-1 ring-white/10 transition-colors duration-500 group-hover:ring-[#2563EB]/40" />
+                      <div className="absolute inset-0 rounded-2xl bg-white/[0.04] ring-1 ring-white/10 transition-colors duration-500 group-hover:ring-[#FE9417]/40" />
                       <service.PrimaryIcon
                         size={36}
                         strokeWidth={1.4}
-                        className="relative z-10 text-white transition-all duration-500"
+                        className="relative z-10 text-[#111111] transition-all duration-500"
                         style={{
                           filter: "drop-shadow(0 0 6px rgba(37,99,235,0.55)) drop-shadow(0 0 14px rgba(37,99,235,0.25))",
                         }}
@@ -427,16 +427,16 @@ export default function AboutClientPage() {
                       <service.AccentIcon
                         size={16}
                         strokeWidth={2}
-                        className="absolute bottom-2 right-2 z-20 text-[#2563EB] transition-all duration-500 group-hover:text-[#2563EB]"
+                        className="absolute bottom-2 right-2 z-20 text-[#FE9417] transition-all duration-500 group-hover:text-[#FE9417]"
                         style={{
                           filter: "drop-shadow(0 0 4px rgba(255,189,30,0.7))",
                         }}
                       />
                     </div>
-                    <h3 className="font-display text-2xl font-bold tracking-[-0.03em] text-white mb-4">
+                    <h3 className="font-display text-2xl font-bold tracking-[-0.03em] text-[#111111] mb-4">
                       {service.title}
                     </h3>
-                    <p className="mt-auto text-base leading-relaxed text-white/50 font-sans">
+                    <p className="mt-auto text-base leading-relaxed text-[#888888] font-sans">
                       {service.description}
                     </p>
                   </div>
@@ -458,7 +458,7 @@ export default function AboutClientPage() {
             className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between"
           >
             <div>
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
                 / Strategic Partnerships
               </p>
               <h2 className="mt-5 font-display text-[clamp(2rem,5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-black">
@@ -480,7 +480,7 @@ export default function AboutClientPage() {
                 transition={{ duration: 0.5, delay: i * 0.08 }}
                 className="group bg-white px-6 py-8 transition-colors duration-300 hover:bg-gray-50 md:px-8 md:py-10"
               >
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gray-400 transition-colors duration-300 group-hover:text-[#2563EB]">
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#666666] transition-colors duration-300 group-hover:text-[#FE9417]">
                   {p.sector}
                 </p>
                 <p className="mt-3 font-display text-2xl font-bold tracking-[-0.03em] text-black md:text-3xl">
@@ -498,7 +498,7 @@ export default function AboutClientPage() {
       </section>
 
       {/* ── Vision Statement (Philosophy) (Black Theme) ── */}
-      <section className="bg-black text-white border-t border-white/10 py-16 md:py-24">
+      <section className="bg-white text-[#111111] border-t border-[#E5E5E5] py-16 md:py-24">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -507,21 +507,21 @@ export default function AboutClientPage() {
           className="mx-auto grid max-w-[1600px] grid-cols-1 gap-8 px-6 md:grid-cols-12 md:px-10"
         >
           <div className="md:col-span-4">
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/40">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#888888]">
               / New Generation 360° Agency
             </p>
           </div>
           <div className="md:col-span-8">
-            <h2 className="font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.95] tracking-[-0.035em] text-balance text-white">
+            <h2 className="font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.95] tracking-[-0.035em] text-balance text-[#111111]">
               Market-first strategy for international brands entering MENA.
             </h2>
-            <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/50 md:text-lg">
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#888888] md:text-lg">
               imediaff Global operates as a new generation 360° agency, combining data-driven creativity, talent management, and market-first strategy into one accountable growth system.
             </p>
-            <div className="mt-8 grid grid-cols-1 gap-px border border-white/10 bg-white/10 sm:grid-cols-3 rounded-lg overflow-hidden">
+            <div className="mt-8 grid grid-cols-1 gap-px border border-[#E5E5E5] bg-white/10 sm:grid-cols-3 rounded-lg overflow-hidden">
               {["Data-driven creativity", "Talent management", "Market-first strategies"].map((item) => (
-                <div key={item} className="bg-black px-4 py-5 text-center">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#2563EB]">
+                <div key={item} className="bg-white px-4 py-5 text-center">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#FE9417]">
                     {item}
                   </p>
                 </div>
@@ -532,7 +532,7 @@ export default function AboutClientPage() {
       </section>
 
       {/* ── Scale CTA (Sunset Gradient Theme) ── */}
-      <section className="bg-gradient-to-br from-[#2563EB] to-[#16A34A] text-black py-24 md:py-36">
+      <section className="bg-gradient-to-br from-[#FE9417] to-[#FF6B00] text-black py-24 md:py-36">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -540,25 +540,25 @@ export default function AboutClientPage() {
           transition={{ duration: 0.7 }}
           className="mx-auto max-w-[1600px] px-6 md:px-10 text-center md:text-left"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-white font-bold">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#111111] font-bold">
             / Start Today
           </p>
-          <h2 className="mt-6 font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.045em] text-balance text-white">
+          <h2 className="mt-6 font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.045em] text-balance text-[#111111]">
             Scale beyond borders.
           </h2>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white md:text-xl font-medium mx-auto md:mx-0">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#111111] md:text-xl font-medium mx-auto md:mx-0">
             Whether you are a brand seeking MENA entry or a creator ready for global reach — your next chapter starts here.
           </p>
           <div className="mt-12 flex flex-wrap items-center justify-center md:justify-start gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-black px-10 py-5 text-base font-bold text-white transition-transform hover:scale-105 rounded-full"
+              className="inline-flex items-center gap-2 bg-white px-10 py-5 text-base font-bold text-[#111111] transition-transform hover:scale-105 rounded-full"
             >
               Start a Project
             </Link>
             <Link
               href="/events"
-              className="inline-flex items-center gap-2 border-2 border-black px-10 py-5 text-base font-bold text-white transition-all hover:bg-black hover:text-white rounded-full"
+              className="inline-flex items-center gap-2 border-2 border-black px-10 py-5 text-base font-bold text-[#111111] transition-all hover:bg-white hover:text-[#111111] rounded-full"
             >
               View Events
             </Link>

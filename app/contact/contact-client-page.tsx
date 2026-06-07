@@ -297,46 +297,46 @@ export default function ContactClientPage() {
     }
   }
 
-  const inputClass = "bg-transparent border-b border-white/20 px-2 py-4 text-white font-sans text-lg focus:outline-none focus:border-[#2563EB] transition-colors w-full"
-  const selectClass = "bg-black/50 border-b border-white/20 px-2 py-4 text-white font-sans text-lg focus:outline-none focus:border-[#2563EB] transition-colors appearance-none cursor-pointer w-full"
-  const labelClass = "font-mono text-xs uppercase tracking-widest text-white/60 ml-2"
+  const inputClass = "bg-transparent border-b border-[#E5E5E5] px-2 py-4 text-[#111111] font-sans text-lg focus:outline-none focus:border-[#FE9417] transition-colors w-full"
+  const selectClass = "bg-white/50 border-b border-[#E5E5E5] px-2 py-4 text-[#111111] font-sans text-lg focus:outline-none focus:border-[#FE9417] transition-colors appearance-none cursor-pointer w-full"
+  const labelClass = "font-mono text-xs uppercase tracking-widest text-[#666666] ml-2"
 
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-white text-[#111111]">
 
       {/* ── SECTION 1: HERO & BRIEF INTAKE (Black) ───────────────────────── */}
-      <section className="bg-black text-white pt-32 pb-24 md:pt-48 md:pb-32 border-b border-white/10 relative overflow-hidden">
-        <div className="pointer-events-none absolute left-0 bottom-0 w-[600px] h-[600px] bg-gradient-to-tr from-[#2563EB]/8 to-transparent blur-[120px] rounded-full -translate-x-1/3 translate-y-1/3" />
+      <section className="bg-white text-[#111111] pt-32 pb-24 md:pt-48 md:pb-32 border-b border-[#E5E5E5] relative overflow-hidden">
+        <div className="pointer-events-none absolute left-0 bottom-0 w-[600px] h-[600px] bg-gradient-to-tr from-[#FE9417]/8 to-transparent blur-[120px] rounded-full -translate-x-1/3 translate-y-1/3" />
 
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 relative z-10">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-16 lg:gap-24 items-start">
             
             {/* Left: Contact Info */}
             <motion.div {...fadeUp()} className="flex flex-col xl:sticky xl:top-32">
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB] mb-6">/ Start a Conversation</p>
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-6">/ Start a Conversation</p>
               <h1 className="font-display text-[clamp(3.5rem,8vw,6.5rem)] font-bold leading-[0.88] tracking-[-0.04em] mb-8">
                 Send your <br /> brief.
               </h1>
-              <p className="max-w-md text-lg text-white/60 leading-relaxed font-sans mb-16">
+              <p className="max-w-md text-lg text-[#666666] leading-relaxed font-sans mb-16">
                 Looking to scale your brand across the MENA region or dominate global platforms? Share your objectives, and our strategic team will construct the blueprint.
               </p>
 
               <div className="flex flex-col gap-10">
                 <div>
-                  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40 mb-2">Direct Email</p>
-                  <a href="mailto:info@imediaff.com" className="font-display text-2xl md:text-3xl font-bold tracking-tight hover:text-[#2563EB] transition-colors">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#888888] mb-2">Direct Email</p>
+                  <a href="mailto:info@imediaff.com" className="font-display text-2xl md:text-3xl font-bold tracking-tight hover:text-[#FE9417] transition-colors">
                     info@imediaff.com
                   </a>
                 </div>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   <div>
-                    <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40 mb-2">TR Operations</p>
-                    <p className="font-mono text-lg text-white/80">+90 216 606 53 59</p>
+                    <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#888888] mb-2">TR Operations</p>
+                    <p className="font-mono text-lg text-[#555555]">+90 216 606 53 59</p>
                   </div>
                   <div>
-                    <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40 mb-2">Global / MENA Desk</p>
-                    <p className="font-mono text-lg text-white/80">+971 4 000 0000</p>
+                    <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#888888] mb-2">Global / MENA Desk</p>
+                    <p className="font-mono text-lg text-[#555555]">+971 4 000 0000</p>
                   </div>
                 </div>
 
@@ -345,7 +345,7 @@ export default function ContactClientPage() {
                     href="https://wa.me/971545360453" 
                     target="_blank" 
                     rel="noreferrer"
-                    className="inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/5 px-6 py-3 font-mono text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
+                    className="inline-flex items-center gap-3 rounded-full border border-[#E5E5E5] bg-white/5 px-6 py-3 font-mono text-xs uppercase tracking-widest hover:bg-white hover:text-[#FE9417] transition-colors"
                   >
                     Direct Chat via WhatsApp
                     <span className="block h-2 w-2 rounded-full bg-[#25D366] animate-pulse" />
@@ -356,9 +356,9 @@ export default function ContactClientPage() {
 
             {/* Right: Form */}
             <motion.div {...fadeUp(0.15)} className="w-full max-w-2xl mx-auto xl:ml-auto" id="native-contact-form">
-              <div className="bg-white/5 border border-white/10 rounded-[2rem] p-8 md:p-12 backdrop-blur-md relative overflow-hidden">
+              <div className="bg-white/5 border border-[#E5E5E5] rounded-[2rem] p-8 md:p-12 backdrop-blur-md relative overflow-hidden">
                 {/* Subtle gradient accent on top edge */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-br from-[#2563EB] to-[#16A34A]" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-br from-[#FE9417] to-[#FF6B00]" />
                 
                 {/* Dynamic Selector Buttons */}
                 <div className="grid grid-cols-2 gap-3 mb-8">
@@ -376,16 +376,16 @@ export default function ContactClientPage() {
                         onClick={() => handleFormTypeChange(type.id as any)}
                         className={`flex flex-col text-left p-4 rounded-2xl border transition-all duration-300 cursor-pointer ${
                           isSelected
-                            ? "bg-white/10 border-[#2563EB] shadow-[0_0_15px_rgba(37,99,235,0.15)]"
-                            : "bg-white/5 border-white/10 hover:bg-white/8 hover:border-white/20"
+                            ? "bg-white/10 border-[#FE9417] shadow-[0_0_15px_rgba(37,99,235,0.15)]"
+                            : "bg-white/5 border-[#E5E5E5] hover:bg-white/8 hover:border-[#E5E5E5]"
                         }`}
                       >
                         <span className={`font-mono text-xs uppercase tracking-wider font-bold mb-1 ${
-                          isSelected ? "text-[#2563EB]" : "text-white/60"
+                          isSelected ? "text-[#FE9417]" : "text-[#666666]"
                         }`}>
                           {type.label}
                         </span>
-                        <span className="text-[10px] text-white/40 font-sans leading-tight">
+                        <span className="text-[10px] text-[#888888] font-sans leading-tight">
                           {type.desc}
                         </span>
                       </button>
@@ -544,7 +544,7 @@ export default function ContactClientPage() {
                   {formType === "creator" && (
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                       <div className="flex flex-col gap-2">
-                        <label htmlFor="instagram-input" className={labelClass}>Instagram Link <span className="text-white/30 text-[10px]">(Optional)</span></label>
+                        <label htmlFor="instagram-input" className={labelClass}>Instagram Link <span className="text-[#FE9417] text-[10px]">(Optional)</span></label>
                         <input 
                           id="instagram-input"
                           type="text" 
@@ -556,7 +556,7 @@ export default function ContactClientPage() {
                       </div>
 
                       <div className="flex flex-col gap-2">
-                        <label htmlFor="tiktok-input" className={labelClass}>TikTok Link <span className="text-white/30 text-[10px]">(Optional)</span></label>
+                        <label htmlFor="tiktok-input" className={labelClass}>TikTok Link <span className="text-[#FE9417] text-[10px]">(Optional)</span></label>
                         <input 
                           id="tiktok-input"
                           type="text" 
@@ -568,7 +568,7 @@ export default function ContactClientPage() {
                       </div>
 
                       <div className="flex flex-col gap-2">
-                        <label htmlFor="youtube-input" className={labelClass}>YouTube Link <span className="text-white/30 text-[10px]">(Optional)</span></label>
+                        <label htmlFor="youtube-input" className={labelClass}>YouTube Link <span className="text-[#FE9417] text-[10px]">(Optional)</span></label>
                         <input 
                           id="youtube-input"
                           type="text" 
@@ -617,7 +617,7 @@ export default function ContactClientPage() {
                       {/* Social Links (Instagram & TikTok) */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div className="flex flex-col gap-2">
-                          <label htmlFor="noon-instagram-input" className={labelClass}>Instagram Link <span className="text-white/30 text-[10px]">(Optional)</span></label>
+                          <label htmlFor="noon-instagram-input" className={labelClass}>Instagram Link <span className="text-[#FE9417] text-[10px]">(Optional)</span></label>
                           <input 
                             id="noon-instagram-input"
                             type="text" 
@@ -629,7 +629,7 @@ export default function ContactClientPage() {
                         </div>
 
                         <div className="flex flex-col gap-2">
-                          <label htmlFor="noon-tiktok-input" className={labelClass}>TikTok Link <span className="text-white/30 text-[10px]">(Optional)</span></label>
+                          <label htmlFor="noon-tiktok-input" className={labelClass}>TikTok Link <span className="text-[#FE9417] text-[10px]">(Optional)</span></label>
                           <input 
                             id="noon-tiktok-input"
                             type="text" 
@@ -644,7 +644,7 @@ export default function ContactClientPage() {
                       {/* Social Links (Snapchat & Telegram) */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div className="flex flex-col gap-2">
-                          <label htmlFor="noon-snapchat-input" className={labelClass}>Snapchat Link <span className="text-white/30 text-[10px]">(Optional)</span></label>
+                          <label htmlFor="noon-snapchat-input" className={labelClass}>Snapchat Link <span className="text-[#FE9417] text-[10px]">(Optional)</span></label>
                           <input 
                             id="noon-snapchat-input"
                             type="text" 
@@ -656,7 +656,7 @@ export default function ContactClientPage() {
                         </div>
 
                         <div className="flex flex-col gap-2">
-                          <label htmlFor="noon-telegram-input" className={labelClass}>Telegram Link <span className="text-white/30 text-[10px]">(Optional)</span></label>
+                          <label htmlFor="noon-telegram-input" className={labelClass}>Telegram Link <span className="text-[#FE9417] text-[10px]">(Optional)</span></label>
                           <input 
                             id="noon-telegram-input"
                             type="text" 
@@ -716,17 +716,17 @@ export default function ContactClientPage() {
                   {formType === "trendyol" && (
                     <>
                       {/* Before You Apply Info Card */}
-                      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-8 text-left text-sm leading-relaxed text-white/80">
-                        <h4 className="font-mono text-xs uppercase tracking-widest text-[#2563EB] mb-3 font-bold">
+                      <div className="bg-white/5 border border-[#E5E5E5] rounded-2xl p-6 mb-8 text-left text-sm leading-relaxed text-[#555555]">
+                        <h4 className="font-mono text-xs uppercase tracking-widest text-[#FE9417] mb-3 font-bold">
                           Before You Apply
                         </h4>
-                        <p className="font-sans mb-4 text-white/90">
+                        <p className="font-sans mb-4 text-[#555555]">
                           TrendFam Gulf is open to creators based in UAE, KSA, Bahrain, Oman, Qatar, or Kuwait.
                         </p>
                         
                         <div className="mb-4">
-                          <p className="font-mono text-[10px] uppercase tracking-wider text-white/50 mb-2">Application Criteria:</p>
-                          <ul className="list-disc pl-5 font-sans space-y-1 text-white/70 text-xs">
+                          <p className="font-mono text-[10px] uppercase tracking-wider text-[#888888] mb-2">Application Criteria:</p>
+                          <ul className="list-disc pl-5 font-sans space-y-1 text-[#666666] text-xs">
                             <li>10,000+ followers on Instagram, Snapchat, or TikTok</li>
                             <li>Organic and high engagement rate</li>
                             <li>Relevant content style</li>
@@ -735,8 +735,8 @@ export default function ContactClientPage() {
                         </div>
 
                         <div className="mb-4">
-                          <p className="font-mono text-[10px] uppercase tracking-wider text-white/50 mb-2">Program Notes:</p>
-                          <ul className="list-disc pl-5 font-sans space-y-1 text-white/70 text-xs">
+                          <p className="font-mono text-[10px] uppercase tracking-wider text-[#888888] mb-2">Program Notes:</p>
+                          <ul className="list-disc pl-5 font-sans space-y-1 text-[#666666] text-xs">
                             <li>New buyer, returning buyer, and personalized code commission rules may apply.</li>
                             <li>Tax deductions and cancelled/returned order deductions may apply.</li>
                             <li>Eligible creators may receive coin rewards after their first story, based on follower count and program rules.</li>
@@ -744,11 +744,11 @@ export default function ContactClientPage() {
                         </div>
 
                         {/* Collapsible Section */}
-                        <div className="border-t border-white/10 pt-3 mt-3">
+                        <div className="border-t border-[#E5E5E5] pt-3 mt-3">
                           <button
                             type="button"
                             onClick={() => setShowDetailedTerms(!showDetailedTerms)}
-                            className="flex items-center justify-between w-full text-left font-mono text-[10px] uppercase tracking-wider text-white/50 hover:text-white transition-colors cursor-pointer"
+                            className="flex items-center justify-between w-full text-left font-mono text-[10px] uppercase tracking-wider text-[#888888] hover:text-[#111111] transition-colors cursor-pointer"
                           >
                             <span>{showDetailedTerms ? "Hide Full Program Details" : "View Full Program Details"}</span>
                             <span className="text-xs transition-transform duration-300">
@@ -757,23 +757,23 @@ export default function ContactClientPage() {
                           </button>
                           
                           {showDetailedTerms && (
-                            <div className="mt-4 pt-4 border-t border-white/10 space-y-6">
+                            <div className="mt-4 pt-4 border-t border-[#E5E5E5] space-y-6">
                               {/* English Program Details */}
-                              <div className="space-y-3 font-sans text-xs text-white/70">
-                                <h5 className="font-mono text-[10px] uppercase tracking-wider text-[#2563EB] font-bold">English Details</h5>
+                              <div className="space-y-3 font-sans text-xs text-[#666666]">
+                                <h5 className="font-mono text-[10px] uppercase tracking-wider text-[#FE9417] font-bold">English Details</h5>
                                 <p>You are invited to be a part of TrendFam GULF Influencer Community! TrendFam program which has more than 40,000 influencers globally is now in GULF region!</p>
                                 <p>It's super easy to generate revenue by sharing your favorite products with your followers. You can earn 150% commission on net earning of the products sold from your links for new buyers to Trendyol & 50% commission on net earning of the products sold from your link for returning buyers!<br />
-                                <span className="text-white/40">PS: 12% of TAX and 20% of cancelled /returned orders will be deducted from all sale.</span></p>
+                                <span className="text-[#888888]">PS: 12% of TAX and 20% of cancelled /returned orders will be deducted from all sale.</span></p>
                                 <p>What's more? You will also have a personalized code to share with your followers & earn 5% commission on sale made from your code. Share your first story and get 50$+ coin based on your follower count to use at Trendyol to shop new items & share with your followers.</p>
                                 <p>Please share your information below with us, we'll evaluate your application and get back to you.</p>
                               </div>
 
                               {/* Arabic Program Details */}
-                              <div className="space-y-3 font-sans text-xs text-white/70" dir="rtl" style={{ textAlign: "right" }}>
-                                <h5 className="font-mono text-[10px] uppercase tracking-wider text-[#2563EB] font-bold text-left" dir="ltr">Arabic Details</h5>
+                              <div className="space-y-3 font-sans text-xs text-[#666666]" dir="rtl" style={{ textAlign: "right" }}>
+                                <h5 className="font-mono text-[10px] uppercase tracking-wider text-[#FE9417] font-bold text-left" dir="ltr">Arabic Details</h5>
                                 <p>أنت مدعو لتكون جزءًا من مجتمع ترندفام الخليج المؤثر! برنامج ترندفام الذي لديه أكثر من 40,000 المؤثرين على مستوى العالم هو الآن في منطقة الخليج!</p>
                                 <p>من السهل جدًا تحقيق إيرادات من خلال مشاركة منتجاتك المفضلة مع متابعيك. يمكنك كسب عمولة 150٪ على صافي ربح المنتجات المباعة من روابطك للمشترين الجدد إلى ترينديول و 50٪ عمولة على صافي ربح المنتجات المباعة من رابطك للمشترين العائدين!<br />
-                                <span className="text-white/40">ملاحظة: سيتم خصم 12٪ من الضرائب و 20٪ من الطلبات الملغاة / المرتجعة من جميع عمليات البيع.</span></p>
+                                <span className="text-[#888888]">ملاحظة: سيتم خصم 12٪ من الضرائب و 20٪ من الطلبات الملغاة / المرتجعة من جميع عمليات البيع.</span></p>
                                 <p>ما هو أكثر من ذلك؟ سيكون لديك أيضًا رمز مخصص لمشاركته مع متابعيك وكسب عمولة 5٪ على البيع المصنوعة من الكود الخاص بك. شارك قصتك الأولى واحصل على 50$+ coin على أساس عدد أتباعك لاستخدامها في ترينديول للتسوق عناصر جديدة ومشاركتها مع متابعيك.</p>
                                 <p>يرجى مشاركة المعلومات الخاصة بك أدناه معنا، وسوف نقوم بتقييم طلبك.</p>
                               </div>
@@ -820,7 +820,7 @@ export default function ContactClientPage() {
                             value={formState.trendyolEmail}
                             onChange={(e) => setFormState({ ...formState, trendyolEmail: e.target.value })}
                           />
-                          <p className="text-[10px] text-white/40 mt-1">
+                          <p className="text-[10px] text-[#888888] mt-1">
                             (You must have an active Trendyol account registered with this e-mail to generate links)
                           </p>
                         </div>
@@ -839,7 +839,7 @@ export default function ContactClientPage() {
                             value={formState.contactEmail}
                             onChange={(e) => setFormState({ ...formState, contactEmail: e.target.value })}
                           />
-                          <p className="text-[10px] text-white/40 mt-1">
+                          <p className="text-[10px] text-[#888888] mt-1">
                             (We recommend an active e-mail you check regularly)
                           </p>
                         </div>
@@ -872,7 +872,7 @@ export default function ContactClientPage() {
                         </div>
 
                         <div className="flex flex-col gap-2">
-                          <label htmlFor="trendyol-instagram-input" className={labelClass}>Instagram Account <span className="text-white/30 text-[10px]">(Optional)</span></label>
+                          <label htmlFor="trendyol-instagram-input" className={labelClass}>Instagram Account <span className="text-[#FE9417] text-[10px]">(Optional)</span></label>
                           <input 
                             id="trendyol-instagram-input"
                             type="text" 
@@ -881,7 +881,7 @@ export default function ContactClientPage() {
                             value={formState.instagram}
                             onChange={(e) => setFormState({ ...formState, instagram: e.target.value })}
                           />
-                          <p className="text-[10px] text-white/40 mt-1">
+                          <p className="text-[10px] text-[#888888] mt-1">
                             (Please enter your full Instagram handle)
                           </p>
                         </div>
@@ -890,7 +890,7 @@ export default function ContactClientPage() {
                       {/* Snapchat & TikTok */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div className="flex flex-col gap-2">
-                          <label htmlFor="trendyol-snapchat-input" className={labelClass}>Snapchat Handle <span className="text-white/30 text-[10px]">(Optional)</span></label>
+                          <label htmlFor="trendyol-snapchat-input" className={labelClass}>Snapchat Handle <span className="text-[#FE9417] text-[10px]">(Optional)</span></label>
                           <input 
                             id="trendyol-snapchat-input"
                             type="text" 
@@ -902,7 +902,7 @@ export default function ContactClientPage() {
                         </div>
 
                         <div className="flex flex-col gap-2">
-                          <label htmlFor="trendyol-tiktok-input" className={labelClass}>TikTok Handle <span className="text-white/30 text-[10px]">(Optional)</span></label>
+                          <label htmlFor="trendyol-tiktok-input" className={labelClass}>TikTok Handle <span className="text-[#FE9417] text-[10px]">(Optional)</span></label>
                           <input 
                             id="trendyol-tiktok-input"
                             type="text" 
@@ -915,14 +915,14 @@ export default function ContactClientPage() {
                       </div>
 
                       {/* Info Card */}
-                      <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 mt-2 overflow-hidden">
+                      <div className="bg-white/5 border border-[#E5E5E5] rounded-2xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 mt-2 overflow-hidden">
                         <div className="flex items-center gap-3 shrink-0">
-                          <svg className="w-5 h-5 text-[#2563EB] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <svg className="w-5 h-5 text-[#FE9417] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
-                          <span className="text-xs text-white/80 font-mono uppercase tracking-wider">Contact Us</span>
+                          <span className="text-xs text-[#555555] font-mono uppercase tracking-wider">Contact Us</span>
                         </div>
-                        <a href="mailto:trendyolmena@imediaffglobal.com" className="text-xs text-[#2563EB] font-mono hover:underline break-all sm:break-normal sm:text-right">
+                        <a href="mailto:trendyolmena@imediaffglobal.com" className="text-xs text-[#FE9417] font-mono hover:underline break-all sm:break-normal sm:text-right">
                           trendyolmena@imediaffglobal.com
                         </a>
                       </div>
@@ -944,7 +944,7 @@ export default function ContactClientPage() {
                         id="message-input"
                         rows={5}
                         required={formType !== "creator"}
-                        className="bg-transparent border-b border-white/20 px-2 py-4 text-white font-sans text-lg focus:outline-none focus:border-[#2563EB] transition-colors resize-none"
+                        className="bg-transparent border-b border-[#E5E5E5] px-2 py-4 text-[#111111] font-sans text-lg focus:outline-none focus:border-[#FE9417] transition-colors resize-none"
                         value={formState.message}
                         onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                       />
@@ -964,7 +964,7 @@ export default function ContactClientPage() {
                   </div>
 
                   {submitSuccess && (
-                    <div className="bg-[#16A34A]/10 border border-[#16A34A]/20 text-[#4ADE80] p-4 rounded-2xl font-sans text-sm leading-relaxed transition-all">
+                    <div className="bg-[#FF6B00]/10 border border-[#FF6B00]/20 text-[#4ADE80] p-4 rounded-2xl font-sans text-sm leading-relaxed transition-all">
                       {submitSuccess}
                     </div>
                   )}
@@ -978,9 +978,9 @@ export default function ContactClientPage() {
                   <button 
                     type="submit"
                     disabled={isSubmitting}
-                    className="group relative mt-4 inline-flex items-center justify-center overflow-hidden rounded-full px-8 py-5 font-mono text-sm font-bold uppercase tracking-widest text-white transition-transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 cursor-pointer"
+                    className="group relative mt-4 inline-flex items-center justify-center overflow-hidden rounded-full px-8 py-5 font-mono text-sm font-bold uppercase tracking-widest text-[#111111] transition-transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 cursor-pointer"
                   >
-                    <span className="absolute inset-0 bg-gradient-to-br from-[#2563EB] to-[#16A34A]" />
+                    <span className="absolute inset-0 bg-gradient-to-br from-[#FE9417] to-[#FF6B00]" />
                     <span className="relative z-10 flex items-center gap-3">
                       {isSubmitting ? "Submitting Application..." : "Submit Application"}
                       {!isSubmitting && <span className="block transition-transform duration-300 group-hover:translate-x-1">→</span>}
@@ -1011,8 +1011,8 @@ export default function ContactClientPage() {
 
               <div className="flex flex-col gap-10">
                 {OFFICES.map((office, i) => (
-                  <motion.div key={office.name} {...fadeUp(0.1 * i)} className="group border-l-2 border-gray-200 pl-6 hover:border-[#2563EB] transition-colors">
-                    <h3 className="font-display text-xl md:text-2xl font-bold tracking-[-0.02em] text-black mb-2 group-hover:text-[#2563EB] transition-colors">
+                  <motion.div key={office.name} {...fadeUp(0.1 * i)} className="group border-l-2 border-gray-200 pl-6 hover:border-[#FE9417] transition-colors">
+                    <h3 className="font-display text-xl md:text-2xl font-bold tracking-[-0.02em] text-black mb-2 group-hover:text-[#FE9417] transition-colors">
                       {office.name}
                     </h3>
                     <p className="font-mono text-[11px] md:text-xs uppercase tracking-[0.1em] leading-relaxed text-gray-500 max-w-[280px]">
@@ -1040,16 +1040,16 @@ export default function ContactClientPage() {
       </section>
 
       {/* ── SECTION 3: PROJECT LOGISTICS (Black) ───────────────────────── */}
-      <section className="bg-black text-white py-24 md:py-36 border-t border-white/10 relative overflow-hidden">
+      <section className="bg-white text-[#111111] py-24 md:py-36 border-t border-[#E5E5E5] relative overflow-hidden">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
             <motion.div {...fadeUp()} className="lg:col-span-5">
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB] font-bold mb-4">/ FAQ</p>
-              <h2 className="font-display text-[clamp(2.5rem,4vw,4rem)] font-bold tracking-[-0.03em] leading-[1.05] text-white">
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] font-bold mb-4">/ FAQ</p>
+              <h2 className="font-display text-[clamp(2.5rem,4vw,4rem)] font-bold tracking-[-0.03em] leading-[1.05] text-[#111111]">
                 Project <br /> Logistics.
               </h2>
-              <p className="mt-6 text-lg text-white/60 font-sans max-w-sm">
+              <p className="mt-6 text-lg text-[#666666] font-sans max-w-sm">
                 Clarity and operational excellence from the first point of contact.
               </p>
             </motion.div>
@@ -1059,12 +1059,12 @@ export default function ContactClientPage() {
                 <motion.div 
                   key={i} 
                   {...fadeUp(0.1 * i)}
-                  className="group border border-white/10 rounded-2xl p-8 hover:bg-white/5 transition-colors cursor-default"
+                  className="group border border-[#E5E5E5] rounded-2xl p-8 hover:bg-[#FFF3E0] transition-colors cursor-default"
                 >
-                  <h3 className="font-display text-xl md:text-2xl font-bold tracking-[-0.01em] text-white mb-4 pr-8">
+                  <h3 className="font-display text-xl md:text-2xl font-bold tracking-[-0.01em] text-[#111111] mb-4 pr-8">
                     {faq.q}
                   </h3>
-                  <p className="text-white/60 leading-relaxed font-sans text-sm md:text-base">
+                  <p className="text-[#666666] leading-relaxed font-sans text-sm md:text-base">
                     {faq.a}
                   </p>
                 </motion.div>

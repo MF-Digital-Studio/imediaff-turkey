@@ -24,7 +24,7 @@ export default function ServicesPreview() {
               We turn attention into{" "}
               <span
                 style={{
-                  backgroundImage: "linear-gradient(135deg, #2563EB 0%, #16A34A 100%)",
+                  backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -34,7 +34,7 @@ export default function ServicesPreview() {
               </span>.
             </h2>
           </div>
-          <Link href="/services" className="group inline-flex items-center gap-2 border border-black/20 px-5 py-3 text-sm font-semibold text-black hover:border-[#2563EB] hover:text-[#2563EB] transition-colors">
+          <Link href="/services" className="group inline-flex items-center gap-2 border border-black/20 px-5 py-3 text-sm font-semibold text-black hover:border-[#FE9417] hover:text-[#FE9417] transition-colors">
             View all services
             <span aria-hidden className="transition-transform group-hover:translate-x-1">-&gt;</span>
           </Link>
@@ -75,7 +75,7 @@ export default function ServicesPreview() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-10% 0px" }}
                 transition={{ duration: 0.6, delay: (index % 3) * 0.08, ease: [0.22, 1, 0.36, 1] }}
-                className="group relative h-[360px] lg:h-[480px] rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 ease-out hover:scale-[1.02] border border-transparent hover:border-white/15 cursor-pointer"
+                className="group relative h-[360px] lg:h-[480px] rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 ease-out hover:scale-[1.02] border border-transparent hover:border-[#E5E5E5] cursor-pointer"
               >
                 {/* Full Card Background Image */}
                 <img 
@@ -107,7 +107,7 @@ export default function ServicesPreview() {
                 >
                   {/* Service Number: small, muted white, top-left corner */}
                   <div>
-                    <p className="font-mono text-xs uppercase tracking-[0.4em] text-white/50">
+                    <p className="font-mono text-xs uppercase tracking-[0.4em] text-[#888888]">
                       {String(index + 1).padStart(2, "0")}
                     </p>
                   </div>
@@ -115,20 +115,20 @@ export default function ServicesPreview() {
                   {/* Bottom Content Area */}
                   <div className="flex flex-col items-start gap-4">
                     {/* Icon: white, above title */}
-                    <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 backdrop-blur-sm border border-white/15">
-                      <service.icon strokeWidth={1.5} className="h-5 w-5 text-white" />
+                    <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 backdrop-blur-sm border border-[#E5E5E5]">
+                      <service.icon strokeWidth={1.5} className="h-5 w-5 text-[#111111]" />
                     </div>
 
                     {/* Title & Description: white/light gray */}
                     <div className="text-left flex flex-col justify-end w-full">
-                      <h3 className="font-sans text-2xl font-bold tracking-[-0.02em] text-white transform transition-transform duration-500 group-hover:-translate-y-1">
+                      <h3 className="font-sans text-2xl font-bold tracking-[-0.02em] text-[#111111] transform transition-transform duration-500 group-hover:-translate-y-1">
                         {service.title}
                       </h3>
                       
                       <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-out">
                         <div className="overflow-hidden">
                           <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-75 flex flex-col gap-3 pt-3">
-                            <p className="text-sm font-medium leading-relaxed text-white/70">
+                            <p className="text-sm font-medium leading-relaxed text-[#666666]">
                               {service.desc}
                             </p>
                             

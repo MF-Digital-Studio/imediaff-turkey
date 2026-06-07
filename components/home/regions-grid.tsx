@@ -14,7 +14,7 @@ const REGIONS = [
     desc: "Our founding market. 5,000+ influencer partners operating through Trendyol's affiliate program with full legal, financial, and strategic support.",
     href: "/talent/turkey",
     accentColor: "rgba(37,99,235,0.12)",
-    hoverBorder: "#2563EB",
+    hoverBorder: "#FE9417",
   },
   {
     emoji: "🇸🇦 🇦🇪 🇰🇼",
@@ -23,7 +23,7 @@ const REGIONS = [
     desc: "TrendFam Gulf operations across KSA, UAE, and Kuwait. Link and code commission model with up to 150% commission for new buyers.",
     href: "/talent/gulf",
     accentColor: "rgba(22,163,74,0.10)",
-    hoverBorder: "#16A34A",
+    hoverBorder: "#FF6B00",
   },
   {
     emoji: "🇷🇴 🇵🇱 🇧🇬 🇬🇷",
@@ -32,7 +32,7 @@ const REGIONS = [
     desc: "Active since October 2024 across Romania, Poland, Bulgaria, and Greece. Performance-based affiliate program via TrendFam.",
     href: "/talent/cee",
     accentColor: "rgba(37,99,235,0.10)",
-    hoverBorder: "#2563EB",
+    hoverBorder: "#FE9417",
   },
   {
     emoji: "🇦🇿",
@@ -41,7 +41,7 @@ const REGIONS = [
     desc: "Trendyol affiliate operations with segment-based commission rates and monthly coupon reward system.",
     href: "/talent/azerbaijan",
     accentColor: "rgba(22,163,74,0.08)",
-    hoverBorder: "#16A34A",
+    hoverBorder: "#FF6B00",
   },
 ]
 
@@ -52,7 +52,7 @@ export default function RegionsGrid() {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-black text-white py-24 md:py-32 border-t border-white/[0.06]"
+      className="relative bg-white text-[#111111] py-24 md:py-32 border-t border-white/[0.06]"
       aria-label="Our Regions"
     >
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
@@ -63,15 +63,15 @@ export default function RegionsGrid() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="mb-16 md:mb-20"
         >
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/30 mb-5">
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FE9417] mb-5">
             / Our Regions
           </p>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-            <h2 className="font-sans text-[clamp(2.5rem,6vw,5rem)] font-bold text-white leading-[0.92] tracking-[-0.03em]">
+            <h2 className="font-sans text-[clamp(2.5rem,6vw,5rem)] font-bold text-[#111111] leading-[0.92] tracking-[-0.03em]">
               Active operations across{" "}
               <span
                 style={{
-                  backgroundImage: "linear-gradient(135deg, #2563EB 0%, #16A34A 100%)",
+                  backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -82,7 +82,7 @@ export default function RegionsGrid() {
             </h2>
             <Link
               href="/talent"
-              className="group inline-flex items-center gap-2 border border-white/20 rounded-full px-6 py-3 text-sm font-semibold text-white/70 hover:border-white hover:text-white transition-all duration-300 shrink-0"
+              className="group inline-flex items-center gap-2 border border-[#E5E5E5] rounded-full px-6 py-3 text-sm font-semibold text-[#666666] hover:border-[#E5E5E5] hover:text-[#111111] transition-all duration-300 shrink-0"
             >
               View all talent programs
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -115,7 +115,7 @@ export default function RegionsGrid() {
               >
                 <Link
                   href={region.href}
-                  className="group relative flex flex-col h-full p-8 md:p-10 rounded-2xl bg-white/[0.03] border border-white/[0.07] hover:border-white/20 transition-all duration-500 hover:-translate-y-1.5 overflow-hidden"
+                  className="group relative flex flex-col h-full p-8 md:p-10 rounded-2xl bg-white/[0.03] border border-white/[0.07] hover:border-[#E5E5E5] transition-all duration-500 hover:-translate-y-1.5 overflow-hidden"
                 >
                   {/* Subtle gradient glow on hover */}
                   <div
@@ -124,7 +124,7 @@ export default function RegionsGrid() {
                   />
                   {/* Top accent line on hover */}
                   <div
-                    className="absolute top-0 inset-x-0 h-[1.5px] rounded-t-2xl bg-gradient-to-r from-[#2563EB] to-[#16A34A] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"
+                    className="absolute top-0 inset-x-0 h-[1.5px] rounded-t-2xl bg-gradient-to-r from-[#FE9417] to-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"
                   />
 
                   {/* Background Image with Dark Overlay */}
@@ -145,21 +145,21 @@ export default function RegionsGrid() {
 
                   {/* Title + Tag */}
                   <div className="mb-4 relative z-10">
-                    <h3 className="font-sans text-2xl font-bold text-white tracking-tight mb-1 group-hover:text-white transition-colors">
+                    <h3 className="font-sans text-2xl font-bold text-[#111111] tracking-tight mb-1 group-hover:text-[#111111] transition-colors">
                       {region.title}
                     </h3>
-                    <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
+                    <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#FE9417]">
                       {region.tag}
                     </p>
                   </div>
 
                   {/* Description */}
-                  <p className="text-sm text-white/50 leading-relaxed font-medium flex-1 relative z-10">
+                  <p className="text-sm text-[#888888] leading-relaxed font-medium flex-1 relative z-10">
                     {region.desc}
                   </p>
 
                   {/* CTA */}
-                  <div className="mt-8 flex items-center gap-2 text-sm font-semibold text-white/40 group-hover:text-white transition-colors duration-300 relative z-10">
+                  <div className="mt-8 flex items-center gap-2 text-sm font-semibold text-[#888888] group-hover:text-[#111111] transition-colors duration-300 relative z-10">
                     View program
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </div>

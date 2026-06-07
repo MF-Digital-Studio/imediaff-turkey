@@ -14,10 +14,10 @@ export default function GulfPage() {
   return (
     <main className="bg-background text-foreground min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative pt-32 md:pt-48 pb-20 md:pb-32 overflow-hidden border-border bg-[#000000] border-b border-[#1a1a1a]">
+      <section className="relative pt-32 md:pt-48 pb-20 md:pb-32 overflow-hidden border-border bg-white border-b border-[#E5E5E5]">
         {/* Glow Effects */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#2563EB]/10 blur-[120px] rounded-full pointer-events-none" />
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#2563EB]/5 blur-[100px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#FE9417]/10 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#FE9417]/5 blur-[100px] rounded-full pointer-events-none" />
         
         <motion.div 
           initial={{ opacity: 0, y: 30 }} 
@@ -33,7 +33,7 @@ export default function GulfPage() {
 
           <h1 className="font-display text-[clamp(3.5rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] max-w-5xl">
             Join the iMediaff <br />
-            <span className="bg-gradient-to-r from-[#2563EB] to-[#16A34A] bg-clip-text text-transparent">Talent Network</span>
+            <span className="bg-gradient-to-r from-[#FE9417] to-[#FF6B00] bg-clip-text text-transparent">Talent Network</span>
           </h1>
           <p className="mt-8 max-w-2xl text-lg md:text-xl text-muted-foreground leading-relaxed">
             We are a global agency headquartered in Dubai, connecting brands and influencers through performance-driven partnerships. We manage affiliate and influencer marketing processes professionally from end-to-end.
@@ -41,7 +41,7 @@ export default function GulfPage() {
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Link 
               href="/contact?type=creator"
-              className="inline-flex h-14 items-center justify-center rounded-full bg-gradient-to-r from-[#2563EB] to-[#16A34A] px-8 font-semibold text-black transition-transform hover:scale-105 active:scale-95"
+              className="inline-flex h-14 items-center justify-center rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] px-8 font-semibold text-black transition-transform hover:scale-105 active:scale-95"
             >
               Apply as a Creator ↗
             </Link>
@@ -50,7 +50,7 @@ export default function GulfPage() {
       </section>
 
 {/* GULF SECTION 1 — The TrendFam Program */}
-          <section className="py-24 relative overflow-hidden bg-[#111111] border-y border-[#1f1f1f]">
+          <section className="py-24 relative overflow-hidden bg-white border-y border-[#1f1f1f]">
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -70,19 +70,19 @@ export default function GulfPage() {
                 </div>
               </div>
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#2563EB]/20 to-[#2563EB]/20 blur-3xl rounded-full" />
-                <div className="relative bg-[#1a1a1a] border border-[#2a2a2a] shadow-[0_4px_24px_rgba(0,0,0,0.4)] backdrop-blur-xl p-10 rounded-3xl overflow-hidden text-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FE9417]/20 to-[#FE9417]/20 blur-3xl rounded-full" />
+                <div className="relative bg-[#F5F5F5] border border-[#E5E5E5] shadow-[0_4px_24px_rgba(0,0,0,0.4)] backdrop-blur-xl p-10 rounded-3xl overflow-hidden text-center">
                   <h3 className="text-xl font-bold mb-6 text-foreground/80 uppercase tracking-widest text-sm">Operating Regions</h3>
                   <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                    <div className="flex flex-col items-center p-4 bg-black/20 rounded-2xl min-w-[120px]">
+                    <div className="flex flex-col items-center p-4 bg-white/20 rounded-2xl min-w-[120px]">
                       <span className="text-4xl mb-2">🇸🇦</span>
                       <span className="font-bold">KSA</span>
                     </div>
-                    <div className="flex flex-col items-center p-4 bg-black/20 rounded-2xl min-w-[120px]">
+                    <div className="flex flex-col items-center p-4 bg-white/20 rounded-2xl min-w-[120px]">
                       <span className="text-4xl mb-2">🇦🇪</span>
                       <span className="font-bold">UAE</span>
                     </div>
-                    <div className="flex flex-col items-center p-4 bg-black/20 rounded-2xl min-w-[120px]">
+                    <div className="flex flex-col items-center p-4 bg-white/20 rounded-2xl min-w-[120px]">
                       <span className="text-4xl mb-2">🇰🇼</span>
                       <span className="font-bold">Kuwait</span>
                     </div>
@@ -93,7 +93,7 @@ export default function GulfPage() {
           </section>
 
           {/* GULF SECTION 2 — Eligibility Requirements */}
-          <section className="py-24 border-border bg-[#111111] border-y border-[#1f1f1f]">
+          <section className="py-24 border-border bg-white border-y border-[#1f1f1f]">
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -112,9 +112,9 @@ export default function GulfPage() {
                   { icon: Globe, title: "Gulf Region", desc: "Residency in UAE, KSA, or Kuwait" },
                   { icon: Building2, title: "Agency Partner", desc: "Must apply through an authorized agency partner" }
                 ].map((req, i) => (
-                  <div key={i} className="bg-[#1a1a1a] border border-[#2a2a2a] shadow-[0_4px_24px_rgba(0,0,0,0.4)] p-8 rounded-2xl">
+                  <div key={i} className="bg-[#F5F5F5] border border-[#E5E5E5] shadow-[0_4px_24px_rgba(0,0,0,0.4)] p-8 rounded-2xl">
                     <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mb-6">
-                      <req.icon className="w-6 h-6 text-[#2563EB]" />
+                      <req.icon className="w-6 h-6 text-[#FE9417]" />
                     </div>
                     <h3 className="text-xl font-bold mb-2">{req.title}</h3>
                     <p className="text-muted-foreground text-sm">{req.desc}</p>
@@ -122,14 +122,14 @@ export default function GulfPage() {
                 ))}
               </div>
 
-              <div className="mt-8 flex flex-col md:flex-row md:items-center justify-between gap-6 p-8 border border-[#2563EB]/30 bg-[#2563EB]/5 rounded-xl">
+              <div className="mt-8 flex flex-col md:flex-row md:items-center justify-between gap-6 p-8 border border-[#FE9417]/30 bg-[#FE9417]/5 rounded-xl">
                 <div className="flex items-start gap-4">
-                  <ShieldAlert className="w-6 h-6 text-[#2563EB] shrink-0 mt-1" />
+                  <ShieldAlert className="w-6 h-6 text-[#FE9417] shrink-0 mt-1" />
                   <p className="text-sm md:text-base text-foreground/80 leading-relaxed max-w-2xl">
                     <strong className="text-foreground">Note:</strong> Influencers must apply with the same email used to register on Trendyol. Download the Trendyol app first, create a customer account, then apply to TrendFam 1 day later. Same-day applications are not verified.
                   </p>
                 </div>
-                <Link href="https://influencer.trendyol.com/" target="_blank" rel="noopener noreferrer" className="shrink-0 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#2563EB] to-[#16A34A] px-6 py-3 font-semibold text-black hover:scale-105 transition-transform text-sm">
+                <Link href="https://influencer.trendyol.com/" target="_blank" rel="noopener noreferrer" className="shrink-0 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] px-6 py-3 font-semibold text-black hover:scale-105 transition-transform text-sm">
                   Apply at influencer.trendyol.com
                 </Link>
               </div>
@@ -152,7 +152,7 @@ export default function GulfPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
                 {/* Connecting line for desktop */}
-                <div className="hidden md:block absolute top-[60px] left-[12%] right-[12%] h-[1px] bg-gradient-to-r from-transparent via-[#2563EB]/25 to-transparent" />
+                <div className="hidden md:block absolute top-[60px] left-[12%] right-[12%] h-[1px] bg-gradient-to-r from-transparent via-[#FE9417]/25 to-transparent" />
                 
                 {[
                   { step: "01", title: "Download App", desc: "Download the Trendyol app and create a customer account." },
@@ -161,7 +161,7 @@ export default function GulfPage() {
                   { step: "04", title: "Access", desc: "Approved influencers gain access to the Influencer Center in the Trendyol app." }
                 ].map((step, i) => (
                   <div key={i} className="relative z-10 flex flex-col items-center text-center">
-                    <div className="w-20 h-20 rounded-full border-4 border-[#ffffff] bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] flex items-center justify-center text-2xl font-display font-bold text-[#2563EB] mb-6">
+                    <div className="w-20 h-20 rounded-full border-4 border-[#ffffff] bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] flex items-center justify-center text-2xl font-display font-bold text-[#FE9417] mb-6">
                       {step.step}
                     </div>
                     <h3 className="text-xl font-bold mb-3 text-[#111827]">{step.title}</h3>
@@ -182,26 +182,26 @@ export default function GulfPage() {
               className="mx-auto max-w-[1600px] px-6 md:px-10"
             >
               <div className="max-w-3xl mb-16">
-                <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">How You</span> <span className="text-[#0a0a0a]">Earn</span></h2>
+                <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#FE9417,#FF6B00)] bg-clip-text">How You</span> <span className="text-[#0a0a0a]">Earn</span></h2>
                 <p className="text-xl text-[#4b5563]">Understanding the commission models and tracking windows.</p>
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
                 {/* Model 1 — Link Commission */}
                 <div className="border border-[#e5e7eb] bg-[#f9fafb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 md:p-10 rounded-3xl relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/5 blur-3xl rounded-full" />
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#FE9417]/5 blur-3xl rounded-full" />
                   <h3 className="text-3xl font-display font-bold mb-6 text-[#111827]">Model 1 — Link Commission</h3>
                   
                   <div className="space-y-6">
                     <div className="bg-[#ffffff] border border-[#e5e7eb] p-5 rounded-xl">
-                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#eff6ff] border border-[#bfdbfe] text-[#2563EB] text-sm font-semibold mb-3">
+                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#eff6ff] border border-[#bfdbfe] text-[#FE9417] text-sm font-semibold mb-3">
                         <LinkIcon className="w-4 h-4" /> New Buyer: 150% Commission
                       </div>
                       <p className="text-[#374151]">Earn 150% link commission for each new buyer who shops from Trendyol through your link.</p>
                     </div>
                     
                     <div className="bg-[#ffffff] border border-[#e5e7eb] p-5 rounded-xl">
-                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#eff6ff] border border-[#bfdbfe] text-[#2563EB] text-sm font-semibold mb-3">
+                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#eff6ff] border border-[#bfdbfe] text-[#FE9417] text-sm font-semibold mb-3">
                         <RefreshCw className="w-4 h-4" /> Returning Buyer: 50% Commission
                       </div>
                       <p className="text-[#374151]">Earn 50% commission for each returning buyer.</p>
@@ -215,11 +215,11 @@ export default function GulfPage() {
 
                 {/* Model 2 — Code Commission */}
                 <div className="border border-[#e5e7eb] bg-[#f9fafb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 md:p-10 rounded-3xl relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/5 blur-3xl rounded-full" />
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#FE9417]/5 blur-3xl rounded-full" />
                   <h3 className="text-3xl font-display font-bold mb-6 text-[#111827]">Model 2 — Code Commission</h3>
                   
                   <div className="bg-[#ffffff] border border-[#e5e7eb] p-5 rounded-xl mb-6">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#eff6ff] border border-[#bfdbfe] text-[#2563EB] text-sm font-semibold mb-3">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#eff6ff] border border-[#bfdbfe] text-[#FE9417] text-sm font-semibold mb-3">
                       <Tag className="w-4 h-4" /> 5% Code Commission
                     </div>
                     <p className="text-[#374151]">Each influencer receives a unique personal code name. Earn 5% commission on any net sales made using your promo code when a link was not used for the purchase.</p>
@@ -236,7 +236,7 @@ export default function GulfPage() {
               </div>
 
               <div className="p-6 bg-[#eff6ff] border border-[#bfdbfe] shadow-[0_1px_4px_rgba(0,0,0,0.06)] rounded-xl">
-                <p className="text-sm text-[#2563EB] leading-relaxed">
+                <p className="text-sm text-[#FE9417] leading-relaxed">
                   <strong className="text-[#111827]">Important:</strong> Commissions are calculated from net revenue after product discounts. A 12% tax is automatically deducted on all orders. For credit card returns, 18% is deducted; for cash-on-delivery returns, 50% is deducted. If an influencer has more than 50% cash-on-delivery return rate, Trendyol reserves the right to deduct additional earnings.
                 </p>
               </div>
@@ -244,7 +244,7 @@ export default function GulfPage() {
           </section>
 
           {/* GULF SECTION 5 — Personal Influencer Codes */}
-          <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
+          <section className="py-24 border-border bg-white border-b border-[#E5E5E5]">
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -257,9 +257,9 @@ export default function GulfPage() {
                 <p className="text-xl text-muted-foreground">Once approved, you receive a unique personal code to share with your audience.</p>
               </div>
 
-               <div className="overflow-x-auto mb-8 border border-white/10 rounded-2xl">
+               <div className="overflow-x-auto mb-8 border border-[#E5E5E5] rounded-2xl">
                 <table className="w-full text-sm text-left border-collapse">
-                  <thead className="bg-[#2563EB] text-white">
+                  <thead className="bg-[#FE9417] text-[#111111]">
                     <tr>
                       <th className="px-6 py-4 font-semibold">Shopper Type</th>
                       <th className="px-6 py-4 font-semibold">Discount</th>
@@ -268,16 +268,16 @@ export default function GulfPage() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-[#1a1a1a] odd:bg-[#000000] even:bg-[#0a0a0a] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">First-time shopper</td><td className="px-6 py-4 text-[#2563EB] font-bold">20% (one-time)</td><td className="px-6 py-4">$20</td><td className="px-6 py-4">$20</td></tr>
-                    <tr className="border-b border-[#1a1a1a] odd:bg-[#000000] even:bg-[#0a0a0a] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">Second purchase</td><td className="px-6 py-4 text-[#2563EB] font-bold">10%</td><td className="px-6 py-4">$1</td><td className="px-6 py-4">$40</td></tr>
-                    <tr className="border-b border-[#1a1a1a] odd:bg-[#000000] even:bg-[#0a0a0a] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">Returning buyers</td><td className="px-6 py-4 text-[#2563EB] font-bold">5%</td><td className="px-6 py-4">1 SAR</td><td className="px-6 py-4">$40</td></tr>
+                    <tr className="border-b border-[#E5E5E5] odd:bg-white even:bg-white text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-[#111111]">First-time shopper</td><td className="px-6 py-4 text-[#FE9417] font-bold">20% (one-time)</td><td className="px-6 py-4">$20</td><td className="px-6 py-4">$20</td></tr>
+                    <tr className="border-b border-[#E5E5E5] odd:bg-white even:bg-white text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-[#111111]">Second purchase</td><td className="px-6 py-4 text-[#FE9417] font-bold">10%</td><td className="px-6 py-4">$1</td><td className="px-6 py-4">$40</td></tr>
+                    <tr className="border-b border-[#E5E5E5] odd:bg-white even:bg-white text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-[#111111]">Returning buyers</td><td className="px-6 py-4 text-[#FE9417] font-bold">5%</td><td className="px-6 py-4">1 SAR</td><td className="px-6 py-4">$40</td></tr>
                   </tbody>
                 </table>
               </div>
 
               <div className="flex flex-col gap-4">
                 <div className="flex items-start gap-3 text-sm text-muted-foreground">
-                  <ShieldCheck className="w-5 h-5 text-[#2563EB] shrink-0" />
+                  <ShieldCheck className="w-5 h-5 text-[#FE9417] shrink-0" />
                   <p>Codes are only valid on the Trendyol app and cannot be combined with other promo codes. Codes do not apply to electronics or global brand products.</p>
                 </div>
                 <div className="flex items-start gap-3 text-xs text-muted-foreground/60">
@@ -289,7 +289,7 @@ export default function GulfPage() {
           </section>
 
           {/* GULF SECTION 6 — Creating & Sharing Your Links */}
-          <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
+          <section className="py-24 border-border bg-white border-b border-[#E5E5E5]">
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -309,22 +309,22 @@ export default function GulfPage() {
                   { icon: Tag, step: "Step 3", title: "Search Links", desc: "Share results for a specific keyword search" },
                   { icon: Share2, step: "Step 4", title: "Copy & Share", desc: "Share your generated link across your social platforms" }
                 ].map((step, i) => (
-                  <div key={i} className="border border-white/10 bg-white/5 p-8 rounded-2xl relative overflow-hidden group">
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/5 blur-2xl rounded-full group-hover:bg-[#2563EB]/10 transition-colors" />
+                  <div key={i} className="border border-[#E5E5E5] bg-white/5 p-8 rounded-2xl relative overflow-hidden group">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-[#FE9417]/5 blur-2xl rounded-full group-hover:bg-[#FE9417]/10 transition-colors" />
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-xs font-semibold mb-6">
                       {step.step}
                     </div>
-                    <step.icon className="w-10 h-10 text-[#2563EB] mb-4" />
+                    <step.icon className="w-10 h-10 text-[#FE9417] mb-4" />
                     <h3 className="text-xl font-bold mb-3">{step.title}</h3>
                     <p className="text-muted-foreground text-sm">{step.desc}</p>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-10 flex items-start gap-4 p-6 border border-[#2563EB]/30 bg-[#2563EB]/5 rounded-xl">
-                <AlertTriangle className="w-6 h-6 text-[#2563EB] shrink-0 mt-0.5" />
+              <div className="mt-10 flex items-start gap-4 p-6 border border-[#FE9417]/30 bg-[#FE9417]/5 rounded-xl">
+                <AlertTriangle className="w-6 h-6 text-[#FE9417] shrink-0 mt-0.5" />
                 <p className="text-sm md:text-base text-foreground/80">
-                  <strong className="text-[#2563EB]">⚠️ Important:</strong> Only links generated through the Influencer Center are tracked and eligible for commission payouts.
+                  <strong className="text-[#FE9417]">⚠️ Important:</strong> Only links generated through the Influencer Center are tracked and eligible for commission payouts.
                 </p>
               </div>
             </motion.div>
@@ -374,7 +374,7 @@ export default function GulfPage() {
               className="mx-auto max-w-[1600px] px-6 md:px-10"
             >
               <div className="max-w-3xl mb-16">
-                <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">Your Rank</span> <span className="text-[#0a0a0a]">& Segment</span></h2>
+                <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#FE9417,#FF6B00)] bg-clip-text">Your Rank</span> <span className="text-[#0a0a0a]">& Segment</span></h2>
                 <p className="text-xl text-[#4b5563]">Top performers earn monthly coin bonuses. Track your ranking and level up.</p>
               </div>
 
@@ -382,7 +382,7 @@ export default function GulfPage() {
                 <div className="px-6 py-3 rounded-xl border border-slate-300 bg-[#f9fafb] text-slate-800 font-bold text-lg flex items-center gap-2">🥇 Platinum</div>
                 <div className="px-6 py-3 rounded-xl border border-amber-400 bg-[#fef3c7] text-amber-800 font-bold text-lg flex items-center gap-2">🥈 Gold</div>
                 <div className="px-6 py-3 rounded-xl border border-slate-300 bg-[#f1f5f9] text-slate-600 font-bold text-lg flex items-center gap-2">🥉 Silver</div>
-                <div className="px-6 py-3 rounded-xl border border-[#16A34A]/30 bg-[#f0fdf4] text-[#16A34A] font-bold text-lg flex items-center gap-2">🌱 Starter</div>
+                <div className="px-6 py-3 rounded-xl border border-[#FF6B00]/30 bg-[#f0fdf4] text-[#FF6B00] font-bold text-lg flex items-center gap-2">🌱 Starter</div>
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -390,7 +390,7 @@ export default function GulfPage() {
                   <h3 className="text-2xl font-bold mb-6 text-[#111827]">Segment Requirements</h3>
                   <div className="overflow-hidden border border-[#e5e7eb] rounded-2xl">
                     <table className="w-full text-sm text-left border-collapse">
-                      <thead className="bg-[#2563EB] text-white">
+                      <thead className="bg-[#FE9417] text-[#111111]">
                         <tr>
                           <th className="px-6 py-4 font-semibold">Segment</th>
                           <th className="px-6 py-4 font-semibold">Requirement</th>
@@ -400,7 +400,7 @@ export default function GulfPage() {
                         <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-6 py-4 font-bold text-[#111827]">Platinum</td><td className="px-6 py-4">Net revenue &gt; $15K and Visitors &gt; 15K last month</td></tr>
                         <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-6 py-4 font-bold text-amber-600">Gold</td><td className="px-6 py-4">Net revenue &gt; $2K and Visitors &gt; 2K last month</td></tr>
                         <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-6 py-4 font-bold text-slate-600">Silver</td><td className="px-6 py-4">Did not reach Platinum or Gold thresholds</td></tr>
-                        <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-6 py-4 font-bold text-[#16A34A]">Starter</td><td className="px-6 py-4">Less than 30 days in TrendFam</td></tr>
+                        <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-6 py-4 font-bold text-[#FF6B00]">Starter</td><td className="px-6 py-4">Less than 30 days in TrendFam</td></tr>
                       </tbody>
                     </table>
                   </div>
@@ -410,7 +410,7 @@ export default function GulfPage() {
                   <h3 className="text-2xl font-bold mb-6 text-[#111827]">Monthly Ranking Coin Bonuses</h3>
                   <div className="overflow-hidden border border-[#e5e7eb] rounded-2xl mb-4">
                     <table className="w-full text-sm text-left border-collapse">
-                      <thead className="bg-[#2563EB] text-white">
+                      <thead className="bg-[#FE9417] text-[#111111]">
                         <tr>
                           <th className="px-4 py-4 font-semibold">Ranking among all influencers</th>
                           <th className="px-4 py-4 font-semibold">Coin Bonus (USD)</th>
@@ -418,18 +418,18 @@ export default function GulfPage() {
                         </tr>
                       </thead>
                       <tbody>
-                        <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium">1–10</td><td className="px-4 py-3 text-[#2563EB] font-bold">$1,500</td><td className="px-4 py-3 text-[#4b5563]">First week of month</td></tr>
-                        <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-4 py-3 font-medium">11–20</td><td className="px-4 py-3 text-[#2563EB] font-bold">$1,000</td><td className="px-4 py-3 text-[#4b5563]">First week of month</td></tr>
-                        <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium">21–50</td><td className="px-4 py-3 text-[#2563EB] font-bold">$500</td><td className="px-4 py-3 text-[#4b5563]">First week of month</td></tr>
-                        <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-4 py-3 font-medium">51–125</td><td className="px-4 py-3 text-[#2563EB] font-bold">$250</td><td className="px-4 py-3 text-[#4b5563]">Second week of month</td></tr>
-                        <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium">126–250</td><td className="px-4 py-3 text-[#2563EB] font-bold">$100</td><td className="px-4 py-3 text-[#4b5563]">Second week of month</td></tr>
-                        <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-4 py-3 font-medium">251–500</td><td className="px-4 py-3 text-[#2563EB] font-bold">$75</td><td className="px-4 py-3 text-[#4b5563]">Third week of month</td></tr>
-                        <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium">501–1000</td><td className="px-4 py-3 text-[#2563EB] font-bold">$50</td><td className="px-4 py-3 text-[#4b5563]">Third week of month</td></tr>
+                        <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium">1–10</td><td className="px-4 py-3 text-[#FE9417] font-bold">$1,500</td><td className="px-4 py-3 text-[#4b5563]">First week of month</td></tr>
+                        <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-4 py-3 font-medium">11–20</td><td className="px-4 py-3 text-[#FE9417] font-bold">$1,000</td><td className="px-4 py-3 text-[#4b5563]">First week of month</td></tr>
+                        <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium">21–50</td><td className="px-4 py-3 text-[#FE9417] font-bold">$500</td><td className="px-4 py-3 text-[#4b5563]">First week of month</td></tr>
+                        <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-4 py-3 font-medium">51–125</td><td className="px-4 py-3 text-[#FE9417] font-bold">$250</td><td className="px-4 py-3 text-[#4b5563]">Second week of month</td></tr>
+                        <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium">126–250</td><td className="px-4 py-3 text-[#FE9417] font-bold">$100</td><td className="px-4 py-3 text-[#4b5563]">Second week of month</td></tr>
+                        <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-4 py-3 font-medium">251–500</td><td className="px-4 py-3 text-[#FE9417] font-bold">$75</td><td className="px-4 py-3 text-[#4b5563]">Third week of month</td></tr>
+                        <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium">501–1000</td><td className="px-4 py-3 text-[#FE9417] font-bold">$50</td><td className="px-4 py-3 text-[#4b5563]">Third week of month</td></tr>
                       </tbody>
                     </table>
                   </div>
                   <p className="text-xs text-[#4b5563] flex items-start gap-2">
-                    <AlertTriangle className="w-4 h-4 shrink-0 text-[#2563EB]" />
+                    <AlertTriangle className="w-4 h-4 shrink-0 text-[#FE9417]" />
                     Note: Rankings update daily. Only influencers in the top 1,000 on the last day of each month qualify for coin bonuses.
                   </p>
                 </div>
@@ -453,32 +453,32 @@ export default function GulfPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                 <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/5 blur-2xl rounded-full" />
-                  <Coins className="w-10 h-10 text-[#2563EB] mb-4" />
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#FE9417]/5 blur-2xl rounded-full" />
+                  <Coins className="w-10 h-10 text-[#FE9417] mb-4" />
                   <h3 className="text-2xl font-bold mb-4 text-[#111827]">Reward Coins</h3>
                   <ul className="space-y-3 text-[#4b5563]">
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#16A34A] shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 text-[#FF6B00] shrink-0" />
                       <span>Earned from in-app engagement tools, spin wheels, and similar activities.</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#16A34A] shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 text-[#FF6B00] shrink-0" />
                       <span>Can cover up to <strong className="text-[#111827]">15–20%</strong> of your order value.</span>
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/5 blur-2xl rounded-full" />
-                  <RefreshCw className="w-10 h-10 text-[#2563EB] mb-4" />
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#FE9417]/5 blur-2xl rounded-full" />
+                  <RefreshCw className="w-10 h-10 text-[#FE9417] mb-4" />
                   <h3 className="text-2xl font-bold mb-4 text-[#111827]">Refund Coins</h3>
                   <ul className="space-y-3 text-[#4b5563]">
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#16A34A] shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 text-[#FF6B00] shrink-0" />
                       <span>Earned from bonuses, monthly rewards, referrals, first-time shares, and order refunds.</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#16A34A] shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 text-[#FF6B00] shrink-0" />
                       <span>Can cover <strong className="text-[#111827]">100%</strong> of your order value.</span>
                     </li>
                   </ul>
@@ -490,19 +490,19 @@ export default function GulfPage() {
                   <h3 className="text-2xl font-bold mb-6 text-[#111827]">First Time Share Coins</h3>
                   <div className="overflow-hidden border border-[#e5e7eb] rounded-2xl mb-4">
                     <table className="w-full text-sm text-left border-collapse">
-                      <thead className="bg-[#2563EB] text-white">
+                      <thead className="bg-[#FE9417] text-[#111111]">
                         <tr>
                           <th className="px-6 py-4 font-semibold">Followers</th>
                           <th className="px-6 py-4 font-semibold">Coin Reward</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-6 py-4 font-medium">Hidden Follower</td><td className="px-6 py-4 text-[#2563EB] font-bold">$50</td></tr>
-                        <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-6 py-4 font-medium">10K–49K</td><td className="px-6 py-4 text-[#2563EB] font-bold">$50</td></tr>
-                        <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-6 py-4 font-medium">50K–99K</td><td className="px-6 py-4 text-[#2563EB] font-bold">$100</td></tr>
-                        <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-6 py-4 font-medium">100K+</td><td className="px-6 py-4 text-[#2563EB] font-bold">$150</td></tr>
-                        <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-6 py-4 font-medium">500K+</td><td className="px-6 py-4 text-[#2563EB] font-bold">$200</td></tr>
-                        <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-6 py-4 font-medium rounded-bl-lg">1M+</td><td className="px-6 py-4 text-[#2563EB] font-bold rounded-br-lg">$300</td></tr>
+                        <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-6 py-4 font-medium">Hidden Follower</td><td className="px-6 py-4 text-[#FE9417] font-bold">$50</td></tr>
+                        <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-6 py-4 font-medium">10K–49K</td><td className="px-6 py-4 text-[#FE9417] font-bold">$50</td></tr>
+                        <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-6 py-4 font-medium">50K–99K</td><td className="px-6 py-4 text-[#FE9417] font-bold">$100</td></tr>
+                        <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-6 py-4 font-medium">100K+</td><td className="px-6 py-4 text-[#FE9417] font-bold">$150</td></tr>
+                        <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-6 py-4 font-medium">500K+</td><td className="px-6 py-4 text-[#FE9417] font-bold">$200</td></tr>
+                        <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-6 py-4 font-medium rounded-bl-lg">1M+</td><td className="px-6 py-4 text-[#FE9417] font-bold rounded-br-lg">$300</td></tr>
                       </tbody>
                     </table>
                   </div>
@@ -515,10 +515,10 @@ export default function GulfPage() {
                   <h3 className="text-2xl font-bold mb-6 text-[#111827]">Important Restrictions</h3>
                   <ul className="space-y-4 text-sm text-[#4b5563]">
                     <li className="flex items-start gap-3"><Ban className="w-5 h-5 text-red-500 shrink-0" /> <span className="text-[#374151]">Coins cannot be used on electronics purchases</span></li>
-                    <li className="flex items-start gap-3"><Clock className="w-5 h-5 text-[#2563EB] shrink-0" /> <span className="text-[#374151]">Coins expire 30 days after being awarded</span></li>
+                    <li className="flex items-start gap-3"><Clock className="w-5 h-5 text-[#FE9417] shrink-0" /> <span className="text-[#374151]">Coins expire 30 days after being awarded</span></li>
                     <li className="flex items-start gap-3"><Ban className="w-5 h-5 text-red-500 shrink-0" /> <span className="text-[#374151]">Coins are not redeemable for cash</span></li>
-                    <li className="flex items-start gap-3"><AlertTriangle className="w-5 h-5 text-[#2563EB] shrink-0" /> <span className="text-[#374151]">Shopping from another influencer&apos;s link using coins will not generate commission for that influencer</span></li>
-                    <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-[#16A34A] shrink-0" /> <span className="text-[#374151]">Coin earnings are separate from commission payments</span></li>
+                    <li className="flex items-start gap-3"><AlertTriangle className="w-5 h-5 text-[#FE9417] shrink-0" /> <span className="text-[#374151]">Shopping from another influencer&apos;s link using coins will not generate commission for that influencer</span></li>
+                    <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-[#FF6B00] shrink-0" /> <span className="text-[#374151]">Coin earnings are separate from commission payments</span></li>
                   </ul>
                 </div>
               </div>
@@ -527,7 +527,7 @@ export default function GulfPage() {
 
 
           {/* GULF SECTION 10 — Brand Offers */}
-          <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
+          <section className="py-24 border-border bg-white border-b border-[#E5E5E5]">
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -541,15 +541,15 @@ export default function GulfPage() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                <div className="border border-white/10 bg-white/5 p-6 rounded-2xl flex flex-col items-center text-center">
+                <div className="border border-[#E5E5E5] bg-white/5 p-6 rounded-2xl flex flex-col items-center text-center">
                   <span className="text-4xl mb-4">💰</span>
                   <p className="font-medium">Higher commission rates set directly by sellers</p>
                 </div>
-                <div className="border border-white/10 bg-white/5 p-6 rounded-2xl flex flex-col items-center text-center">
+                <div className="border border-[#E5E5E5] bg-white/5 p-6 rounded-2xl flex flex-col items-center text-center">
                   <span className="text-4xl mb-4">⏱️</span>
                   <p className="font-medium">7-day attribution window (vs. standard 2 days)</p>
                 </div>
-                <div className="border border-white/10 bg-white/5 p-6 rounded-2xl flex flex-col items-center text-center">
+                <div className="border border-[#E5E5E5] bg-white/5 p-6 rounded-2xl flex flex-col items-center text-center">
                   <span className="text-4xl mb-4">🤝</span>
                   <p className="font-medium">Direct exposure to brands and product variety</p>
                 </div>
@@ -566,7 +566,7 @@ export default function GulfPage() {
                     { step: "3", title: "Share Link", desc: "Click \"Share Link\" to generate your unique Commission-Based Brand Partnership link and start sharing" }
                   ].map((step, i) => (
                     <div key={i} className="relative z-10 flex flex-col items-center text-center">
-                      <div className="w-16 h-16 rounded-full bg-zinc-900 border-2 border-white/20 flex items-center justify-center text-xl font-bold mb-6 shadow-xl">
+                      <div className="w-16 h-16 rounded-full bg-[#F5F5F5] border-2 border-[#E5E5E5] flex items-center justify-center text-xl font-bold mb-6 shadow-xl">
                         {step.step}
                       </div>
                       <h4 className="font-bold text-lg mb-2">{step.title}</h4>
@@ -577,20 +577,20 @@ export default function GulfPage() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="border-l-4 border-[#2563EB] bg-[#2563EB]/10 p-6 rounded-r-xl">
+                <div className="border-l-4 border-[#FE9417] bg-[#FE9417]/10 p-6 rounded-r-xl">
                   <div className="flex items-center gap-3 mb-2">
-                    <ShieldAlert className="w-5 h-5 text-[#2563EB]" />
-                    <h4 className="font-bold text-[#2563EB]">Important Note</h4>
+                    <ShieldAlert className="w-5 h-5 text-[#FE9417]" />
+                    <h4 className="font-bold text-[#FE9417]">Important Note</h4>
                   </div>
                   <p className="text-sm text-foreground/80 leading-relaxed">
                     Always generate links from the Influencer Panel — not from within the seller&apos;s store. Links acquired inside the store will only yield standard affiliate earnings, not the higher brand partnership commission rate.
                   </p>
                 </div>
                 
-                <div className="border-l-4 border-[#2563EB] bg-[#2563EB]/10 p-6 rounded-r-xl">
+                <div className="border-l-4 border-[#FE9417] bg-[#FE9417]/10 p-6 rounded-r-xl">
                   <div className="flex items-center gap-3 mb-2">
-                    <TrendingUp className="w-5 h-5 text-[#2563EB]" />
-                    <h4 className="font-bold text-[#2563EB]">Reporting Note</h4>
+                    <TrendingUp className="w-5 h-5 text-[#FE9417]" />
+                    <h4 className="font-bold text-[#FE9417]">Reporting Note</h4>
                   </div>
                   <p className="text-sm text-foreground/80 leading-relaxed">
                     Track brand offer performance in the Reports section under the &apos;Brand Collaborations&apos; tab. Filter up to 7 days after the sharing date to see total offer performance.
@@ -601,7 +601,7 @@ export default function GulfPage() {
           </section>
 
           {/* GULF SECTION 11 — Fair Play Policy */}
-          <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
+          <section className="py-24 border-border bg-white border-b border-[#E5E5E5]">
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -647,9 +647,9 @@ export default function GulfPage() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-6 border border-white/10 bg-white/5 rounded-xl">
+                <div className="p-6 border border-[#E5E5E5] bg-white/5 rounded-xl">
                   <p className="text-sm text-muted-foreground">
-                    <strong className="text-white">Note on WhatsApp/Telegram:</strong> Sharing links in WhatsApp, Telegram, or Facebook Groups is permitted, as these are considered social media. However, collusive transactions within closed groups are still flagged by our risk scoring system.
+                    <strong className="text-[#111111]">Note on WhatsApp/Telegram:</strong> Sharing links in WhatsApp, Telegram, or Facebook Groups is permitted, as these are considered social media. However, collusive transactions within closed groups are still flagged by our risk scoring system.
                   </p>
                 </div>
 
@@ -663,8 +663,8 @@ export default function GulfPage() {
           </section>
 
       {/* 9. CTA SECTION */}
-      <section className="py-32 relative overflow-hidden bg-[#000000] border-b border-[#1a1a1a]">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#2563EB]/10 pointer-events-none" />
+      <section className="py-32 relative overflow-hidden bg-white border-b border-[#E5E5E5]">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#FE9417]/10 pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -678,7 +678,7 @@ export default function GulfPage() {
           </p>
           <Link 
             href="/contact?type=creator"
-            className="inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-[#2563EB] to-[#16A34A] px-10 text-lg font-bold text-black transition-all hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(37,99,235,0.4)]"
+            className="inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] px-10 text-lg font-bold text-black transition-all hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(37,99,235,0.4)]"
           >
             Join the Creator Network ↗
           </Link>

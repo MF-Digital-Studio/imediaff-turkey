@@ -90,7 +90,7 @@ export default function ScrollHero() {
                 WebkitMaskImage: 'radial-gradient(ellipse 75% 65% at 50% 50%, black 40%, transparent 100%)'
               }}
               initial={{ opacity: 0, scale: shouldReduceMotion ? 1 : 0.97 }}
-              animate={{ opacity: 0.12, scale: 1 }}
+              animate={{ opacity: 0.1, scale: 1 }}
               transition={{ duration: 1.5, delay: 0.2, ease: easeCustom }}
             >
               <img
@@ -98,7 +98,7 @@ export default function ScrollHero() {
                 alt="World Map Silhouette"
                 className="w-full h-auto max-h-[80vh] object-contain"
                 style={{
-                  filter: 'invert(27%) sepia(91%) saturate(2258%) hue-rotate(216deg) brightness(105%) contrast(115%) drop-shadow(0 0 20px rgba(37, 99, 235, 0.2))',
+                  filter: 'grayscale(100%) brightness(0%)',
                 }}
                 draggable={false}
               />
@@ -139,7 +139,7 @@ export default function ScrollHero() {
           style={{ opacity: textOpacity, scale: textScale }}
         >
           <motion.p
-            className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-[#2563EB] mb-6"
+            className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-[#FE9417] mb-6"
             initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: easeCustom }}
@@ -167,7 +167,7 @@ export default function ScrollHero() {
             </motion.span>{" "}
             <br className="hidden md:block" />
             <motion.span
-              className="bg-gradient-to-br from-[#2563EB] to-[#16A34A] bg-clip-text text-transparent inline-block"
+              className="bg-gradient-to-br from-[#FE9417] to-[#FF6B00] bg-clip-text text-transparent inline-block"
               initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.6, ease: easeCustom }}
@@ -193,7 +193,7 @@ export default function ScrollHero() {
           >
             <Link
               href="/contact?type=brand"
-              className="group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold text-white transition-all hover:scale-105 bg-gradient-to-br from-[#2563EB] to-[#16A34A] shadow-[0_4px_14px_0_rgba(37,99,235,0.2)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.4)]"
+              className="group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold text-[#111111] transition-all hover:scale-105 bg-gradient-to-br from-[#FE9417] to-[#FF6B00] shadow-[0_4px_14px_0_rgba(37,99,235,0.2)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.4)]"
             >
               <span className="relative z-10 flex items-center gap-2">
                 Start a Project
@@ -203,7 +203,7 @@ export default function ScrollHero() {
 
             <Link
               href="/talent"
-              className="inline-flex items-center justify-center rounded-full border-2 border-[#0F172A] bg-transparent px-8 py-4 font-semibold text-[#0F172A] transition-all hover:bg-[#0F172A] hover:text-white"
+              className="inline-flex items-center justify-center rounded-full border-2 border-[#0F172A] bg-transparent px-8 py-4 font-semibold text-[#0F172A] transition-all hover:bg-[#0F172A] hover:text-[#111111]"
             >
               I am a Creator
             </Link>

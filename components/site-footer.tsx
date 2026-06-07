@@ -45,11 +45,11 @@ export default function SiteFooter() {
     <footer className="relative border-t border-border bg-background">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-14 grid grid-cols-1 md:grid-cols-12 gap-10">
         <div className="md:col-span-3">
-          <Link href="/" className="font-display text-lg font-semibold tracking-tight text-white">imediaff<span className="text-[#2563EB]">.</span></Link>
-          <p className="mt-4 max-w-sm text-sm text-white/60 leading-relaxed font-sans">A 360° digital agency connecting ambitious brands and world-class creators across Dubai and the MENA region.</p>
+          <Link href="/" className="font-display text-lg font-semibold tracking-tight text-[#111111]">imediaff<span className="text-[#FE9417]">.</span></Link>
+          <p className="mt-4 max-w-sm text-sm text-[#666666] leading-relaxed font-sans">A 360° digital agency connecting ambitious brands and world-class creators across Dubai and the MENA region.</p>
           <div className="mt-6 flex flex-wrap gap-2">
             {SOCIAL.map((s) => (
-              <a key={s.label} href={s.href} className="inline-flex items-center gap-2 border border-white/20 px-3 py-1.5 text-xs font-mono tracking-widest text-white/60 hover:border-white hover:text-white transition-colors">{s.label}<span aria-hidden>↗</span></a>
+              <a key={s.label} href={s.href} className="inline-flex items-center gap-2 border border-[#E5E5E5] px-3 py-1.5 text-xs font-mono tracking-widest text-[#666666] hover:border-[#E5E5E5] hover:text-[#111111] transition-colors">{s.label}<span aria-hidden>↗</span></a>
             ))}
           </div>
           <div className="mt-8">
@@ -63,13 +63,13 @@ export default function SiteFooter() {
 
         {Object.entries(FOOTER_LINKS).map(([heading, items]) => (
           <div key={heading} className={heading === "Offices" ? "md:col-span-3" : "md:col-span-2"}>
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-white font-bold">/ {heading}</p>
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#111111] font-bold">/ {heading}</p>
             <ul className="mt-6 flex flex-col gap-4">
               {items.map((item) => (
                 <li key={item.label}>
                   <Link
                     href={item.href}
-                    className={`text-sm text-white/60 hover:text-white transition-colors ${item.isAddress ? "font-mono text-xs leading-loose" : "font-sans"}`}
+                    className={`text-sm text-[#666666] hover:text-[#111111] transition-colors ${item.isAddress ? "font-mono text-xs leading-loose" : "font-sans"}`}
                   >
                     {item.label}
                   </Link>
@@ -80,14 +80,14 @@ export default function SiteFooter() {
         ))}
       </div>
 
-      <div className="border-t border-white/10">
+      <div className="border-t border-[#E5E5E5]">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <p className="font-mono text-[10px] uppercase tracking-widest text-white/40">© {new Date().getFullYear()} imediaff Global. All rights reserved.</p>
+          <p className="font-mono text-[10px] uppercase tracking-widest text-[#888888]">© {new Date().getFullYear()} imediaff Global. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <Link href="#" className="font-mono text-[10px] uppercase tracking-widest text-white/40 hover:text-white transition-colors">KVKK / Privacy Policy</Link>
-            <p className="font-mono font-bold text-[10px] uppercase tracking-widest text-white/40">Powered by MF Digital Studio</p>
+            <Link href="#" className="font-mono text-[10px] uppercase tracking-widest text-[#888888] hover:text-[#111111] transition-colors">KVKK / Privacy Policy</Link>
+            <p className="font-mono font-bold text-[10px] uppercase tracking-widest text-[#888888]">Powered by MF Digital Studio</p>
           </div>
-          <p className="font-mono text-[10px] uppercase tracking-widest text-white/40">Dubai / Riyadh / London / Istanbul</p>
+          <p className="font-mono text-[10px] uppercase tracking-widest text-[#888888]">Dubai / Riyadh / London / Istanbul</p>
         </div>
       </div>
     </footer>

@@ -32,9 +32,9 @@ const REPEL_STRENGTH = 2.2
 const FRICTION       = 0.88
 
 const BRAND_PALETTE = [
-  { color: "#2563EB", glow: "rgba(37,99,235," },
-  { color: "#2563EB", glow: "rgba(255,138,30," },
-  { color: "#2563EB", glow: "rgba(255,189,30," },
+  { color: "#FE9417", glow: "rgba(37,99,235," },
+  { color: "#FE9417", glow: "rgba(255,138,30," },
+  { color: "#FE9417", glow: "rgba(255,189,30," },
 ]
 
 // ─── DATA ─────────────────────────────────────────────────────────────────────
@@ -247,7 +247,7 @@ function MetricCard({
       transition={{ duration: 0.72, delay: index * 0.11, ease: [0.22, 1, 0.36, 1] }}
       className="relative flex flex-col justify-center px-6 py-10 border-r border-white/[0.07] last:border-r-0"
     >
-      <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-white/25 mb-4">
+      <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-[#FE9417] mb-4">
         0{index + 1}
       </p>
 
@@ -263,15 +263,15 @@ function MetricCard({
         {display}<span>{suffix}</span>
       </p>
 
-      <p className="mt-4 text-sm font-semibold text-white/85 leading-snug tracking-tight">{label}</p>
-      <p className="mt-0.5 text-xs text-white/40 font-medium tracking-tight">{sublabel}</p>
+      <p className="mt-4 text-sm font-semibold text-[#555555] leading-snug tracking-tight">{label}</p>
+      <p className="mt-0.5 text-xs text-[#888888] font-medium tracking-tight">{sublabel}</p>
 
       <motion.div
         initial={{ scaleX: 0 }}
         animate={inView ? { scaleX: 1 } : {}}
         transition={{ duration: 0.9, delay: index * 0.11 + 0.3, ease: [0.22, 1, 0.36, 1] }}
         style={{ originX: 0 }}
-        className="absolute bottom-0 left-6 right-6 h-[1.5px] bg-gradient-to-br from-[#2563EB] to-[#16A34A] opacity-50"
+        className="absolute bottom-0 left-6 right-6 h-[1.5px] bg-gradient-to-br from-[#FE9417] to-[#FF6B00] opacity-50"
       />
     </motion.div>
   )
@@ -353,7 +353,7 @@ export default function AuthorityMetrics() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-black"
+      className="relative overflow-hidden bg-white"
       aria-label="Authority Metrics"
     >
       {/* ── STATIC ATMOSPHERIC GRADIENTS (non-animated, CSS only) ─────────── */}
@@ -409,7 +409,7 @@ export default function AuthorityMetrics() {
               initial={{ opacity: 0, y: 14 }}
               animate={contentInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/30 mb-6"
+              className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FE9417] mb-6"
             >
               / Trusted Data
             </motion.p>
@@ -418,12 +418,12 @@ export default function AuthorityMetrics() {
               initial={{ opacity: 0, y: 24 }}
               animate={contentInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.75, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-              className="font-sans font-bold text-white leading-[0.92] tracking-[-0.03em] text-[clamp(2.2rem,5.5vw,4.5rem)] text-balance"
+              className="font-sans font-bold text-[#111111] leading-[0.92] tracking-[-0.03em] text-[clamp(2.2rem,5.5vw,4.5rem)] text-balance"
             >
               iMediaff Global —{" "}
               <span
                 style={{
-                  backgroundImage: "linear-gradient(135deg, #2563EB 0%, #16A34A 100%)",
+                  backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -452,9 +452,9 @@ export default function AuthorityMetrics() {
             >
               <Link
                 href="/about"
-                className="group inline-flex items-center gap-3 rounded-full px-10 py-4 text-sm font-bold uppercase tracking-widest text-white transition-all duration-300 hover:scale-105"
+                className="group inline-flex items-center gap-3 rounded-full px-10 py-4 text-sm font-bold uppercase tracking-widest text-[#111111] transition-all duration-300 hover:scale-105"
                 style={{
-                  background: "linear-gradient(90deg, #2563EB 0%, #2563EB 50%, #2563EB 100%)",
+                  background: "linear-gradient(90deg, #FE9417 0%, #FE9417 50%, #FE9417 100%)",
                   boxShadow: "0 0 30px rgba(37,99,235,0.45), inset 0 0 12px rgba(255,255,255,0.07)",
                   border: "1px solid rgba(255,255,255,0.10)",
                 }}

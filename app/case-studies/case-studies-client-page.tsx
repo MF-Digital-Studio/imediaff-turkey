@@ -78,14 +78,14 @@ function ParallaxImage({
     <div
       ref={ref}
       className={`relative w-full aspect-[4/3] md:aspect-[4/5] lg:aspect-[16/10] overflow-hidden rounded-[2rem] ${
-        theme === "white" ? "shadow-2xl" : "border border-white/10"
+        theme === "white" ? "shadow-2xl" : "border border-[#E5E5E5]"
       }`}
     >
       <motion.div style={{ y }} className="absolute inset-[-10%] w-[120%] h-[120%]">
         <Image src={src} alt={alt} fill className="object-cover" unoptimized />
         {/* Subtle overlay to ensure text/UI stands out if needed, or just for mood */}
         {theme === "black" && (
-          <div className="absolute inset-0 bg-black/10 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-black/5 mix-blend-multiply" />
         )}
       </motion.div>
     </div>
@@ -138,23 +138,23 @@ const CASE_STUDIES = [
 // ── Main Component ───────────────────────────────────────────────────────────
 export default function CaseStudiesClientPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-white text-[#111111]">
       
       {/* ── Section 1: Hero (Black Theme) ────────────────────────────────────── */}
-      <section className="bg-black text-white pt-32 pb-16 md:pt-48 md:pb-24 border-b border-white/10">
+      <section className="bg-white text-[#111111] pt-32 pb-16 md:pt-48 md:pb-24 border-b border-[#E5E5E5]">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
             / Case Studies
           </p>
           <h1 className="mt-6 font-display text-[clamp(3rem,9vw,9rem)] font-bold leading-[0.88] tracking-[-0.04em] text-balance">
             Market Success <br /> Stories.
           </h1>
-          <p className="mt-8 max-w-2xl text-lg md:text-xl text-white/60 leading-relaxed font-sans">
+          <p className="mt-8 max-w-2xl text-lg md:text-xl text-[#666666] leading-relaxed font-sans">
             Explore how we engineer influence, scale presence, and drive algorithmic dominance for global enterprises across the MENA and TR markets.
           </p>
         </motion.div>
@@ -171,7 +171,7 @@ export default function CaseStudiesClientPage() {
             className={`py-20 md:py-32 overflow-hidden ${
               isWhite
                 ? "bg-white text-black border-b border-gray-200"
-                : "bg-black text-white border-b border-white/10"
+                : "bg-white text-[#111111] border-b border-[#E5E5E5]"
             }`}
           >
             <div className="mx-auto max-w-[1600px] px-6 md:px-10">
@@ -186,28 +186,28 @@ export default function CaseStudiesClientPage() {
                   className={`flex flex-col ${isEven ? "lg:order-2" : "lg:order-1"}`}
                 >
                   <div className="flex items-center gap-4 mb-8">
-                    <p className={`font-mono text-xs uppercase tracking-[0.2em] font-bold ${isWhite ? 'text-black' : 'text-white'}`}>
+                    <p className={`font-mono text-xs uppercase tracking-[0.2em] font-bold ${isWhite ? 'text-black' : 'text-[#111111]'}`}>
                       {study.client}
                     </p>
-                    <div className={`h-px w-8 ${isWhite ? 'bg-black/20' : 'bg-white/20'}`} />
-                    <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#2563EB]">
+                    <div className={`h-px w-8 ${isWhite ? 'bg-white/20' : 'bg-white/20'}`} />
+                    <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#FE9417]">
                       {study.sector}
                     </p>
                   </div>
 
-                  <h2 className={`font-display text-[clamp(2.5rem,4.5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[1.05] mb-8 ${isWhite ? 'text-black' : 'text-white'}`}>
+                  <h2 className={`font-display text-[clamp(2.5rem,4.5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[1.05] mb-8 ${isWhite ? 'text-black' : 'text-[#111111]'}`}>
                     {study.title}
                   </h2>
                   
-                  <p className={`text-xl md:text-2xl leading-relaxed font-sans mb-12 ${isWhite ? 'text-gray-700' : 'text-white/80'}`}>
+                  <p className={`text-xl md:text-2xl leading-relaxed font-sans mb-12 ${isWhite ? 'text-gray-700' : 'text-[#555555]'}`}>
                     {study.strategy}
                   </p>
 
                   {/* ── KPI Grid ── */}
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12">
                     {study.kpis.map((kpi, i) => (
-                      <div key={kpi.label} className="flex flex-col border-l-2 border-gradient pl-4" style={{ borderImage: "linear-gradient(to bottom, #2563EB, #16A34A) 1" }}>
-                        <p className="font-mono text-4xl md:text-5xl font-bold bg-gradient-to-br from-[#2563EB] to-[#16A34A] bg-clip-text text-transparent mb-2">
+                      <div key={kpi.label} className="flex flex-col border-l-2 border-gradient pl-4" style={{ borderImage: "linear-gradient(to bottom, #FE9417, #FF6B00) 1" }}>
+                        <p className="font-mono text-4xl md:text-5xl font-bold bg-gradient-to-br from-[#FE9417] to-[#FF6B00] bg-clip-text text-transparent mb-2">
                           <Counter
                             to={kpi.to}
                             prefix={kpi.prefix}
@@ -215,7 +215,7 @@ export default function CaseStudiesClientPage() {
                             decimals={kpi.decimals}
                           />
                         </p>
-                        <p className={`font-mono text-[10px] uppercase tracking-[0.15em] font-semibold ${isWhite ? 'text-gray-500' : 'text-white/40'}`}>
+                        <p className={`font-mono text-[10px] uppercase tracking-[0.15em] font-semibold ${isWhite ? 'text-gray-500' : 'text-[#888888]'}`}>
                           {kpi.label}
                         </p>
                       </div>
@@ -226,11 +226,11 @@ export default function CaseStudiesClientPage() {
                   <div>
                     <button className={`group relative inline-flex items-center justify-center overflow-hidden rounded-full border-2 px-8 py-4 font-mono text-sm font-bold uppercase tracking-widest transition-all ${
                       isWhite 
-                        ? "border-[#2563EB]/30 text-black hover:border-transparent" 
-                        : "border-[#2563EB]/30 text-white hover:border-transparent"
+                        ? "border-[#FE9417]/30 text-black hover:border-transparent" 
+                        : "border-[#FE9417]/30 text-[#111111] hover:border-transparent"
                     }`}>
-                      <span className="absolute inset-0 bg-gradient-to-br from-[#2563EB] to-[#16A34A] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                      <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+                      <span className="absolute inset-0 bg-gradient-to-br from-[#FE9417] to-[#FF6B00] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                      <span className="relative z-10 transition-colors duration-300 group-hover:text-[#111111]">
                         View Detailed Report
                       </span>
                     </button>

@@ -49,10 +49,27 @@ export default function ScrollHero() {
         >
           <div className="relative w-full max-w-[1400px] aspect-[16/9] md:aspect-video px-6 flex items-center justify-center">
 
-
+            {/* Minimalist Turkey Map Silhouette with Soft Elliptical Edges */}
+            <motion.div
+              className="absolute inset-0 flex items-center justify-center pointer-events-none"
+              style={{
+                maskImage: 'radial-gradient(ellipse 65% 55% at 50% 50%, black 45%, transparent 100%)',
+                WebkitMaskImage: 'radial-gradient(ellipse 65% 55% at 50% 50%, black 45%, transparent 100%)'
+              }}
+              initial={{ opacity: 0, scale: shouldReduceMotion ? 1 : 0.97 }}
+              animate={{ opacity: 0.14, scale: 1 }}
+              transition={{ duration: 1.5, delay: 0.2, ease: easeCustom }}
+            >
+              <img
+                src="/turkey-map.svg"
+                alt="Türkiye Haritası"
+                className="w-full h-auto max-h-[75vh] object-contain"
+                draggable={false}
+              />
+            </motion.div>
 
             {/* Premium Ambient Accent Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full bg-gradient-to-r from-blue-500/20 to-emerald-500/20 blur-[130px] opacity-[0.10] pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full bg-gradient-to-r from-[#FE9417]/20 to-[#FF6B00]/20 blur-[130px] opacity-[0.12] pointer-events-none" />
 
             {/* Central Anchor: iMediaff Logo */}
             <motion.div

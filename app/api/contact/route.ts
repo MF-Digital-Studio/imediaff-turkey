@@ -2,10 +2,10 @@ import { NextResponse } from "next/server"
 import { Resend } from "resend"
 
 const SUBJECTS_BY_TYPE = {
-  brand: "New Brand Inquiry - imediaff Global",
-  creator: "New Creator Application - imediaff Global",
-  trendyol: "New Trendyol Affiliate Application - imediaff Global",
-  noon: "New Noon Affiliate Application - imediaff Global",
+  brand: "Yeni Marka Başvurusu - imediaff Türkiye",
+  creator: "Yeni Creator Başvurusu - imediaff Türkiye",
+  trendyol: "Yeni Trendyol Affiliate Başvurusu - imediaff Türkiye",
+  noon: "Yeni Noon Affiliate Başvurusu - imediaff Türkiye",
 } as const
 
 const FORM_LABELS: Record<string, string> = {
@@ -254,7 +254,7 @@ export async function POST(request: Request) {
               </div>
             </div>
             <div class="footer">
-              This inquiry was submitted natively from the imediaff Global website.
+              Bu başvuru imediaff Türkiye web sitesinden yapılmıştır.
             </div>
           </div>
         </body>
@@ -269,7 +269,7 @@ Submitted At: ${dateTimeString} (UTC)
 --------------------------------------------------
 ${textContentFields}${messageVal ? `${formType === "creator" ? "Is there anything else you would like to mention?" : "Message / Details"}: ${messageVal}\n` : ""}
 --------------------------------------------------
-This inquiry was submitted natively from the imediaff Global website.
+Bu başvuru imediaff Türkiye web sitesinden yapılmıştır.
     `
 
     // 5. Send email via Resend

@@ -3,7 +3,6 @@ import AuthorityMetrics from "@/components/home/authority-metrics"
 import RegionsGrid from "@/components/home/regions-grid"
 import AffiliatePreview from "@/components/home/affiliate-preview"
 import GlobalValue from "@/components/home/global-value"
-import StrategicGateway from "@/components/home/strategic-gateway"
 import ClientMarquee from "@/components/home/client-marquee"
 import StickyManifesto from "@/components/home/sticky-manifesto"
 import ServicesPreview from "@/components/home/services-preview"
@@ -19,7 +18,6 @@ export default function HomePage() {
       <AffiliatePreview />
       <ClientMarquee />
       <GlobalValue />
-      <StrategicGateway />
       <StickyManifesto />
       <ServicesPreview />
       <FeaturedEvents />

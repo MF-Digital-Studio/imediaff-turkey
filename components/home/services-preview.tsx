@@ -7,8 +7,8 @@ import { Sparkles, Target, Users, LineChart, Globe2, LayoutDashboard } from "luc
 const SERVICES = [
   { icon: Users, title: "Affiliate Pazarlama Yönetimi", desc: "Trendyol TrendFam affiliate program yönetimi: onboarding, takip ve ödemeler." },
   { icon: Globe2, title: "Influencer İş Birlikleri", desc: "Markalar ile doğrulanmış içerik üreticileri arasında 1 yıllık performans sözleşmeleriyle yapılandırılmış eşleştirme." },
-  { icon: Target, title: "Kampanya Prodüksiyonu", desc: "Türkiye pazarında ölçeklenen markalar için yüksek kaliteli içerik ve reklam prodüksiyonu." },
-  { icon: LayoutDashboard, title: "Pazar Stratejisi", desc: "Türkiye'de sürdürülebilir büyüme için veri odaklı strateji ve operasyonel altyapı." },
+  { icon: Target, title: "Kampanya Prodüksiyonu", desc: "Ölçeklenen markalar için yüksek kaliteli içerik ve reklam prodüksiyonu." },
+  { icon: LayoutDashboard, title: "Pazar Stratejisi", desc: "Sürdürülebilir büyüme için veri odaklı strateji ve operasyonel altyapı." },
   { icon: Sparkles, title: "Hukuki & Finansal Danışmanlık", desc: "Sözleşme mimarisi, KVKK uyumu ve ödeme yönetimi." },
   { icon: LineChart, title: "İçerik Üretici Danışmanlığı", desc: "Birebir danışmanlık, webinarlar ve performans analitiğiyle içerik üreticilerinin kazancını maksimize ediyoruz." },
 ]
@@ -55,7 +55,7 @@ export default function ServicesPreview() {
               "Affiliate marketing and e-commerce performance",
               "Influencer creating content for brand partnership",
               "Professional campaign production and content creation",
-              "Global market entry strategy and regional expansion",
+              "Pazara giriş stratejisi ve bölgesel büyüme",
               "Legal contract and financial advisory services",
               "One-on-one creator consultancy and growth session"
             ]

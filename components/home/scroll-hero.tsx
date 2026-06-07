@@ -108,7 +108,7 @@ export default function ScrollHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: easeCustom }}
           >
-            / Türkiye'nin Dijital Otoritesi
+            / Yeni Nesil Büyüme Ortağı
           </motion.p>
 
           <h1 className="font-display font-bold leading-[0.9] tracking-[-0.035em] text-balance text-[clamp(2.5rem,7vw,7rem)] max-w-6xl mx-auto pointer-events-auto">
@@ -118,16 +118,7 @@ export default function ScrollHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.3, ease: easeCustom }}
             >
-              Türkiye'nin
-            </motion.span>{" "}
-            <br className="hidden md:block" />
-            <motion.span
-              className="inline-block"
-              initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9, delay: 0.45, ease: easeCustom }}
-            >
-              En Güçlü
+              Markalar ve İçerik Üreticileri İçin
             </motion.span>{" "}
             <br className="hidden md:block" />
             <motion.span
@@ -136,7 +127,7 @@ export default function ScrollHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.6, ease: easeCustom }}
             >
-              Influencer Ağı
+              Güçlü Affiliate Ekosistemi
             </motion.span>
           </h1>
 
@@ -146,7 +137,7 @@ export default function ScrollHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.0, delay: 0.8, ease: easeCustom }}
           >
-            Trendyol'un Türkiye'deki en büyük partner ajansı — 5.000'den fazla influencer ve Trendyol TrendFam affiliate programıyla markalar için gerçek, ölçülebilir büyüme.
+            Markaları doğru içerik üreticileriyle buluşturuyor; kampanya, affiliate, prodüksiyon ve performans süreçlerini uçtan uca yönetiyoruz.
           </motion.p>
 
           <motion.div
@@ -160,7 +151,7 @@ export default function ScrollHero() {
               className="group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold text-[#111111] transition-all hover:scale-105 bg-gradient-to-br from-[#FE9417] to-[#FF6B00] shadow-[0_4px_14px_0_rgba(37,99,235,0.2)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.4)]"
             >
               <span className="relative z-10 flex items-center gap-2">
-                Proje Başlat
+                Teklif Al
                 <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
               </span>
             </Link>
@@ -169,7 +160,7 @@ export default function ScrollHero() {
               href="/talent"
               className="inline-flex items-center justify-center rounded-full border-2 border-[#0F172A] bg-transparent px-8 py-4 font-semibold text-[#0F172A] transition-all hover:bg-[#0F172A] hover:text-[#111111]"
             >
-              Ben İçerik Üreticisiyim
+              Başvuru Yap
             </Link>
           </motion.div>
         </motion.div>

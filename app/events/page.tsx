@@ -1,8 +1,8 @@
 import EventsClientPage from "./events-client-page"
 
 export const metadata = {
-  title: "Events | iMediaff Global",
-  description: "Explore iMediaff Global events, creator gatherings, brand activations, and regional campaign moments across MENA, CEE, Gulf, Turkey, and Azerbaijan.",
+  title: "Etkinlikler | imediaff Türkiye",
+  description: "imediaff Türkiye etkinliklerini, içerik üreticisi buluşmalarını, marka aktivasyonlarını ve trend buluşmalarını keşfedin.",
 }
 
 export default function EventsPage() {

@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = BLOG_POSTS.find((p) => p.slug === slug)
   if (!post) return { title: 'Post Not Found' }
   return { 
-    title: `${post.title} | imediaff Global Insights`,
+    title: `${post.title} | imediaff Türkiye Blog`,
     description: post.summary
   }
 }

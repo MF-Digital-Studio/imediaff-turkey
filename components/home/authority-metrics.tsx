@@ -8,10 +8,10 @@ import { motion, useInView, useSpring, useTransform, animate } from "motion/reac
 // ─── DATA ─────────────────────────────────────────────────────────────────────
 
 const METRICS = [
-  { value: 5000, suffix: "+", label: "Doğrulanmış İçerik Üreticisi", sublabel: "Trendyol Ağında" },
+  { value: 10000, suffix: "+", label: "İçerik Üreticisi", sublabel: "Farklı kategorilerde aktif creator ağı." },
   { value: 150,   suffix: "+", label: "Marka İşbirliği",         sublabel: "2019'dan bu yana" },
   { value: 850,   suffix: "+", label: "Tamamlanan Proje",   sublabel: "Ajans kuruluşundan bu yana" },
-  { value: 7,     suffix: "+",  label: "Yıllık Deneyim",        sublabel: "Türkiye pazarında" },
+  { value: 7,     suffix: "+",  label: "Yıllık Deneyim",        sublabel: "Sektör tecrübesi" },
 ]
 
 function formatDisplay(n: number, max: number): string {
@@ -172,7 +172,7 @@ export default function AuthorityMetrics() {
               transition={{ duration: 0.75, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
               className="font-sans font-bold text-[#111111] leading-[0.92] tracking-[-0.03em] text-[clamp(2.2rem,5.5vw,4.5rem)] text-balance"
             >
-              imediaff Türkiye —{" "}
+              imediaff —{" "}
               <span
                 style={{
                   backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
@@ -192,7 +192,7 @@ export default function AuthorityMetrics() {
               transition={{ duration: 0.72, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
               className="mt-7 max-w-lg text-base md:text-[1.05rem] text-[#555555] leading-relaxed font-sans"
             >
-              imediaff Türkiye, Trendyol'un resmi partner ajansı olarak 5.000'den fazla influencer ile markalar arasında güçlü köprüler kuruyor. Strateji, içerik ve performans odaklı yaklaşımımızla kalıcı etki yaratıyoruz.
+              imediaff, 10.000'den fazla influencer ile markalar arasında güçlü köprüler kuruyor. Strateji, içerik ve performans odaklı yaklaşımımızla kalıcı etki yaratıyoruz.
             </motion.p>
 
             {/* Learn More CTA */}

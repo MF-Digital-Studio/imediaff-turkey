@@ -1,8 +1,8 @@
-﻿import TalentClientPage from "./talent-client-page"
+import TalentClientPage from "./talent-client-page"
 
 export const metadata = {
-  title: "Talent | imediaff Global",
-  description: "Apply to join the global creator roster and scale with premium brand partnerships.",
+  title: "İçerik Üreticileri | imediaff Türkiye",
+  description: "Performans odaklı creator ekosistemine katılın ve kazancınızı artırın.",
 }
 
 export default function TalentPage() {

@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 
 import { motion } from "motion/react"
 
@@ -15,7 +15,7 @@ export default function BusinessHeader() {
           </motion.h1>
         </div>
         <motion.p initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.25 }} className="md:col-span-4 text-base md:text-lg text-muted-foreground leading-relaxed max-w-sm">
-          Strategy, creative production, performance media, and analytics under one roof for global-first brand expansion.
+          Pazar genişlemesi için strateji, yaratıcı prodüksiyon, performans medyası ve veri analizi tek çatı altında.
         </motion.p>
       </div>
     </section>

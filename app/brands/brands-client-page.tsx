@@ -6,18 +6,19 @@ import Link from "next/link"
 import { motion, useScroll, useTransform } from "motion/react"
 
 const METRICS = [
-  { title: "Global Presence",  value: "150+",    desc: "Strategic Brand Consultancies"      },
-  { title: "Network Power",    value: "17,000+", desc: "Verified Influencers across MENA"   },
-  { title: "Track Record",     value: "850+",    desc: "Successfully Completed Projects"    },
-  { title: "Execution",        value: "450+",    desc: "Active Digital Campaigns"           },
+  { title: "Türkiye Operasyonu",  value: "7+",    desc: "Yıllık Sektör Deneyimi"      },
+  { title: "İçerik Üreticisi",    value: "10.000+", desc: "Doğrulanmış Influencer Ağı"   },
+  { title: "Başarı Oranı",     value: "850+",    desc: "Başarıyla Tamamlanan Proje"    },
+  { title: "Aylık Aktif",        value: "150+",    desc: "Aktif Marka İş Birliği"           },
 ]
 
 const ALL_BRANDS = [
-  "purebaby","züber","letsbechild","ariel","atawich","bepanthol","biofeline","cif",
-  "dove","hepsiburada","hipp","hobby","karcher","kinderkraft","loreal","luisbien",
-  "lumberjack","mustela","schafer","şok","xiaomi","amazon","arkonem","sleepy","yayla",
-  "dermokil","avon","babyturco","omo","tefal","defacto","elidor","indo","procsın",
-  "çiçeksepeti","yemeksepeti","trendyol","bio-oil","flo",
+  "trendyol", "yemeksepeti", "çiçeksepeti", "amazon", "xiaomi", "avon", "züber",
+  "dermokil", "purebaby", "flo", "bio-oil", "procsin", "indo", "elidor",
+  "defacto", "tefal", "omo", "baby turco", "yayla", "sleepy", "şok",
+  "schafer", "mustela", "lumberjack", "l'oréal", "kinderkraft", "kärcher",
+  "hobby", "hipp", "hepsiburada", "dove", "cif", "biofeline", "bepanthol",
+  "ariel", "letsbechild", "atawich"
 ]
 
 // ── Parallax image wrapper ──────────────────────────────────────────────────
@@ -62,12 +63,12 @@ export default function BrandsClientPage() {
         <div className="pointer-events-none absolute right-0 top-0 w-full max-w-[800px] h-[800px] bg-gradient-to-bl from-[#FE9417]/10 to-transparent blur-[120px] rounded-full opacity-50 translate-x-1/3 -translate-y-1/3" />
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 relative z-10">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">/ Brand Partnerships</p>
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">/ Marka İş Birlikleri</p>
             <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8.5rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance">
-              International <br /> Authority.
+              Markanız İçin <br /> Doğru İçerik Üreticileriyle <br /> Performans Odaklı Büyüme.
             </h1>
             <p className="mt-8 max-w-2xl text-lg md:text-xl text-[#666666] leading-relaxed font-sans">
-              iMediaff Global is one of Trendyol&apos;s top 3 authorized partner agencies worldwide — giving brands direct access to a vetted network of influencers across Turkey, CEE, Gulf, and Azerbaijan. We don&apos;t just run campaigns. We build performance-driven affiliate ecosystems that generate measurable revenue.
+              Geniş içerik üreticisi ekosistemine katılın. Trendyol, Çiçeksepeti, Hepsiburada ve Amazon gibi platformlarla yürütülen iş birlikleri ve kampanya deneyimimizle, markanızı doğru kitleyle buluşturuyor, ölçülebilir ve performansa dayalı sonuçlar üzerinden büyüme sağlıyoruz.
             </p>
           </motion.div>
         </div>
@@ -105,9 +106,9 @@ export default function BrandsClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-14 md:mb-20"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">/ Brand Advantage</p>
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">/ Marka Avantajları</p>
             <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-[#111111] text-balance">
-              What Brands Get<br />When They Work<br />With iMediaff.
+              Neden imediaff Türkiye<br />İle Çalışmalısınız?
             </h2>
           </motion.div>
 
@@ -115,18 +116,18 @@ export default function BrandsClientPage() {
             {[
               {
                 num: "01",
-                title: "Direct Influencer Access",
-                desc: "Tap into a vetted network of 5,000+ active influencers across Turkey, CEE, Gulf, and Azerbaijan — all operating under structured 1-year contracts with verified performance data.",
+                title: "Doğru İçerik Üreticisine Erişim",
+                desc: "Markanızın hedef kitlesine en uygun, 10.000'den fazla doğrulanmış içerik üreticisinden oluşan geniş bir havuza anında erişim sağlarsınız.",
               },
               {
                 num: "02",
-                title: "Performance-Based Model",
-                desc: "No flat fees. No wasted spend. Our affiliate commission model means brands only pay for results — real sales, real conversions, real ROI tracked through Trendyol's Influencer Center.",
+                title: "Performans Bazlı Kampanya",
+                desc: "Sadece gerçekleşen satışlar ve dönüşümler üzerinden komisyon ödersiniz. Boşa harcanan reklam bütçesi yoktur; ölçülebilir bir ROI sunar.",
               },
               {
                 num: "03",
-                title: "Regional Market Entry",
-                desc: "Whether you're entering MENA, Gulf, CEE, or Azerbaijan — iMediaff provides the cultural fluency, local network, and operational infrastructure to launch and scale with confidence.",
+                title: "Operasyonel Süreç Yönetimi",
+                desc: "İçerik üreticisi seçimi, link oluşturma, Trendyol, Çiçeksepeti, Hepsiburada ve Amazon ekosisteminde görünürlük, raporlama ve ödeme takibi gibi tüm operasyonel yükü biz üstleniyoruz.",
               },
             ].map((card, i) => (
               <motion.div
@@ -153,7 +154,7 @@ export default function BrandsClientPage() {
         <div className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 h-32 bg-gradient-to-br from-[#FE9417]/5 to-[#FF6B00]/5 blur-3xl" />
 
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 mb-12 relative z-10">
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">/ Trusted by Industry Leaders</p>
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">/ Ekosistemdeki Markalar</p>
         </div>
 
         {/* Fading edge masks for white background */}
@@ -187,12 +188,12 @@ export default function BrandsClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-14 md:mb-20 max-w-4xl"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">/ Trendyol Brand Offers</p>
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">/ Marka Teklifleri</p>
             <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-[#111111] text-balance mb-6">
-              Activate Your Brand<br />Directly with Creators.
+              Trendyol Brand Offers<br />Programına Katılın.
             </h2>
             <p className="text-lg text-[#555555] leading-relaxed font-sans max-w-2xl">
-              Through our exclusive Trendyol Brand Offers program, brands can run targeted influencer campaigns with custom commission rates and extended tracking windows.
+              Özel komisyon oranları belirleyerek içerik üreticilerini markanız için içerik oluşturmaya teşvik edin. Trendyol'un Influencer Merkezi üzerinden tam ölçülebilir kampanyalar tasarlayın.
             </p>
           </motion.div>
 
@@ -201,18 +202,18 @@ export default function BrandsClientPage() {
             {[
               {
                 num: "01",
-                title: "Custom Commission Rates",
-                desc: "Set your own commission rate for your products — always higher than the standard affiliate model. Motivate influencers to prioritize your brand.",
+                title: "Özel Komisyon Oranları",
+                desc: "Ürünleriniz için standart affiliate modelinden daha yüksek, size özel komisyon oranları belirleyerek influencer'ların markanızı önceliklendirmesini sağlayın.",
               },
               {
                 num: "02",
-                title: "7-Day Attribution Window",
-                desc: "Standard affiliate links track for 2 days. Brand Offer links track for a full 7 days — meaning you capture purchases that happen days after a creator's post.",
+                title: "Geniş Takip Penceresi",
+                desc: "Standart 2 günlük takip süresini, Brand Offers kampanyalarıyla uzatarak içerik paylaşımından günler sonra bile gerçekleşen satın alımları komisyona dönüştürün.",
               },
               {
                 num: "03",
-                title: "Brand Visibility at Scale",
-                desc: "Your products appear directly in influencers' Brand Offers panel. Creators discover your brand, build content around it, and share it with their audiences — organically.",
+                title: "Creator Panelinde Görünürlük",
+                desc: "Markanız doğrudan içerik üreticilerinin özel panellerinde listelenir. Organik bir şekilde keşfedilir, daha fazla etkileşim ve satış oluşturursunuz.",
               },
             ].map((card, i) => (
               <motion.div
@@ -239,23 +240,23 @@ export default function BrandsClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-14"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#888888] mb-10">/ How It Works</p>
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#888888] mb-10">/ Nasıl Çalışır?</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
                   step: "01",
-                  title: "Create Your Offer",
-                  desc: "Define your products, set your commission rate, and specify your sharing window. iMediaff manages the setup within Trendyol's platform.",
+                  title: "Teklifinizi Oluşturun",
+                  desc: "Odaklanmak istediğiniz ürünleri seçin, komisyon oranınızı ve hedef kitlenizi belirleyin. Geri kalan kurulumu biz yönetiyoruz.",
                 },
                 {
                   step: "02",
-                  title: "Influencers Activate",
-                  desc: "Approved influencers across your target region see your offer in their Influencer Center, generate unique Brand Offer links, and share with their audiences.",
+                  title: "Influencer'lar Paylaşsın",
+                  desc: "Onaylanmış içerik üreticileri panel üzerinden markanızı keşfeder, kendilerine özel linkleri oluşturarak kitleleriyle paylaşırlar.",
                 },
                 {
                   step: "03",
-                  title: "Track & Earn",
-                  desc: "Monitor performance in real time via the Brand Collaborations tab. See inlink/outlink earnings, revenue, and visitor data for every offer — filtered by date and region.",
+                  title: "Ölçün ve Kazanın",
+                  desc: "Tıklanmalar, dönüşümler ve ciro artışını şeffaf bir şekilde takip edin. Sadece başarılı satışlar üzerinden ödeme yapın.",
                 },
               ].map((s, i) => (
                 <div key={s.step} className="flex flex-col">
@@ -273,140 +274,8 @@ export default function BrandsClientPage() {
             href="/contact?type=brand"
             className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] px-10 py-5 text-base font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl"
           >
-            Submit a Campaign Brief ↗
+            Marka Briefi Gönder ↗
           </Link>
-        </div>
-      </section>
-
-      {/* ── Section 1: The MENA Gateway (White Theme) ────────────────────────── */}
-      <section className="bg-white text-black py-20 md:py-32 border-b border-gray-200 overflow-hidden">
-        <div className="mx-auto max-w-[1600px] px-6 md:px-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-
-            {/* Text */}
-            <motion.div
-              initial={{ opacity: 0, x: -40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-10% 0px" }}
-              transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-6 font-bold">/ The MENA Gateway</p>
-              <h2 className="font-display text-[clamp(2.5rem,4.5vw,5rem)] font-bold tracking-[-0.03em] leading-[1.05] text-black mb-10">
-                Your Strategic <br /> Gateway to the <br /> MENA Region.
-              </h2>
-              <div className="h-px w-full bg-gradient-to-br from-[#FE9417] to-[#FF6B00] mb-10" />
-              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed font-sans mb-6">
-                We don't just run campaigns; we navigate cultures.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed font-sans mb-6">
-                iMediaff Global provides the operational infrastructure and cultural fluency required for Western brands to dominate the Middle Eastern and Turkish markets. We translate global equity into local resonance.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed font-sans">
-                As a Trendyol-authorized partner agency, iMediaff gives your brand privileged access to the TrendFam influencer network — the largest performance-based creator program in the region. From brand offer setup to commission tracking and payment management, we handle every operational layer so your team can focus on growth.
-              </p>
-            </motion.div>
-
-            {/* Image */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-10% 0px" }}
-              transition={{ duration: 0.95, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <ParallaxImage
-                src="https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=2070&auto=format&fit=crop"
-                alt="Dubai skyline at dusk — the MENA gateway"
-                direction="left"
-                theme="white"
-              />
-            </motion.div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ── Section 2: Data-Led Creator Selection (Black Theme) ──────────────── */}
-      <section className="bg-white text-[#111111] py-20 md:py-32 border-b border-[#E5E5E5] overflow-hidden">
-        <div className="mx-auto max-w-[1600px] px-6 md:px-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-
-            {/* Image */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-10% 0px" }}
-              transition={{ duration: 0.95, ease: [0.22, 1, 0.36, 1] }}
-              className="order-2 lg:order-1"
-            >
-              <ParallaxImage
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
-                alt="High-fidelity data analytics dashboard — creator selection intelligence"
-                direction="right"
-                theme="black"
-              />
-            </motion.div>
-
-            {/* Text */}
-            <motion.div
-              initial={{ opacity: 0, x: 40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-10% 0px" }}
-              transition={{ duration: 0.85, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-              className="order-1 lg:order-2"
-            >
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-6">/ Data-Led Creator Selection</p>
-              <h2 className="font-display text-[clamp(2.5rem,4.5vw,5rem)] font-bold tracking-[-0.03em] leading-[1.05] text-[#111111] mb-10">
-                Proprietary Tech, <br /> Proven Creators.
-              </h2>
-              <div className="h-px w-full bg-gradient-to-br from-[#FE9417] to-[#FF6B00] mb-10" />
-              <p className="text-xl md:text-2xl text-[#555555] leading-relaxed font-sans mb-6">
-                Leveraging our database of 17,000+ verified influencers.
-              </p>
-              <p className="text-lg text-[#666666] leading-relaxed font-sans">
-                We use predictive analytics to match your brand with creators who don't just have followers—they have influence. It's an exact science designed for maximum conversion and authentic engagement.
-              </p>
-            </motion.div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ── Global Standards (White Theme) ─────────────────────────────────────── */}
-      <section className="bg-white text-black py-20 md:py-32 border-b border-gray-200">
-        <div className="mx-auto max-w-[1600px] px-6 md:px-10">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-10% 0px" }}
-            transition={{ duration: 0.7 }}
-            className="mb-16 md:mb-24 text-center"
-          >
-            <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] text-black">
-              Global Standards, Local Expertise.
-            </h2>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
-            {[
-              { title: "Compliance", desc: "Adhering strictly to GCC & international advertising standards, ensuring brand safety at scale." },
-              { title: "Logistics",  desc: "Seamless cross-border campaign management, handling every detail from contracting to payouts." },
-              { title: "Strategy",   desc: "360° digital mastery from Istanbul to Dubai, executing tailored roadmaps for every region." },
-              { title: "Performance Accountability", desc: "Every brand campaign is tracked through Trendyol's Influencer Center with full transparency — clicks, conversions, revenue, and returns. You see exactly what your investment is generating." },
-            ].map((col, i) => (
-              <motion.div
-                key={col.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10% 0px" }}
-                transition={{ duration: 0.6, delay: i * 0.15 }}
-                className="p-8 md:p-12 rounded-[2rem] bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div className="h-px w-12 bg-gradient-to-br from-[#FE9417] to-[#FF6B00] mb-8" />
-                <h3 className="font-display text-3xl font-bold text-black mb-4">{col.title}.</h3>
-                <p className="text-gray-600 leading-relaxed font-sans">{col.desc}</p>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -420,12 +289,12 @@ export default function BrandsClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-14"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">/ Brand Categories</p>
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">/ Sektör Kategorileri</p>
             <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-[#111111] text-balance mb-6">
-              Built for Brands<br />Across Every Category.
+              Her Sektöre Uygun<br />Performans Çözümleri.
             </h2>
             <p className="text-lg text-[#555555] leading-relaxed font-sans max-w-2xl">
-              From global e-commerce platforms to emerging lifestyle brands — iMediaff has the regional network and operational expertise to scale your presence.
+              Modadan teknolojiye, kozmetikten ev yaşamına kadar tüm sektörlerde, markanızı doğru hedef kitle ile buluşturacak geniş bir içerik üreticisi ağına sahibiz.
             </p>
           </motion.div>
 
@@ -437,10 +306,10 @@ export default function BrandsClientPage() {
             className="flex flex-wrap gap-3 mb-10"
           >
             {[
-              "Fashion & Apparel", "Beauty & Cosmetics", "Electronics & Tech",
-              "Baby & Kids", "Food & Grocery", "Home & Living",
-              "Sports & Outdoor", "Health & Wellness", "Automotive",
-              "Luxury & Lifestyle", "Travel & Hospitality", "E-Commerce Platforms",
+              "Moda & Giyim", "Güzellik & Kozmetik", "Anne & Bebek",
+              "Gıda & Hızlı Tüketim", "Ev & Yaşam", "Elektronik & Teknoloji",
+              "Spor & Outdoor", "Sağlık & Kişisel Bakım", "E-Ticaret",
+              "Perakende",
             ].map((cat) => (
               <span
                 key={cat}
@@ -451,10 +320,41 @@ export default function BrandsClientPage() {
               </span>
             ))}
           </motion.div>
+        </div>
+      </section>
 
-          <p className="text-sm text-[#FE9417] font-mono">
-            Note: Electronics and global brand products are excluded from standard affiliate commission structures per Trendyol program rules.
-          </p>
+      {/* ── Brand Services (White Theme) ────────────────────────────────────── */}
+      <section className="bg-white text-[#111111] py-20 md:py-28 border-b border-[#E5E5E5]">
+        <div className="mx-auto max-w-[1600px] px-6 md:px-10">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10% 0px" }}
+            transition={{ duration: 0.7 }}
+            className="mb-14 md:mb-20"
+          >
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">/ Markalar İçin Çözümler</p>
+            <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-[#111111] text-balance">
+              Markanız İçin Uçtan Uca<br />Süreç Yönetimi.
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {[
+              { title: "Kampanya Stratejisi", desc: "Markanızın hedeflerine özel influencer ve performans odaklı pazarlama stratejisi kurguluyoruz." },
+              { title: "Creator Seçimi", desc: "10.000+ creator ağımızdan hedef kitlenize ve marka kimliğinize en uygun isimleri belirliyoruz." },
+              { title: "Affiliate Kurgu", desc: "Link oluşturma, komisyon yapısı ve performans modellerini sizin için hazırlıyoruz." },
+              { title: "Prodüksiyon Desteği", desc: "Sosyal medya platformlarının dinamiklerine uygun kreatif içerik ve reklam yapım süreçlerini yönetiyoruz." },
+              { title: "Raporlama", desc: "Erişim, tıklama, dönüşüm ve ciro artışını anlık ve şeffaf olarak raporluyoruz." },
+              { title: "Hukuki & Mali Süreç Takibi", desc: "Sözleşme, fatura, ödeme ve KVKK süreçlerinin mevzuata uygun şekilde yürütülmesini sağlıyoruz." }
+            ].map((srv, i) => (
+              <div key={srv.title} className="p-8 border border-black/[0.07] bg-white rounded-2xl">
+                <p className="font-mono text-xs text-[#FE9417] mb-4">0{i + 1}</p>
+                <h3 className="text-xl font-bold mb-3">{srv.title}</h3>
+                <p className="text-[#666666] text-sm leading-relaxed">{srv.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -468,22 +368,23 @@ export default function BrandsClientPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10 text-center relative z-10"
         >
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#555555] font-bold mb-6">
-            / Scale your brand
+            / Markanızı Büyütün
           </p>
           <h2 className="font-display text-[clamp(2.5rem,5.5vw,5.5rem)] font-bold tracking-[-0.03em] text-[#111111] mb-6 text-balance">
-            Ready to Scale Your Brand<br />Across 4 Regions?
+            iMediaff Creator & Affiliate <br /> Ekosistemine Katılın.
           </h2>
           <p className="text-lg text-[#555555] leading-relaxed max-w-2xl mx-auto mb-10 font-sans">
-            Partner with iMediaff Global — one of Trendyol&apos;s top 3 authorized agencies. Access a vetted influencer network, custom brand offer campaigns, and full operational support across Turkey, CEE, Gulf, and Azerbaijan.
+            imediaff Türkiye ile çalışarak satışlarınızı artırın, içerik üreticisi entegrasyonuyla markanızın dijital görünürlüğünü güçlendirin.
           </p>
           <Link
             href="/contact?type=brand"
             className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl"
           >
-            Request a Brand Partnership ↗
+            Marka Briefi Gönder ↗
           </Link>
         </motion.div>
       </section>
+
 
     </main>
   )

@@ -1,9 +1,9 @@
 import AboutClientPage from "./about-client-page"
 
 export const metadata = {
-  title: "About | imediaff Global",
+  title: "Hakkımızda | imediaff Türkiye",
   description:
-    "A legacy of global influence — imediaff operates with 10,000+ verified influencers and 150+ brand partners across Dubai, MENA, and beyond. Learn our story.",
+    "imediaff Türkiye'nin markalar, içerik üreticileri ve e-ticaret ekosistemi arasında nasıl köprü kurduğunu ve performans odaklı iş birliklerini keşfedin.",
 }
 
 export default function AboutPage() {

@@ -1,9 +1,9 @@
 import ServicesClientPage from "./services-client-page"
 
 export const metadata = {
-  title: "Services | imediaff Global",
+  title: "Hizmetler | imediaff Türkiye",
   description:
-    "We integrate strategy, creative production, performance media, and analytics under one roof for global-first brand expansion.",
+    "Markalar ve içerik üreticileri için uçtan uca performans odaklı affiliate ve influencer pazarlama çözümleri.",
 }
 
 export default function ServicesPage() {

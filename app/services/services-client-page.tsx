@@ -6,68 +6,68 @@ import { motion } from "motion/react"
 
 const DETAILED_SERVICES = [
   {
-    title: "Affiliate Marketing Management",
-    description: "Full-service TrendFam affiliate program management — influencer onboarding, link creation, commission tracking, and payment processing. We are one of Trendyol's top 3 authorized partner agencies globally.",
-    image: "/services/service-01.jpg",
-    features: ["TrendFam Partner", "4 Regions", "Commission Tracking"],
-  },
-  {
-    title: "Influencer & Brand Partnerships",
-    description: "Strategic matchmaking between brands and vetted influencers. Every partnership operates under a structured 1-year contract with clear KPIs, transparent reporting, and protected rights for both parties.",
-    image: "/services/service-02.jpg",
-    features: ["5,000+ Influencers", "1-Year Contracts", "Performance-Based"],
-  },
-  {
-    title: "Creator Consultancy & Growth",
-    description: "One-on-one guidance for influencers — from link strategy and content optimization to audience analytics and earnings maximization. Regular webinars and active campaign channels keep creators ahead.",
-    image: "/services/service-06.jpg",
-    features: ["1-on-1 Advisory", "Webinars", "WhatsApp Channel"],
-  },
-  {
-    title: "Campaign Production & Content",
-    description: "High-fidelity content creation and advertising production for brands seeking regional relevance. From concept to delivery, every asset is built to perform across social platforms.",
-    image: "/services/service-03.jpg",
-    features: ["Set Production", "Social Formats", "Regional Adaptation"],
-  },
-  {
-    title: "Market Entry & Regional Expansion",
-    description: "Strategic entry into MENA, CEE, Gulf, and Azerbaijan markets. Cultural fluency, local network access, and full operational infrastructure for confident regional scaling.",
+    title: "Marka Danışmanlığı",
+    description: "Markanın hedef kitlesine, kategori dinamiklerine ve satış hedeflerine göre influencer ve affiliate stratejisi oluştururuz.",
     image: "/services/service-04.jpg",
-    features: ["MENA", "CEE", "Gulf & Azerbaijan"],
+    features: ["Hedef Kitle Analizi", "Kategori Dinamikleri", "Stratejik Konumlandırma"],
   },
   {
-    title: "Legal & Financial Advisory",
-    description: "Contract architecture, tax compliance, KVKK/GDPR data protection, and cross-border payment management. Commission-only model — no upfront fees, no hidden costs.",
+    title: "Influencer Marketing",
+    description: "Markaları doğru içerik üreticileriyle buluşturur, brief’ten raporlamaya kadar tüm kampanya sürecini yönetiriz.",
+    image: "/services/service-02.jpg",
+    features: ["Doğru Eşleştirme", "Uçtan Uca Yönetim", "Performans Odaklı"],
+  },
+  {
+    title: "Affiliate Marketing",
+    description: "Link, komisyon, performans ve ödeme süreçlerini şeffaf bir operasyon yapısıyla takip ederiz.",
+    image: "/services/service-01.jpg",
+    features: ["Şeffaf Takip", "Link & Komisyon Altyapısı", "Performans Analizi"],
+  },
+  {
+    title: "Talent Management",
+    description: "İçerik üreticilerinin marka iş birlikleri, teklif değerlendirme, içerik planlama ve performans analiz süreçlerine destek oluruz.",
+    image: "/services/service-06.jpg",
+    features: ["Yetenek Yönetimi", "İş Birliği Değerlendirme", "Birebir Destek"],
+  },
+  {
+    title: "Prodüksiyon & Reklam Yapımı",
+    description: "Kampanya fikri, kreatif konsept, çekim, kurgu, post-prodüksiyon ve medya planlama süreçlerinde markalara destek veririz.",
+    image: "/services/service-03.jpg",
+    features: ["Kreatif Konsept", "Post-Prodüksiyon", "Medya Planlama"],
+  },
+  {
+    title: "Mali & Hukuki Süreç Danışmanlığı",
+    description: "Sözleşme, ödeme, faturalandırma, KVKK ve kampanya süreçlerinde marka ve içerik üreticilerine daha güvenli bir operasyon alanı sağlarız.",
     image: "/services/service-05.jpg",
-    features: ["Contract Architecture", "Tax Compliance", "KVKK/GDPR"],
+    features: ["Güvenli Sözleşmeler", "KVKK Uyum Altyapısı", "Mali Danışmanlık"],
   },
 ]
 
 const PROCESS = [
   {
     step: "01",
-    title: "Onboarding & Eligibility Review",
-    description: "Profile reviewed within 1–5 business days. Eligibility confirmed against regional TrendFam requirements.",
+    title: "Başvuru ve İnceleme",
+    description: "1-5 iş günü içerisinde profil veya kampanya incelenir, uygunluk doğrulanır.",
   },
   {
     step: "02",
-    title: "Contract & Agreement",
-    description: "1-year partnership contract signed. Commission rates, payment schedule, and compliance rules clearly defined for both parties.",
+    title: "Sözleşme Onayı",
+    description: "Komisyon oranları, kurallar ve hakların net bir şekilde belirlendiği sözleşme imzalanır.",
   },
   {
     step: "03",
-    title: "Program Activation",
-    description: "Affiliate links activated, Influencer Center access granted, agency campaign channel onboarded.",
+    title: "Sistem Aktivasyonu",
+    description: "Affiliate linkleri veya kampanya kurgusu aktif hale getirilir, iletişim kanallarına dahil olunur.",
   },
   {
     step: "04",
-    title: "Active Management & Optimization",
-    description: "Real-time performance tracking, bonus mission alerts, campaign updates via dedicated channel, and 1-on-1 advisory.",
+    title: "Aktif Yönetim",
+    description: "Anlık performans takibi, kampanya güncellemeleri ve danışmanlık hizmetleriyle optimizasyon sağlanır.",
   },
   {
     step: "05",
-    title: "Reporting & Payment",
-    description: "Monthly commission reports with transparent breakdowns. 30-day payment cycle. Direct IBAN or local account transfer. No upfront fees — commission only.",
+    title: "Raporlama ve Ödeme",
+    description: "Aylık şeffaf raporlamalar doğrultusunda hak edilen ödemeler doğrudan gerçekleştirilir.",
   },
 ]
 
@@ -83,13 +83,13 @@ export default function ServicesClientPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
-            / Capabilities
+            / Hizmetlerimiz
           </p>
           <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance">
-            Not just growth,<br />transformation.
+            Markalar ve İçerik Üreticileri İçin Uçtan Uca Çözümler.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#666666] md:text-xl">
-            From affiliate program management to creative production and legal advisory — iMediaff Global delivers end-to-end solutions for brands and creators across Turkey, CEE, Gulf, and Azerbaijan.
+            iMediaff Türkiye; markalar, içerik üreticileri ve e-ticaret platformları arasında entegre çözümler geliştirir. 360° yaklaşımla sunduğumuz hizmet yelpazemiz: Influencer Marketing, Affiliate Marketing, Talent Management, Marka Danışmanlığı, Dijital Pazarlama, Prodüksiyon & Reklam Yapımı, Kampanya Yönetimi, Mali ve Hukuki Süreç Danışmanlığı.
           </p>
         </motion.div>
       </section>
@@ -105,10 +105,10 @@ export default function ServicesClientPage() {
             className="mb-16 md:mb-32 text-center md:text-left"
           >
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
-              / Integrated Capabilities
+              / Entegre Çözümler
             </p>
             <h2 className="mt-5 font-display text-[clamp(2.5rem,6vw,5.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-black">
-              End-to-End <br className="hidden md:block" /> Enterprise Solutions.
+              Performans Odaklı <br className="hidden md:block" /> 360° Uzmanlık.
             </h2>
           </motion.div>
 
@@ -116,12 +116,12 @@ export default function ServicesClientPage() {
             {DETAILED_SERVICES.map((service, i) => {
               const isEven = i % 2 === 0
               const serviceIds = [
-                "affiliate-marketing-management",
-                "influencer-brand-partnerships",
-                "creator-consultancy-growth",
-                "campaign-production-content",
-                "market-entry-regional-expansion",
-                "legal-financial-advisory"
+                "marka-danismanligi",
+                "influencer-marketing",
+                "affiliate-marketing",
+                "talent-management",
+                "produksiyon-ve-reklam-yapimi",
+                "mali-ve-hukuki-surec-danismanligi"
               ]
               return (
                 <div 
@@ -202,10 +202,10 @@ export default function ServicesClientPage() {
           >
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
-                / Clear Timeline
+                / Net ve Şeffaf Akış
               </p>
               <h2 className="mt-5 font-display text-[clamp(2rem,5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-[#111111]">
-                Operational <br /> Excellence.
+                Operasyonel <br /> Mükemmellik.
               </h2>
             </div>
           </motion.div>
@@ -251,16 +251,16 @@ export default function ServicesClientPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10 text-center relative z-10"
         >
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#555555] font-bold mb-6">
-            / Expand your reach
+            / Gücünüzü Katlayın
           </p>
           <h2 className="font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance mb-10 text-[#111111]">
-            Build measurable <br className="hidden md:block" /> momentum.
+            Ölçülebilir başarıya <br className="hidden md:block" /> bugün ulaşın.
           </h2>
           <Link
             href="/contact"
             className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl"
           >
-            Start Pilot
+            Teklif Al
           </Link>
         </motion.div>
       </section>

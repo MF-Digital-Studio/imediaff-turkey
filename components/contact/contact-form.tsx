@@ -33,10 +33,10 @@ export default function ContactForm() {
           <p className="mt-6 text-sm md:text-base text-muted-foreground leading-relaxed max-w-sm">Your message goes directly to our strategy team. No generic queue and no auto-response filter.</p>
 
           <div className="mt-10 space-y-4 border-t border-border pt-8">
-            <InfoRow k="Email" v="info@imediaff.com" href="mailto:info@imediaff.com" />
-            <InfoRow k="Phone" v="+971 4 000 0000" href="tel:+97140000000" />
-            <InfoRow k="Studio" v="Dubai, UAE" />
-            <InfoRow k="Creator Applications" v="creators@imediaff.global" href="mailto:creators@imediaff.global" />
+            <InfoRow k="E-Posta" v="info@imediaff.com" href="mailto:info@imediaff.com" />
+            <InfoRow k="Telefon" v="+90 216 606 53 59" href="tel:+902166065359" />
+            <InfoRow k="Ofis" v="İstanbul, Türkiye" />
+            <InfoRow k="Creator Başvuruları" v="info@imediaff.com" href="mailto:info@imediaff.com" />
           </div>
         </aside>
 

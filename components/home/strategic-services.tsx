@@ -7,12 +7,12 @@ import { Lightbulb, Globe2, MousePointerClick, LayoutDashboard } from "lucide-re
 const SERVICES = [
   {
     title: "Creator Strategy",
-    description: "Engineering high-conversion creator roadmaps that align with your brand’s global DNA.",
+    description: "Markanızın DNA'sına uygun yüksek dönüşümlü içerik üreticisi stratejileri geliştiriyoruz.",
     icon: Lightbulb,
   },
   {
     title: "Market Entry & Growth",
-    description: "Your gateway to the Dubai and MENA markets, ensuring cultural fluency and rapid scaling.",
+    description: "Kültürel akıcılık ve bölgesel ağlarımız sayesinde Türkiye pazarında hızlı büyüme garantisi.",
     icon: Globe2,
   },
   {
@@ -46,7 +46,7 @@ export default function StrategicServices() {
             / Strategic Services
           </p>
           <h2 className="font-sans text-[clamp(2.5rem,5vw,4.5rem)] font-bold leading-[0.95] tracking-[-0.03em] text-[#111111] max-w-3xl text-balance">
-            Driving global impact through <br />
+            Pazar liderliğini güçlendiren <br />
             <span className="text-[#FE9417]">precision</span> and <span className="text-[#FE9417]">scale.</span>
           </h2>
         </motion.div>

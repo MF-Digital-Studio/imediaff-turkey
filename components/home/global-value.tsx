@@ -54,7 +54,7 @@ export default function GlobalValue() {
             transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
             className="text-black/60 text-lg md:text-xl font-medium leading-relaxed max-w-3xl mx-auto"
           >
-            Markalarla içerik üreticilerini buluşturmanın ötesine geçiyoruz; Türkiye pazarında sürdürülebilir büyüme altyapısı kuruyoruz.
+            Markalarla içerik üreticilerini buluşturmanın ötesine geçiyoruz; sürdürülebilir büyüme altyapısı kuruyoruz.
           </motion.p>
         </div>
 

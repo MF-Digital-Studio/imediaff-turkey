@@ -1,8 +1,8 @@
 import BlogClientPage from "./blog-client-page"
 
 export const metadata = {
-  title: "Blog | Global Insights on Influencer Marketing & MENA Brand Growth | imediaff",
-  description: "Editorial intelligence from iMediaff Global. In-depth analysis on influencer ROI, MENA creator economy, performance creative, and social commerce strategy for enterprise brands.",
+  title: "Blog | Influencer Marketing ve Performans Pazarlama İçgörüleri | imediaff Türkiye",
+  description: "imediaff Türkiye'den editoryal analizler. Influencer ROI, Türkiye içerik üreticisi ekosistemi, performans pazarlama ve markalar için büyüme stratejileri.",
 }
 
 export default function BlogPage() {

@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 
 import Image from "next/image"
 import { motion } from "motion/react"
@@ -15,7 +15,7 @@ type Influencer = {
 
 const INFLUENCERS: Influencer[] = [
   { id: "1", name: "Defne Kara", handle: "@defnekara", niche: "Fashion & Lifestyle", image: "/influencers/influencer-1.jpg", stats: { reach: "2.4M+", engagement: "9.1%", platform: "Instagram" }, bio: "Editorial storytelling with everyday relevance for premium lifestyle audiences." },
-  { id: "2", name: "Kerem Aksoy", handle: "@keremaksoy", niche: "Streetwear & Culture", image: "/influencers/influencer-2.jpg", stats: { reach: "1.8M+", engagement: "7.8%", platform: "TikTok" }, bio: "A category voice translating global street culture into local impact." },
+  { id: "2", name: "Kerem Aksoy", handle: "@keremaksoy", niche: "Streetwear & Culture", image: "/influencers/influencer-2.jpg", stats: { reach: "1.8M+", engagement: "7.8%", platform: "TikTok" }, bio: "Uluslararası sokak kültürünü yerel etkiye dönüştüren bir kategori sesi." },
   { id: "3", name: "Melis Yildiz", handle: "@melisyildiz", niche: "Avant-Garde", image: "/influencers/influencer-3.jpg", stats: { reach: "960K+", engagement: "11.3%", platform: "Instagram" }, bio: "Experimental visual direction trusted by luxury and premium brands." },
   { id: "4", name: "Berk Demir", handle: "@berkdemir", niche: "Lifestyle & Technology", image: "/influencers/influencer-4.jpg", stats: { reach: "3.1M+", engagement: "6.4%", platform: "YouTube" }, bio: "High-conversion creator known for narrative-led product communication." },
   { id: "5", name: "Ayca Oz", handle: "@aycaoz", niche: "Beauty & Skincare", image: "/influencers/influencer-5.jpg", stats: { reach: "1.2M+", engagement: "10.6%", platform: "Instagram" }, bio: "Data-informed beauty creator with sustained category authority." },

@@ -97,8 +97,8 @@ const CASE_STUDIES = [
   {
     theme: "white",
     client: "Amazon",
-    sector: "MENA Gateway",
-    title: "Scaling Global Retail into the Dubai Market.",
+    sector: "Pazara Giriş",
+    title: "Uluslararası Perakende Markasının Türkiye Pazarına Girişi.",
     strategy: "Integrated creator-led market entry for high-tech consumer goods.",
     image: "https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=2070&auto=format&fit=crop",
     kpis: [
@@ -110,9 +110,9 @@ const CASE_STUDIES = [
   {
     theme: "black",
     client: "L'Oréal",
-    sector: "MENA Network",
+    sector: "Bölgesel Ağ",
     title: "Redefining Beauty Standards in the GCC Region.",
-    strategy: "Localized 360° digital campaign involving elite MENA-based talents and high-fidelity production.",
+    strategy: "Türkiye'nin önde gelen yeteneklerinin ve yüksek çözünürlüklü prodüksiyonun kullanıldığı 360° yerel dijital kampanya.",
     image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop",
     kpis: [
       { to: 85, suffix: "%", label: "Brand Sentiment" },
@@ -123,7 +123,7 @@ const CASE_STUDIES = [
   {
     theme: "white",
     client: "Trendyol",
-    sector: "Global Expansion",
+    sector: "Pazar Büyümesi",
     title: "Transforming Market Presence through Algorithmic Dominance.",
     strategy: "Aggressive TikTok and Reels strategy focused on high-frequency, platform-native content.",
     image: "/trendyol-showcase.png",
@@ -155,7 +155,7 @@ export default function CaseStudiesClientPage() {
             Market Success <br /> Stories.
           </h1>
           <p className="mt-8 max-w-2xl text-lg md:text-xl text-[#666666] leading-relaxed font-sans">
-            Explore how we engineer influence, scale presence, and drive algorithmic dominance for global enterprises across the MENA and TR markets.
+            Türkiye pazarında, uluslararası markalar için etki alanını nasıl kurguladığımızı ve algoritmik hakimiyeti nasıl sağladığımızı keşfedin.
           </p>
         </motion.div>
       </section>

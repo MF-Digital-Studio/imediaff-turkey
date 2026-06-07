@@ -21,13 +21,13 @@ export default function EventsClientPage() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] font-bold">
-              / Events
+              / Etkinlikler
             </p>
             <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8.5rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance">
-              Moments that <br /> move markets.
+              Sınırları <br /> Aşan Anlar.
             </h1>
             <p className="mt-8 max-w-2xl text-lg md:text-xl text-[#666666] leading-relaxed font-sans">
-              Explore iMediaff Global events, creator gatherings, brand activations, and regional campaign moments across our operating markets.
+              imediaff Türkiye etkinliklerini, içerik üreticisi buluşmalarını, marka aktivasyonlarını ve pazar dinamiklerini değiştiren anları keşfedin.
             </p>
           </motion.div>
         </div>
@@ -57,14 +57,14 @@ export default function EventsClientPage() {
               <div className="flex flex-col justify-center p-8 md:p-16 lg:p-20 relative z-10 lg:bg-white/40 lg:backdrop-blur-sm">
                 <div className="flex flex-wrap items-center gap-4 mb-6">
                   <span className="inline-flex items-center rounded-full border border-[#FE9417]/40 bg-[#FE9417]/10 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-[#FE9417]">
-                    Featured
+                    Öne Çıkan
                   </span>
                   <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#888888]">
                     {featuredEvent.category}
                   </span>
                   {featuredEvent.gallery && featuredEvent.gallery.length > 0 && (
                     <span className="inline-flex items-center gap-2 rounded-full border border-[#E5E5E5] bg-white/10 backdrop-blur-md px-3 py-1 font-mono text-[10px] uppercase tracking-[0.1em] text-[#111111]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B00]"></span> Gallery
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B00]"></span> Galeri
                     </span>
                   )}
                 </div>
@@ -88,7 +88,7 @@ export default function EventsClientPage() {
                   href={`/events/${featuredEvent.slug}`}
                   className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] px-10 py-5 text-base font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl w-fit"
                 >
-                  View Event ↗
+                  Etkinliği İncele ↗
                 </Link>
               </div>
             </div>
@@ -107,10 +107,10 @@ export default function EventsClientPage() {
             className="mb-14"
           >
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">
-              / Event Archive
+              / Etkinlik Arşivi
             </p>
             <h2 className="font-display text-[clamp(2rem,4vw,3.5rem)] font-bold tracking-tight text-[#111111]">
-              Discover Recent Events.
+              Geçmiş Etkinliklerimizi Keşfedin.
             </h2>
           </motion.div>
 
@@ -138,7 +138,7 @@ export default function EventsClientPage() {
                   </div>
                   {event.gallery && event.gallery.length > 0 && (
                     <div className="absolute top-4 right-4 bg-white/10 backdrop-blur-md border border-[#E5E5E5] px-3 py-1.5 rounded-full font-mono text-[10px] uppercase tracking-[0.1em] text-[#111111] flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B00]"></span> Gallery Available
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B00]"></span> Galeri
                     </div>
                   )}
                 </div>
@@ -149,7 +149,7 @@ export default function EventsClientPage() {
                   </h3>
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-4 font-sans text-sm text-[#888888]">
                     <span>{event.date}</span>
-                    <span className="w-1 h-1 rounded-full bg-white/20" />
+                    <span className="w-1 h-1 rounded-full bg-[#111111]/20" />
                     <span>{event.region}</span>
                   </div>
                   <p className="text-[#666666] leading-relaxed font-sans text-sm mb-8 line-clamp-3">
@@ -160,7 +160,7 @@ export default function EventsClientPage() {
                       href={`/events/${event.slug}`}
                       className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-[#111111] transition-colors group-hover:text-[#FE9417]"
                     >
-                      View Details
+                      Detayları Gör
                       <span aria-hidden className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
                         →
                       </span>

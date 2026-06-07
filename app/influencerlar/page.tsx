@@ -1,11 +1,11 @@
-﻿import InfluencerHeader from "@/components/influencers/influencer-header"
+import InfluencerHeader from "@/components/influencers/influencer-header"
 import InfluencerGrid from "@/components/influencers/influencer-grid"
 import InfluencerCta from "@/components/influencers/influencer-cta"
 
 export const metadata = {
-  title: "Talent | imediaff Global",
+  title: "Influencer Ağı | imediaff Türkiye",
   description:
-    "A curated global creator roster built for premium campaigns and measurable brand growth.",
+    "Premium kampanyalar ve ölçülebilir büyüme için özenle seçilmiş Türkiye influencer ağı.",
 }
 
 export default function InfluencerPage() {

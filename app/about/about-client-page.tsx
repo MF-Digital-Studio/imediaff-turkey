@@ -17,59 +17,59 @@ import {
 
 const PRESENCE = [
   {
-    region: "TR",
-    city: "Istanbul",
-    note: "Creative strategy, legal advisory, and high-fidelity production hub. Home to our Turkey operations with 5,000+ influencer partners in the Trendyol affiliate network.",
+    region: "MERKEZ",
+    city: "İstanbul HQ",
+    note: "Tüm operasyonlarımızın, hukuki ve finansal süreçlerimizin yönetildiği stratejik merkezimiz.",
   },
   {
-    region: "Dubai",
-    city: "UAE",
-    note: "Regional headquarters for Gulf and MENA partnerships. Active TrendFam operations across KSA, UAE, and Kuwait.",
+    region: "EKOSİSTEM",
+    city: "Güçlü Creator Ağı",
+    note: "Trendyol, Çiçeksepeti, Hepsiburada ve Amazon partnerlikleriyle büyüyen 10.000+ içerik üreticisi ağıyla, markalar ve creator'lar arasında sürdürülebilir iş birlikleri kuruyoruz.",
   },
   {
-    region: "CEE & AZ",
-    city: "Growth Markets",
-    note: "Active since October 2024 across Romania, Poland, Bulgaria, Greece, and Azerbaijan — our fastest-growing affiliate markets.",
+    region: "PRODÜKSİYON",
+    city: "Kreatif Stüdyo",
+    note: "Markalar için platform dinamiklerine uygun, yüksek kaliteli içerik ve kampanya üretim merkezi.",
   },
 ]
 
 const METRICS = [
-  { value: "10,000+", label: "Verified Influencers" },
-  { value: "150+", label: "Global Brand Partners" },
-  { value: "360°", label: "Growth Solutions" },
+  { value: "10.000+", label: "İçerik Üreticisi" },
+  { value: "150+", label: "Marka İş Birliği" },
+  { value: "360°", label: "Performans Çözümü" },
 ]
 
 const PARTNERS = [
-  { name: "Amazon", sector: "E-Commerce" },
-  { name: "Trendyol", sector: "Fashion & Retail" },
-  { name: "Çiçeksepeti", sector: "Lifestyle" },
-  { name: "Hepsiburada", sector: "Technology" },
+  { name: "Trendyol", sector: "E-Ticaret" },
+  { name: "Boyner", sector: "Moda & Perakende" },
+  { name: "LC Waikiki", sector: "Giyim" },
+  { name: "Hepsiburada", sector: "Teknoloji" },
 ]
 
 const CAPABILITIES = [
   {
     index: "01",
-    title: "Creator Strategy",
+    title: "İçerik Üretici Ağı",
     description:
-      "Full-service TrendFam affiliate program management — influencer onboarding, link tracking, commission reporting, and payment processing across all 4 regions.",
+      "Trendyol TrendFam ekosisteminde aktif olarak yer alan, doğrulanmış ve performans odaklı geniş influencer ağı.",
   },
   {
     index: "02",
-    title: "Market Entry & Growth",
+    title: "Marka & Influencer Eşleştirme",
     description:
-      "Strategic entry into MENA, Gulf, CEE, and Azerbaijani markets with local cultural fluency, network access, and full operational infrastructure.",
+      "Marka hedeflerine ve hedef kitleye en uygun içerik üreticilerini veri odaklı analizlerle belirleme ve eşleştirme.",
   },
   {
     index: "03",
-    title: "Production & Media",
+    title: "Affiliate Operasyon Yönetimi",
     description:
-      "High-fidelity content creation and advertising production optimized for social platforms across MENA and European markets.",
+      "Link oluşturma, komisyon yapısı kurulumu, performans takibi ve Trendyol paneli üzerinden uçtan uca kampanya yönetimi.",
   },
   {
     index: "04",
-    title: "Strategic Consultancy",
+    title: "Raporlama ve Süreç Yönetimi",
     description:
-      "Legal contract architecture, tax compliance, KVKK/GDPR protection, and financial advisory — covering every jurisdiction we operate in.",
+      "Şeffaf raporlama, sözleşme süreçleri, KVKK uyumu ve komisyon ödemelerinin eksiksiz takibi.",
   },
 ]
 
@@ -77,38 +77,38 @@ const CORE_SERVICES = [
   {
     PrimaryIcon: TrendingUp,
     AccentIcon: Coins,
-    title: "Financial & Strategic Advisory",
-    description: "Tailored financial roadmaps and strategic business growth for digital-first enterprises.",
-  },
-  {
-    PrimaryIcon: Scale,
-    AccentIcon: Lock,
-    title: "Legal & Rights Management",
-    description: "Comprehensive legal support for contract architecture and intellectual property in the creator economy.",
-  },
-  {
-    PrimaryIcon: Target,
-    AccentIcon: Camera,
-    title: "Advertising & Marketing Production",
-    description: "End-to-end campaign creation that resonates across cultures and platforms.",
-  },
-  {
-    PrimaryIcon: Film,
-    AccentIcon: Zap,
-    title: "Creative Production",
-    description: "High-fidelity visual storytelling and content assets built for the modern attention economy.",
+    title: "Affiliate Pazarlama Yönetimi",
+    description: "Trendyol TrendFam süreçleri, link oluşturma, komisyon takibi, raporlama ve ödeme süreci.",
   },
   {
     PrimaryIcon: Users,
     AccentIcon: Star,
-    title: "Global Talent Management",
-    description: "360-degree career growth and partnership management for the digital elite.",
+    title: "Influencer İş Birlikleri",
+    description: "Markalarla doğru içerik üreticilerini eşleştirme ve 1 yıllık sözleşmeli, performans odaklı yapı.",
+  },
+  {
+    PrimaryIcon: Target,
+    AccentIcon: Camera,
+    title: "Marka Kampanya Yönetimi",
+    description: "Brief alma, hedef kitle analizi, creator seçimi, kampanya takibi ve optimizasyonu.",
+  },
+  {
+    PrimaryIcon: Film,
+    AccentIcon: Zap,
+    title: "Kampanya Prodüksiyonu",
+    description: "Sosyal medya formatlarına uygun kreatif üretim, kampanya içeriği ve prodüksiyon desteği.",
   },
   {
     PrimaryIcon: Package,
     AccentIcon: Flag,
-    title: "Brand & Product Development",
-    description: "Developing unique brand identities and product lines that dominate markets.",
+    title: "İçerik Üretici Danışmanlığı",
+    description: "Link stratejisi, içerik optimizasyonu, performans analizi ve özel eğitim webinarları.",
+  },
+  {
+    PrimaryIcon: Scale,
+    AccentIcon: Lock,
+    title: "Hukuki & Finansal Yönetim",
+    description: "Sözleşme, KVKK uyumu, faturalandırma, ödeme takibi ve tam şeffaf finansal raporlama.",
   },
 ]
 
@@ -135,16 +135,16 @@ export default function AboutClientPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#888888]">
-            / About
+            / Hakkımızda
           </p>
-          <h1 className="mt-6 font-display text-[clamp(3rem,11vw,11rem)] font-bold leading-[0.85] tracking-[-0.05em] text-balance text-[#111111]">
-            Global Vision.
+          <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8rem)] font-bold leading-[0.85] tracking-[-0.05em] text-balance text-[#111111]">
+            Türkiye'de Etkiyi Ölçülebilir Büyümeye Dönüştürüyoruz.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#888888] md:text-xl">
-            imediaff Global connects brands and creators through a unified strategic model built for market relevance, cultural fluency, and measurable growth.
+            imediaff Türkiye, markaları doğru içerik üreticileriyle buluşturur; Trendyol TrendFam ekosisteminde performans odaklı, ölçülebilir ve sürdürülebilir büyüme sağlar.
           </p>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#888888] md:text-lg">
-            As one of Trendyol&apos;s top 3 global partner agencies, we manage affiliate and influencer marketing operations across Turkey, CEE, Gulf, and Azerbaijan — delivering structured, transparent, and performance-based partnerships.
+            Trendyol'un resmi partner ajanslarından biri olarak, Türkiye'de influencer ve affiliate pazarlama operasyonlarını şeffaf, ölçülebilir ve güçlü bir altyapıyla yönetiyoruz.
           </p>
         </motion.div>
       </section>
@@ -159,7 +159,7 @@ export default function AboutClientPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
-            / Regional Power
+            / Türkiye'de Güçlü Operasyon
           </p>
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
             {PRESENCE.map((item, index) => (
@@ -196,13 +196,13 @@ export default function AboutClientPage() {
             transition={{ duration: 0.7 }}
           >
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
-              / Heritage
+              / Altyapı
             </p>
             <h2 className="mt-6 font-display text-[clamp(2.5rem,7vw,6.5rem)] font-bold leading-[0.88] tracking-[-0.045em] text-balance text-[#111111]">
-              A Legacy of<br />Global Influence.
+              Performans Odaklı<br />Güçlü Ekosistem.
             </h2>
             <p className="mt-6 max-w-3xl text-base leading-relaxed text-[#888888] md:text-lg">
-              Rooted in the powerhouse of the Turkish digital landscape, imediaff has evolved into a strategic gateway for the MENA region. We operate with a network of 10,000+ verified influencers, delivering 360° growth solutions.
+              Türkiye dijital ekosisteminde derinleşen tecrübemizle, 10.000'den fazla içerik üreticisinden oluşan doğrulanmış ağımızla markalara uçtan uca büyüme çözümleri sunuyoruz.
             </p>
           </motion.div>
 
@@ -242,7 +242,7 @@ export default function AboutClientPage() {
         <motion.div style={{ y: brandY }} className="absolute inset-0 scale-[1.2]">
           <Image
             src="/brand.png"
-            alt="imediaff Global brand visual"
+            alt="imediaff Türkiye"
             fill
             priority
             sizes="100vw"
@@ -261,10 +261,10 @@ export default function AboutClientPage() {
         <div className="absolute inset-0 flex items-end z-20">
           <div className="mx-auto w-full max-w-[1600px] px-6 md:px-10 pb-12 md:pb-24">
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#FE9417]">
-              / Brand System
+              / Sistem
             </p>
             <p className="mt-3 max-w-2xl font-display text-3xl font-bold leading-tight text-[#FFFFFF] md:text-5xl lg:text-6xl drop-shadow-2xl">
-              Built for visibility across cultures, platforms, and <span className="text-[#FE9417]">markets.</span>
+              Türkiye pazarında iz bırakan, sürdürülebilir ve şeffaf <span className="text-[#FE9417]">çözümler.</span>
             </p>
           </div>
         </div>
@@ -280,10 +280,10 @@ export default function AboutClientPage() {
             transition={{ duration: 0.7 }}
           >
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
-              / Global Capabilities
+              / Yetkinliklerimiz
             </p>
             <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-[#111111]">
-              Four Pillars of<br />Digital Excellence.
+              Dijital Mükemmelliğin<br />Dört Temeli.
             </h2>
           </motion.div>
 
@@ -324,10 +324,10 @@ export default function AboutClientPage() {
             className="mb-14 md:mb-20"
           >
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
-              / How We Work
+              / Nasıl Çalışıyoruz
             </p>
             <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-[#111111]">
-              A transparent,{"\u00A0"}<br />performance-driven{"\u00A0"}model.
+              Şeffaf ve{"\u00A0"}<br />performans odaklı{"\u00A0"}süreç.
             </h2>
           </motion.div>
 
@@ -335,28 +335,28 @@ export default function AboutClientPage() {
             {[
               {
                 step: "01",
-                title: "Onboarding & Review",
-                desc: "Influencer or brand profile reviewed within 1–5 business days. Eligibility confirmed against regional program requirements.",
+                title: "Başvuru / Brief",
+                desc: "İçerik üreticisi başvurusu veya marka kampanya briefi sisteme iletilir. İhtiyaçlar netleştirilir.",
               },
               {
                 step: "02",
-                title: "Contract & Agreement",
-                desc: "A 1-year partnership contract signed by both parties. Commission rates, payment schedule, and compliance rules clearly defined.",
+                title: "Uygunluk Analizi",
+                desc: "Profil veya kampanya hedefleri incelenerek Trendyol TrendFam kriterlerine ve bölgesel dinamiklere uygunluğu doğrulanır.",
               },
               {
                 step: "03",
-                title: "Program Activation",
-                desc: "Affiliate links activated. Influencer Center access granted. Agency WhatsApp channel access provided.",
+                title: "Sözleşme ve Kurulum",
+                desc: "Tam şeffaflıkla komisyon oranları ve kuralların belirlendiği resmi sözleşme imzalanır. Paneller aktive edilir.",
               },
               {
                 step: "04",
-                title: "Active Management",
-                desc: "Ongoing performance tracking, campaign updates, bonus mission alerts, and 1-on-1 consultancy support.",
+                title: "Kampanya Aktivasyonu",
+                desc: "Affiliate linkleri oluşturulur, kampanya yayına alınır. Süreç boyunca stratejik danışmanlık sağlanır.",
               },
               {
                 step: "05",
-                title: "Reporting & Payment",
-                desc: "Monthly commission reports with full breakdowns. Payments processed on a 30-day cycle — directly to IBAN or local account. No upfront fees. Commission-only model.",
+                title: "Performans Takibi ve Raporlama",
+                desc: "Aylık performans raporları ve komisyon dökümleri sunulur. Düzenli ve sorunsuz ödeme süreci yürütülür.",
               },
             ].map((item, i) => (
               <motion.div
@@ -394,10 +394,10 @@ export default function AboutClientPage() {
             className="mb-14 md:mb-20"
           >
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
-              / Core Expertise
+              / Hizmetlerimiz
             </p>
             <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-[#111111]">
-              End-to-End <br className="hidden md:block" /> Digital Mastery.
+              Uçtan Uca <br className="hidden md:block" /> Dijital Çözümler.
             </h2>
           </motion.div>
 
@@ -462,14 +462,14 @@ export default function AboutClientPage() {
           >
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
-                / Strategic Partnerships
+                / Stratejik Partnerlikler
               </p>
               <h2 className="mt-5 font-display text-[clamp(2rem,5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-black">
-                Empowering<br />Industry Leaders.
+                Sektör Liderleriyle<br />Güçlü İş Birlikleri.
               </h2>
             </div>
             <p className="max-w-sm text-sm leading-relaxed text-gray-500 md:text-base">
-              Empowering industry leaders across e-commerce, technology, and lifestyle sectors.
+              E-ticaret, teknoloji, moda ve perakende sektörlerinin öncü markalarıyla ölçülebilir büyüme sağlıyoruz.
             </p>
           </motion.div>
 
@@ -491,7 +491,7 @@ export default function AboutClientPage() {
                 </p>
                 {p.name === "Trendyol" && (
                   <p className="mt-2 text-xs leading-relaxed text-gray-500">
-                    iMediaff is one of Trendyol&apos;s top 3 authorized global partner agencies — managing TrendFam operations across MENA, CEE, Turkey, and Azerbaijan.
+                    imediaff Türkiye, Trendyol'un resmi partner ajanslarından biri olarak influencer ekosisteminde aktif rol oynamaktadır.
                   </p>
                 )}
               </motion.div>
@@ -511,18 +511,18 @@ export default function AboutClientPage() {
         >
           <div className="md:col-span-4">
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#888888]">
-              / New Generation 360° Agency
+              / Yeni Nesil Dijital Ajans
             </p>
           </div>
           <div className="md:col-span-8">
             <h2 className="font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.95] tracking-[-0.035em] text-balance text-[#111111]">
-              Market-first strategy for international brands entering MENA.
+              İş ortaklarımızla uzun vadeli ve şeffaf ilişkiler kuruyoruz.
             </h2>
             <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#888888] md:text-lg">
-              imediaff Global operates as a new generation 360° agency, combining data-driven creativity, talent management, and market-first strategy into one accountable growth system.
+              Marka, ajans ve içerik üreticisi arasındaki süreci; sözleşme, raporlama, ödeme ve performans takibiyle güven temelli bir yapıya dönüştürüyoruz. imediaff Türkiye; markalar, içerik üreticileri ve dijital ticaret platformları arasında 360° influencer marketing, affiliate marketing, prodüksiyon, danışmanlık ve süreç yönetimi hizmetleri sunan yeni nesil bir ajanstır.
             </p>
             <div className="mt-8 grid grid-cols-1 gap-px border border-[#E5E5E5] bg-white/10 sm:grid-cols-3 rounded-lg overflow-hidden">
-              {["Data-driven creativity", "Talent management", "Market-first strategies"].map((item) => (
+              {["Veri Odaklı Strateji", "Şeffaf Süreç Yönetimi", "Performans Bazlı Büyüme"].map((item) => (
                 <div key={item} className="bg-white px-4 py-5 text-center">
                   <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#FE9417]">
                     {item}
@@ -544,26 +544,26 @@ export default function AboutClientPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10 text-center md:text-left"
         >
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#111111] font-bold">
-            / Start Today
+            / Hemen Başlayın
           </p>
           <h2 className="mt-6 font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.045em] text-balance text-[#111111]">
-            Scale beyond borders.
+            Gücünüzü keşfedin.
           </h2>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#111111] md:text-xl font-medium mx-auto md:mx-0">
-            Whether you are a brand seeking MENA entry or a creator ready for global reach — your next chapter starts here.
+            İster doğru kitleye ulaşmak isteyen bir marka olun, ister gelirinizi katlamak isteyen bir içerik üreticisi — başarı yolculuğunuz burada başlıyor.
           </p>
           <div className="mt-12 flex flex-wrap items-center justify-center md:justify-start gap-4">
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 bg-white px-10 py-5 text-base font-bold text-[#111111] transition-transform hover:scale-105 rounded-full"
             >
-              Start a Project
+              Teklif Al
             </Link>
             <Link
-              href="/events"
+              href="/talent"
               className="inline-flex items-center gap-2 border-2 border-black px-10 py-5 text-base font-bold text-[#111111] transition-all hover:bg-white hover:text-[#111111] rounded-full"
             >
-              View Events
+              Başvuru Yap
             </Link>
           </div>
         </motion.div>

@@ -2,9 +2,9 @@ import { Suspense } from "react"
 import ContactClientPage from "./contact-client-page"
 
 export const metadata = {
-  title: "Contact | Global Network & Brief Intake | imediaff",
+  title: "İletişim | Teklif & Başvuru | imediaff Türkiye",
   description:
-    "Request a proposal, share your brief, or discuss a partnership with our global team across Istanbul, Dubai, and the USA.",
+    "Marka kampanya teklifi almak veya içerik üreticisi olarak ekosisteme katılmak için bizimle iletişime geçin.",
 }
 
 export default function ContactPage() {

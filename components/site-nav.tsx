@@ -7,21 +7,15 @@ import { motion, AnimatePresence } from "motion/react"
 import { cn } from "@/lib/utils"
 
 const NAV_ITEMS = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Brands", href: "/brands" },
-  { label: "Affiliate Programs", href: "/affiliate-programs" },
-  {
-    label: "İçerik Üreticileri",
-    href: "/talent",
-    subItems: [
-      { label: "Turkey", href: "/talent/turkey", flags: "🇹🇷" }
-    ]
-  },
-  { label: "Events", href: "/events" },
+  { label: "Ana Sayfa", href: "/" },
+  { label: "Hakkımızda", href: "/about" },
+  { label: "Hizmetler", href: "/services" },
+  { label: "Markalar", href: "/brands" },
+  { label: "Affiliate Programları", href: "/affiliate-programs" },
+  { label: "İçerik Üreticileri", href: "/talent" },
+  { label: "Etkinlikler", href: "/events" },
   { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" },
+  { label: "İletişim", href: "/contact" },
 ]
 
 const SOCIAL_LINKS = [

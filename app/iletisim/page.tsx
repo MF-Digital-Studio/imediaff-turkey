@@ -1,11 +1,11 @@
-﻿import ContactHero from "@/components/contact/contact-hero"
+import ContactHero from "@/components/contact/contact-hero"
 import ContactForm from "@/components/contact/contact-form"
 import ContactFooterInfo from "@/components/contact/contact-footer-info"
 
 export const metadata = {
-  title: "Contact | imediaff Global",
+  title: "İletişim | imediaff Türkiye",
   description:
-    "Request a proposal, share your brief, or discuss a partnership with our global team.",
+    "Türkiye ekibimizle bir iş birliği görüşmek, teklif almak veya brief paylaşmak için bize ulaşın.",
 }
 
 export default function ContactPage() {

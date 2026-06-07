@@ -25,10 +25,10 @@ export default function RegionsGrid() {
           className="mb-16 md:mb-20 text-center md:text-left"
         >
           <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FE9417] mb-5">
-            / TÜRKİYE OPERASYONLARIMIZ
+            / OPERASYONLARIMIZ
           </p>
           <h2 className="font-sans text-[clamp(2.5rem,6vw,5rem)] font-bold text-[#111111] leading-[0.92] tracking-[-0.03em]">
-            Türkiye'nin en büyük{" "}
+            Geniş ve etkili{" "}
             <span
               style={{
                 backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
@@ -73,13 +73,13 @@ export default function RegionsGrid() {
               </h3>
               
               <p className="text-base md:text-lg text-[#666666] leading-relaxed font-medium mb-10">
-                Trendyol'un Türkiye'deki en büyük resmi partner ajansı. 5.000'den fazla influencer, tam hukuki, finansal ve stratejik destekle Trendyol affiliate programında aktif olarak çalışıyor.
+                Trendyol'un resmi partner ajansı. 10.000'den fazla influencer, tam hukuki, finansal ve stratejik destekle Trendyol affiliate programında aktif olarak çalışıyor.
               </p>
 
               {/* Stats Row */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 py-8 border-y border-[#E5E5E5]">
                 <div>
-                  <p className="font-sans text-2xl font-bold text-[#111111] mb-1">5.000+</p>
+                  <p className="font-sans text-2xl font-bold text-[#111111] mb-1">10.000+</p>
                   <p className="font-mono text-[10px] uppercase tracking-wider text-[#888888]">İçerik Üreticisi</p>
                 </div>
                 <div>
@@ -88,13 +88,13 @@ export default function RegionsGrid() {
                 </div>
                 <div>
                   <p className="font-sans text-2xl font-bold text-[#111111] mb-1">2019'dan Beri</p>
-                  <p className="font-mono text-[10px] uppercase tracking-wider text-[#888888]">Sektör Lideri</p>
+                  <p className="font-mono text-[10px] uppercase tracking-wider text-[#888888]">Operasyonel Deneyim</p>
                 </div>
               </div>
 
               {/* CTA */}
               <Link
-                href="/talent/turkey"
+                href="/talent"
                 className="group inline-flex items-center gap-3 bg-[#FE9417] text-white rounded-full px-8 py-4 font-bold transition-transform hover:scale-105 w-fit"
               >
                 Programı İncele

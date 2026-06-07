@@ -1,28 +1,33 @@
 import Link from "next/link"
 
 const FOOTER_LINKS = {
-  Explore: [
-    { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Services", href: "/services" },
-    { label: "Brands", href: "/brands" },
-    { label: "Events", href: "/events" },
+  "Keşfet": [
+    { label: "Ana Sayfa", href: "/" },
+    { label: "Hakkımızda", href: "/about" },
+    { label: "Hizmetler", href: "/services" },
+    { label: "Markalar", href: "/brands" },
+    { label: "Etkinlikler", href: "/events" },
     { label: "Blog", href: "/blog" },
   ],
-  Capabilities: [
-    { label: "Creator Strategy", href: "/services" },
-    { label: "Campaign Management", href: "/services" },
-    { label: "Paid Media", href: "/services" },
-    { label: "Influencer Partnerships", href: "/services" },
+  "Hizmetler": [
+    { label: "Affiliate Pazarlama", href: "/services" },
+    { label: "Influencer İş Birlikleri", href: "/services" },
+    { label: "Kampanya Yönetimi", href: "/services" },
+    { label: "İçerik Üretici Danışmanlığı", href: "/services" },
   ],
-  Contact: [
+  "İletişim": [
     { label: "info@imediaff.com", href: "mailto:info@imediaff.com" },
     { label: "İstanbul, Türkiye", href: "/contact" },
     { label: "Teklif Al", href: "/contact" },
   ],
-  Offices: [
+  "Ofis": [
     {
-      label: "Istanbul HQ: Fikirtepe Mah. Hizirbey Cad. No:25/C Fortis Sinanli Yeni Kadikoy, G Block, D-Entrance, Floor: 1, D:06, 34720 Kadikoy/Istanbul",
+      label: "Istanbul HQ: Fikirtepe Mah. Hızırbey Cad. No:25/C Fortis Sinanlı Yeni Kadıköy G Blok (Giriş D Blok) K:1 D:06, 34720 Kadıköy/İstanbul",
+      href: "/contact",
+      isAddress: true
+    },
+    {
+      label: "Vadistanbul: Ayazağa, Vadistanbul Park Etabı Bilişim Vadisi, D:7A Blok Kat 10 No:38, 34396 Sarıyer/İstanbul",
       href: "/contact",
       isAddress: true
     }
@@ -78,7 +83,7 @@ export default function SiteFooter() {
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="font-mono text-[10px] uppercase tracking-widest text-[#888888]">© {new Date().getFullYear()} imediaff Türkiye. Tüm hakları saklıdır.</p>
           <div className="flex items-center gap-6">
-            <Link href="#" className="font-mono text-[10px] uppercase tracking-widest text-[#888888] hover:text-[#111111] transition-colors">KVKK / Privacy Policy</Link>
+            <Link href="#" className="font-mono text-[10px] uppercase tracking-widest text-[#888888] hover:text-[#111111] transition-colors">KVKK ve Gizlilik Politikası</Link>
             <p className="font-mono font-bold text-[10px] uppercase tracking-widest text-[#888888]">Powered by MF Digital Studio</p>
           </div>
         </div>

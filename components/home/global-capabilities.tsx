@@ -8,9 +8,9 @@ import { motion, useInView } from "motion/react"
 const CAPABILITIES = [
   {
     index: "01",
-    title: "Creator Strategy",
+    title: "Creator Stratejisi",
     description:
-      "Engineering high-conversion creator roadmaps that align with your brand's global DNA — from talent selection to content architecture.",
+      "Markanızın DNA'sına uygun yüksek dönüşümlü içerik üreticisi stratejileri geliştiriyoruz.",
     glow: "rgba(37,99,235,0.22)",
     glowHover: "rgba(37,99,235,0.45)",
     accentFrom: "#FE9417",
@@ -25,9 +25,9 @@ const CAPABILITIES = [
   },
   {
     index: "02",
-    title: "Market Entry & Growth",
+    title: "Pazar Girişi ve Büyüme",
     description:
-      "Your strategic gateway to the Dubai and MENA markets, ensuring cultural fluency and rapid scaling through established regional networks.",
+      "Türkiye pazarındaki stratejik köprünüz. Yerel ağlarımız ve bölgesel tecrübemiz ile hızlı ve güvenilir büyüme sağlıyoruz.",
     glow: "rgba(255,138,30,0.20)",
     glowHover: "rgba(255,138,30,0.42)",
     accentFrom: "#FE9417",
@@ -42,9 +42,9 @@ const CAPABILITIES = [
   },
   {
     index: "03",
-    title: "Campaign Management",
+    title: "Kampanya Yönetimi",
     description:
-      "End-to-end execution of multi-platform campaigns with transparent, real-time reporting and performance guarantees built in.",
+      "Şeffaf, gerçek zamanlı raporlama ve performans garantisi ile çok kanallı kampanyaların uçtan uca yönetimi.",
     glow: "rgba(255,189,30,0.18)",
     glowHover: "rgba(255,189,30,0.38)",
     accentFrom: "#FE9417",
@@ -59,9 +59,9 @@ const CAPABILITIES = [
   },
   {
     index: "04",
-    title: "Strategic Consultancy",
+    title: "Stratejik Danışmanlık",
     description:
-      "Expert advisory on digital expansion, tax-efficient structures, and legal contract architecture across international jurisdictions.",
+      "Türkiye pazarında operasyonel mükemmellik, hukuki sözleşmeler ve dijital büyüme konularında uzman danışmanlık.",
     glow: "rgba(37,99,235,0.20)",
     glowHover: "rgba(37,99,235,0.42)",
     accentFrom: "#FE9417",
@@ -295,7 +295,7 @@ export default function GlobalCapabilities() {
     <section
       ref={sectionRef}
       className="relative overflow-hidden bg-white"
-      aria-label="Global Capabilities"
+      aria-label="Yeteneklerimiz"
     >
 
 
@@ -322,10 +322,10 @@ export default function GlobalCapabilities() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FE9417] mb-5">
-              / Capabilities
+              / Yeteneklerimiz
             </p>
             <h2 className="font-sans text-[clamp(2.4rem,5vw,4.5rem)] font-bold text-[#111111] leading-[0.92] tracking-[-0.03em] text-balance">
-              Built to{" "}
+              Her ölçekte{" "}
               <span
                 style={{
                   backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
@@ -334,9 +334,9 @@ export default function GlobalCapabilities() {
                   backgroundClip: "text",
                 }}
               >
-                perform
+                performans
               </span>{" "}
-              at every scale.
+              için tasarlandı.
             </h2>
           </motion.div>
 
@@ -346,8 +346,7 @@ export default function GlobalCapabilities() {
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="max-w-sm text-[0.95rem] text-[#888888] leading-relaxed font-medium md:text-right"
           >
-            Four integrated service verticals, designed for brands operating at the intersection of
-            global ambition and regional precision.
+            Türkiye pazarında ve ötesinde büyümek isteyen markalar için tasarlanmış entegre hizmet noktaları.
           </motion.p>
         </div>
 

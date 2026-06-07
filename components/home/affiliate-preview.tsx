@@ -40,7 +40,7 @@ export default function AffiliatePreview() {
                   )}
                 </div>
                 <span className="inline-flex rounded-full bg-white px-4 py-1.5 font-sans text-[10px] uppercase tracking-[0.15em] text-[#FE9417] font-bold">
-                  Türkiye'nin 1 Numaralı Programı
+                  Resmi Affiliate Ortaklığı
                 </span>
               </div>
 
@@ -48,15 +48,15 @@ export default function AffiliatePreview() {
                 Trendyol TrendFam
               </h3>
               <p className="text-[#555555] leading-relaxed text-lg md:text-xl font-sans max-w-2xl">
-                Türkiye'nin en büyük e-ticaret platformu Trendyol'un resmi affiliate programı. İçerik üreticileri için en yüksek komisyon oranları ve tam ajans desteği.
+                Trendyol'un resmi affiliate programı. İçerik üreticileri için yüksek komisyon oranları ve tam ajans desteği.
               </p>
             </div>
 
             <div className="lg:col-span-5 flex flex-col gap-12 lg:pl-12">
               <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
                 {[
-                  { label: "Creator", value: "5.000+" },
-                  { label: "Commission cap", value: "150% Max" }
+                  { label: "İçerik Üreticisi", value: "10.000+" },
+                  { label: "Komisyon", value: "%150'ye Varan" }
                 ].map((stat, i) => (
                   <div key={i} className="border-l border-[#E5E5E5] pl-5 py-1">
                     <div className="text-[#111111] font-bold text-xl md:text-2xl uppercase tracking-tight">{stat.value}</div>

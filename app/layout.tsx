@@ -18,14 +18,14 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "imediaff Türkiye | 360° Dijital Ajans",
+  title: "imediaff Türkiye | Influencer & Affiliate Pazarlama Ajansı",
   description:
-    "imediaff Türkiye, markalar ve içerik üreticilerini Trendyol affiliate ağı üzerinden bir araya getiren Türkiye'nin lider influencer pazarlama ajansıdır.",
+    "imediaff Türkiye, markalar ve içerik üreticilerini Trendyol TrendFam ekosisteminde performans odaklı influencer ve affiliate iş birlikleriyle buluşturur.",
   generator: "v0.app",
   openGraph: {
-    title: "imediaff Türkiye | 360° Dijital Ajans",
+    title: "imediaff Türkiye | Influencer & Affiliate Pazarlama Ajansı",
     description:
-      "imediaff Türkiye, markalar ve içerik üreticilerini Trendyol affiliate ağı üzerinden bir araya getiren Türkiye'nin lider influencer pazarlama ajansıdır.",
+      "imediaff Türkiye, markalar ve içerik üreticilerini Trendyol TrendFam ekosisteminde performans odaklı influencer ve affiliate iş birlikleriyle buluşturur.",
     type: "website",
   },
   icons: {
@@ -46,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${instrumentSans.variable} ${geistMono.variable} bg-background dark`}>
+    <html lang="tr" className={`${instrumentSans.variable} ${geistMono.variable} bg-background dark`}>
       <body className="font-sans antialiased bg-background text-foreground overflow-x-hidden grain">
         <LenisProvider>
           <SiteNav />

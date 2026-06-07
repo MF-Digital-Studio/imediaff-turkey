@@ -29,10 +29,10 @@ export default function BlogClientPage() {
           <motion.div {...fadeUp()}>
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">/ Blog</p>
             <h1 className="mt-6 font-display text-[clamp(3.5rem,9vw,9.5rem)] font-bold leading-[0.88] tracking-[-0.04em]">
-              Global <br /> Insights.
+              Sektörel <br /> İçgörüler.
             </h1>
             <p className="mt-8 max-w-2xl text-lg md:text-xl text-[#666666] leading-relaxed font-sans">
-              Editorial intelligence for brands, creators, and operators building influence at international scale.
+              Markalar, ajanslar ve içerik üreticileri için performans odaklı stratejiler ve güncel sektörel analizler.
             </p>
           </motion.div>
         </div>
@@ -42,7 +42,7 @@ export default function BlogClientPage() {
       <section className="bg-white text-black py-20 md:py-32 border-b border-gray-200">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           <motion.div {...fadeUp()} className="mb-14">
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#666666] font-bold">/ Industry Alpha</p>
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#666666] font-bold">/ Güncel Yazılar</p>
           </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
@@ -79,7 +79,7 @@ export default function BlogClientPage() {
                     href={`/blog/${post.slug}`}
                     className="inline-flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.15em] font-bold text-black group-hover:text-[#FE9417] transition-colors mt-auto w-fit"
                   >
-                    Read Article
+                    Yazıyı Oku
                     <span className="block h-px w-6 bg-gradient-to-br from-[#FE9417] to-[#FF6B00] transition-all duration-300 group-hover:w-10" />
                   </Link>
                 </div>
@@ -94,7 +94,7 @@ export default function BlogClientPage() {
         <section className="bg-white text-[#111111] py-20 md:py-32 border-b border-[#E5E5E5]">
           <div className="mx-auto max-w-[1600px] px-6 md:px-10">
             <motion.div {...fadeUp()} className="mb-14">
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#888888] font-bold">/ The Strategic Edge</p>
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#888888] font-bold">/ Stratejik Derinlik</p>
             </motion.div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
@@ -133,7 +133,7 @@ export default function BlogClientPage() {
                       href={`/blog/${post.slug}`}
                       className="inline-flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.15em] font-bold text-[#111111] group-hover:text-[#FE9417] transition-colors mt-auto w-fit"
                     >
-                      Read Article
+                      Yazıyı Oku
                       <span className="block h-px w-6 bg-gradient-to-br from-[#FE9417] to-[#FF6B00] transition-all duration-300 group-hover:w-10" />
                     </Link>
                   </div>
@@ -149,7 +149,7 @@ export default function BlogClientPage() {
         <section className="bg-gradient-to-br from-[#FE9417] to-[#FF6B00] text-[#111111] py-24 md:py-36 relative overflow-hidden">
           <div className="mx-auto max-w-[1600px] px-6 md:px-10">
             <motion.div {...fadeUp()} className="mb-12">
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#555555] font-bold">/ Featured Read</p>
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#555555] font-bold">/ Öne Çıkan Yazı</p>
             </motion.div>
 
             <motion.div
@@ -190,7 +190,7 @@ export default function BlogClientPage() {
                   </p>
 
                   <div className="inline-flex items-center gap-4 font-mono text-xs uppercase tracking-[0.15em] font-bold text-[#111111] w-fit">
-                    Read Full Article
+                    Yazıyı Oku
                     <span className="flex items-center justify-center w-10 h-10 rounded-full border border-[#E5E5E5] group-hover:border-[#E5E5E5] group-hover:bg-white group-hover:text-[#FE9417] transition-all duration-300">
                       →
                     </span>

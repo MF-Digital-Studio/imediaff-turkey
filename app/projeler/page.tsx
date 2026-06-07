@@ -1,12 +1,12 @@
-﻿import ProjectsHeader from "@/components/projects/projects-header"
+import ProjectsHeader from "@/components/projects/projects-header"
 import HorizontalGallery from "@/components/projects/horizontal-gallery"
 import ProjectsIndex from "@/components/projects/projects-index"
 import ProjectsCta from "@/components/projects/projects-cta"
 
 export const metadata = {
-  title: "Case Studies | imediaff Global",
+  title: "Projeler | imediaff Türkiye",
   description:
-    "Selected global campaigns across fashion, beauty, automotive, and technology.",
+    "Moda, güzellik, otomotiv ve teknoloji sektörlerindeki seçkin Türkiye kampanyaları.",
 }
 
 export default function ProjectsPage() {

@@ -2,8 +2,8 @@ import { redirect } from "next/navigation"
 import CaseStudiesClientPage from "./case-studies-client-page"
 
 export const metadata = {
-  title: "Case Studies | imediaff Global",
-  description: "Market success stories across growth, creators, and performance media.",
+  title: "Projeler | imediaff Türkiye",
+  description: "Moda, güzellik, otomotiv ve teknoloji sektörlerindeki seçkin Türkiye kampanyaları.",
   robots: {
     index: false,
     follow: false,

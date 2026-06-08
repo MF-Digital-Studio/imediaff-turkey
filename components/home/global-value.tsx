@@ -9,8 +9,8 @@ import { cn } from "@/lib/utils"
 
 const PILLARS = [
   {
-    title: "Stratejik Eşleştirme",
-    description: "Markaları doğru içerik üreticileriyle buluşturuyoruz — sadece en büyük kitlelerle değil. Her iş birliği performans metrikleri, kitle uyumu ve komisyon bazlı hesap verebilirlik üzerine inşa ediliyor.",
+    title: "Stratejik Eşleşme",
+    description: "Markaları en doğru içerik üreticileriyle bir araya getiriyoruz. Her iş birliği kitle uyumu ve net sonuçlar üzerine inşa ediliyor.",
     icon: <Target className="w-6 h-6 text-black" strokeWidth={1.5} />,
     glowColor: "rgba(37,99,235,0.15)",
   },
@@ -22,7 +22,7 @@ const PILLARS = [
   },
   {
     title: "Tam Şeffaflık",
-    description: "Her içerik üreticisi net 1 yıllık sözleşmeyle çalışıyor. Her komisyon Influencer Center üzerinden anlık takip ediliyor. Her ödeme belgelenmiş. Hiçbir zaman ön ödeme yok.",
+    description: "Net sözleşmeler, anlık komisyon takipleri ve belgelenmiş ödemelerle tam güven ortamı sunuyoruz.",
     icon: <ShieldCheck className="w-6 h-6 text-black" strokeWidth={1.5} />,
     glowColor: "rgba(255,189,30,0.15)",
   },
@@ -45,7 +45,7 @@ export default function GlobalValue() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
             <h2 className="font-sans text-[clamp(2.8rem,6vw,5.5rem)] font-bold text-black tracking-[-0.04em] leading-[0.95] mb-8">
-              Etki Mimarları.
+              Tek Ekip. Net Süreç.
             </h2>
           </motion.div>
           <motion.p

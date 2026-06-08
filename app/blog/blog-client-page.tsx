@@ -31,7 +31,7 @@ export default function BlogClientPage() {
               Sektörel <br /> İçgörüler.
             </h1>
             <p className="mt-8 max-w-2xl text-lg md:text-xl text-[#666666] leading-relaxed font-sans">
-              Markalar, ajanslar ve içerik üreticileri için performans odaklı stratejiler ve güncel sektörel analizler.
+              Markalara, ajanslara ve içerik üreticilerine yönelik stratejik rehberler ve güncel analizler.
             </p>
           </motion.div>
         </div>

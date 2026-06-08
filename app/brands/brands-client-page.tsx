@@ -65,10 +65,10 @@ export default function BrandsClientPage() {
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">/ Marka İş Birlikleri</p>
             <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8.5rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance">
-              Markanız İçin <br /> Doğru İçerik Üreticileriyle <br /> Performans Odaklı Büyüme.
+              Creator Gücüyle Büyüyün.
             </h1>
             <p className="mt-8 max-w-2xl text-lg md:text-xl text-[#666666] leading-relaxed font-sans">
-              Geniş içerik üreticisi ekosistemine katılın. Trendyol, Çiçeksepeti, Hepsiburada ve Amazon gibi platformlarla yürütülen iş birlikleri ve kampanya deneyimimizle, markanızı doğru kitleyle buluşturuyor, ölçülebilir ve performansa dayalı sonuçlar üzerinden büyüme sağlıyoruz.
+              Trendyol resmi partnerliğiyle, markanızı doğru kitleyle buluşturuyor, performansa dayalı sonuçlar üzerinden büyüme sağlıyoruz.
             </p>
           </motion.div>
         </div>
@@ -121,12 +121,12 @@ export default function BrandsClientPage() {
               },
               {
                 num: "02",
-                title: "Performans Bazlı Kampanya",
+                title: "Performans Kampanyaları",
                 desc: "Sadece gerçekleşen satışlar ve dönüşümler üzerinden komisyon ödersiniz. Boşa harcanan reklam bütçesi yoktur; ölçülebilir bir ROI sunar.",
               },
               {
                 num: "03",
-                title: "Operasyonel Süreç Yönetimi",
+                title: "Operasyon Yönetimi",
                 desc: "İçerik üreticisi seçimi, link oluşturma, Trendyol, Çiçeksepeti, Hepsiburada ve Amazon ekosisteminde görünürlük, raporlama ve ödeme takibi gibi tüm operasyonel yükü biz üstleniyoruz.",
               },
             ].map((card, i) => (
@@ -274,7 +274,7 @@ export default function BrandsClientPage() {
             href="/contact?type=brand"
             className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] px-10 py-5 text-base font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl"
           >
-            Marka Briefi Gönder ↗
+            Brief Gönder
           </Link>
         </div>
       </section>
@@ -380,7 +380,7 @@ export default function BrandsClientPage() {
             href="/contact?type=brand"
             className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl"
           >
-            Marka Briefi Gönder ↗
+            Brief Gönder
           </Link>
         </motion.div>
       </section>

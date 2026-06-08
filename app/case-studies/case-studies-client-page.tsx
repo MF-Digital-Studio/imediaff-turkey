@@ -99,7 +99,7 @@ const CASE_STUDIES = [
     client: "Amazon",
     sector: "Pazara Giriş",
     title: "Uluslararası Perakende Markasının Yeni Pazara Girişi.",
-    strategy: "Integrated creator-led market entry for high-tech consumer goods.",
+    strategy: "Yüksek teknoloji tüketici ürünleri için entegre içerik üreticisi odaklı pazara giriş.",
     image: "https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=2070&auto=format&fit=crop",
     kpis: [
       { prefix: "+", to: 240, suffix: "%", label: "ROAS" },
@@ -111,7 +111,7 @@ const CASE_STUDIES = [
     theme: "black",
     client: "L'Oréal",
     sector: "Bölgesel Ağ",
-    title: "Redefining Beauty Standards in the GCC Region.",
+    title: "GCC Bölgesinde Güzellik Standartlarını Yeniden Tanımlamak.",
     strategy: "Öncü yeteneklerin ve yüksek çözünürlüklü prodüksiyonun kullanıldığı 360° dijital kampanya.",
     image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop",
     kpis: [
@@ -124,8 +124,8 @@ const CASE_STUDIES = [
     theme: "white",
     client: "Trendyol",
     sector: "Pazar Büyümesi",
-    title: "Transforming Market Presence through Algorithmic Dominance.",
-    strategy: "Aggressive TikTok and Reels strategy focused on high-frequency, platform-native content.",
+    title: "Algoritmik Hakimiyetle Pazardaki Varlığı Dönüştürmek.",
+    strategy: "Yüksek frekanslı, platforma özel içeriklere odaklanan agresif TikTok ve Reels stratejisi.",
     image: "/trendyol-showcase.png",
     kpis: [
       { prefix: "+", to: 450, suffix: "%", label: "Follower Growth" },
@@ -149,10 +149,10 @@ export default function CaseStudiesClientPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
-            / Case Studies
+            / Başarı Hikayeleri
           </p>
           <h1 className="mt-6 font-display text-[clamp(3rem,9vw,9rem)] font-bold leading-[0.88] tracking-[-0.04em] text-balance">
-            Market Success <br /> Stories.
+            Başarı Hikayeleri
           </h1>
           <p className="mt-8 max-w-2xl text-lg md:text-xl text-[#666666] leading-relaxed font-sans">
             Uluslararası markalar için etki alanını nasıl kurguladığımızı ve algoritmik hakimiyeti nasıl sağladığımızı keşfedin.
@@ -231,7 +231,7 @@ export default function CaseStudiesClientPage() {
                     }`}>
                       <span className="absolute inset-0 bg-gradient-to-br from-[#FE9417] to-[#FF6B00] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                       <span className="relative z-10 transition-colors duration-300 group-hover:text-[#111111]">
-                        View Detailed Report
+                        Detayları İncele
                       </span>
                     </button>
                   </div>

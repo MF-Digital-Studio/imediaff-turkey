@@ -101,7 +101,7 @@ const CORE_SERVICES = [
   {
     PrimaryIcon: Package,
     AccentIcon: Flag,
-    title: "İçerik Üretici Danışmanlığı",
+    title: "Creator Danışmanlığı",
     description: "Link stratejisi, içerik optimizasyonu, performans analizi ve özel eğitim webinarları.",
   },
   {
@@ -138,7 +138,7 @@ export default function AboutClientPage() {
             / Hakkımızda
           </p>
           <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8rem)] font-bold leading-[0.85] tracking-[-0.05em] text-balance text-[#111111]">
-            Etkiyi Ölçülebilir Büyümeye Dönüştürüyoruz.
+            Etkiyi Ölçülebilir Kılıyoruz.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#888888] md:text-xl">
             Markalar, içerik üreticileri ve dijital ticaret platformları arasında güçlü, sürdürülebilir ve performans odaklı iş birlikleri kuruyoruz.
@@ -159,7 +159,7 @@ export default function AboutClientPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
-            / Türkiye'de Güçlü Operasyon
+            / Operasyon
           </p>
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
             {PRESENCE.map((item, index) => (
@@ -199,10 +199,10 @@ export default function AboutClientPage() {
               / Altyapı
             </p>
             <h2 className="mt-6 font-display text-[clamp(2.5rem,7vw,6.5rem)] font-bold leading-[0.88] tracking-[-0.045em] text-balance text-[#111111]">
-              Performans Odaklı<br />Güçlü Ekosistem.
+              Güçlü Ekosistem.
             </h2>
             <p className="mt-6 max-w-3xl text-base leading-relaxed text-[#888888] md:text-lg">
-              Dijital ekosistemdeki derinleşen tecrübemizle, 10.000'den fazla içerik üreticisinden oluşan doğrulanmış ağımızla markalara uçtan uca büyüme çözümleri sunuyoruz.
+              Geniş içerik üreticisi ağımızla markaların dijital görünürlüğünü ve satışlarını artıracak çözümler sunuyoruz.
             </p>
           </motion.div>
 
@@ -355,7 +355,7 @@ export default function AboutClientPage() {
               },
               {
                 step: "05",
-                title: "Performans Takibi ve Raporlama",
+                title: "Performans Raporlama",
                 desc: "Aylık performans raporları ve komisyon dökümleri sunulur. Düzenli ve sorunsuz ödeme süreci yürütülür.",
               },
             ].map((item, i) => (

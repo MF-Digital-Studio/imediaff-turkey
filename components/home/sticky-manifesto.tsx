@@ -11,19 +11,19 @@ type ManifestoSection = {
 
 const SECTIONS: ManifestoSection[] = [
   {
-    kicker: "01 - STRATEJİK MERKEZ",
-    title: "Sadece ulaşmıyoruz. Gerçek bağlar kuruyoruz.",
-    body: "İstanbul'da stratejik olarak konumlanan imediaff, Trendyol ekosisteminde markalar için büyüme altyapısı oluşturuyor.",
+    kicker: "01 - STRATEJİ",
+    title: "Doğru Creator. Doğru Kampanya.",
+    body: "Her kampanya için kitle analizi ve veri odaklı eşleştirmelerle en uygun içerik üreticilerini belirliyoruz.",
   },
   {
-    kicker: "02 - KÜLTÜREL ZEKA",
-    title: "Trendleri takip etmiyoruz. Sektöre yön veren yeni trendler yaratıyoruz.",
-    body: "Tüketicilerin dinamiklerini ve kültürel bağlamı derinlemesine anlıyoruz. Markanızın konuşmaların otantik bir parçası olmasını sağlıyoruz.",
+    kicker: "02 - KÜLTÜR",
+    title: "Sektöre Yön Veren Trendler",
+    body: "Kültürel bağlamı derinlemesine anlıyor, markanızın sosyal medyadaki konuşmaların doğal bir parçası olmasını sağlıyoruz.",
   },
   {
-    kicker: "03 - ÖLÇÜLEBILIR BÜYÜME",
-    title: "Sadece veri takip etmiyoruz. Pazar payı yaratıyoruz.",
-    body: "Trendyol ekosisteminde dijital dikkati ölçülebilir büyümeye dönüştürüyoruz.",
+    kicker: "03 - BÜYÜME",
+    title: "Pazar Payı Yaratıyoruz",
+    body: "Sosyal medyadaki dijital ilgiyi satışa ve kalıcı pazar payına dönüştürüyoruz.",
   },
 ]
 
@@ -52,7 +52,6 @@ export default function StickyManifesto() {
             <h2 className="mt-4 font-sans text-[clamp(2.5rem,7vw,6rem)] font-bold leading-[1.05] tracking-[-0.035em] text-balance max-w-4xl text-[#111111]">
               Ne inşa ediyoruz?
               <br />
-              İnsanların konuştuğu{" "}
               <span
                 style={{
                   backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
@@ -61,12 +60,12 @@ export default function StickyManifesto() {
                   backgroundClip: "text",
                 }}
               >
-                markalar inşa ediyoruz.
+                Konuşulan Marka Anları.
               </span>
             </h2>
           </div>
           <p className="max-w-md text-sm md:text-base text-[#888888] leading-relaxed font-medium">
-            Stratejiden kültüre ve ölçülebilir büyümeye uzanan üç aşamalı bir büyüme modeli.
+            Stratejiden kültüre ve büyümeye uzanan üç aşamalı bir model.
           </p>
         </div>
       </div>

@@ -46,9 +46,8 @@ export default function AffiliateProgramsClientPage() {
                 / Performans Pazarlaması
               </p>
               <h1 className="font-display text-[clamp(3.5rem,8vw,7.5rem)] font-bold leading-[0.9] tracking-[-0.04em] mb-8 text-black text-balance font-sans">
-                Etkileşimi <br />
                 <span className="bg-gradient-to-r from-[#FE9417] to-[#C8B2F8] bg-clip-text text-transparent font-sans">
-                  Kazanca Dönüştürün.
+                  Etkinizi Kazanca Dönüştürün.
                 </span>
               </h1>
               <p className="max-w-3xl text-lg md:text-xl leading-relaxed text-black/60 mb-12 font-sans text-balance">
@@ -61,7 +60,7 @@ export default function AffiliateProgramsClientPage() {
                 href="/contact"
                 className="group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold text-[#111111] transition-all hover:scale-105 bg-gradient-to-br from-[#FE9417] to-[#C8B2F8] shadow-[0_4px_14px_0_rgba(255,161,1,0.25)] hover:shadow-[0_6px_20px_rgba(255,161,1,0.4)] w-full sm:w-auto font-bold"
               >
-                Affiliate Programına Katılın ↗
+                Başvuru Yap
               </Link>
             </motion.div>
           </div>
@@ -283,7 +282,7 @@ export default function AffiliateProgramsClientPage() {
               href="/talent"
               className="group inline-flex items-center justify-center rounded-full px-8 py-4 bg-white text-[#FE9417] hover:bg-white hover:text-[#111111] transition-all hover:scale-105 shadow-xl font-bold"
             >
-              Hemen Başvuru Yapın ↗
+              Başvuru Yap
             </Link>
           </div>
         </div>
@@ -460,7 +459,7 @@ export default function AffiliateProgramsClientPage() {
               href="/talent"
               className="inline-flex items-center justify-center rounded-full bg-white px-10 py-5 text-base font-bold text-[#111111] transition-all hover:scale-105 shadow-xl w-full sm:w-auto"
             >
-              Affiliate Başvurusu Yapın ↗
+              Başvuru Yap
             </Link>
           </div>
         </motion.div>

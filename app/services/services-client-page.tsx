@@ -86,7 +86,7 @@ export default function ServicesClientPage() {
             / Hizmetlerimiz
           </p>
           <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance">
-            Uçtan Uca Influencer & Affiliate Çözümleri
+            Influencer & Affiliate Çözümleri
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#666666] md:text-xl">
             Stratejiden prodüksiyona, kampanya yönetiminden raporlamaya kadar tüm süreci tek merkezden yönetiyoruz.
@@ -108,7 +108,7 @@ export default function ServicesClientPage() {
               / Entegre Çözümler
             </p>
             <h2 className="mt-5 font-display text-[clamp(2.5rem,6vw,5.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-black">
-              Performans Odaklı <br className="hidden md:block" /> 360° Uzmanlık.
+              360° Uzmanlık.
             </h2>
           </motion.div>
 
@@ -254,7 +254,7 @@ export default function ServicesClientPage() {
             / Gücünüzü Katlayın
           </p>
           <h2 className="font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance mb-10 text-[#111111]">
-            Ölçülebilir başarıya <br className="hidden md:block" /> bugün ulaşın.
+            Başarıya bugün ulaşın.
           </h2>
           <Link
             href="/contact"

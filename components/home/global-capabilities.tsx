@@ -44,7 +44,7 @@ const CAPABILITIES = [
     index: "03",
     title: "Kampanya Yönetimi",
     description:
-      "Şeffaf, gerçek zamanlı raporlama ve performans garantisi ile çok kanallı kampanyaların uçtan uca yönetimi.",
+      "Şeffaf, gerçek zamanlı raporlama ve performans garantisi ile çok kanallı kampanyaların yönetimi.",
     glow: "rgba(255,189,30,0.18)",
     glowHover: "rgba(255,189,30,0.38)",
     accentFrom: "#FE9417",

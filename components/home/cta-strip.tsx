@@ -111,18 +111,18 @@ export default function CtaStrip() {
           </p>
           
           <h2 className="font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance mb-6 text-[#111111]">
-            Dijital etkinizi <br className="hidden md:block" /> inşa edelim.
+            Kampanyanızı <br className="hidden md:block" /> Birlikte Kuralım
           </h2>
           
           <p className="max-w-2xl text-lg md:text-xl font-medium leading-relaxed text-[#555555] mb-10">
-            Dikkati büyümeye dönüştürüyoruz. Yüksek kaliteli prodüksiyondan güçlü influencer ağına — markanızın geleceğini birlikte şekillendirin.
+            Fikir aşamasından raporlamaya kadar tüm süreçte markanızın gücünü içerik üreticileriyle birleştiriyoruz.
           </p>
           
           <Link
             href="/contact"
             className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl"
           >
-            Proje Başlat
+            Kampanya Başlat
           </Link>
         </motion.div>
       </section>

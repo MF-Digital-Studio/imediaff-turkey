@@ -1,17 +1,17 @@
-﻿"use client"
+"use client"
 
 import { motion } from "motion/react"
 
 const ROWS = [
-  { year: "2026", client: "Aura Studios", cat: "Fashion", service: "Campaign + Influencer Program", metric: "2.4M reach" },
-  { year: "2026", client: "Noir Skin", cat: "Beauty", service: "Launch + Performance", metric: "14x ROAS" },
-  { year: "2025", client: "Grid Motors", cat: "Automotive", service: "Showroom Activation", metric: "+320%" },
-  { year: "2025", client: "Hertz Audio", cat: "Technology", service: "Commerce + Reels", metric: "180K sales" },
-  { year: "2025", client: "Maison Volt", cat: "Fashion", service: "Editorial + PR", metric: "Vogue feature" },
-  { year: "2024", client: "Studio Ritual", cat: "Content", service: "Documentary Series", metric: "+420% subscribers" },
-  { year: "2024", client: "Kartal Coffee", cat: "F&B", service: "Organic Growth", metric: "890K followers" },
-  { year: "2024", client: "Vela Moda", cat: "Fashion", service: "Creator Team", metric: "8x CTR" },
-  { year: "2023", client: "Lumen Cosmetics", cat: "Beauty", service: "TikTok Shop", metric: "$3M GMV" },
+  { year: "2026", client: "Aura Studios", cat: "Moda", service: "Kampanya + Influencer Programı", metric: "2.4M Erişim" },
+  { year: "2026", client: "Noir Skin", cat: "Güzellik", service: "Lansman + Performans", metric: "14x ROAS" },
+  { year: "2025", client: "Grid Motors", cat: "Otomotiv", service: "Showroom Aktivasyonu", metric: "+320%" },
+  { year: "2025", client: "Hertz Audio", cat: "Teknoloji", service: "E-Ticaret + Reels", metric: "180K Satış" },
+  { year: "2025", client: "Maison Volt", cat: "Moda", service: "Editoryal + PR", metric: "Vogue Özel" },
+  { year: "2024", client: "Studio Ritual", cat: "İçerik", service: "Belgesel Seri", metric: "+420% Abone" },
+  { year: "2024", client: "Kartal Coffee", cat: "Gıda", service: "Organik Büyüme", metric: "890K Takipçi" },
+  { year: "2024", client: "Vela Moda", cat: "Moda", service: "Creator Ekibi", metric: "8x Tıklama" },
+  { year: "2023", client: "Lumen Cosmetics", cat: "Güzellik", service: "TikTok Shop", metric: "$3M GMV" },
 ]
 
 export default function ProjectsIndex() {
@@ -20,19 +20,19 @@ export default function ProjectsIndex() {
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28">
         <div className="flex items-end justify-between flex-wrap gap-6 mb-10">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">/ Index</p>
-            <h2 className="mt-4 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.95] tracking-[-0.035em] text-balance">All work in one view.</h2>
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">/ Tüm Projeler</p>
+            <h2 className="mt-4 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.95] tracking-[-0.035em] text-balance">Tüm İşler</h2>
           </div>
-          <p className="font-mono text-xs text-muted-foreground">{"//"} Hover rows to reveal detail</p>
+          <p className="font-mono text-xs text-muted-foreground">{"//"} Detaylar için satırların üzerine gelin</p>
         </div>
 
         <div className="border-t border-border">
           <div className="hidden md:grid grid-cols-12 py-4 border-b border-border font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-            <div className="col-span-1">Year</div>
-            <div className="col-span-3">Brand</div>
-            <div className="col-span-2">Category</div>
-            <div className="col-span-4">Service</div>
-            <div className="col-span-2 text-right">Outcome</div>
+            <div className="col-span-1">Yıl</div>
+            <div className="col-span-3">Marka</div>
+            <div className="col-span-2">Kategori</div>
+            <div className="col-span-4">Hizmet</div>
+            <div className="col-span-2 text-right">Sonuç</div>
           </div>
 
           {ROWS.map((r, i) => (

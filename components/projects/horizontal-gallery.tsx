@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 
 import { useEffect, useRef } from "react"
 import Image from "next/image"
@@ -8,12 +8,12 @@ import { useLenis } from "@/components/providers/LenisProvider"
 type Project = { n: string; client: string; title: string; tag: string; metric: string; image: string }
 
 const PROJECTS: Project[] = [
-  { n: "01", client: "AURA STUDIOS", title: "Quiet Luxury Campaign", tag: "Fashion", metric: "2.4M organic views", image: "/showcase/project-1.jpg" },
-  { n: "02", client: "NOIR SKIN", title: "New Serum Launch", tag: "Beauty", metric: "14x ROAS | 7 days", image: "/showcase/project-2.jpg" },
-  { n: "03", client: "STUDIO RITUAL", title: "Creator Lab Documentary", tag: "Content", metric: "+420% subscribers", image: "/showcase/project-3.jpg" },
-  { n: "04", client: "GRID MOTORS", title: "Showroom Launch", tag: "Automotive", metric: "+320% reach", image: "/showcase/project-4.jpg" },
-  { n: "05", client: "MAISON VOLT", title: "Midnight Editorial Release", tag: "Fashion", metric: "Vogue feature", image: "/showcase/project-5.jpg" },
-  { n: "06", client: "HERTZ AUDIO", title: "Premium Product Release", tag: "Technology", metric: "180K sales | 30 days", image: "/showcase/project-6.jpg" },
+  { n: "01", client: "AURA STUDIOS", title: "Sessiz Lüks Kampanyası", tag: "Moda", metric: "2.4M Organik İzlenme", image: "/showcase/project-1.jpg" },
+  { n: "02", client: "NOIR SKIN", title: "Serum Lansmanı", tag: "Güzellik", metric: "14x ROAS | 7 Gün", image: "/showcase/project-2.jpg" },
+  { n: "03", client: "STUDIO RITUAL", title: "Creator Lab Serisi", tag: "İçerik", metric: "+420% Abone Artışı", image: "/showcase/project-3.jpg" },
+  { n: "04", client: "GRID MOTORS", title: "Showroom Lansmanı", tag: "Otomotiv", metric: "+320% Erişim", image: "/showcase/project-4.jpg" },
+  { n: "05", client: "MAISON VOLT", title: "Editoryal Koleksiyon", tag: "Moda", metric: "Vogue Özel Yayını", image: "/showcase/project-5.jpg" },
+  { n: "06", client: "HERTZ AUDIO", title: "Premium Ürün Lansmanı", tag: "Teknoloji", metric: "180K Satış | 30 Gün", image: "/showcase/project-6.jpg" },
 ]
 
 export default function HorizontalGallery() {
@@ -34,8 +34,8 @@ export default function HorizontalGallery() {
     <section ref={ref} className="relative h-[520vh] bg-background" aria-label="Featured projects horizontal gallery">
       <div className="sticky top-0 h-screen overflow-hidden flex flex-col">
         <div className="mx-auto max-w-[1600px] w-full px-6 md:px-10 pt-24 pb-4 flex items-end justify-between flex-wrap gap-4">
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">/ Selection | 06 projects</p>
-          <p className="font-mono text-xs text-muted-foreground">{"// "}Scroll down to move sideways</p>
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">/ Seçki | 06 Proje</p>
+          <p className="font-mono text-xs text-muted-foreground">{"// "}Aşağı kaydır</p>
         </div>
 
         <div className="flex-1 flex items-center">

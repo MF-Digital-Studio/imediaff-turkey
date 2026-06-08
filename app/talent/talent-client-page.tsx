@@ -23,7 +23,6 @@ export default function TalentClientPage() {
             / İçerik Üreticileri
           </p>
           <h1 className="font-display text-[clamp(3.5rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] max-w-5xl text-[#111111]">
-            imediaff <br />
             <span className="bg-gradient-to-r from-[#FE9417] to-[#FF6B00] bg-clip-text text-transparent">Creator Ağına Katılın.</span>
           </h1>
           <p className="mt-8 max-w-2xl text-lg md:text-xl text-[#555555] leading-relaxed">
@@ -164,7 +163,7 @@ export default function TalentClientPage() {
             href="/contact?type=creator"
             className="inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] px-10 text-lg font-bold text-[#111111] transition-all hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(254,148,23,0.4)]"
           >
-            İçerik Üreticisi Başvurusu Yap ↗
+            Başvuru Yap
           </Link>
         </motion.div>
       </section>

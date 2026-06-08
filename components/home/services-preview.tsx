@@ -5,12 +5,12 @@ import { motion } from "motion/react"
 import { Sparkles, Target, Users, LineChart, Globe2, LayoutDashboard } from "lucide-react"
 
 const SERVICES = [
-  { icon: Users, title: "Affiliate Pazarlama Yönetimi", desc: "Trendyol TrendFam affiliate program yönetimi: onboarding, takip ve ödemeler." },
+  { icon: Users, title: "Affiliate Pazarlama", desc: "Trendyol TrendFam affiliate program yönetimi: onboarding, takip ve ödemeler." },
   { icon: Globe2, title: "Influencer İş Birlikleri", desc: "Markalar ile doğrulanmış içerik üreticileri arasında 1 yıllık performans sözleşmeleriyle yapılandırılmış eşleştirme." },
   { icon: Target, title: "Kampanya Prodüksiyonu", desc: "Ölçeklenen markalar için yüksek kaliteli içerik ve reklam prodüksiyonu." },
   { icon: LayoutDashboard, title: "Pazar Stratejisi", desc: "Sürdürülebilir büyüme için veri odaklı strateji ve operasyonel altyapı." },
-  { icon: Sparkles, title: "Hukuki & Finansal Danışmanlık", desc: "Sözleşme mimarisi, KVKK uyumu ve ödeme yönetimi." },
-  { icon: LineChart, title: "İçerik Üretici Danışmanlığı", desc: "Birebir danışmanlık, webinarlar ve performans analitiğiyle içerik üreticilerinin kazancını maksimize ediyoruz." },
+  { icon: Sparkles, title: "Finansal Danışmanlık", desc: "Sözleşme mimarisi, KVKK uyumu ve ödeme yönetimi." },
+  { icon: LineChart, title: "Creator Danışmanlığı", desc: "Birebir danışmanlık, webinarlar ve performans analitiğiyle içerik üreticilerinin kazancını maksimize ediyoruz." },
 ]
 
 export default function ServicesPreview() {

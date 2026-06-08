@@ -13,7 +13,7 @@ const FOOTER_LINKS = {
     { label: "Affiliate Pazarlama", href: "/services" },
     { label: "Influencer İş Birlikleri", href: "/services" },
     { label: "Kampanya Yönetimi", href: "/services" },
-    { label: "İçerik Üretici Danışmanlığı", href: "/services" },
+    { label: "Creator Danışmanlığı", href: "/services" },
   ],
   "İletişim": [
     { label: "info@imediaff.com", href: "mailto:info@imediaff.com" },
@@ -45,7 +45,7 @@ export default function SiteFooter() {
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-14 grid grid-cols-1 md:grid-cols-12 gap-10">
         <div className="md:col-span-3">
           <Link href="/" className="font-display text-lg font-semibold tracking-tight text-[#111111]">imediaff<span className="text-[#FE9417]">.</span></Link>
-          <p className="mt-4 max-w-sm text-sm text-[#666666] leading-relaxed font-sans">Markalar ve içerik üreticileri için influencer marketing, affiliate marketing, prodüksiyon ve kampanya yönetimi çözümleri sunuyoruz.</p>
+          <p className="mt-4 max-w-sm text-sm text-[#666666] leading-relaxed font-sans">Markalara ve içerik üreticilerine affiliate, prodüksiyon ve kampanya yönetimi çözümleri sunuyoruz.</p>
           <div className="mt-6 flex flex-wrap gap-2">
             {SOCIAL.map((s) => (
               <a key={s.label} href={s.href} className="inline-flex items-center gap-2 border border-[#E5E5E5] px-3 py-1.5 text-xs font-mono tracking-widest text-[#666666] hover:border-[#E5E5E5] hover:text-[#111111] transition-colors">{s.label}<span aria-hidden>↗</span></a>

@@ -108,7 +108,7 @@ export default function ScrollHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: easeCustom }}
           >
-            / Yeni Nesil Büyüme Ortağı
+            / Büyüme Ortağı
           </motion.p>
 
           <h1 className="font-display font-bold leading-[0.9] tracking-[-0.035em] text-balance text-[clamp(2.5rem,7vw,7rem)] max-w-6xl mx-auto pointer-events-auto">
@@ -118,7 +118,7 @@ export default function ScrollHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.3, ease: easeCustom }}
             >
-              Markalar ve İçerik Üreticileri İçin
+              Doğru Etki,
             </motion.span>{" "}
             <br className="hidden md:block" />
             <motion.span
@@ -127,7 +127,7 @@ export default function ScrollHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.6, ease: easeCustom }}
             >
-              Güçlü Affiliate Ekosistemi
+              Net Sonuç.
             </motion.span>
           </h1>
 
@@ -137,7 +137,7 @@ export default function ScrollHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.0, delay: 0.8, ease: easeCustom }}
           >
-            Markaları doğru içerik üreticileriyle buluşturuyor; kampanya, affiliate, prodüksiyon ve performans süreçlerini uçtan uca yönetiyoruz.
+            Markalarla içerik üreticilerini bir araya getiriyor; kampanya, affiliate ve prodüksiyon süreçlerini şeffaflıkla yönetiyoruz.
           </motion.p>
 
           <motion.div

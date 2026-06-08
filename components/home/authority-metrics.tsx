@@ -172,7 +172,7 @@ export default function AuthorityMetrics() {
               transition={{ duration: 0.75, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
               className="font-sans font-bold text-[#111111] leading-[0.92] tracking-[-0.03em] text-[clamp(2.2rem,5.5vw,4.5rem)] text-balance"
             >
-              imediaff —{" "}
+              Etkiyi{" "}
               <span
                 style={{
                   backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
@@ -181,9 +181,9 @@ export default function AuthorityMetrics() {
                   backgroundClip: "text",
                 }}
               >
-                Etkiyi ölçülebilir
+                Ölçülebilir
               </span>{" "}
-              büyümeye dönüştürüyoruz.
+              Kılarız.
             </motion.h2>
 
             <motion.p
@@ -192,7 +192,7 @@ export default function AuthorityMetrics() {
               transition={{ duration: 0.72, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
               className="mt-7 max-w-lg text-base md:text-[1.05rem] text-[#555555] leading-relaxed font-sans"
             >
-              imediaff, 10.000'den fazla influencer ile markalar arasında güçlü köprüler kuruyor. Strateji, içerik ve performans odaklı yaklaşımımızla kalıcı etki yaratıyoruz.
+              İçerik üreticileriyle markalar arasında güçlü köprüler kurarak kalıcı, verimli ve ölçeklenebilir sonuçlar üretiyoruz.
             </motion.p>
 
             {/* Learn More CTA */}
@@ -219,7 +219,7 @@ export default function AuthorityMetrics() {
                     "0 0 30px rgba(37,99,235,0.45), inset 0 0 12px rgba(255,255,255,0.07)"
                 }}
               >
-                <span>Daha fazla bilgi</span>
+                <span>Hizmetleri İncele</span>
                 <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
               </Link>
             </motion.div>

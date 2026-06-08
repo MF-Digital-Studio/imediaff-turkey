@@ -1,40 +1,40 @@
 export const BLOG_POSTS = [
   {
-    slug: "affiliate-marketing-nedir",
-    title: "Affiliate Marketing Nedir?",
+    slug: "icerik-ureticileri-icin-affiliate-ilk-adim",
+    title: "İçerik Üreticileri İçin İlk Adım: Affiliate",
     category: "Performans Pazarlama",
     date: "Haziran 2026",
     readTime: "5 dk okuma",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop",
-    summary: "Affiliate marketing (satış ortaklığı) ekosistemini ve potansiyel kazanç modellerini anlamak için kapsamlı rehber.",
+    summary: "İçerik üreticisi olarak affiliate (satış ortaklığı) dünyasına giriş yapmak ve ilk gelirinizi elde etmek için temel stratejiler.",
     content: `
-<h2>Affiliate Marketing (Satış Ortaklığı) Nedir?</h2>
+<h2>İçerik Üreticileri İçin İlk Adım: Affiliate</h2>
 
-<p>Affiliate marketing, teknoloji çağının bize sunduğu ve artık hayatımızın her alanında karşımıza çıkan performans odaklı bir pazarlama modelidir. "Affiliate Marketing Nedir?" sorusunun cevabı, markaların ürün veya hizmetlerini tanıtan kişilere (affiliate) gerçekleşen satışlar üzerinden komisyon ödemesine dayanır.</p>
+<p>Affiliate marketing, teknoloji çağının bize sunduğu ve artık hayatımızın her alanında karşımıza çıkan performans odaklı bir pazarlama modelidir. İçerik üreticileri için ise düzenli gelir elde etmenin en sürdürülebilir yollarından biridir.</p>
 
-<p>Özellikle Trendyol gibi büyük e-ticaret platformlarının Türkiye'deki uygulamaları sayesinde, influencer'lar veya içerik üreticileri paylaştıkları linkler üzerinden yapılan alışverişlerden ciddi gelirler elde etmektedir. Performans odaklı olması sebebiyle, hem marka hem de içerik üreticisi için kazan-kazan prensibiyle çalışır.</p>
+<p>Özellikle e-ticaret platformlarının Türkiye'deki uygulamaları sayesinde, influencer'lar veya içerik üreticileri paylaştıkları linkler üzerinden yapılan alışverişlerden ciddi gelirler elde etmektedir. Performans odaklı olması sebebiyle, hem marka hem de içerik üreticisi için kazan-kazan prensibiyle çalışır.</p>
 
 <p>İyi bir affiliate marketing stratejisi, doğru kitleye doğru ürünü sunmaktan geçer. Siz de ilgi alanlarınıza yönelik içerikler üreterek, takipçilerinizin güvenini kazanabilir ve satış ortaklığı üzerinden düzenli bir gelir modeli oluşturabilirsiniz.</p>
 `
   },
   {
-    slug: "affiliate-marketing-nasil-yapilir",
-    title: "Affiliate Marketing Nasıl Yapılır?",
+    slug: "markalar-icin-affiliate-kampanya-rehberi",
+    title: "Markalar İçin Affiliate Kampanya Rehberi",
     category: "Performans Pazarlama",
     date: "Haziran 2026",
     readTime: "7 dk okuma",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
-    summary: "Başarılı bir affiliate marketing kampanyası başlatmak ve yönetmek için gerekli temel adımlar ve ipuçları.",
+    summary: "Satışlarınızı artırmak ve ROI hedeflerinize ulaşmak için performans odaklı affiliate kampanyaları oluşturmanın sırları.",
     content: `
-<h2>Affiliate Marketing Nasıl Yapılır?</h2>
+<h2>Markalar İçin Affiliate Kampanya Rehberi</h2>
 
-<p>Affiliate marketing (satış ortaklığı) yapmaya başlamak için ilk adım güvenilir bir platformun programına dahil olmaktır. Türkiye'de en popüler olanı Trendyol Affiliate (TrendFam) programıdır. Programa kabul edildikten sonra, size özel olarak oluşturulan takip edilebilir linkleri içeriklerinizde paylaşarak satış yapmaya başlayabilirsiniz.</p>
+<p>Performans odaklı pazarlamanın temel taşı olan affiliate kurguları, markaların sadece gerçekleşen satışlar üzerinden ödeme yapmasını sağlayarak riski en aza indirir. Güçlü bir içerik üreticisi ağıyla birleştiğinde satışları hızla ölçeklendirebilirsiniz.</p>
 
 <h3>İpuçları ve Stratejiler</h3>
 
-<p>Takipçilerinizle şeffaf bir iletişim kurun. Sadece gerçekten beğendiğiniz ve kullandığınız ürünleri tavsiye etmeniz, uzun vadede size olan güveni artıracaktır. "Bu ürün favorim, çok kalıcı" gibi deneyim odaklı yorumlar, standart bir tanıtımdan çok daha etkilidir.</p>
+<p>Kampanyalarınızda doğru kitleye hitap eden niş içerik üreticileriyle çalışmak, yüksek dönüşüm oranları getirir. Ayrıca, cazip komisyon oranları belirlemek influencer'ların ürünlerinize odaklanmasını sağlar.</p>
 
-<p>Ödemeler genellikle iptal ve iade sürelerinin dolmasından sonraki ay yapılır. Komisyon oranları kategoriden kategoriye değişiklik gösterir, bu yüzden teknoloji, kozmetik veya moda gibi en çok satan kategorilere odaklanmak gelirinizi artırabilir.</p>
+<p>Süreci profesyonel bir ajansla yönetmek; link takibi, raporlama ve ödeme adımlarının şeffaf ve sorunsuz ilerlemesini garanti altına alır. Böylece siz sadece ciro artışına odaklanabilirsiniz.</p>
 `
   },
   {

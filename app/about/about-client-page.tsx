@@ -24,7 +24,7 @@ const PRESENCE = [
   {
     region: "EKOSİSTEM",
     city: "Güçlü Creator Ağı",
-    note: "Trendyol, Çiçeksepeti, Hepsiburada ve Amazon partnerlikleriyle büyüyen 10.000+ içerik üreticisi ağıyla, markalar ve creator'lar arasında sürdürülebilir iş birlikleri kuruyoruz.",
+    note: "Trendyol, Çiçeksepeti, Hepsiburada ve Amazon partnerlikleriyle büyüyen geniş influencer ağıyla sürdürülebilir iş birlikleri kuruyoruz.",
   },
   {
     region: "PRODÜKSİYON",
@@ -73,44 +73,7 @@ const CAPABILITIES = [
   },
 ]
 
-const CORE_SERVICES = [
-  {
-    PrimaryIcon: TrendingUp,
-    AccentIcon: Coins,
-    title: "Affiliate Pazarlama Yönetimi",
-    description: "Trendyol TrendFam süreçleri, link oluşturma, komisyon takibi, raporlama ve ödeme süreci.",
-  },
-  {
-    PrimaryIcon: Users,
-    AccentIcon: Star,
-    title: "Influencer İş Birlikleri",
-    description: "Markalarla doğru içerik üreticilerini eşleştirme ve 1 yıllık sözleşmeli, performans odaklı yapı.",
-  },
-  {
-    PrimaryIcon: Target,
-    AccentIcon: Camera,
-    title: "Marka Kampanya Yönetimi",
-    description: "Brief alma, hedef kitle analizi, creator seçimi, kampanya takibi ve optimizasyonu.",
-  },
-  {
-    PrimaryIcon: Film,
-    AccentIcon: Zap,
-    title: "Kampanya Prodüksiyonu",
-    description: "Sosyal medya formatlarına uygun kreatif üretim, kampanya içeriği ve prodüksiyon desteği.",
-  },
-  {
-    PrimaryIcon: Package,
-    AccentIcon: Flag,
-    title: "Creator Danışmanlığı",
-    description: "Link stratejisi, içerik optimizasyonu, performans analizi ve özel eğitim webinarları.",
-  },
-  {
-    PrimaryIcon: Scale,
-    AccentIcon: Lock,
-    title: "Hukuki & Finansal Yönetim",
-    description: "Sözleşme, KVKK uyumu, faturalandırma, ödeme takibi ve tam şeffaf finansal raporlama.",
-  },
-]
+
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
@@ -313,190 +276,30 @@ export default function AboutClientPage() {
         </div>
       </section>
 
-      {/* ── How We Work (Black Theme) ── */}
-      <section className="bg-white text-[#111111] py-16 md:py-28 relative z-10 border-t border-[#E5E5E5]">
+
+
+      {/* ── Strategic Partnerships (Short Reference) ── */}
+      <section className="bg-white text-black py-16 md:py-24 border-t border-[#E5E5E5]">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 0.7 }}
-            className="mb-14 md:mb-20"
-          >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
-              / Nasıl Çalışıyoruz
-            </p>
-            <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-[#111111]">
-              Şeffaf ve{"\u00A0"}<br />performans odaklı{"\u00A0"}süreç.
-            </h2>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-            {[
-              {
-                step: "01",
-                title: "Başvuru / Brief",
-                desc: "İçerik üreticisi başvurusu veya marka kampanya briefi sisteme iletilir. İhtiyaçlar netleştirilir.",
-              },
-              {
-                step: "02",
-                title: "Uygunluk Analizi",
-                desc: "Profil veya kampanya hedefleri incelenerek Trendyol TrendFam kriterlerine ve bölgesel dinamiklere uygunluğu doğrulanır.",
-              },
-              {
-                step: "03",
-                title: "Sözleşme ve Kurulum",
-                desc: "Tam şeffaflıkla komisyon oranları ve kuralların belirlendiği resmi sözleşme imzalanır. Paneller aktive edilir.",
-              },
-              {
-                step: "04",
-                title: "Kampanya Aktivasyonu",
-                desc: "Affiliate linkleri oluşturulur, kampanya yayına alınır. Süreç boyunca stratejik danışmanlık sağlanır.",
-              },
-              {
-                step: "05",
-                title: "Performans Raporlama",
-                desc: "Aylık performans raporları ve komisyon dökümleri sunulur. Düzenli ve sorunsuz ödeme süreci yürütülür.",
-              },
-            ].map((item, i) => (
-              <motion.div
-                key={item.step}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10% 0px" }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="relative flex flex-col group"
-              >
-                {i < 4 && (
-                  <div className="hidden md:block absolute top-6 left-12 w-full h-[1px] bg-white/10 group-hover:bg-[#FE9417]/50 transition-colors duration-500" />
-                )}
-                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-[#E5E5E5] bg-white font-mono text-sm text-[#FE9417] transition-colors duration-500 group-hover:border-[#FE9417] group-hover:text-[#FE9417] mb-6">
-                  {item.step}
-                </div>
-                <h3 className="font-display text-xl font-bold text-[#111111] mb-3">{item.title}</h3>
-                <p className="text-sm leading-relaxed text-[#888888]">{item.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Core Services (Black Theme) ── */}
-      <section className="bg-white text-[#111111] pb-16 md:pb-28 relative overflow-hidden z-10">
-        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#FE9417]/10 to-[#FF6B00]/10 blur-[100px] rounded-full opacity-50" />
-
-        <div className="mx-auto max-w-[1600px] px-6 md:px-10 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-10% 0px" }}
-            transition={{ duration: 0.7 }}
-            className="mb-14 md:mb-20"
-          >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
-              / Hizmetlerimiz
-            </p>
-            <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-[#111111]">
-              Uçtan Uca <br className="hidden md:block" /> Dijital Çözümler.
-            </h2>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-4 lg:pb-24">
-            {CORE_SERVICES.map((service, i) => (
-              <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10% 0px" }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-                className={`group relative overflow-hidden rounded-2xl bg-white/[0.03] backdrop-blur-md p-[1px] transition-all duration-500 ${i % 3 === 1 ? 'lg:translate-y-12' : i % 3 === 2 ? 'lg:translate-y-24' : ''}`}
-              >
-                <div className="absolute inset-0 bg-white/10 transition-colors duration-500 group-hover:bg-gradient-to-r group-hover:from-[#FE9417] group-hover:via-[#FE9417] group-hover:to-[#FE9417]" />
-
-                <div className="relative flex flex-col h-full bg-black/90 backdrop-blur-md rounded-[15px] p-8 md:p-10">
-                  <div className="absolute -right-12 -top-12 w-48 h-48 bg-white/[0.02] rounded-full blur-2xl group-hover:bg-gradient-to-br group-hover:from-[#FE9417]/20 group-hover:to-[#FE9417]/20 transition-colors duration-700" />
-
-                  <div className="relative z-10 flex flex-col h-full">
-                    <div className="mb-10 relative inline-flex h-20 w-20 items-center justify-center transition-transform duration-500 group-hover:scale-110">
-                      <div className="absolute inset-0 rounded-2xl bg-white/[0.04] ring-1 ring-white/10 transition-colors duration-500 group-hover:ring-[#FE9417]/40" />
-                      <service.PrimaryIcon
-                        size={36}
-                        strokeWidth={1.4}
-                        className="relative z-10 text-white transition-all duration-500 group-hover:text-[#FE9417]"
-                        style={{
-                          filter: "drop-shadow(0 0 6px rgba(254,148,23,0.55)) drop-shadow(0 0 14px rgba(254,148,23,0.25))",
-                        }}
-                      />
-                      <service.AccentIcon
-                        size={16}
-                        strokeWidth={2}
-                        className="absolute bottom-2 right-2 z-20 text-[#FE9417] transition-all duration-500 group-hover:text-[#FE9417]"
-                        style={{
-                          filter: "drop-shadow(0 0 4px rgba(255,189,30,0.7))",
-                        }}
-                      />
-                    </div>
-                    <h3 className="font-display text-2xl font-bold tracking-[-0.03em] text-white mb-4 transition-colors group-hover:text-[#FE9417]">
-                      {service.title}
-                    </h3>
-                    <p className="mt-auto text-base leading-relaxed text-gray-400 font-sans transition-colors group-hover:text-gray-300">
-                      {service.description}
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Strategic Partnerships (White Theme) ── */}
-      <section className="bg-white text-black py-16 md:py-24">
-        <div className="mx-auto max-w-[1600px] px-6 md:px-10">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-10% 0px" }}
-            transition={{ duration: 0.7 }}
-            className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between"
+            className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"
           >
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
                 / Stratejik Partnerlikler
               </p>
-              <h2 className="mt-5 font-display text-[clamp(2rem,5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-black">
-                Sektör Liderleriyle<br />Güçlü İş Birlikleri.
+              <h2 className="mt-5 font-display text-3xl md:text-4xl font-bold tracking-[-0.03em] text-black">
+                Sektör Liderleriyle Güçlü İş Birlikleri.
               </h2>
             </div>
-            <p className="max-w-sm text-sm leading-relaxed text-gray-500 md:text-base">
-              E-ticaret, teknoloji, moda ve perakende sektörlerinin öncü markalarıyla ölçülebilir büyüme sağlıyoruz.
+            <p className="max-w-md text-sm leading-relaxed text-gray-500 md:text-base">
+              E-ticaret, teknoloji, moda ve perakende sektörlerinin öncü markalarıyla çalışıyor, ölçülebilir büyüme sağlıyoruz.
             </p>
           </motion.div>
-
-          <div className="mt-12 grid grid-cols-2 gap-px border border-gray-200 bg-gray-200 md:grid-cols-4 rounded-xl overflow-hidden">
-            {PARTNERS.map((p, i) => (
-              <motion.div
-                key={p.name}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="group bg-white px-6 py-8 transition-colors duration-300 hover:bg-gray-50 md:px-8 md:py-10"
-              >
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#666666] transition-colors duration-300 group-hover:text-[#FE9417]">
-                  {p.sector}
-                </p>
-                <p className="mt-3 font-display text-2xl font-bold tracking-[-0.03em] text-black md:text-3xl">
-                  {p.name}
-                </p>
-                {p.name === "Trendyol" && (
-                  <p className="mt-2 text-xs leading-relaxed text-gray-500">
-                    imediaff, Trendyol'un resmi partner ajanslarından biri olarak influencer ekosisteminde aktif rol oynamaktadır.
-                  </p>
-                )}
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 

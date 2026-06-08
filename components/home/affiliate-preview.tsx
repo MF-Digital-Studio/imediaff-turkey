@@ -53,17 +53,12 @@ export default function AffiliatePreview() {
             </div>
 
             <div className="lg:col-span-5 flex flex-col gap-12 lg:pl-12">
-              <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
-                {[
-                  { label: "İçerik Üreticisi", value: "10.000+" },
-                  { label: "Komisyon", value: "%150'ye Varan" }
-                ].map((stat, i) => (
-                  <div key={i} className="border-l border-[#E5E5E5] pl-5 py-1">
-                    <div className="text-[#111111] font-bold text-xl md:text-2xl uppercase tracking-tight">{stat.value}</div>
-                    <div className="text-[#555555] text-xs font-mono uppercase tracking-wider mt-2">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
+              <p className="text-[#555555] font-mono text-sm uppercase tracking-widest font-bold mb-6">Partnerlik Avantajları</p>
+              <ul className="space-y-4 mb-8 text-[#555555] font-sans">
+                <li className="flex items-center gap-3"><span className="text-[#FE9417] font-bold">✓</span> Yüksek Komisyon Modelleri</li>
+                <li className="flex items-center gap-3"><span className="text-[#FE9417] font-bold">✓</span> Teknik ve Operasyonel Destek</li>
+                <li className="flex items-center gap-3"><span className="text-[#FE9417] font-bold">✓</span> Marka Kampanyalarına Erişim</li>
+              </ul>
 
               <Link
                 href="/affiliate-programs"

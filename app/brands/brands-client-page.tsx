@@ -7,7 +7,7 @@ import { motion, useScroll, useTransform } from "motion/react"
 
 const METRICS = [
   { title: "Operasyon Deneyimi",  value: "7+",    desc: "Yıllık Sektör Deneyimi"      },
-  { title: "İçerik Üreticisi",    value: "10.000+", desc: "Doğrulanmış Influencer Ağı"   },
+  { title: "Kategori Uzmanlığı",  value: "10+",   desc: "Farklı Sektör Kategorisi"   },
   { title: "Başarı Oranı",     value: "850+",    desc: "Başarıyla Tamamlanan Proje"    },
   { title: "Aylık Aktif",        value: "150+",    desc: "Aktif Marka İş Birliği"           },
 ]
@@ -116,18 +116,18 @@ export default function BrandsClientPage() {
             {[
               {
                 num: "01",
-                title: "Doğru İçerik Üreticisine Erişim",
-                desc: "Markanızın hedef kitlesine en uygun, 10.000'den fazla doğrulanmış içerik üreticisinden oluşan geniş bir havuza anında erişim sağlarsınız.",
+                title: "Strateji ve Eşleştirme",
+                desc: "Markanızın hedeflerine özel kampanya kurgularız. Hedef kitlenize en uygun doğrulanmış içerik üreticilerini seçerek organik ve etkili bir bağ kurarız.",
               },
               {
                 num: "02",
-                title: "Performans Kampanyaları",
-                desc: "Sadece gerçekleşen satışlar ve dönüşümler üzerinden komisyon ödersiniz. Boşa harcanan reklam bütçesi yoktur; ölçülebilir bir ROI sunar.",
+                title: "Performans ve Affiliate",
+                desc: "Sadece gerçekleşen satışlar üzerinden komisyon ödeyebileceğiniz performans odaklı modeller geliştirir, ROI takibini anlık yaparız.",
               },
               {
                 num: "03",
-                title: "Operasyon Yönetimi",
-                desc: "İçerik üreticisi seçimi, link oluşturma, Trendyol, Çiçeksepeti, Hepsiburada ve Amazon ekosisteminde görünürlük, raporlama ve ödeme takibi gibi tüm operasyonel yükü biz üstleniyoruz.",
+                title: "Tam Kapsamlı Operasyon",
+                desc: "İçerik üretimi, prodüksiyon, raporlama, ödeme takibi, KVKK ve sözleşme süreçleri dahil tüm operasyonel yükü üstleniyoruz.",
               },
             ].map((card, i) => (
               <motion.div
@@ -168,7 +168,7 @@ export default function BrandsClientPage() {
             transition={{ repeat: Infinity, ease: "linear", duration: 50 }}
           >
             {[...ALL_BRANDS, ...ALL_BRANDS].map((brand, i) => (
-              <div key={`${brand}-${i}`} className="group cursor-default whitespace-nowrap">
+              <div key={`${brand}-${i}`} className="group cursor-default whitespace-nowrap" aria-hidden={i >= ALL_BRANDS.length ? "true" : undefined}>
                 <span className="font-display text-3xl md:text-5xl font-bold tracking-tight lowercase text-black/20 transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#FE9417] group-hover:to-[#FE9417]">
                   {brand}
                 </span>
@@ -178,104 +178,130 @@ export default function BrandsClientPage() {
         </div>
       </section>
 
-      {/* ── Brand Offers Program (Black Theme) ──────────────────────────────── */}
+      {/* ── Brand Offers Program (Premium Container Theme) ──────────────────────────────── */}
       <section className="bg-white text-[#111111] py-20 md:py-32 border-b border-[#E5E5E5]">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-10% 0px" }}
-            transition={{ duration: 0.7 }}
-            className="mb-14 md:mb-20 max-w-4xl"
+            transition={{ duration: 0.8 }}
+            className="rounded-[2.5rem] bg-[#FAFAFA] border border-[#E5E5E5] p-8 md:p-14 lg:p-20 relative overflow-hidden"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">/ Marka Teklifleri</p>
-            <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-[#111111] text-balance mb-6">
-              Trendyol Brand Offers<br />Programına Katılın.
-            </h2>
-            <p className="text-lg text-[#555555] leading-relaxed font-sans max-w-2xl">
-              Özel komisyon oranları belirleyerek içerik üreticilerini markanız için içerik oluşturmaya teşvik edin. Trendyol'un Influencer Merkezi üzerinden tam ölçülebilir kampanyalar tasarlayın.
-            </p>
-          </motion.div>
+            {/* Subtle glow inside container */}
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-[#FE9417]/5 to-transparent blur-[80px] rounded-full pointer-events-none" />
 
-          {/* 3 advantage cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-20">
-            {[
-              {
-                num: "01",
-                title: "Özel Komisyon Oranları",
-                desc: "Ürünleriniz için standart affiliate modelinden daha yüksek, size özel komisyon oranları belirleyerek influencer'ların markanızı önceliklendirmesini sağlayın.",
-              },
-              {
-                num: "02",
-                title: "Geniş Takip Penceresi",
-                desc: "Standart 2 günlük takip süresini, Brand Offers kampanyalarıyla uzatarak içerik paylaşımından günler sonra bile gerçekleşen satın alımları komisyona dönüştürün.",
-              },
-              {
-                num: "03",
-                title: "Creator Panelinde Görünürlük",
-                desc: "Markanız doğrudan içerik üreticilerinin özel panellerinde listelenir. Organik bir şekilde keşfedilir, daha fazla etkileşim ve satış oluşturursunuz.",
-              },
-            ].map((card, i) => (
-              <motion.div
-                key={card.num}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10% 0px" }}
-                transition={{ duration: 0.6, delay: i * 0.12 }}
-                className="group relative flex flex-col p-8 md:p-10 rounded-2xl bg-white/[0.03] border border-white/[0.07] hover:border-[#FE9417]/40 hover:-translate-y-1 transition-all duration-500 overflow-hidden"
-              >
-                <div className="absolute top-0 inset-x-0 h-[1.5px] rounded-t-2xl bg-gradient-to-r from-[#FE9417] to-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-[#FE9417] mb-6">{card.num}</p>
-                <h3 className="font-display text-2xl font-bold text-[#111111] mb-4 tracking-tight">{card.title}</h3>
-                <p className="text-[#555555] leading-relaxed text-sm font-medium">{card.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* How It Works 3-step flow */}
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-10% 0px" }}
-            transition={{ duration: 0.7 }}
-            className="mb-14"
-          >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#888888] mb-10">/ Nasıl Çalışır?</p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  step: "01",
-                  title: "Teklifinizi Oluşturun",
-                  desc: "Odaklanmak istediğiniz ürünleri seçin, komisyon oranınızı ve hedef kitlenizi belirleyin. Geri kalan kurulumu biz yönetiyoruz.",
-                },
-                {
-                  step: "02",
-                  title: "Influencer'lar Paylaşsın",
-                  desc: "Onaylanmış içerik üreticileri panel üzerinden markanızı keşfeder, kendilerine özel linkleri oluşturarak kitleleriyle paylaşırlar.",
-                },
-                {
-                  step: "03",
-                  title: "Ölçün ve Kazanın",
-                  desc: "Tıklanmalar, dönüşümler ve ciro artışını şeffaf bir şekilde takip edin. Sadece başarılı satışlar üzerinden ödeme yapın.",
-                },
-              ].map((s, i) => (
-                <div key={s.step} className="flex flex-col">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#E5E5E5] font-mono text-sm text-[#FE9417] mb-6">
-                    {s.step}
-                  </div>
-                  <h4 className="font-display text-xl font-bold text-[#111111] mb-3">{s.title}</h4>
-                  <p className="text-sm text-[#888888] leading-relaxed">{s.desc}</p>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 relative z-10">
+              {/* Left Column: Title & CTA */}
+              <div className="lg:col-span-5 flex flex-col justify-center">
+                <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-6 font-bold">
+                  / MARKA TEKLİFLERİ
+                </p>
+                <h2 className="font-display text-[clamp(2.5rem,4.5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[1.05] text-[#111111] mb-6 text-balance">
+                  Brand Offers ile Satışa Dönüşen İş Birlikleri
+                </h2>
+                <p className="text-lg text-[#555555] leading-relaxed font-sans mb-12">
+                  Ürünlerinizi creator panelinde görünür hale getirin; özel komisyon kurgularıyla satışa dönüşen iş birlikleri oluşturun.
+                </p>
+                
+                <div className="flex flex-col items-start gap-4">
+                  <Link
+                    href="/contact?type=brand"
+                    className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] px-10 py-5 text-base font-bold text-[#111111] transition-transform hover:scale-105 shadow-lg shadow-[#FE9417]/20"
+                  >
+                    Brief Gönder
+                  </Link>
+                  <p className="text-[13px] text-[#888888] font-medium font-sans">
+                    Komisyon, ürün seçimi ve kampanya kurgusunu birlikte netleştirelim.
+                  </p>
                 </div>
-              ))}
-            </div>
-          </motion.div>
+              </div>
 
-          <Link
-            href="/contact?type=brand"
-            className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] px-10 py-5 text-base font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl"
-          >
-            Brief Gönder
-          </Link>
+              {/* Right Column: 3 Cards */}
+              <div className="lg:col-span-7 flex flex-col gap-6">
+                {[
+                  {
+                    num: "01",
+                    title: "Özel Komisyon",
+                    desc: "Ürün bazlı özel komisyon oranlarıyla creator’ların markanızı önceliklendirmesini sağlayın."
+                  },
+                  {
+                    num: "02",
+                    title: "Geniş Takip Penceresi",
+                    desc: "Organik paylaşımlardan gelen etkileşimleri daha uzun süre satış fırsatına dönüştürün."
+                  },
+                  {
+                    num: "03",
+                    title: "Creator Görünürlüğü",
+                    desc: "Markanız, içerik üreticilerinin panelinde keşfedilebilir hale gelir."
+                  }
+                ].map((card, i) => (
+                  <motion.div
+                    key={card.num}
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, margin: "-10% 0px" }}
+                    transition={{ duration: 0.5, delay: i * 0.1 }}
+                    className="group bg-white rounded-2xl p-6 md:p-8 border border-[#E5E5E5] hover:border-[#FE9417]/50 transition-colors shadow-sm"
+                  >
+                    <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-6">
+                      <div className="font-mono text-sm uppercase tracking-widest text-[#FE9417] font-bold shrink-0 pt-1">
+                        {card.num}
+                      </div>
+                      <div>
+                        <h3 className="font-display text-xl font-bold text-[#111111] mb-2">{card.title}</h3>
+                        <p className="text-[#666666] leading-relaxed text-sm">{card.desc}</p>
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+
+            {/* Divider */}
+            <div className="w-full h-px bg-[#E5E5E5] my-16 relative z-10" />
+
+            {/* Timeline: Nasıl Çalışır? */}
+            <div className="relative z-10">
+              <h3 className="font-display text-2xl font-bold text-[#111111] mb-10 md:mb-14">Nasıl Çalışır?</h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 relative">
+                {/* Connecting Line (Desktop) */}
+                <div className="hidden md:block absolute top-[1.125rem] left-[2.25rem] right-[calc(33.333%+2.25rem)] h-px bg-[#E5E5E5]" />
+                
+                {[
+                  {
+                    step: "01",
+                    title: "Teklifi Kurgulayın",
+                    desc: "Ürün, hedef kitle ve komisyon oranı netleşir.",
+                  },
+                  {
+                    step: "02",
+                    title: "Creator’lar Keşfetsin",
+                    desc: "Uygun içerik üreticileri kampanyayı panelden görüntüler.",
+                  },
+                  {
+                    step: "03",
+                    title: "Satışları Takip Edin",
+                    desc: "Tıklama, dönüşüm ve satış performansı düzenli takip edilir.",
+                  },
+                ].map((s, i) => (
+                  <div key={s.step} className="relative flex flex-col group">
+                    <div className="flex items-center gap-4 mb-5">
+                      <div className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#E5E5E5] bg-white font-mono text-[11px] font-bold text-[#FE9417] group-hover:border-[#FE9417] transition-colors">
+                        {s.step}
+                      </div>
+                      <h4 className="font-display text-lg font-bold text-[#111111]">{s.title}</h4>
+                    </div>
+                    <p className="text-sm text-[#666666] leading-relaxed md:pl-[3.25rem]">
+                      {s.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </motion.div>
         </div>
       </section>
 
@@ -323,40 +349,7 @@ export default function BrandsClientPage() {
         </div>
       </section>
 
-      {/* ── Brand Services (White Theme) ────────────────────────────────────── */}
-      <section className="bg-white text-[#111111] py-20 md:py-28 border-b border-[#E5E5E5]">
-        <div className="mx-auto max-w-[1600px] px-6 md:px-10">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-10% 0px" }}
-            transition={{ duration: 0.7 }}
-            className="mb-14 md:mb-20"
-          >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">/ Markalar İçin Çözümler</p>
-            <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-[#111111] text-balance">
-              Markanız İçin Uçtan Uca<br />Süreç Yönetimi.
-            </h2>
-          </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {[
-              { title: "Kampanya Stratejisi", desc: "Markanızın hedeflerine özel influencer ve performans odaklı pazarlama stratejisi kurguluyoruz." },
-              { title: "Creator Seçimi", desc: "10.000+ creator ağımızdan hedef kitlenize ve marka kimliğinize en uygun isimleri belirliyoruz." },
-              { title: "Affiliate Kurgu", desc: "Link oluşturma, komisyon yapısı ve performans modellerini sizin için hazırlıyoruz." },
-              { title: "Prodüksiyon Desteği", desc: "Sosyal medya platformlarının dinamiklerine uygun kreatif içerik ve reklam yapım süreçlerini yönetiyoruz." },
-              { title: "Raporlama", desc: "Erişim, tıklama, dönüşüm ve ciro artışını anlık ve şeffaf olarak raporluyoruz." },
-              { title: "Hukuki & Mali Süreç Takibi", desc: "Sözleşme, fatura, ödeme ve KVKK süreçlerinin mevzuata uygun şekilde yürütülmesini sağlıyoruz." }
-            ].map((srv, i) => (
-              <div key={srv.title} className="p-8 border border-black/[0.07] bg-white rounded-2xl">
-                <p className="font-mono text-xs text-[#FE9417] mb-4">0{i + 1}</p>
-                <h3 className="text-xl font-bold mb-3">{srv.title}</h3>
-                <p className="text-[#666666] text-sm leading-relaxed">{srv.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── Final CTA (Sunset Gradient Theme) ─────────────────────────────────── */}
       <section className="bg-gradient-to-br from-[#FE9417] to-[#FF6B00] text-[#111111] py-24 md:py-36 relative overflow-hidden">

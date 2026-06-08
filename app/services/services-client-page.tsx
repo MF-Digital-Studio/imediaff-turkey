@@ -15,13 +15,13 @@ const DETAILED_SERVICES = [
     title: "Influencer Marketing",
     description: "Markaları doğru içerik üreticileriyle buluşturur, brief’ten raporlamaya kadar tüm kampanya sürecini yönetiriz.",
     image: "/services/service-02.jpg",
-    features: ["Doğru Eşleştirme", "Uçtan Uca Yönetim", "Performans Odaklı"],
+    features: ["Doğru Eşleştirme", "Kampanya Yönetimi", "Veri Analizi"],
   },
   {
     title: "Affiliate Marketing",
-    description: "Link, komisyon, performans ve ödeme süreçlerini şeffaf bir operasyon yapısıyla takip ederiz.",
+    description: "Link, komisyon ve ödeme süreçlerini şeffaf bir operasyon yapısıyla takip ederiz.",
     image: "/services/service-01.jpg",
-    features: ["Şeffaf Takip", "Link & Komisyon Altyapısı", "Performans Analizi"],
+    features: ["Şeffaf Takip", "Link & Komisyon Altyapısı", "Stratejik Analiz"],
   },
   {
     title: "Talent Management",
@@ -251,11 +251,14 @@ export default function ServicesClientPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10 text-center relative z-10"
         >
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#555555] font-bold mb-6">
-            / Gücünüzü Katlayın
+            / İlk Adımı Atın
           </p>
-          <h2 className="font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance mb-10 text-[#111111]">
-            Başarıya bugün ulaşın.
+          <h2 className="font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance mb-6 text-[#111111]">
+            Brief'inizi Paylaşın.
           </h2>
+          <p className="text-[#111111] text-lg md:text-xl max-w-2xl mx-auto mb-10 font-medium">
+            Hedeflerinize uygun kampanya ve hizmet modelini birlikte netleştirelim.
+          </p>
           <Link
             href="/contact"
             className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl"

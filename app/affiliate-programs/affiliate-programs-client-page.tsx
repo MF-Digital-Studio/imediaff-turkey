@@ -354,83 +354,90 @@ export default function AffiliateProgramsClientPage() {
         </div>
       </section>
 
-      {/* ── SECTION 6: WHY IMEDIAFF ── */}
-      <section className="py-24 md:py-32 border-b border-white/[0.08] relative">
+      {/* ── SECTION 6: IMEDIAFF ADVANTAGE (EDITORIAL) ── */}
+      <section className="py-24 md:py-32 bg-[#FAFAFA] border-y border-[#E5E5E5] relative overflow-hidden">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
-          <motion.div {...fadeUp(0)} className="mb-16 md:mb-24 text-center max-w-4xl mx-auto">
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#C8B2F8]">
-              / imediaff Farkı
+          
+          {/* Section Header */}
+          <motion.div {...fadeUp(0)} className="mb-20 md:mb-32 max-w-5xl">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] font-bold mb-6">
+              / iMEDIAFF AVANTAJI
             </p>
-            <h2 className="mt-5 font-display text-[clamp(2.5rem,5vw,5.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance">
-              Bir Linkten Çok Daha Fazlası. <br />
-              <span className="bg-gradient-to-r from-[#FE9417] to-[#C8B2F8] bg-clip-text text-transparent">
-                Tam Kapsamlı Altyapı.
-              </span>
+            <h2 className="font-display text-[clamp(3rem,6vw,5.5rem)] font-bold leading-[0.9] tracking-[-0.04em] text-[#111111] text-balance mb-4">
+              Bir Linkten Fazlası. <br />
+              <span className="text-[#FE9417]">Tam Kapsamlı Affiliate Altyapısı.</span>
             </h2>
+            <p className="mt-8 text-lg md:text-xl text-[#4B5563] font-sans leading-relaxed max-w-3xl">
+              Teknik destekten stratejiye, kampanya erişiminden sözleşme ve ödeme yönetimine kadar tüm süreci profesyonel bir yapıya taşıyoruz.
+            </p>
           </motion.div>
 
-          <div className="flex flex-col gap-24 md:gap-36">
+          {/* Advantage Blocks */}
+          <div className="flex flex-col gap-24 md:gap-40">
             {[
               {
-                title: "Teknik ve Operasyonel Destek",
-                desc: "Link kırılmaları, panel senkronizasyon hataları veya sipariş uyuşmazlıkları gibi teknik tüm sorunlarda, hesap yöneticilerimiz platformlarla doğrudan iletişime geçerek sorunları hızla çözer.",
-                image: "/affiliate-programs/tech-shield.jpg",
-                isImageLeft: true
+                num: "01",
+                label: "/ AVANTAJ 01",
+                title: "Teknik & Operasyonel Destek",
+                desc: "Link kırılmaları, panel senkronizasyon hataları, sipariş uyuşmazlıkları ve raporlama problemlerinde süreci takip eder; platform ekipleriyle koordinasyon sağlayarak teknik konuların hızlı çözülmesine destek oluruz.",
+                img: "/affiliate-programs/tech-shield.jpg",
+                align: "left"
               },
               {
-                title: "Stratejik Danışmanlık ve Veri Analizi",
-                desc: "Size sadece link vermiyoruz. Düzenli webinarlar, panel analiz eğitimleri, kitle hedefleme stratejileri ve içerik optimizasyonu rehberliğiyle kazanç potansiyelinizi sürekli artırıyoruz.",
-                image: "/affiliate-programs/consultancy.jpg",
-                isImageLeft: false
+                num: "02",
+                label: "/ AVANTAJ 02",
+                title: "Strateji & Veri Danışmanlığı",
+                desc: "Sadece link vermekle kalmayız. Panel analitiği, hedef kitle davranışı, link performansı, içerik formatları ve düzenli yönlendirmelerle kazanç potansiyelinizi artırmaya odaklanırız.",
+                img: "/affiliate-programs/consultancy.jpg",
+                align: "right"
               },
               {
-                title: "Marka Kampanyalarına Öncelikli Erişim",
-                desc: "İçerik üreticilerimizi sadece tek bir platformla sınırlamıyoruz. TrendFam dışında ajansımıza özel marka kampanyaları, sezonluk bonus görevler ve büyük marka iş birliklerini doğrudan size getiriyoruz.",
-                image: "/affiliate-programs/brand-network.jpg",
-                isImageLeft: true
+                num: "03",
+                label: "/ AVANTAJ 03",
+                title: "Marka & Kampanya Ağı",
+                desc: "Creator'ları tek bir kampanya veya platformla sınırlamayız. Sezonluk fırsatlar, özel marka iş birlikleri, kampanya görevleri ve kategori bazlı tekliflerle daha geniş bir gelir alanı oluştururuz.",
+                img: "/affiliate-programs/brand-network.jpg",
+                align: "left"
               },
               {
-                title: "Hukuki Güvence & Şeffaf Ödemeler",
-                desc: "Tüm partnerliklerimiz 1 yıllık resmi sözleşmelerle güvence altındadır. İçerik üreticilerimizin haklarını koruyor, ödeme takvimlerine sadık kalıyor ve tam finansal şeffaflık sunuyoruz.",
-                image: "/affiliate-programs/legal-payouts.jpg",
-                isImageLeft: false
+                num: "04",
+                label: "/ AVANTAJ 04",
+                title: "Sözleşme & Şeffaf Ödeme",
+                desc: "İş birlikleri resmi sözleşme, net ödeme takvimi, komisyon takibi ve yasal süreç yönetimiyle yürütülür. Böylece haklarınız, ödeme süreçleriniz ve emeğiniz daha güvenli bir yapıya alınır.",
+                img: "/affiliate-programs/legal-payouts.jpg",
+                align: "right"
               }
-            ].map((block, index) => (
-              <div
-                key={block.title}
-                className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${block.isImageLeft ? "" : "lg:flex-row-reverse"}`}
+            ].map((block) => (
+              <motion.div
+                key={block.num}
+                {...fadeUp(0.1)}
+                className={`flex flex-col md:flex-row items-center gap-10 md:gap-20 lg:gap-32 ${block.align === "right" ? "md:flex-row-reverse" : ""}`}
               >
-                {/* Image Side */}
-                <motion.div
-                  {...fadeUp(0.1)}
-                  className="w-full lg:w-1/2 aspect-[16/9] relative rounded-2xl overflow-hidden border border-black/10"
-                >
-                  <Image
-                    src={block.image}
-                    alt={block.title}
-                    fill
-                    className="object-cover transition-transform duration-700 hover:scale-102"
-                    unoptimized
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/40 to-transparent" />
-                </motion.div>
-
-                {/* Text Side */}
-                <motion.div
-                  {...fadeUp(0.2)}
-                  className="w-full lg:w-1/2 flex flex-col justify-center"
-                >
-                  <div className="mb-6 font-mono text-xs uppercase tracking-[0.30em] text-[#C8B2F8] font-bold">
-                    / AVANTAJ {String(index + 1).padStart(2, "0")}
+                {/* Image */}
+                <div className="w-full md:w-1/2">
+                  <div className="relative aspect-[4/3] md:aspect-[5/4] lg:aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-[0_20px_40px_rgb(0,0,0,0.06)] border border-black/5">
+                    <Image
+                      src={block.img}
+                      alt={block.title}
+                      fill
+                      className="object-cover transition-transform duration-700 hover:scale-105"
+                    />
                   </div>
-                  <h3 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-[#111111] mb-6">
+                </div>
+
+                {/* Content */}
+                <div className="w-full md:w-1/2 flex flex-col justify-center">
+                  <div className="mb-6 font-mono text-sm font-bold text-[#FE9417]">
+                    {block.label}
+                  </div>
+                  <h3 className="font-display text-3xl md:text-5xl font-bold tracking-tight text-[#111111] mb-6 leading-[1.1] text-balance">
                     {block.title}
                   </h3>
-                  <p className="text-[#666666] leading-relaxed font-sans text-base md:text-lg">
+                  <p className="text-[#4B5563] text-base md:text-lg leading-relaxed font-sans max-w-lg">
                     {block.desc}
                   </p>
-                </motion.div>
-              </div>
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>

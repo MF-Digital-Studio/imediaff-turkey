@@ -22,12 +22,12 @@ const FOOTER_LINKS = {
   ],
   "Ofis": [
     {
-      label: "Istanbul HQ: Fikirtepe Mah. Hızırbey Cad. No:25/C Fortis Sinanlı Yeni Kadıköy G Blok (Giriş D Blok) K:1 D:06, 34720 Kadıköy/İstanbul",
+      label: "İstanbul Merkez: Fortis Sinanlı Yeni Kadıköy, Kadıköy/İstanbul",
       href: "/contact",
       isAddress: true
     },
     {
-      label: "Vadistanbul: Ayazağa, Vadistanbul Park Etabı Bilişim Vadisi, D:7A Blok Kat 10 No:38, 34396 Sarıyer/İstanbul",
+      label: "Vadistanbul: Bilişim Vadisi, Sarıyer/İstanbul",
       href: "/contact",
       isAddress: true
     }

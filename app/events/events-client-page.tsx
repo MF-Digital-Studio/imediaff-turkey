@@ -24,7 +24,7 @@ export default function EventsClientPage() {
               / Etkinlikler
             </p>
             <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8.5rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance">
-              Sınırları <br /> Aşan Anlar.
+              Etkinlikler <br /> ve Buluşmalar.
             </h1>
             <p className="mt-8 max-w-2xl text-lg md:text-xl text-[#666666] leading-relaxed font-sans">
               Markaları, içerik üreticilerini ve sektör profesyonellerini bir araya getiren etkinlikleri buradan takip edebilirsiniz.

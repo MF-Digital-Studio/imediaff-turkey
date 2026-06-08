@@ -125,16 +125,11 @@ function ManifestoStackCard({
         ? useTransform(progress, [0, 0.45, 0.75, 1], [0, 0.1, 0.3, 0.5])
         : useTransform(progress, [0, 1], [0, 0])
 
-  const opacity =
-    index === 0
-      ? useTransform(progress, [0, 0.33, 0.66, 1], [1, 0.85, 0.65, 0.5])
-      : index === 1
-        ? useTransform(progress, [0, 0.45, 0.75, 1], [1, 0.9, 0.75, 0.65])
-        : useTransform(progress, [0, 1], [1, 1])
+
 
   return (
     <motion.article
-      style={{ y, scale, opacity, zIndex }}
+      style={{ y, scale, zIndex }}
       className="sticky top-0 h-screen w-full flex items-center justify-center bg-white overflow-hidden"
     >
       <div className="absolute inset-0 pointer-events-none z-10">

@@ -41,6 +41,7 @@ export default function ClientMarquee() {
           {doubled.map((c, i) => (
             <span
               key={`${c}-${i}`}
+              aria-hidden={i >= CLIENTS.length ? "true" : undefined}
               className="font-sans text-4xl md:text-6xl font-bold tracking-[-0.03em] text-[#111111]/20 hover:text-[#FE9417] transition-all duration-500 cursor-default"
             >
               {c}

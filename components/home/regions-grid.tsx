@@ -76,22 +76,6 @@ export default function RegionsGrid() {
                 Trendyol'un resmi partner ajansı. 10.000'den fazla influencer, tam hukuki, finansal ve stratejik destekle Trendyol affiliate programında aktif olarak çalışıyor.
               </p>
 
-              {/* Stats Row */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 py-8 border-y border-[#E5E5E5]">
-                <div>
-                  <p className="font-sans text-2xl font-bold text-[#111111] mb-1">10.000+</p>
-                  <p className="font-mono text-[10px] uppercase tracking-wider text-[#888888]">İçerik Üreticisi</p>
-                </div>
-                <div>
-                  <p className="font-sans text-2xl font-bold text-[#111111] mb-1">%150'ye Kadar</p>
-                  <p className="font-mono text-[10px] uppercase tracking-wider text-[#888888]">Komisyon</p>
-                </div>
-                <div>
-                  <p className="font-sans text-2xl font-bold text-[#111111] mb-1">2019'dan Beri</p>
-                  <p className="font-mono text-[10px] uppercase tracking-wider text-[#888888]">Operasyonel Deneyim</p>
-                </div>
-              </div>
-
               {/* CTA */}
               <Link
                 href="/talent"

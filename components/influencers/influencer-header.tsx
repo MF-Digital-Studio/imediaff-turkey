@@ -8,7 +8,7 @@ export default function InfluencerHeader() {
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
         <div className="flex items-start justify-between flex-wrap gap-8">
           <div>
-            <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="font-mono text-xs uppercase tracking-[0.3em] text-primary">/ Türkiye Ağı - 24 creator</motion.p>
+            <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="font-mono text-xs uppercase tracking-[0.3em] text-primary">/ Creator Ağı - 24 creator</motion.p>
             <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.1 }} className="mt-6 font-display text-[clamp(3rem,10vw,10rem)] font-bold leading-[0.85] tracking-[-0.045em] text-balance max-w-[14ch]">
               Not just faces,
               <br />

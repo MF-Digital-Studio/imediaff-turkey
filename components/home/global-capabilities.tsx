@@ -27,7 +27,7 @@ const CAPABILITIES = [
     index: "02",
     title: "Pazar Girişi ve Büyüme",
     description:
-      "Türkiye pazarındaki stratejik köprünüz. Yerel ağlarımız ve bölgesel tecrübemiz ile hızlı ve güvenilir büyüme sağlıyoruz.",
+      "Markanız için stratejik büyüme ortağınız. Geniş ağlarımız ve sektörel tecrübemiz ile hızlı ve güvenilir büyüme sağlıyoruz.",
     glow: "rgba(255,138,30,0.20)",
     glowHover: "rgba(255,138,30,0.42)",
     accentFrom: "#FE9417",
@@ -61,7 +61,7 @@ const CAPABILITIES = [
     index: "04",
     title: "Stratejik Danışmanlık",
     description:
-      "Türkiye pazarında operasyonel mükemmellik, hukuki sözleşmeler ve dijital büyüme konularında uzman danışmanlık.",
+      "Operasyonel mükemmellik, hukuki sözleşmeler ve dijital büyüme konularında uzman danışmanlık.",
     glow: "rgba(37,99,235,0.20)",
     glowHover: "rgba(37,99,235,0.42)",
     accentFrom: "#FE9417",
@@ -346,7 +346,7 @@ export default function GlobalCapabilities() {
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="max-w-sm text-[0.95rem] text-[#888888] leading-relaxed font-medium md:text-right"
           >
-            Türkiye pazarında ve ötesinde büyümek isteyen markalar için tasarlanmış entegre hizmet noktaları.
+            Dijital ekosistemde büyümek isteyen markalar için tasarlanmış entegre hizmet noktaları.
           </motion.p>
         </div>
 

@@ -23,7 +23,7 @@ export default function TalentClientPage() {
             / İçerik Üreticileri
           </p>
           <h1 className="font-display text-[clamp(3.5rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] max-w-5xl text-[#111111]">
-            imediaff Türkiye <br />
+            imediaff <br />
             <span className="bg-gradient-to-r from-[#FE9417] to-[#FF6B00] bg-clip-text text-transparent">Creator Ağına Katılın.</span>
           </h1>
           <p className="mt-8 max-w-2xl text-lg md:text-xl text-[#555555] leading-relaxed">
@@ -42,7 +42,7 @@ export default function TalentClientPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Neden imediaff Türkiye?</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Neden imediaff?</h2>
             <p className="text-xl text-[#374151] font-medium mb-4">Bireysel başvuruların ötesine geçin. Profesyonel ajans güvencesiyle daha yüksek komisyonlar kazanın.</p>
             <p className="text-base text-[#555555] leading-relaxed">İçerik üreticileri için yalnızca kampanya yönlendirmesi yapmıyoruz; marka teklifleri, ürün/hizmet iş birlikleri, etkileşim analizleri, içerik kurgusu, prodüksiyon desteği ve süreç yönetimiyle profesyonel bir partnerlik sunuyoruz.</p>
           </div>

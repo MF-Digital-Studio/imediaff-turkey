@@ -27,7 +27,7 @@ export default function EventsClientPage() {
               Sınırları <br /> Aşan Anlar.
             </h1>
             <p className="mt-8 max-w-2xl text-lg md:text-xl text-[#666666] leading-relaxed font-sans">
-              imediaff Türkiye etkinliklerini, içerik üreticisi buluşmalarını, marka aktivasyonlarını ve pazar dinamiklerini değiştiren anları keşfedin.
+              Markaları, içerik üreticilerini ve sektör profesyonellerini bir araya getiren etkinlikleri buradan takip edebilirsiniz.
             </p>
           </motion.div>
         </div>

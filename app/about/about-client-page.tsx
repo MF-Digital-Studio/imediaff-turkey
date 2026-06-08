@@ -138,13 +138,13 @@ export default function AboutClientPage() {
             / Hakkımızda
           </p>
           <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8rem)] font-bold leading-[0.85] tracking-[-0.05em] text-balance text-[#111111]">
-            Türkiye'de Etkiyi Ölçülebilir Büyümeye Dönüştürüyoruz.
+            Etkiyi Ölçülebilir Büyümeye Dönüştürüyoruz.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#888888] md:text-xl">
-            imediaff Türkiye, markaları doğru içerik üreticileriyle buluşturur; Trendyol TrendFam ekosisteminde performans odaklı, ölçülebilir ve sürdürülebilir büyüme sağlar.
+            Markalar, içerik üreticileri ve dijital ticaret platformları arasında güçlü, sürdürülebilir ve performans odaklı iş birlikleri kuruyoruz.
           </p>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#888888] md:text-lg">
-            Trendyol'un resmi partner ajanslarından biri olarak, Türkiye'de influencer ve affiliate pazarlama operasyonlarını şeffaf, ölçülebilir ve güçlü bir altyapıyla yönetiyoruz.
+            Trendyol'un resmi partner ajanslarından biri olarak, influencer ve affiliate pazarlama operasyonlarını şeffaf, ölçülebilir ve güçlü bir altyapıyla yönetiyoruz.
           </p>
         </motion.div>
       </section>
@@ -202,7 +202,7 @@ export default function AboutClientPage() {
               Performans Odaklı<br />Güçlü Ekosistem.
             </h2>
             <p className="mt-6 max-w-3xl text-base leading-relaxed text-[#888888] md:text-lg">
-              Türkiye dijital ekosisteminde derinleşen tecrübemizle, 10.000'den fazla içerik üreticisinden oluşan doğrulanmış ağımızla markalara uçtan uca büyüme çözümleri sunuyoruz.
+              Dijital ekosistemdeki derinleşen tecrübemizle, 10.000'den fazla içerik üreticisinden oluşan doğrulanmış ağımızla markalara uçtan uca büyüme çözümleri sunuyoruz.
             </p>
           </motion.div>
 
@@ -264,7 +264,7 @@ export default function AboutClientPage() {
               / Sistem
             </p>
             <p className="mt-3 max-w-2xl font-display text-3xl font-bold leading-tight text-[#FFFFFF] md:text-5xl lg:text-6xl drop-shadow-2xl">
-              Türkiye pazarında iz bırakan, sürdürülebilir ve şeffaf <span className="text-[#FE9417]">çözümler.</span>
+              Sektörde iz bırakan, sürdürülebilir ve şeffaf <span className="text-[#FE9417]">çözümler.</span>
             </p>
           </div>
         </div>
@@ -422,9 +422,9 @@ export default function AboutClientPage() {
                       <service.PrimaryIcon
                         size={36}
                         strokeWidth={1.4}
-                        className="relative z-10 text-[#111111] transition-all duration-500"
+                        className="relative z-10 text-white transition-all duration-500 group-hover:text-[#FE9417]"
                         style={{
-                          filter: "drop-shadow(0 0 6px rgba(37,99,235,0.55)) drop-shadow(0 0 14px rgba(37,99,235,0.25))",
+                          filter: "drop-shadow(0 0 6px rgba(254,148,23,0.55)) drop-shadow(0 0 14px rgba(254,148,23,0.25))",
                         }}
                       />
                       <service.AccentIcon
@@ -436,10 +436,10 @@ export default function AboutClientPage() {
                         }}
                       />
                     </div>
-                    <h3 className="font-display text-2xl font-bold tracking-[-0.03em] text-[#111111] mb-4">
+                    <h3 className="font-display text-2xl font-bold tracking-[-0.03em] text-white mb-4 transition-colors group-hover:text-[#FE9417]">
                       {service.title}
                     </h3>
-                    <p className="mt-auto text-base leading-relaxed text-[#888888] font-sans">
+                    <p className="mt-auto text-base leading-relaxed text-gray-400 font-sans transition-colors group-hover:text-gray-300">
                       {service.description}
                     </p>
                   </div>
@@ -491,7 +491,7 @@ export default function AboutClientPage() {
                 </p>
                 {p.name === "Trendyol" && (
                   <p className="mt-2 text-xs leading-relaxed text-gray-500">
-                    imediaff Türkiye, Trendyol'un resmi partner ajanslarından biri olarak influencer ekosisteminde aktif rol oynamaktadır.
+                    imediaff, Trendyol'un resmi partner ajanslarından biri olarak influencer ekosisteminde aktif rol oynamaktadır.
                   </p>
                 )}
               </motion.div>
@@ -519,7 +519,7 @@ export default function AboutClientPage() {
               İş ortaklarımızla uzun vadeli ve şeffaf ilişkiler kuruyoruz.
             </h2>
             <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#888888] md:text-lg">
-              Marka, ajans ve içerik üreticisi arasındaki süreci; sözleşme, raporlama, ödeme ve performans takibiyle güven temelli bir yapıya dönüştürüyoruz. imediaff Türkiye; markalar, içerik üreticileri ve dijital ticaret platformları arasında 360° influencer marketing, affiliate marketing, prodüksiyon, danışmanlık ve süreç yönetimi hizmetleri sunan yeni nesil bir ajanstır.
+              Marka, ajans ve içerik üreticisi arasındaki süreci; sözleşme, raporlama, ödeme ve performans takibiyle güven temelli bir yapıya dönüştürüyoruz. imediaff; markalar, içerik üreticileri ve dijital ticaret platformları arasında 360° influencer marketing, affiliate marketing, prodüksiyon, danışmanlık ve süreç yönetimi hizmetleri sunan yeni nesil bir ajanstır.
             </p>
             <div className="mt-8 grid grid-cols-1 gap-px border border-[#E5E5E5] bg-white/10 sm:grid-cols-3 rounded-lg overflow-hidden">
               {["Veri Odaklı Strateji", "Şeffaf Süreç Yönetimi", "Performans Bazlı Büyüme"].map((item) => (

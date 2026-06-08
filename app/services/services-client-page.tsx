@@ -86,10 +86,10 @@ export default function ServicesClientPage() {
             / Hizmetlerimiz
           </p>
           <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance">
-            Markalar ve İçerik Üreticileri İçin Uçtan Uca Çözümler.
+            Uçtan Uca Influencer & Affiliate Çözümleri
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#666666] md:text-xl">
-            iMediaff Türkiye; markalar, içerik üreticileri ve e-ticaret platformları arasında entegre çözümler geliştirir. 360° yaklaşımla sunduğumuz hizmet yelpazemiz: Influencer Marketing, Affiliate Marketing, Talent Management, Marka Danışmanlığı, Dijital Pazarlama, Prodüksiyon & Reklam Yapımı, Kampanya Yönetimi, Mali ve Hukuki Süreç Danışmanlığı.
+            Stratejiden prodüksiyona, kampanya yönetiminden raporlamaya kadar tüm süreci tek merkezden yönetiyoruz.
           </p>
         </motion.div>
       </section>

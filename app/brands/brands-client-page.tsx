@@ -6,7 +6,7 @@ import Link from "next/link"
 import { motion, useScroll, useTransform } from "motion/react"
 
 const METRICS = [
-  { title: "Türkiye Operasyonu",  value: "7+",    desc: "Yıllık Sektör Deneyimi"      },
+  { title: "Operasyon Deneyimi",  value: "7+",    desc: "Yıllık Sektör Deneyimi"      },
   { title: "İçerik Üreticisi",    value: "10.000+", desc: "Doğrulanmış Influencer Ağı"   },
   { title: "Başarı Oranı",     value: "850+",    desc: "Başarıyla Tamamlanan Proje"    },
   { title: "Aylık Aktif",        value: "150+",    desc: "Aktif Marka İş Birliği"           },
@@ -108,7 +108,7 @@ export default function BrandsClientPage() {
           >
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">/ Marka Avantajları</p>
             <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-[#111111] text-balance">
-              Neden imediaff Türkiye<br />İle Çalışmalısınız?
+              Neden imediaff<br />İle Çalışmalısınız?
             </h2>
           </motion.div>
 
@@ -374,7 +374,7 @@ export default function BrandsClientPage() {
             iMediaff Creator & Affiliate <br /> Ekosistemine Katılın.
           </h2>
           <p className="text-lg text-[#555555] leading-relaxed max-w-2xl mx-auto mb-10 font-sans">
-            imediaff Türkiye ile çalışarak satışlarınızı artırın, içerik üreticisi entegrasyonuyla markanızın dijital görünürlüğünü güçlendirin.
+            imediaff ile çalışarak satışlarınızı artırın, içerik üreticisi entegrasyonuyla markanızın dijital görünürlüğünü güçlendirin.
           </p>
           <Link
             href="/contact?type=brand"

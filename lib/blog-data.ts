@@ -156,7 +156,7 @@ export const BLOG_POSTS = [
 <h3>Popüler Influencer Analiz Araçları</h3>
 <p>Sektörde kullanılan önde gelen araçlar; takipçi analizi, sahte takipçi tespiti, kitle demografisi (yaş, cinsiyet, konum) ve etkileşim oranlarını detaylı raporlar halinde sunar. Bu araçlar sayesinde yatırım getirisi (ROI) tahmini yapabilir, geçmiş kampanya performanslarını inceleyebilirsiniz.</p>
 
-<p>iMediaff Türkiye olarak, geniş veri tabanımız ve gelişmiş iç analiz sistemlerimizle markalarımıza bu veri yönetimini uçtan uca sunuyor, manuel hata payını sıfıra indirerek doğrudan satış odaklı eşleştirmeler yapıyoruz.</p>
+<p>iMediaff olarak, geniş veri tabanımız ve gelişmiş iç analiz sistemlerimizle markalarımıza bu veri yönetimini uçtan uca sunuyor, manuel hata payını sıfıra indirerek doğrudan satış odaklı eşleştirmeler yapıyoruz.</p>
 `
   },
   {
@@ -185,13 +185,13 @@ export const BLOG_POSTS = [
     date: "Haziran 2026",
     readTime: "4 dk okuma",
     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
-    summary: "imediaff Türkiye'nin creator'lar için sunduğu gelir artırıcı fırsatlar ve profesyonel süreç yönetimi avantajları.",
+    summary: "imediaff'in creator'lar için sunduğu gelir artırıcı fırsatlar and profesyonel süreç yönetimi avantajları.",
     content: `
 <h2>iMediaff Ekosisteminde Yer Almanın Avantajları</h2>
 
-<p>Sosyal medya içerik üreticileri için sadece kaliteli içerik üretmek yeterli değildir; bu içeriklerin doğru iş birlikleriyle ve profesyonel süreç yönetimiyle gelir modeline dönüştürülmesi gerekir. imediaff Türkiye, içerik üreticilerine dijital ekosistemde hak ettikleri profesyonel desteği sunar.</p>
+<p>Sosyal medya içerik üreticileri için sadece kaliteli içerik üretmek yeterli değildir; bu içeriklerin doğru iş birlikleriyle ve profesyonel süreç yönetimiyle gelir modeline dönüştürülmesi gerekir. imediaff, içerik üreticilerine dijital ekosistemde hak ettikleri profesyonel desteği sunar.</p>
 
-<h3>iMediaff Türkiye'nin Sağladığı Fırsatlar</h3>
+<h3>iMediaff'in Sağladığı Fırsatlar</h3>
 <p><strong>Özel Komisyon ve Kampanyalar:</strong> Trendyol başta olmak üzere lider e-ticaret platformlarıyla yürüttüğümüz doğrudan iş birlikleri sayesinde, bağımsız çalışırken elde edemeyeceğiniz özel komisyon oranları ve Brand Offers kampanyalarına erişirsiniz.</p>
 <p><strong>Uçtan Uca Süreç Yönetimi:</strong> Yasal sözleşmeler, faturalandırma, vergilendirme süreçleri ve ödemelerin takibi gibi tüm operasyonel ve hukuki yükü biz üstleniyoruz. Siz sadece içerik üretimine odaklanırsınız.</p>
 <p><strong>Performans ve Gelişim Desteği:</strong> Kitle etkileşiminizi artıracak içerik kurguları, link stratejileri ve düzenli analizlerle affiliate gelirlerinizi sürekli büyütmenize destek oluyoruz.</p>

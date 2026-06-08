@@ -98,7 +98,7 @@ const CASE_STUDIES = [
     theme: "white",
     client: "Amazon",
     sector: "Pazara Giriş",
-    title: "Uluslararası Perakende Markasının Türkiye Pazarına Girişi.",
+    title: "Uluslararası Perakende Markasının Yeni Pazara Girişi.",
     strategy: "Integrated creator-led market entry for high-tech consumer goods.",
     image: "https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=2070&auto=format&fit=crop",
     kpis: [
@@ -112,7 +112,7 @@ const CASE_STUDIES = [
     client: "L'Oréal",
     sector: "Bölgesel Ağ",
     title: "Redefining Beauty Standards in the GCC Region.",
-    strategy: "Türkiye'nin önde gelen yeteneklerinin ve yüksek çözünürlüklü prodüksiyonun kullanıldığı 360° yerel dijital kampanya.",
+    strategy: "Öncü yeteneklerin ve yüksek çözünürlüklü prodüksiyonun kullanıldığı 360° dijital kampanya.",
     image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop",
     kpis: [
       { to: 85, suffix: "%", label: "Brand Sentiment" },
@@ -155,7 +155,7 @@ export default function CaseStudiesClientPage() {
             Market Success <br /> Stories.
           </h1>
           <p className="mt-8 max-w-2xl text-lg md:text-xl text-[#666666] leading-relaxed font-sans">
-            Türkiye pazarında, uluslararası markalar için etki alanını nasıl kurguladığımızı ve algoritmik hakimiyeti nasıl sağladığımızı keşfedin.
+            Uluslararası markalar için etki alanını nasıl kurguladığımızı ve algoritmik hakimiyeti nasıl sağladığımızı keşfedin.
           </p>
         </motion.div>
       </section>

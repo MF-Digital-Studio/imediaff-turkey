@@ -116,8 +116,8 @@ export default function ServicesPreview() {
                   {/* Bottom Content Area */}
                   <div className="flex flex-col items-start gap-4">
                     {/* Icon: white, above title */}
-                    <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 backdrop-blur-sm border border-[#E5E5E5]">
-                      <service.icon strokeWidth={1.5} className="h-5 w-5 text-[#111111]" />
+                    <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 backdrop-blur-sm border border-white/20">
+                      <service.icon strokeWidth={1.5} className="h-5 w-5 text-white" />
                     </div>
 
                     {/* Title & Description: white/light gray */}

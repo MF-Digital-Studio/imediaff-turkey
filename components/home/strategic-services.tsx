@@ -12,7 +12,7 @@ const SERVICES = [
   },
   {
     title: "Market Entry & Growth",
-    description: "Kültürel akıcılık ve bölgesel ağlarımız sayesinde Türkiye pazarında hızlı büyüme garantisi.",
+    description: "Kültürel akıcılık ve bölgesel ağlarımız sayesinde pazarda hızlı büyüme garantisi.",
     icon: Globe2,
   },
   {

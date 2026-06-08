@@ -19,7 +19,7 @@ export default function FeaturedEvents() {
             <h2 className="mt-4 font-display text-[clamp(2.25rem,6vw,5rem)] font-semibold leading-[0.9] tracking-[-0.035em] text-balance max-w-3xl">
               Son etkinlikler.
               <br />
-              <span className="text-muted-foreground">Türkiye'de etki.</span>
+              <span className="text-muted-foreground">Ölçülebilir etki.</span>
             </h2>
           </div>
           <Link

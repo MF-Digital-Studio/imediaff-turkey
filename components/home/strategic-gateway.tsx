@@ -10,7 +10,7 @@ const REGIONS = [
     city: "İstanbul",
     role: "Genel Merkez",
     description:
-      "Yaratıcı strateji, hukuki danışmanlık ve yüksek kaliteli prodüksiyon merkezi. 5.000'den fazla influencer partneriyle Türkiye'nin lider Trendyol affiliate ajansı.",
+      "Yaratıcı strateji, hukuki danışmanlık ve yüksek kaliteli prodüksiyon merkezi. 5.000'den fazla influencer partneriyle güçlü Trendyol affiliate ajansı.",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10" aria-hidden>
         <circle cx="20" cy="20" r="14" stroke="currentColor" strokeWidth="1.2" />
@@ -51,9 +51,9 @@ export default function StrategicGateway() {
             </p>
 
             <h2 className="font-sans text-[clamp(2.4rem,5.5vw,4.8rem)] font-bold leading-[0.92] tracking-[-0.03em] text-black text-balance">
-              Türkiye'nin{" "}
-              <br className="hidden md:block" />
               Dijital{" "}
+              <br className="hidden md:block" />
+              Pazarda{" "}
               <span
                 style={{
                   backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
@@ -62,10 +62,10 @@ export default function StrategicGateway() {
                   backgroundClip: "text",
                 }}
               >
-                Pazarında
+                Stratejik
               </span>
               <br className="hidden md:block" />
-              Stratejik Güç.
+              Büyüme Ortağı.
             </h2>
           </motion.div>
 
@@ -80,7 +80,7 @@ export default function StrategicGateway() {
             <div className="w-10 h-[2px] bg-gradient-to-r from-[#FE9417] to-[#FF6B00] mb-7" />
 
             <p className="text-black/60 leading-relaxed text-[1.05rem] font-medium max-w-lg">
-              İstanbul merkezli operasyonlarımızla Türkiye'nin en dinamik markalarına ve içerik üreticilerine hizmet veriyoruz. KVKK uyumlu sözleşmeler, anlık performans takibi ve güçlü ajans desteğiyle yanınızdayız.
+              İstanbul merkezli operasyonlarımızla en dinamik markalara ve içerik üreticilerine hizmet veriyoruz. KVKK uyumlu sözleşmeler, anlık performans takibi ve güçlü ajans desteğiyle yanınızdayız.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">

@@ -31,14 +31,14 @@ export interface EventItem {
 
 export const EVENTS: EventItem[] = [
   {
-    slug: "featured-event-placeholder",
-    title: "Öne Çıkan Etkinlik Başlığı",
-    date: "Yakında Duyurulacak",
-    location: "İstanbul, Türkiye",
-    region: "Türkiye",
-    category: "Özel Etkinlik",
-    excerpt: "Bu alan, öne çıkan etkinliğin kısa özetini içermektedir. Müşteri tarafından güncellenecektir.",
-    description: "Bu açıklama metni etkinlik detaylarını, görselleri ve program akışını barındırmak üzere ayrılmış geçici bir metindir. Etkinlik yaklaştığında detaylar burada yer alacaktır.",
+    slug: "event-title-placeholder-01",
+    title: "Event Title Placeholder 01",
+    date: "Event Date Placeholder 01",
+    location: "Location Placeholder 01",
+    region: "Region Placeholder 01",
+    category: "Category Placeholder 01",
+    excerpt: "Excerpt Placeholder 01 - This is a short placeholder description for event 01.",
+    description: "Description Placeholder 01 - Detailed event description goes here. This section is reserved for event agenda, speakers, and timing information.",
     coverImage: "/placeholder.svg",
     featured: true,
     gallery: [
@@ -50,34 +50,16 @@ export const EVENTS: EventItem[] = [
     ]
   },
   {
-    slug: "event-title-placeholder-01",
-    title: "Marka Aktivasyon Etkinliği",
-    date: "Yakında",
-    location: "İstanbul",
-    region: "Türkiye",
-    category: "Marka Etkinliği",
-    excerpt: "Markaların içerik üreticileri ile buluştuğu ve yeni stratejilerin konuşulduğu bölgesel aktivasyon.",
-    description: "Bu etkinlik, imediaff Türkiye tarafından organize edilen bölgesel marka aktivasyonudur. Detaylar ve görseller etkinlik sonrası eklenecektir.",
-    coverImage: "/placeholder.svg",
-    gallery: [
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg"
-    ]
-  },
-  {
     slug: "event-title-placeholder-02",
-    title: "İçerik Üreticileri Buluşması",
-    date: "2026",
-    location: "İzmir",
-    region: "Türkiye",
-    category: "Creator Buluşması",
-    excerpt: "TrendFam ekosistemindeki içerik üreticilerini bir araya getiren özel gala yemeği.",
-    description: "Influencer marketing sektörünün önde gelen isimleri ve en başarılı içerik üreticilerini bir araya getiren etkinliğimizin detayları bu alanda yer alacaktır.",
+    title: "Event Title Placeholder 02",
+    date: "Event Date Placeholder 02",
+    location: "Location Placeholder 02",
+    region: "Region Placeholder 02",
+    category: "Category Placeholder 02",
+    excerpt: "Excerpt Placeholder 02 - This is a short placeholder description for event 02.",
+    description: "Description Placeholder 02 - Detailed event description goes here. This section is reserved for event agenda, speakers, and timing information.",
     coverImage: "/placeholder.svg",
     gallery: [
-      "/placeholder.svg",
       "/placeholder.svg",
       "/placeholder.svg",
       "/placeholder.svg",
@@ -86,13 +68,31 @@ export const EVENTS: EventItem[] = [
   },
   {
     slug: "event-title-placeholder-03",
-    title: "E-Ticaret Zirvesi Katılımı",
-    date: "2026",
-    location: "İstanbul",
-    region: "Türkiye",
-    category: "Sektörel Zirve",
-    excerpt: "imediaff Türkiye ekibi, dijital pazarın en büyük fuar ve zirvelerinde yer almaya devam ediyor.",
-    description: "Sektörel büyümenin konuşulduğu, yeni panellerin duyurulduğu etkinlikte standımızı ziyaret eden markalara ve influencer'lara teşekkür ederiz. Görseller yakında yüklenecektir.",
+    title: "Event Title Placeholder 03",
+    date: "Event Date Placeholder 03",
+    location: "Location Placeholder 03",
+    region: "Region Placeholder 03",
+    category: "Category Placeholder 03",
+    excerpt: "Excerpt Placeholder 03 - This is a short placeholder description for event 03.",
+    description: "Description Placeholder 03 - Detailed event description goes here. This section is reserved for event agenda, speakers, and timing information.",
+    coverImage: "/placeholder.svg",
+    gallery: [
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg"
+    ]
+  },
+  {
+    slug: "event-title-placeholder-04",
+    title: "Event Title Placeholder 04",
+    date: "Event Date Placeholder 04",
+    location: "Location Placeholder 04",
+    region: "Region Placeholder 04",
+    category: "Category Placeholder 04",
+    excerpt: "Excerpt Placeholder 04 - This is a short placeholder description for event 04.",
+    description: "Description Placeholder 04 - Detailed event description goes here. This section is reserved for event agenda, speakers, and timing information.",
     coverImage: "/placeholder.svg",
     gallery: [
       "/placeholder.svg",

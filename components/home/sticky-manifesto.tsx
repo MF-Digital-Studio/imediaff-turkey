@@ -13,17 +13,17 @@ const SECTIONS: ManifestoSection[] = [
   {
     kicker: "01 - STRATEJİK MERKEZ",
     title: "Sadece ulaşmıyoruz. Gerçek bağlar kuruyoruz.",
-    body: "İstanbul'da stratejik olarak konumlanan imediaff Türkiye, Trendyol ekosisteminde markalar için büyüme altyapısı oluşturuyor.",
+    body: "İstanbul'da stratejik olarak konumlanan imediaff, Trendyol ekosisteminde markalar için büyüme altyapısı oluşturuyor.",
   },
   {
     kicker: "02 - KÜLTÜREL ZEKA",
-    title: "Trendleri takip etmiyoruz. Türkiye'ye özgü trendler yaratıyoruz.",
-    body: "Türk tüketicisinin dinamiklerini ve kültürel bağlamını derinlemesine anlıyoruz. Markanızın yerel konuşmaların otantik bir parçası olmasını sağlıyoruz.",
+    title: "Trendleri takip etmiyoruz. Sektöre yön veren yeni trendler yaratıyoruz.",
+    body: "Tüketicilerin dinamiklerini ve kültürel bağlamı derinlemesine anlıyoruz. Markanızın konuşmaların otantik bir parçası olmasını sağlıyoruz.",
   },
   {
     kicker: "03 - ÖLÇÜLEBILIR BÜYÜME",
     title: "Sadece veri takip etmiyoruz. Pazar payı yaratıyoruz.",
-    body: "Trendyol'un Türkiye ağında dijital dikkati ölçülebilir büyümeye dönüştürüyoruz.",
+    body: "Trendyol ekosisteminde dijital dikkati ölçülebilir büyümeye dönüştürüyoruz.",
   },
 ]
 

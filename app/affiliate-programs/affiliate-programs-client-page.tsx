@@ -52,7 +52,7 @@ export default function AffiliateProgramsClientPage() {
                 </span>
               </h1>
               <p className="max-w-3xl text-lg md:text-xl leading-relaxed text-black/60 mb-12 font-sans text-balance">
-                İçerik üreticilerini e-ticaret platformu Trendyol ile buluşturuyoruz. Uçtan uca imediaff Türkiye tarafından yönetilen, şeffaf ve komisyon odaklı affiliate (satış ortaklığı) ağına katılın.
+                İçerik üreticilerini e-ticaret platformu Trendyol ile buluşturuyoruz. Uçtan uca imediaff tarafından yönetilen, şeffaf ve komisyon odaklı affiliate (satış ortaklığı) ağına katılın.
               </p>
             </motion.div>
 
@@ -109,7 +109,7 @@ export default function AffiliateProgramsClientPage() {
                   </span>
                 </div>
                 <p className="text-[#111111] leading-relaxed font-sans mb-8">
-                  TrendFam, Trendyol'un resmi komisyon bazlı içerik üreticisi programıdır. imediaff Türkiye, bu profesyonel ağın ana partnerlerinden biri olarak; bireysel başvuruların onay süreçlerini hızlandırır, daha yüksek komisyon imkanları sunar ve tüm süreci profesyonel kurumsal güvence altına alır.
+                  TrendFam, Trendyol'un resmi komisyon bazlı içerik üreticisi programıdır. imediaff, bu profesyonel ağın ana partnerlerinden biri olarak; bireysel başvuruların onay süreçlerini hızlandırır, daha yüksek komisyon imkanları sunar ve tüm süreci profesyonel kurumsal güvence altına alır.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-10">
                   {["Türkiye", "Ekosistem", "Performans"].map((reg) => (
@@ -303,7 +303,7 @@ export default function AffiliateProgramsClientPage() {
               </span>
             </h2>
             <p className="mt-6 max-w-2xl text-base md:text-lg text-[#666666] font-sans">
-              imediaff Türkiye ile uçtan uca yönetilen şeffaf ve güvenilir bir süreç.
+              imediaff ile uçtan uca yönetilen şeffaf ve güvenilir bir süreç.
             </p>
           </motion.div>
 
@@ -453,7 +453,7 @@ export default function AffiliateProgramsClientPage() {
             Kazancınızı <br /> Artırmaya Hazır Mısınız?
           </h2>
           <p className="text-lg text-[#555555] leading-relaxed max-w-2xl mx-auto mb-10 font-sans">
-            Affiliate ağımıza katılmak ve profesyonel destekle gelirinizi artırmak için imediaff Türkiye'ye hemen başvurun.
+            Affiliate ağımıza katılmak ve profesyonel destekle gelirinizi artırmak için imediaff'e hemen başvurun.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto sm:max-w-none">
             <Link

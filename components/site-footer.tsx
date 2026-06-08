@@ -44,8 +44,8 @@ export default function SiteFooter() {
     <footer className="relative border-t border-border bg-background">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-14 grid grid-cols-1 md:grid-cols-12 gap-10">
         <div className="md:col-span-3">
-          <Link href="/" className="font-display text-lg font-semibold tracking-tight text-[#111111]">imediaff Türkiye<span className="text-[#FE9417]">.</span></Link>
-          <p className="mt-4 max-w-sm text-sm text-[#666666] leading-relaxed font-sans">Türkiye'nin lider influencer ve dijital pazarlama ajansı — markalar ve içerik üreticilerini güçlü iş birlikleriyle buluşturuyoruz.</p>
+          <Link href="/" className="font-display text-lg font-semibold tracking-tight text-[#111111]">imediaff<span className="text-[#FE9417]">.</span></Link>
+          <p className="mt-4 max-w-sm text-sm text-[#666666] leading-relaxed font-sans">Markalar ve içerik üreticileri için influencer marketing, affiliate marketing, prodüksiyon ve kampanya yönetimi çözümleri sunuyoruz.</p>
           <div className="mt-6 flex flex-wrap gap-2">
             {SOCIAL.map((s) => (
               <a key={s.label} href={s.href} className="inline-flex items-center gap-2 border border-[#E5E5E5] px-3 py-1.5 text-xs font-mono tracking-widest text-[#666666] hover:border-[#E5E5E5] hover:text-[#111111] transition-colors">{s.label}<span aria-hidden>↗</span></a>
@@ -68,7 +68,7 @@ export default function SiteFooter() {
                 <li key={item.label}>
                   <Link
                     href={item.href}
-                    className={`text-sm text-[#666666] hover:text-[#111111] transition-colors ${item.isAddress ? "font-mono text-xs leading-loose" : "font-sans"}`}
+                    className={`text-sm text-[#666666] hover:text-[#111111] transition-colors ${'isAddress' in item && item.isAddress ? "font-mono text-xs leading-loose" : "font-sans"}`}
                   >
                     {item.label}
                   </Link>
@@ -81,7 +81,7 @@ export default function SiteFooter() {
 
       <div className="border-t border-[#E5E5E5]">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <p className="font-mono text-[10px] uppercase tracking-widest text-[#888888]">© {new Date().getFullYear()} imediaff Türkiye. Tüm hakları saklıdır.</p>
+          <p className="font-mono text-[10px] uppercase tracking-widest text-[#888888]">© {new Date().getFullYear()} imediaff. Tüm hakları saklıdır.</p>
           <div className="flex items-center gap-6">
             <Link href="#" className="font-mono text-[10px] uppercase tracking-widest text-[#888888] hover:text-[#111111] transition-colors">KVKK ve Gizlilik Politikası</Link>
             <p className="font-mono font-bold text-[10px] uppercase tracking-widest text-[#888888]">Powered by MF Digital Studio</p>

@@ -7,7 +7,7 @@ export default function InfluencerCta() {
         <div className="md:col-span-8">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">/ Are you a creator?</p>
           <h2 className="mt-4 font-display text-[clamp(2.5rem,8vw,7rem)] font-bold leading-[0.9] tracking-[-0.045em] text-balance">
-            Türkiye <span className="text-primary">ağımıza katılın</span>.
+            Creator <span className="text-primary">ağımıza katılın</span>.
           </h2>
           <p className="mt-6 max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed">
             We onboard new creators every month. If you have a distinctive voice, we want to hear from you.

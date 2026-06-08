@@ -17,7 +17,6 @@ const fadeUp = (delay = 0) => ({
 export default function BlogClientPage() {
   const featurePost = BLOG_POSTS[0]
   const row1Posts = BLOG_POSTS.slice(1, 4)
-  const row2Posts = BLOG_POSTS.slice(4, 7)
 
   return (
     <main className="min-h-screen bg-white text-[#111111]">
@@ -89,60 +88,7 @@ export default function BlogClientPage() {
         </div>
       </section>
 
-      {/* ── ROW 2: 3-Column Grid (Black) ─────────────────────────────────────── */}
-      {row2Posts.length > 0 && (
-        <section className="bg-white text-[#111111] py-20 md:py-32 border-b border-[#E5E5E5]">
-          <div className="mx-auto max-w-[1600px] px-6 md:px-10">
-            <motion.div {...fadeUp()} className="mb-14">
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#888888] font-bold">/ Stratejik Derinlik</p>
-            </motion.div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
-              {row2Posts.map((post, i) => (
-                <motion.article
-                  key={post.slug}
-                  {...fadeUp(i * 0.1)}
-                  className="group flex flex-col"
-                >
-                  <Link href={`/blog/${post.slug}`} className="block relative w-full aspect-[4/3] overflow-hidden rounded-[1.5rem] mb-6 border border-[#E5E5E5]">
-                    <Image
-                      src={post.image}
-                      alt={post.title}
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                      unoptimized
-                    />
-                    {/* Subtle overlay to fit the black theme */}
-                    <div className="absolute inset-0 bg-black/5 mix-blend-multiply" />
-                  </Link>
-                  <div className="flex flex-col flex-grow">
-                    <div className="flex items-center gap-3 mb-4">
-                      <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#FE9417] font-bold">{post.category}</span>
-                      <span className="h-px w-4 bg-white/20" />
-                      <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#888888]">{post.readTime}</span>
-                    </div>
-                    <Link href={`/blog/${post.slug}`}>
-                      <h3 className="font-display text-2xl md:text-[1.75rem] font-bold leading-[1.1] tracking-[-0.02em] text-[#111111] mb-4 group-hover:text-[#FE9417] transition-colors line-clamp-3">
-                        {post.title}
-                      </h3>
-                    </Link>
-                    <p className="text-[#666666] font-sans mb-8 line-clamp-2 mt-auto">
-                      {post.summary}
-                    </p>
-                    <Link
-                      href={`/blog/${post.slug}`}
-                      className="inline-flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.15em] font-bold text-[#111111] group-hover:text-[#FE9417] transition-colors mt-auto w-fit"
-                    >
-                      Yazıyı Oku
-                      <span className="block h-px w-6 bg-gradient-to-br from-[#FE9417] to-[#FF6B00] transition-all duration-300 group-hover:w-10" />
-                    </Link>
-                  </div>
-                </motion.article>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
+
 
       {/* ── ROW 3: Featured Post (Sunset Gradient) ────────────────────────────── */}
       {featurePost && (

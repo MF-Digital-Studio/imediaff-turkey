@@ -26,7 +26,7 @@ export default function ClientMarquee() {
           </div>
           <div className="lg:col-span-5">
             <p className="text-[#666666] leading-relaxed text-sm md:text-base font-medium">
-              E-ticaret, perakende, kozmetik, anne-bebek, gıda, teknoloji ve yaşam kategorilerinde Türkiye’nin önde gelen markalarıyla kampanya ve iş birliği deneyimi.
+              E-ticaret, perakende, kozmetik, anne-bebek, gıda, teknoloji ve yaşam kategorilerinde önde gelen markalarla kampanya ve iş birliği deneyimi.
             </p>
           </div>
         </div>

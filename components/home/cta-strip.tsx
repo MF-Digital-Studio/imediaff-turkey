@@ -8,7 +8,7 @@ import { useState, useEffect, useRef } from "react"
 function MarqueeSlice() {
   return (
     <span className="flex items-center gap-8 pr-8 md:gap-14 md:pr-14 shrink-0">
-      <span>TÜRKİYE'NİN LİDERİ</span>
+      <span>ETKİLİ İŞ BİRLİKLERİ</span>
       <span
         aria-hidden
         className="inline-block h-[0.22em] w-[0.22em] shrink-0"
@@ -111,11 +111,11 @@ export default function CtaStrip() {
           </p>
           
           <h2 className="font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance mb-6 text-[#111111]">
-            Türkiye'deki etkini <br className="hidden md:block" /> inşa edelim.
+            Dijital etkinizi <br className="hidden md:block" /> inşa edelim.
           </h2>
           
           <p className="max-w-2xl text-lg md:text-xl font-medium leading-relaxed text-[#555555] mb-10">
-            Dikkati büyümeye dönüştürüyoruz. Yüksek kaliteli prodüksiyondan Türkiye'nin lider influencer ağına — markanızın geleceğini birlikte şekillendirin.
+            Dikkati büyümeye dönüştürüyoruz. Yüksek kaliteli prodüksiyondan güçlü influencer ağına — markanızın geleceğini birlikte şekillendirin.
           </p>
           
           <Link

@@ -75,14 +75,14 @@ export default function ScrollHero() {
 
             {/* Central Anchor: iMediaff Logo */}
             <motion.div
-              className="relative z-50 flex flex-col items-center justify-center pointer-events-auto"
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[65%] z-50 flex flex-col items-center justify-center pointer-events-auto"
               initial={{ opacity: 0, scale: shouldReduceMotion ? 1 : 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2, delay: 0.4, ease: easeCustom }}
             >
-              <div className="relative w-48 h-20 md:w-72 md:h-28 flex items-center justify-center drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+              <div className="relative w-64 h-28 md:w-[28rem] md:h-40 flex items-center justify-center drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]">
                 <Image
-                  src="/logo-black.png"
+                  src="/logo-map.png"
                   alt="iMediaff"
                   fill
                   className="object-contain"

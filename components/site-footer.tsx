@@ -76,7 +76,7 @@ export default function SiteFooter() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 + (index * 0.1) }}
-            className={heading === "Offices" ? "md:col-span-3" : "md:col-span-2"}
+            className={heading === "Ofis" ? "md:col-span-3" : "md:col-span-2"}
           >
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#111111] font-bold">/ {heading}</p>
             <ul className="mt-6 flex flex-col gap-4">
@@ -93,6 +93,35 @@ export default function SiteFooter() {
             </ul>
           </motion.div>
         ))}
+
+        {/* Global Link Section */}
+        <motion.div 
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-10% 0px" }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.5 }}
+          className="md:col-span-2"
+        >
+          <div className="flex items-center h-8">
+            <img src="/logo-global.png" alt="imediaff Global" className="h-full w-auto object-contain" />
+          </div>
+          <div className="mt-6">
+            <a 
+              href="https://imediaff-global.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="imediaff Global sitesini yeni sekmede aç"
+              className="group flex flex-col gap-2"
+            >
+              <span className="text-sm font-semibold text-[#111111] group-hover:text-[#FE9417] transition-colors inline-flex items-center gap-1">
+                imediaff Global <span aria-hidden>↗</span>
+              </span>
+              <span className="text-xs text-[#666666] leading-relaxed font-sans mt-1">
+                Global operasyon ve uluslararası yapılanma için ana siteyi ziyaret edin.
+              </span>
+            </a>
+          </div>
+        </motion.div>
       </div>
 
       <motion.div 

@@ -6,68 +6,68 @@ import { motion } from "motion/react"
 
 const DETAILED_SERVICES = [
   {
-    title: "Marka Danışmanlığı",
-    description: "Markanın hedef kitlesine, kategori dinamiklerine ve satış hedeflerine göre influencer ve affiliate stratejisi oluştururuz.",
-    image: "/services/service-04.jpg",
-    features: ["Hedef Kitle Analizi", "Kategori Dinamikleri", "Stratejik Konumlandırma"],
-  },
-  {
-    title: "Influencer Marketing",
-    description: "Markaları doğru içerik üreticileriyle buluşturur, brief’ten raporlamaya kadar tüm kampanya sürecini yönetiriz.",
-    image: "/services/service-02.jpg",
-    features: ["Doğru Eşleştirme", "Kampanya Yönetimi", "Veri Analizi"],
-  },
-  {
-    title: "Affiliate Marketing",
-    description: "Link, komisyon ve ödeme süreçlerini şeffaf bir operasyon yapısıyla takip ederiz.",
+    title: "Affiliate Marketing Yönetimi",
+    description: "TrendFam affiliate programı için uçtan uca yönetim: içerik üreticisi onboarding’i, link oluşturma, komisyon takibi ve ödeme süreçleri. Trendyol’un önde gelen yetkili partner ajanslarından biri olarak süreci profesyonel bir yapıyla yönetiyoruz.",
     image: "/services/service-01.jpg",
-    features: ["Şeffaf Takip", "Link & Komisyon Altyapısı", "Stratejik Analiz"],
+    features: ["TrendFam Partneri", "Komisyon Takibi", "Ödeme Süreci"],
   },
   {
-    title: "Talent Management",
-    description: "İçerik üreticilerinin marka iş birlikleri, teklif değerlendirme, içerik planlama ve performans analiz süreçlerine destek oluruz.",
+    title: "Influencer & Marka İş Birlikleri",
+    description: "Markalar ile doğrulanmış içerik üreticileri arasında stratejik eşleşmeler kurarız. Her iş birliği; net KPI’lar, şeffaf raporlama ve tarafların haklarını koruyan yapılandırılmış sözleşme süreçleriyle yürütülür.",
+    image: "/services/service-02.jpg",
+    features: ["5.000+ İçerik Üreticisi", "Sözleşmeli İş Birlikleri", "Performans Bazlı"],
+  },
+  {
+    title: "Creator Danışmanlığı & Büyüme",
+    description: "İçerik üreticilerine link stratejisi, içerik optimizasyonu, hedef kitle analizi ve kazanç maksimizasyonu konularında birebir destek sunarız. Düzenli webinarlar ve aktif kampanya kanallarıyla creator’ların güncel fırsatlara erişmesini sağlarız.",
     image: "/services/service-06.jpg",
-    features: ["Yetenek Yönetimi", "İş Birliği Değerlendirme", "Birebir Destek"],
+    features: ["Birebir Danışmanlık", "Webinarlar", "WhatsApp Kanalı"],
   },
   {
-    title: "Prodüksiyon & Reklam Yapımı",
-    description: "Kampanya fikri, kreatif konsept, çekim, kurgu, post-prodüksiyon ve medya planlama süreçlerinde markalara destek veririz.",
+    title: "Kampanya Prodüksiyonu & İçerik",
+    description: "Sosyal platformlarda performans gösterecek yüksek kaliteli içerik ve reklam prodüksiyonları geliştiririz. Konseptten teslimata kadar her içerik, kampanya hedeflerine ve platform formatlarına uygun şekilde hazırlanır.",
     image: "/services/service-03.jpg",
-    features: ["Kreatif Konsept", "Post-Prodüksiyon", "Medya Planlama"],
+    features: ["Set Prodüksiyonu", "Sosyal Formatlar", "Kreatif Uyarlama"],
   },
   {
-    title: "Mali & Hukuki Süreç Danışmanlığı",
-    description: "Sözleşme, ödeme, faturalandırma, KVKK ve kampanya süreçlerinde marka ve içerik üreticilerine daha güvenli bir operasyon alanı sağlarız.",
+    title: "Pazar Stratejisi & Kategori Büyümesi",
+    description: "Markaların doğru kategori, hedef kitle, creator profili ve kampanya modeliyle daha güçlü konumlanmasına yardımcı oluruz. Yerel tüketici davranışları, platform dinamikleri ve creator ağı üzerinden uygulanabilir büyüme stratejileri geliştiririz.",
+    image: "/services/service-04.jpg",
+    features: ["Kategori Stratejisi", "Hedef Kitle Analizi", "Kampanya Modeli"],
+  },
+  {
+    title: "Hukuki & Finansal Danışmanlık",
+    description: "Sözleşme yapısı, vergi uyumu, KVKK süreçleri ve ödeme yönetimi konularında destek sunarız. Komisyon bazlı modelle çalışır; ön ödeme ve gizli maliyet içermeyen şeffaf bir yapı kurarız.",
     image: "/services/service-05.jpg",
-    features: ["Güvenli Sözleşmeler", "KVKK Uyum Altyapısı", "Mali Danışmanlık"],
+    features: ["Sözleşme Yapısı", "Vergi Uyumu", "KVKK"],
   },
 ]
 
 const PROCESS = [
   {
     step: "01",
-    title: "Başvuru ve İnceleme",
-    description: "1-5 iş günü içerisinde profil veya kampanya incelenir, uygunluk doğrulanır.",
+    title: "Onboarding & Uygunluk İncelemesi",
+    description: "Profil ve başvuru bilgileri 1–5 iş günü içinde incelenir. Uygunluk, program kriterleri ve kampanya ihtiyaçları doğrultusunda değerlendirilir.",
   },
   {
     step: "02",
-    title: "Sözleşme Onayı",
-    description: "Komisyon oranları, kurallar ve hakların net bir şekilde belirlendiği sözleşme imzalanır.",
+    title: "Sözleşme & Anlaşma",
+    description: "1 yıllık partnerlik sözleşmesi imzalanır. Komisyon oranları, ödeme takvimi ve uyum kuralları taraflar için net şekilde tanımlanır.",
   },
   {
     step: "03",
-    title: "Sistem Aktivasyonu",
-    description: "Affiliate linkleri veya kampanya kurgusu aktif hale getirilir, iletişim kanallarına dahil olunur.",
+    title: "Program Aktivasyonu",
+    description: "Affiliate linkleri aktive edilir, Influencer Center erişimi sağlanır ve içerik üreticisi kampanya kanalına dahil edilir.",
   },
   {
     step: "04",
-    title: "Aktif Yönetim",
-    description: "Anlık performans takibi, kampanya güncellemeleri ve danışmanlık hizmetleriyle optimizasyon sağlanır.",
+    title: "Aktif Yönetim & Optimizasyon",
+    description: "Performans düzenli takip edilir; bonus görevleri, kampanya güncellemeleri, kanal duyuruları ve birebir yönlendirmelerle süreç optimize edilir.",
   },
   {
     step: "05",
-    title: "Raporlama ve Ödeme",
-    description: "Aylık şeffaf raporlamalar doğrultusunda hak edilen ödemeler doğrudan gerçekleştirilir.",
+    title: "Raporlama & Ödeme",
+    description: "Aylık komisyon raporları şeffaf kırılımlarla paylaşılır. Ödemeler belirlenen döngüye göre IBAN veya uygun hesap transferiyle yapılır. Ön ödeme yoktur; komisyon bazlı model uygulanır.",
   },
 ]
 
@@ -83,13 +83,13 @@ export default function ServicesClientPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
-            / Hizmetlerimiz
+            / HİZMETLER
           </p>
           <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance">
-            Influencer & Affiliate Çözümleri
+            Sadece Büyüme Değil, Dönüşüm.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#666666] md:text-xl">
-            Stratejiden prodüksiyona, kampanya yönetiminden raporlamaya kadar tüm süreci tek merkezden yönetiyoruz.
+            Affiliate program yönetiminden kreatif prodüksiyona ve hukuki danışmanlığa kadar; markalar ve içerik üreticileri için uçtan uca çözümler sunuyoruz.
           </p>
         </motion.div>
       </section>
@@ -105,10 +105,10 @@ export default function ServicesClientPage() {
             className="mb-16 md:mb-32 text-center md:text-left"
           >
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
-              / Entegre Çözümler
+              / ENTEGRE YETKİNLİKLER
             </p>
             <h2 className="mt-5 font-display text-[clamp(2.5rem,6vw,5.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-black">
-              360° Uzmanlık.
+              Uçtan Uca Kurumsal Çözümler.
             </h2>
           </motion.div>
 
@@ -116,22 +116,22 @@ export default function ServicesClientPage() {
             {DETAILED_SERVICES.map((service, i) => {
               const isEven = i % 2 === 0
               const serviceIds = [
-                "marka-danismanligi",
-                "influencer-marketing",
-                "affiliate-marketing",
-                "talent-management",
-                "produksiyon-ve-reklam-yapimi",
-                "mali-ve-hukuki-surec-danismanligi"
+                "affiliate-marketing-yonetimi",
+                "influencer-ve-marka-is-birlikleri",
+                "creator-danismanligi-ve-buyume",
+                "kampanya-produksiyonu-ve-icerik",
+                "pazar-stratejisi-ve-kategori-buyumesi",
+                "hukuki-ve-finansal-danismanlik"
               ]
               return (
-                <div 
+                <div
                   id={serviceIds[i]}
-                  key={service.title} 
+                  key={service.title}
                   className={`relative flex flex-col items-center ${isEven ? "md:flex-row" : "md:flex-row-reverse"} scroll-mt-28`}
                 >
-                  
+
                   {/* Image Side */}
-                  <motion.div 
+                  <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true, margin: "-10% 0px" }}
@@ -144,10 +144,10 @@ export default function ServicesClientPage() {
                       transition={{ duration: 1.5, ease: "easeOut" }}
                       className="w-full h-full relative"
                     >
-                      <Image 
-                        src={service.image} 
-                        alt={service.title} 
-                        fill 
+                      <Image
+                        src={service.image}
+                        alt={service.title}
+                        fill
                         unoptimized
                         className="object-cover"
                       />
@@ -155,7 +155,7 @@ export default function ServicesClientPage() {
                   </motion.div>
 
                   {/* Text Side (Overlapping Glassmorphism Card on White) */}
-                  <motion.div 
+                  <motion.div
                     initial={{ opacity: 0, x: isEven ? 50 : -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-10% 0px" }}
@@ -171,7 +171,7 @@ export default function ServicesClientPage() {
                     <p className="text-base md:text-lg leading-relaxed text-gray-600 font-sans mb-10">
                       {service.description}
                     </p>
-                    
+
                     <div className="flex flex-col gap-5">
                       {service.features.map(feat => (
                         <div key={feat} className="flex items-center gap-4 group/feat">
@@ -202,7 +202,7 @@ export default function ServicesClientPage() {
           >
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
-                / Net ve Şeffaf Akış
+                / NET SÜREÇ
               </p>
               <h2 className="mt-5 font-display text-[clamp(2rem,5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-[#111111]">
                 Operasyonel <br /> Mükemmellik.
@@ -224,11 +224,11 @@ export default function ServicesClientPage() {
                 {i < PROCESS.length - 1 && (
                   <div className="hidden md:block absolute top-6 left-12 w-full h-[1px] bg-white/10 group-hover:bg-[#FE9417]/50 transition-colors duration-500" />
                 )}
-                
+
                 <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-[#E5E5E5] bg-white font-mono text-sm text-[#FE9417] transition-colors duration-500 group-hover:border-[#FE9417] group-hover:text-[#FE9417] mb-6">
                   {step.step}
                 </div>
-                
+
                 <h3 className="font-display text-xl font-bold text-[#111111] mb-3">
                   {step.title}
                 </h3>
@@ -251,13 +251,13 @@ export default function ServicesClientPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10 text-center relative z-10"
         >
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#555555] font-bold mb-6">
-            / İlk Adımı Atın
+            / ETKİNİZİ BÜYÜTÜN
           </p>
           <h2 className="font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance mb-6 text-[#111111]">
-            Brief'inizi Paylaşın.
+            Ölçülebilir Momentum Kurun.
           </h2>
           <p className="text-[#111111] text-lg md:text-xl max-w-2xl mx-auto mb-10 font-medium">
-            Hedeflerinize uygun kampanya ve hizmet modelini birlikte netleştirelim.
+            Hedeflerinize uygun hizmet modelini birlikte netleştirelim.
           </p>
           <Link
             href="/contact"

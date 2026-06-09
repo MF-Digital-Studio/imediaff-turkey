@@ -115,8 +115,9 @@ export default function BlogClientPage() {
                     className="object-cover transition-transform duration-1000 group-hover:scale-105"
                     unoptimized
                   />
-                  {/* Gradient mask to blend with black */}
-                  <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-black via-black/50 to-transparent" />
+                  {/* Gradient overlay for smooth transition to white content panel */}
+                  <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-b from-transparent via-white/60 to-white pointer-events-none lg:hidden" />
+                  <div className="absolute inset-y-0 right-0 w-1/3 bg-gradient-to-r from-transparent via-white/60 to-white pointer-events-none hidden lg:block" />
                 </div>
 
                 <div className="flex flex-col justify-center p-10 md:p-16 lg:p-20 relative z-10">

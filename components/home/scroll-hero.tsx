@@ -36,12 +36,13 @@ export default function ScrollHero() {
       ref={containerRef}
       className="relative h-[250vh] text-[#0F172A] bg-white"
       aria-label="Hero"
-      style={{
-        background: '#FFFFFF'
-      }}
       data-theme="light"
     >
-      <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-0 hero-gradient-bg"
+      />
+      <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center z-10">
 
         {/* ── Layer B: The Global Map Anchor ── */}
         <motion.div

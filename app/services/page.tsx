@@ -3,7 +3,7 @@ import ServicesClientPage from "./services-client-page"
 export const metadata = {
   title: "Hizmetler | imediaff Türkiye",
   description:
-    "Markalar ve içerik üreticileri için uçtan uca performans odaklı affiliate ve influencer pazarlama çözümleri.",
+    "Affiliate marketing, influencer iş birlikleri, creator danışmanlığı, kampanya prodüksiyonu ve hukuki-finansal süreç yönetimi için uçtan uca çözümler.",
 }
 
 export default function ServicesPage() {

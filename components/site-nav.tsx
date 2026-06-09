@@ -52,7 +52,11 @@ export default function SiteNav() {
             classes.includes("bg-white") ||
             classes.includes("bg-[#FFFFFF]") ||
             classes.includes("bg-[#F9FAFB]") ||
-            el.getAttribute("data-theme") === "light"
+            classes.includes("bg-background") ||
+            classes.includes("bg-[#fafafa]") ||
+            classes.includes("bg-gray-50") ||
+            el.getAttribute("data-theme") === "light" ||
+            !classes.includes("bg-[#111111]") && !classes.includes("bg-black") && !classes.includes("bg-[#0a0a0a]") && el.tagName === "SECTION" // Default to light if not explicitly dark
           setCurrentTheme(isLight ? "light" : "dark")
         }
       },

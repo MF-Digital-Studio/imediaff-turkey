@@ -119,7 +119,7 @@ export default function BlogClientPage() {
                   <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-black via-black/50 to-transparent" />
                 </div>
 
-                <div className="flex flex-col justify-center p-10 md:p-16 lg:p-20 relative z-10 lg:-ml-24">
+                <div className="flex flex-col justify-center p-10 md:p-16 lg:p-20 relative z-10">
                   <div className="flex items-center gap-4 mb-6">
                     <span className="inline-flex rounded-full bg-white/10 backdrop-blur-sm px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.2em] text-[#FE9417] font-bold border border-[#E5E5E5]">
                       {featurePost.category}

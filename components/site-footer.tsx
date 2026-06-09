@@ -52,10 +52,10 @@ export default function SiteFooter() {
             ))}
           </div>
           <div className="mt-8">
-            <img 
-              src="/iab_logo.svg" 
-              alt="IAB Member" 
-              className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" 
+            <img
+              src="/iab_logo.svg"
+              alt="IAB Member"
+              className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
             />
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function SiteFooter() {
           <p className="font-mono text-[10px] uppercase tracking-widest text-[#888888]">© {new Date().getFullYear()} imediaff. Tüm hakları saklıdır.</p>
           <div className="flex items-center gap-6">
             <Link href="#" className="font-mono text-[10px] uppercase tracking-widest text-[#888888] hover:text-[#111111] transition-colors">KVKK ve Gizlilik Politikası</Link>
-            <p className="font-mono font-bold text-[10px] uppercase tracking-widest text-[#888888]">Powered by MF Digital Studio</p>
+            <a href="https://www.mfdigitalstudio.com" target="_blank" rel="noopener noreferrer" className="font-mono font-bold text-[10px] uppercase tracking-widest text-[#888888] hover:text-[#111111] transition-colors">Desıgned by MF Dıgıtal Studıo</a>
           </div>
         </div>
       </div>

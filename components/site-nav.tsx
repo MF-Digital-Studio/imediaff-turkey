@@ -28,16 +28,54 @@ export default function SiteNav() {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const [openSubmenu, setOpenSubmenu] = useState<string | null>(null)
+  const isDefaultLightPath = pathname === "/" || pathname === "/affiliate-programs"
+  const [currentTheme, setCurrentTheme] = useState<"light" | "dark">(isDefaultLightPath ? "light" : "dark")
 
-  const isLightNav = !scrolled && (pathname === "/" || pathname === "/affiliate-programs")
+  const isLightNav = currentTheme === "light" && !open
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20)
+    const onScroll = () => setScrolled(window.scrollY > 24)
     onScroll()
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // Find the last intersecting entry to handle overlapping sections
+        const intersectingEntries = entries.filter((entry) => entry.isIntersecting)
+        if (intersectingEntries.length > 0) {
+          const entry = intersectingEntries[intersectingEntries.length - 1]
+          const el = entry.target as HTMLElement
+          const classes = el.className || ""
+          const isLight =
+            classes.includes("bg-white") ||
+            classes.includes("bg-[#FFFFFF]") ||
+            classes.includes("bg-[#F9FAFB]") ||
+            el.getAttribute("data-theme") === "light"
+          setCurrentTheme(isLight ? "light" : "dark")
+        }
+      },
+      {
+        rootMargin: "-24px 0px -80% 0px",
+      }
+    )
+
+    const observeSections = () => {
+      document.querySelectorAll("section, main > div, [data-theme]").forEach((sec) => {
+        observer.observe(sec)
+      })
+    }
+
+    observeSections()
+    const timeout = setTimeout(observeSections, 500) // Re-check after dynamic content loads
+
+    return () => {
+      clearTimeout(timeout)
+      observer.disconnect()
+    }
+  }, [pathname])
 
   useEffect(() => {
     if (open) {
@@ -76,9 +114,14 @@ export default function SiteNav() {
     <>
       <header
         className={cn(
-          "fixed top-0 left-0 right-0 z-[110] transition-all duration-500",
+          "fixed top-0 left-0 right-0 z-[110] transition-all duration-300 ease-out",
           scrolled
-            ? "h-[56px] backdrop-blur-md bg-white/80 border-b border-white/[0.08]"
+            ? cn(
+                "h-[60px] min-[992px]:h-[64px]",
+                isLightNav
+                  ? "bg-white/80 backdrop-blur-md border-b border-black/[0.08]"
+                  : "bg-[#0a0a0a]/60 backdrop-blur-md border-b border-white/[0.08]"
+              )
             : "h-[64px] min-[992px]:h-[72px] bg-transparent border-b border-transparent"
         )}
       >
@@ -86,7 +129,14 @@ export default function SiteNav() {
           {/* LEFT: Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="group flex items-center relative z-[60]">
-              <img src="/logo.png" alt="imediaff" className="h-10 w-auto object-contain" />
+              <img
+                src={isLightNav ? "/logo-black.png" : "/logo-white.png"}
+                alt="imediaff"
+                className={cn(
+                  "object-contain transition-all duration-300 ease-out",
+                  scrolled ? "w-[116px] h-auto" : "w-[163px] h-auto"
+                )}
+              />
             </Link>
           </div>
 
@@ -102,21 +152,26 @@ export default function SiteNav() {
                       href={item.href}
                       className={cn(
                         "group/link nav-link-underline py-2 text-[13px] px-[10px] font-medium tracking-wide transition-colors inline-flex items-center gap-1",
-                        isLightNav 
-                          ? (active ? "text-[#0F172A] active font-semibold" : "text-[#0F172A]/70 hover:text-[#0F172A]") 
-                          : (active ? "text-[#111111] active" : "text-[#666666] hover:text-[#111111]")
+                        active && "active",
+                        isLightNav
+                          ? active
+                            ? "text-[#0F172A] font-semibold"
+                            : "text-[#0F172A]/70 hover:text-[#0F172A]"
+                          : active
+                          ? "text-white font-semibold"
+                          : "text-white/70 hover:text-white"
                       )}
                     >
                       {item.label}
                       <span className="text-[10px] opacity-70 group-hover/link:opacity-100 transition-opacity">▾</span>
                     </Link>
                     <div className="absolute top-full left-0 pt-4 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100]">
-                      <div className="bg-white border border-[#E5E5E5] rounded-xl p-2 w-[280px] shadow-2xl flex flex-col gap-1">
+                      <div className="bg-white dark:bg-[#0a0a0a] border border-[#E5E5E5] dark:border-white/10 rounded-xl p-2 w-[280px] shadow-2xl flex flex-col gap-1">
                         {item.subItems.map(subItem => (
                           <Link
                             key={subItem.href}
                             href={subItem.href}
-                            className="flex items-center justify-between px-4 py-3 rounded-lg text-sm text-[#666666] hover:text-[#111111] hover:bg-[#FFF3E0] transition-colors group/sub"
+                            className="flex items-center justify-between px-4 py-3 rounded-lg text-sm text-[#666666] dark:text-white/70 hover:text-[#111111] dark:hover:text-white hover:bg-[#FFF3E0] dark:hover:bg-white/5 transition-colors group/sub"
                           >
                             <span className="group-hover/sub:text-[#FE9417] transition-colors">{subItem.label}</span>
                             <span className="text-sm opacity-80">{subItem.flags}</span>
@@ -134,9 +189,14 @@ export default function SiteNav() {
                   href={item.href}
                   className={cn(
                     "group nav-link-underline py-2 text-[13px] px-[10px] font-medium tracking-wide transition-colors",
-                    isLightNav 
-                      ? (active ? "text-[#0F172A] active font-semibold" : "text-[#0F172A]/70 hover:text-[#0F172A]") 
-                      : (active ? "text-[#111111] active" : "text-[#666666] hover:text-[#111111]")
+                    active && "active",
+                    isLightNav
+                      ? active
+                        ? "text-[#0F172A] font-semibold"
+                        : "text-[#0F172A]/70 hover:text-[#0F172A]"
+                      : active
+                      ? "text-white font-semibold"
+                      : "text-white/70 hover:text-white"
                   )}
                 >
                   {item.label}
@@ -150,15 +210,17 @@ export default function SiteNav() {
             <Link
               href="/contact"
               className={cn(
-                "hidden min-[992px]:inline-flex group relative items-center justify-center gap-2 border px-4 py-2 text-[12px] font-bold uppercase tracking-widest overflow-hidden transition-all duration-[250ms] hover:border-transparent",
-                isLightNav ? "border-[#0F172A]/20 text-[#0F172A]" : "border-[#E5E5E5] text-[#111111]"
+                "hidden min-[992px]:inline-flex group relative items-center justify-center gap-2 border px-4 py-2 text-[12px] font-bold uppercase tracking-widest overflow-hidden transition-all duration-[250ms]",
+                isLightNav
+                  ? "border-[#0F172A]/20 text-[#0F172A] hover:border-transparent"
+                  : "border-white/20 text-white hover:border-transparent"
               )}
             >
               {/* Fill layer */}
               <span className="absolute inset-0 bg-gradient-to-r from-[#FE9417] to-[#FF6B00] translate-y-full group-hover:translate-y-0 transition-transform duration-[250ms] ease-out -z-10" />
 
-              <span className="relative z-10 group-hover:text-[#111111] transition-colors duration-[250ms]">Teklif Al</span>
-              <span aria-hidden className="relative z-10 group-hover:text-[#111111] transition-all group-hover:translate-x-1 duration-[250ms]">→</span>
+              <span className="relative z-10 group-hover:text-white transition-colors duration-[250ms]">Teklif Al</span>
+              <span aria-hidden className="relative z-10 group-hover:text-white transition-all group-hover:translate-x-1 duration-[250ms]">→</span>
             </Link>
 
             {/* Hamburger Icon */}
@@ -169,15 +231,24 @@ export default function SiteNav() {
             >
               <motion.span
                 animate={open ? { rotate: 45, y: 8, width: 24 } : { rotate: 0, y: 0, width: 24 }}
-                className="h-[2px] bg-gradient-to-r from-[#FE9417] to-[#FF6B00] transition-all duration-300"
+                className={cn(
+                  "h-[2px] transition-all duration-300",
+                  open || !isLightNav ? "bg-white" : "bg-[#111111]"
+                )}
               />
               <motion.span
                 animate={open ? { opacity: 0, x: 10 } : { opacity: 1, x: 0 }}
-                className="h-[2px] w-5 bg-gradient-to-r from-[#FE9417] to-[#FF6B00] transition-all duration-300"
+                className={cn(
+                  "h-[2px] w-5 transition-all duration-300",
+                  open || !isLightNav ? "bg-white" : "bg-[#111111]"
+                )}
               />
               <motion.span
                 animate={open ? { rotate: -45, y: -8, width: 24 } : { rotate: 0, y: 0, width: 16 }}
-                className="h-[2px] bg-gradient-to-r from-[#FE9417] to-[#FF6B00] transition-all duration-300"
+                className={cn(
+                  "h-[2px] transition-all duration-300",
+                  open || !isLightNav ? "bg-white" : "bg-[#111111]"
+                )}
               />
             </button>
           </div>
@@ -192,7 +263,7 @@ export default function SiteNav() {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed inset-0 z-[100] flex flex-col bg-white px-6 overflow-y-auto min-[992px]:hidden"
+            className="fixed inset-0 z-[100] flex flex-col bg-[#0a0a0a] px-6 overflow-y-auto min-[992px]:hidden"
           >
             {/* Ambient Glow Orb */}
             <div className="fixed top-1/2 left-1/2 h-[60vh] w-[60vh] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#FE9417]/10 blur-[100px] pointer-events-none" />
@@ -216,7 +287,7 @@ export default function SiteNav() {
                           <Link
                             href={item.href}
                             onClick={() => setOpen(false)}
-                            className="block py-1 text-[clamp(28px,8vw,48px)] font-bold uppercase leading-none tracking-tighter text-[#111111] hover:bg-gradient-to-r hover:from-[#FE9417] hover:via-[#FE9417] hover:to-[#FE9417] hover:bg-clip-text hover:text-transparent transition-all duration-300"
+                            className="block py-1 text-[clamp(28px,8vw,48px)] font-bold uppercase leading-none tracking-tighter text-white hover:bg-gradient-to-r hover:from-[#FE9417] hover:via-[#FE9417] hover:to-[#FE9417] hover:bg-clip-text hover:text-transparent transition-all duration-300"
                           >
                             {item.label}
                           </Link>
@@ -225,7 +296,7 @@ export default function SiteNav() {
                               e.preventDefault();
                               setOpenSubmenu(openSubmenu === item.label ? null : item.label);
                             }}
-                            className="p-2 text-[#888888] hover:text-[#111111]"
+                            className="p-2 text-white/60 hover:text-white"
                           >
                             <span className={cn("inline-block transform transition-transform text-2xl", openSubmenu === item.label ? "rotate-180" : "rotate-0")}>▾</span>
                           </button>
@@ -238,13 +309,13 @@ export default function SiteNav() {
                               exit={{ height: 0, opacity: 0 }}
                               className="overflow-hidden"
                             >
-                              <div className="mt-4 flex flex-col gap-4 pl-4 border-l border-[#E5E5E5] ml-2 py-2">
+                              <div className="mt-4 flex flex-col gap-4 pl-4 border-l border-white/10 ml-2 py-2">
                                 {item.subItems.map((sub) => (
                                   <Link
                                     key={sub.href}
                                     href={sub.href}
                                     onClick={() => setOpen(false)}
-                                    className="text-lg font-medium text-[#666666] hover:text-[#FE9417] transition-colors flex items-center justify-between pr-4 group/sublink"
+                                    className="text-lg font-medium text-white/60 hover:text-[#FE9417] transition-colors flex items-center justify-between pr-4 group/sublink"
                                   >
                                     <span className="flex items-center">
                                       <span className="inline-block w-1.5 h-1.5 rounded-full bg-white/20 mr-3 group-hover/sublink:bg-[#FE9417] transition-colors" />
@@ -262,7 +333,7 @@ export default function SiteNav() {
                       <Link
                         href={item.href}
                         onClick={() => setOpen(false)}
-                        className="group block w-full py-3 text-[clamp(28px,8vw,48px)] font-bold uppercase leading-none tracking-tighter text-[#111111] hover:bg-gradient-to-r hover:from-[#FE9417] hover:via-[#FE9417] hover:to-[#FE9417] hover:bg-clip-text hover:text-transparent transition-all duration-300"
+                        className="group block w-full py-3 text-[clamp(28px,8vw,48px)] font-bold uppercase leading-none tracking-tighter text-white hover:bg-gradient-to-r hover:from-[#FE9417] hover:via-[#FE9417] hover:to-[#FE9417] hover:bg-clip-text hover:text-transparent transition-all duration-300"
                       >
                         {item.label}
                         <span className="ml-4 inline-block opacity-0 -translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 bg-gradient-to-r from-[#FE9417] to-[#FF6B00] bg-clip-text text-transparent">
@@ -290,13 +361,13 @@ export default function SiteNav() {
 
                 <div className="flex flex-wrap gap-x-6 gap-y-2">
                   {SOCIAL_LINKS.map((link) => (
-                    <Link key={link.label} href={link.href} className="text-sm font-medium text-[#888888] hover:text-[#111111] uppercase tracking-wider transition-colors hover:cursor-crosshair">
+                    <Link key={link.label} href={link.href} className="text-sm font-medium text-white/50 hover:text-white uppercase tracking-wider transition-colors hover:cursor-crosshair">
                       {link.label}
                     </Link>
                   ))}
                 </div>
                 <div className="h-px w-full bg-white/10" />
-                <div className="font-mono text-xs uppercase tracking-widest text-[#888888]">
+                <div className="font-mono text-xs uppercase tracking-widest text-white/40">
                   IST
                 </div>
               </motion.div>

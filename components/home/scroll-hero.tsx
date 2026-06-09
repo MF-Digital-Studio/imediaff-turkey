@@ -34,11 +34,12 @@ export default function ScrollHero() {
   return (
     <motion.section
       ref={containerRef}
-      className="relative h-[250vh] text-[#0F172A]"
+      className="relative h-[250vh] text-[#0F172A] bg-white"
       aria-label="Hero"
       style={{
         background: '#FFFFFF'
       }}
+      data-theme="light"
     >
       <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center">
 
@@ -80,7 +81,7 @@ export default function ScrollHero() {
             >
               <div className="relative w-48 h-20 md:w-72 md:h-28 flex items-center justify-center drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]">
                 <Image
-                  src="/logo.png"
+                  src="/logo-black.png"
                   alt="iMediaff"
                   fill
                   className="object-contain"
@@ -148,17 +149,17 @@ export default function ScrollHero() {
           >
             <Link
               href="/contact?type=brand"
-              className="group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold text-[#111111] transition-all hover:scale-105 bg-gradient-to-br from-[#FE9417] to-[#FF6B00] shadow-[0_4px_14px_0_rgba(37,99,235,0.2)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.4)]"
+              className="group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold text-[#111111] transition-all duration-300 hover:scale-105 active:scale-95 bg-gradient-to-br from-[#FE9417] to-[#FF6B00] shadow-[0_8px_20px_-6px_rgba(254,148,23,0.5)] hover:shadow-[0_14px_30px_-8px_rgba(254,148,23,0.7)] hover:brightness-110"
             >
               <span className="relative z-10 flex items-center gap-2">
                 Teklif Al
-                <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+                <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1.5">→</span>
               </span>
             </Link>
 
             <Link
               href="/talent"
-              className="inline-flex items-center justify-center rounded-full border-2 border-[#0F172A] bg-transparent px-8 py-4 font-semibold text-[#0F172A] transition-all hover:bg-[#0F172A] hover:text-[#111111]"
+              className="inline-flex items-center justify-center rounded-full border-2 border-[#111111] bg-transparent px-8 py-4 font-semibold text-[#111111] transition-all duration-300 hover:bg-[#111111] hover:text-white hover:scale-105 active:scale-95 hover:shadow-[0_14px_30px_-8px_rgba(17,17,17,0.4)]"
             >
               Başvuru Yap
             </Link>

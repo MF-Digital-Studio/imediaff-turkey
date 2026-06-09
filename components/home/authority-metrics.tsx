@@ -204,23 +204,10 @@ export default function AuthorityMetrics() {
             >
               <Link
                 href="/about"
-                className="group inline-flex items-center gap-3 rounded-full px-10 py-4 text-sm font-bold uppercase tracking-widest text-[#111111] transition-all duration-300 hover:scale-105"
-                style={{
-                  background: "linear-gradient(90deg, #FE9417 0%, #FE9417 50%, #FE9417 100%)",
-                  boxShadow: "0 0 30px rgba(37,99,235,0.45), inset 0 0 12px rgba(255,255,255,0.07)",
-                  border: "1px solid rgba(255,255,255,0.10)",
-                }}
-                onMouseEnter={e => {
-                  (e.currentTarget as HTMLAnchorElement).style.boxShadow =
-                    "0 0 50px 8px rgba(255,189,30,0.5), inset 0 0 18px rgba(255,255,255,0.10)"
-                }}
-                onMouseLeave={e => {
-                  (e.currentTarget as HTMLAnchorElement).style.boxShadow =
-                    "0 0 30px rgba(37,99,235,0.45), inset 0 0 12px rgba(255,255,255,0.07)"
-                }}
+                className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-br from-[#FE9417] to-[#FF6B00] px-10 py-4 text-sm font-bold uppercase tracking-widest text-[#111111] transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_8px_20px_-6px_rgba(254,148,23,0.5)] hover:shadow-[0_14px_30px_-8px_rgba(254,148,23,0.7)] hover:brightness-110"
               >
                 <span>Hizmetleri İncele</span>
-                <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+                <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1.5">→</span>
               </Link>
             </motion.div>
           </div>

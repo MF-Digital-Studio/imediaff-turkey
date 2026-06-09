@@ -1,4 +1,7 @@
+"use client"
+
 import Link from "next/link"
+import { motion } from "motion/react"
 
 const FOOTER_LINKS = {
   "Keşfet": [
@@ -41,9 +44,15 @@ const SOCIAL = [
 
 export default function SiteFooter() {
   return (
-    <footer className="relative border-t border-border bg-background">
+    <footer className="relative border-t border-border bg-background overflow-hidden">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-14 grid grid-cols-1 md:grid-cols-12 gap-10">
-        <div className="md:col-span-3">
+        <motion.div 
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-10% 0px" }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="md:col-span-3"
+        >
           <Link href="/" className="font-display text-lg font-semibold tracking-tight text-[#111111]">imediaff<span className="text-[#FE9417]">.</span></Link>
           <p className="mt-4 max-w-sm text-sm text-[#666666] leading-relaxed font-sans">Markalara ve içerik üreticilerine affiliate, prodüksiyon ve kampanya yönetimi çözümleri sunuyoruz.</p>
           <div className="mt-6 flex flex-wrap gap-2">
@@ -58,10 +67,17 @@ export default function SiteFooter() {
               className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
             />
           </div>
-        </div>
+        </motion.div>
 
-        {Object.entries(FOOTER_LINKS).map(([heading, items]) => (
-          <div key={heading} className={heading === "Offices" ? "md:col-span-3" : "md:col-span-2"}>
+        {Object.entries(FOOTER_LINKS).map(([heading, items], index) => (
+          <motion.div 
+            key={heading} 
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10% 0px" }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 + (index * 0.1) }}
+            className={heading === "Offices" ? "md:col-span-3" : "md:col-span-2"}
+          >
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#111111] font-bold">/ {heading}</p>
             <ul className="mt-6 flex flex-col gap-4">
               {items.map((item) => (
@@ -75,11 +91,17 @@ export default function SiteFooter() {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         ))}
       </div>
 
-      <div className="border-t border-[#E5E5E5]">
+      <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.5 }}
+        className="border-t border-[#E5E5E5]"
+      >
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="font-mono text-[10px] uppercase tracking-widest text-[#888888]">© {new Date().getFullYear()} imediaff. Tüm hakları saklıdır.</p>
           <div className="flex items-center gap-6">
@@ -87,7 +109,7 @@ export default function SiteFooter() {
             <a href="https://www.mfdigitalstudio.com" target="_blank" rel="noopener noreferrer" className="font-mono font-bold text-[10px] uppercase tracking-widest text-[#888888] hover:text-[#111111] transition-colors">Desıgned by MF Dıgıtal Studıo</a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </footer>
   )
 }

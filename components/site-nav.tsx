@@ -28,8 +28,7 @@ export default function SiteNav() {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const isDefaultLightPath = pathname === "/" || pathname === "/affiliate-programs"
-  const [currentTheme, setCurrentTheme] = useState<"light" | "dark">(isDefaultLightPath ? "light" : "dark")
+  const [currentTheme, setCurrentTheme] = useState<"light" | "dark">("light")
 
   const isLightNav = currentTheme === "light" && !open
 

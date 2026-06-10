@@ -42,19 +42,19 @@ export default function StickyManifesto() {
   const smoothProgress = useSpring(scrollYProgress, SPRING)
 
   return (
-    <section className="relative bg-white" aria-label="Manifesto">
+    <section className="relative bg-[#FB430A]" aria-label="Manifesto">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 pt-24 pb-10">
         <div className="flex items-end justify-between gap-6 flex-wrap">
           <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FE9417]">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-white font-bold">
               / Manifesto
             </p>
-            <h2 className="mt-4 font-sans text-[clamp(2.5rem,7vw,6rem)] font-bold leading-[1.05] tracking-[-0.035em] text-balance max-w-4xl text-[#111111]">
+            <h2 className="mt-4 font-sans text-[clamp(2.5rem,7vw,6rem)] font-bold leading-[1.05] tracking-[-0.035em] text-balance max-w-4xl text-white">
               Ne inşa ediyoruz?
               <br />
               <span
                 style={{
-                  backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
+                  backgroundImage: "linear-gradient(135deg, #FFFFFF 0%, #FFE5C4 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -64,7 +64,7 @@ export default function StickyManifesto() {
               </span>
             </h2>
           </div>
-          <p className="max-w-md text-sm md:text-base text-[#888888] leading-relaxed font-medium">
+          <p className="max-w-md text-sm md:text-base text-white/90 leading-relaxed font-medium">
             Stratejiden kültüre ve büyümeye uzanan üç aşamalı bir model.
           </p>
         </div>
@@ -130,33 +130,33 @@ function ManifestoStackCard({
   return (
     <motion.article
       style={{ y, scale, zIndex }}
-      className="sticky top-0 h-screen w-full flex items-center justify-center bg-white overflow-hidden"
+      className="sticky top-0 h-screen w-full flex items-center justify-center bg-[#FB430A] overflow-hidden border-t border-white/10"
     >
       <div className="absolute inset-0 pointer-events-none z-10">
-        <motion.div style={{ opacity: dimOpacity }} className="absolute inset-0 bg-white" />
+        <motion.div style={{ opacity: dimOpacity }} className="absolute inset-0 bg-[#FB430A]" />
       </div>
 
       <div className="relative z-20 mx-auto max-w-[1600px] w-full px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
         <div className="md:col-span-3 hidden md:block">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FE9417]">{kicker}</p>
-          <p className="mt-4 font-sans text-[10rem] leading-none font-bold tracking-[-0.05em] text-[#111111]/5">
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-white font-bold">{kicker}</p>
+          <p className="mt-4 font-sans text-[10rem] leading-none font-bold tracking-[-0.05em] text-white/30">
             {String(index + 1).padStart(2, "0")}
           </p>
         </div>
 
         <div className="md:col-span-8 md:col-start-5">
-          <p className="md:hidden font-mono text-[10px] uppercase tracking-[0.4em] text-[#FE9417] mb-4">
+          <p className="md:hidden font-mono text-[10px] uppercase tracking-[0.4em] text-white font-bold mb-4">
             {kicker}
           </p>
-          <h3 className="font-sans text-[clamp(2.5rem,5.5vw,5rem)] font-bold leading-[1.1] tracking-[-0.03em] text-[#111111] text-balance">
+          <h3 className="font-sans text-[clamp(2.5rem,5.5vw,5rem)] font-bold leading-[1.1] tracking-[-0.03em] text-white text-balance">
             {title}
           </h3>
-          <p className="mt-8 max-w-xl text-base md:text-lg text-[#888888] font-medium leading-relaxed text-pretty">
+          <p className="mt-8 max-w-xl text-base md:text-lg text-white/90 font-medium leading-relaxed text-pretty">
             {body}
           </p>
           <div className="mt-12 flex items-center gap-4">
-            <div className="h-[1px] flex-1 bg-[#E5E5E5]" />
-            <p className="font-mono text-[10px] tracking-[0.2em] text-[#888888]">
+            <div className="h-[1px] flex-1 bg-white/20" />
+            <p className="font-mono text-[10px] tracking-[0.2em] text-white/60">
               {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
             </p>
           </div>

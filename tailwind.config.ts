@@ -9,16 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "accent": "#FE9417",
+        "accent": "#FB430A",
         "secondary": "#FF6B00",
-        "brand-magenta": "#FE9417",
-        "brand-red": "#FE9417",
-        "brand-orange": "#FE9417",
-        "brand-yellow": "#FE9417",
+        "brand-magenta": "#FB430A",
+        "brand-red": "#FB430A",
+        "brand-orange": "#FB430A",
+        "brand-yellow": "#FB430A",
       },
       backgroundImage: {
-        "sunset-gradient": "linear-gradient(135deg, #FE9417, #FF6B00)",
-        "accent-gradient": "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
+        "sunset-gradient": "linear-gradient(135deg, #FB430A, #FF6B00)",
+        "accent-gradient": "linear-gradient(135deg, #FB430A 0%, #FF6B00 100%)",
       },
       fontFamily: {
         sans: ["var(--font-instrument-sans)"],

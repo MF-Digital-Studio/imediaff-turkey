@@ -15,16 +15,16 @@ const SERVICES = [
 
 export default function ServicesPreview() {
   return (
-    <section className="relative border-b border-black/10 bg-white" aria-label="Services">
+    <section className="relative border-b border-[#E5E5E5] bg-white" aria-label="Services">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-24 md:py-32">
         <div className="flex items-end justify-between flex-wrap gap-6">
           <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-black/40">/ Hizmetlerimiz</p>
-            <h2 className="mt-4 font-sans text-[clamp(2.5rem,6vw,5rem)] font-bold leading-[0.95] tracking-[-0.03em] text-black text-balance max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FB430A] font-bold">/ Hizmetlerimiz</p>
+            <h2 className="mt-4 font-sans text-[clamp(2.5rem,6vw,5rem)] font-bold leading-[0.95] tracking-[-0.03em] text-[#111111] text-balance max-w-3xl">
               Dikkati{" "}
               <span
                 style={{
-                  backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
+                  backgroundImage: "linear-gradient(135deg, #FB430A 0%, #FF6B00 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -35,7 +35,7 @@ export default function ServicesPreview() {
               dönüştürüyoruz.
             </h2>
           </div>
-          <Link href="/services" className="group inline-flex items-center gap-2 border border-black/20 px-5 py-3 text-sm font-semibold text-black hover:border-[#FE9417] hover:text-[#FE9417] transition-colors">
+          <Link href="/services" className="group inline-flex items-center gap-2 border border-[#E5E5E5] px-5 py-3 text-sm font-semibold text-[#111111] hover:bg-[#111111] hover:text-white transition-colors">
             Tüm hizmetleri gör
             <span aria-hidden className="transition-transform group-hover:translate-x-1">-&gt;</span>
           </Link>
@@ -108,7 +108,7 @@ export default function ServicesPreview() {
                 >
                   {/* Service Number: small, muted white, top-left corner */}
                   <div>
-                    <p className="font-mono text-xs uppercase tracking-[0.4em] text-[#FE9417]">
+                    <p className="font-mono text-xs uppercase tracking-[0.4em] text-[#FB430A]">
                       {String(index + 1).padStart(2, "0")}
                     </p>
                   </div>
@@ -134,7 +134,7 @@ export default function ServicesPreview() {
                             </p>
                             
                             {/* Accent Color link */}
-                            <div className="inline-flex items-center gap-1 text-sm font-bold text-[#FE9417] group-hover:text-[#FF6B00] transition-colors">
+                            <div className="inline-flex items-center gap-1 text-sm font-bold text-[#FB430A] group-hover:text-[#FF6B00] transition-colors">
                               Daha fazla bilgi <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                             </div>
                           </div>

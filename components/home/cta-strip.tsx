@@ -11,32 +11,27 @@ function MarqueeSlice() {
       <span>ETKİLİ İŞ BİRLİKLERİ</span>
       <span
         aria-hidden
-        className="inline-block h-[0.22em] w-[0.22em] shrink-0"
-        style={{ background: "linear-gradient(135deg, #FE9417, #FE9417)" }}
+        className="inline-block h-[0.22em] w-[0.22em] shrink-0 bg-[#FB430A]"
       />
       <span>INFLUENCER GÜCÜ</span>
       <span
         aria-hidden
-        className="inline-block h-[0.22em] w-[0.22em] shrink-0"
-        style={{ background: "linear-gradient(135deg, #FE9417, #FE9417)" }}
+        className="inline-block h-[0.22em] w-[0.22em] shrink-0 bg-[#FB430A]"
       />
       <span>TRENDYOL ORTAĞI</span>
       <span
         aria-hidden
-        className="inline-block h-[0.22em] w-[0.22em] shrink-0"
-        style={{ background: "linear-gradient(135deg, #FE9417, #FE9417)" }}
+        className="inline-block h-[0.22em] w-[0.22em] shrink-0 bg-[#FB430A]"
       />
       <span>ÖLÇÜLEBILIR BÜYÜME</span>
       <span
         aria-hidden
-        className="inline-block h-[0.22em] w-[0.22em] shrink-0"
-        style={{ background: "linear-gradient(135deg, #FE9417, #FE9417)" }}
+        className="inline-block h-[0.22em] w-[0.22em] shrink-0 bg-[#FB430A]"
       />
       <span>STRATEJİK ETKİ</span>
       <span
         aria-hidden
-        className="inline-block h-[0.22em] w-[0.22em] shrink-0"
-        style={{ background: "linear-gradient(135deg, #FE9417, #FE9417)" }}
+        className="inline-block h-[0.22em] w-[0.22em] shrink-0 bg-[#FB430A]"
       />
     </span>
   )
@@ -99,28 +94,28 @@ export default function CtaStrip() {
       </section>
 
       {/* ── Final CTA (Sunset Gradient Theme - Mirrored from Services) ── */}
-      <section ref={ctaRef} className="bg-gradient-to-br from-[#FE9417] to-[#FF6B00] text-[#111111] py-24 md:py-36 relative overflow-hidden">
+      <section ref={ctaRef} className="bg-gradient-to-br from-[#FB430A] to-[#FF6B00] text-white py-24 md:py-36 relative overflow-hidden">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto max-w-[1600px] px-6 md:px-10 text-center relative z-10 flex flex-col items-center"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#555555] font-bold mb-6">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/80 font-bold mb-6">
             / Başlayalım
           </p>
           
-          <h2 className="font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance mb-6 text-[#111111]">
+          <h2 className="font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance mb-6 text-white">
             Kampanyanızı <br className="hidden md:block" /> Birlikte Kuralım
           </h2>
           
-          <p className="max-w-2xl text-lg md:text-xl font-medium leading-relaxed text-[#555555] mb-10">
+          <p className="max-w-2xl text-lg md:text-xl font-medium leading-relaxed text-white/90 mb-10">
             Fikir aşamasından raporlamaya kadar tüm süreçte markanızın gücünü içerik üreticileriyle birleştiriyoruz.
           </p>
           
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl"
+            className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#FB430A] transition-transform hover:scale-105 shadow-xl"
           >
             Kampanya Başlat
           </Link>

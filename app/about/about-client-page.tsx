@@ -178,7 +178,7 @@ export default function AboutClientPage() {
       </section>
 
       {/* ── Regional Presence (White Theme) ── */}
-      <section className="bg-[#FAFAFA] text-[#111111] py-16 md:py-24 border-b border-[#E5E5E5]">
+      <section className="bg-[#FB430A] text-white py-16 md:py-24 border-b border-white/20">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -194,15 +194,15 @@ export default function AboutClientPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.55, delay: index * 0.08 }}
-                className="border border-[#E5E5E5] bg-white p-8 md:p-10 shadow-sm transition-shadow hover:shadow-md rounded-2xl"
+                className="border border-white/20 bg-white/10 p-8 md:p-10 shadow-sm transition-shadow hover:shadow-md rounded-2xl"
               >
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#FE9417]">
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/60">
                   {item.region}
                 </p>
-                <h2 className="mt-4 font-display text-3xl font-bold tracking-[-0.03em] text-[#111111]">
+                <h2 className="mt-4 font-display text-3xl font-bold tracking-[-0.03em] text-white">
                   {item.city}
                 </h2>
-                <p className="mt-4 text-sm leading-relaxed text-[#888888]">
+                <p className="mt-4 text-sm leading-relaxed text-white/80">
                   {item.note}
                 </p>
               </motion.article>
@@ -220,7 +220,7 @@ export default function AboutClientPage() {
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 0.7 }}
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FB430A]">
               / Etki
             </p>
             <h2 className="mt-6 font-display text-[clamp(2.5rem,7vw,6.5rem)] font-bold leading-[0.88] tracking-[-0.045em] text-balance text-[#111111]">
@@ -246,7 +246,7 @@ export default function AboutClientPage() {
                   className="font-display font-bold leading-none tracking-[-0.05em] text-[#111111]"
                   style={{ fontSize: "clamp(3rem, 8vw, 7rem)" }}
                 >
-                  <span className="bg-gradient-to-br from-[#FE9417] to-[#FF6B00] bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-br from-[#FB430A] to-[#FF6B00] bg-clip-text text-transparent">
                     {m.value}
                   </span>
                 </p>
@@ -301,7 +301,7 @@ export default function AboutClientPage() {
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 0.7 }}
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FB430A]">
               / Temel Yetkinlikler
             </p>
             <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-[#111111]">
@@ -319,7 +319,7 @@ export default function AboutClientPage() {
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 className="group relative bg-white px-8 py-10 transition-colors duration-300 hover:bg-[#FAFAFA] md:px-10 md:py-12"
               >
-                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-br from-[#FE9417] to-[#FF6B00] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-br from-[#FB430A] to-[#FF6B00] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#888888]">
                   {cap.index}
                 </p>
@@ -336,7 +336,7 @@ export default function AboutClientPage() {
       </section>
 
       {/* ── How We Work (White Theme) ── */}
-      <section className="bg-[#FAFAFA] text-[#111111] py-16 md:py-28 relative z-10 border-t border-[#E5E5E5]">
+      <section className="bg-[#FB430A] text-white py-16 md:py-28 relative z-10 border-t border-white/20">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -345,10 +345,10 @@ export default function AboutClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-14 md:mb-20"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/80">
               / Nasıl Çalışırız
             </p>
-            <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-[#111111]">
+            <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-white">
               Şeffaf ve Performans{"\u00A0"}<br />Odaklı Model.
             </h2>
           </motion.div>
@@ -364,13 +364,13 @@ export default function AboutClientPage() {
                 className="relative flex flex-col group"
               >
                 {i < 4 && (
-                  <div className="hidden md:block absolute top-6 left-12 w-full h-[1px] bg-[#E5E5E5] group-hover:bg-[#FE9417]/50 transition-colors duration-500" />
+                  <div className="hidden md:block absolute top-6 left-12 w-full h-[1px] bg-white/20 group-hover:bg-white/50 transition-colors duration-500" />
                 )}
-                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-[#E5E5E5] bg-white font-mono text-sm text-[#FE9417] transition-colors duration-500 group-hover:border-[#FE9417] group-hover:text-[#FE9417] mb-6">
+                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 font-mono text-sm text-white/80 transition-colors duration-500 group-hover:border-white group-hover:text-white mb-6">
                   {item.step}
                 </div>
-                <h3 className="font-display text-xl font-bold text-[#111111] mb-3">{item.title}</h3>
-                <p className="text-sm leading-relaxed text-[#888888]">{item.desc}</p>
+                <h3 className="font-display text-xl font-bold text-white mb-3">{item.title}</h3>
+                <p className="text-sm leading-relaxed text-white/80">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -379,7 +379,7 @@ export default function AboutClientPage() {
 
       {/* ── Core Services (White Theme) ── */}
       <section className="bg-white text-[#111111] pt-16 pb-16 md:pt-20 md:pb-28 relative overflow-hidden z-10 border-t border-[#E5E5E5]">
-        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#FE9417]/10 to-[#FF6B00]/10 blur-[100px] rounded-full opacity-50" />
+        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#FB430A]/10 to-[#FF6B00]/10 blur-[100px] rounded-full opacity-50" />
 
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 relative z-10">
           <motion.div
@@ -389,7 +389,7 @@ export default function AboutClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-14 md:mb-20"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FB430A]">
               / Uzmanlık Alanları
             </p>
             <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-[#111111]">
@@ -405,20 +405,20 @@ export default function AboutClientPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-10% 0px" }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
-                className={`group relative overflow-hidden rounded-2xl bg-[#E5E5E5] border border-[#E5E5E5] p-[1px] transition-all duration-500 hover:shadow-lg hover:border-[#FE9417]/30 ${i % 3 === 1 ? 'lg:translate-y-12' : i % 3 === 2 ? 'lg:translate-y-24' : ''}`}
+                className={`group relative overflow-hidden rounded-2xl bg-[#E5E5E5] border border-[#E5E5E5] p-[1px] transition-all duration-500 hover:shadow-lg hover:border-[#FB430A]/30 ${i % 3 === 1 ? 'lg:translate-y-12' : i % 3 === 2 ? 'lg:translate-y-24' : ''}`}
               >
-                <div className="absolute inset-0 bg-[#FAFAFA] transition-colors duration-500 group-hover:bg-gradient-to-r group-hover:from-[#FE9417] group-hover:via-[#FA1702] group-hover:to-[#FE9417]" />
+                <div className="absolute inset-0 bg-[#FAFAFA] transition-colors duration-500 group-hover:bg-gradient-to-r group-hover:from-[#FB430A] group-hover:via-[#FA1702] group-hover:to-[#FB430A]" />
 
                 <div className="relative flex flex-col h-full bg-white rounded-[15px] p-8 md:p-10">
-                  <div className="absolute -right-12 -top-12 w-48 h-48 bg-[#FAFAFA] rounded-full blur-2xl group-hover:bg-gradient-to-br group-hover:from-[#FE9417]/10 group-hover:to-[#FE9417]/10 transition-colors duration-700" />
+                  <div className="absolute -right-12 -top-12 w-48 h-48 bg-[#FAFAFA] rounded-full blur-2xl group-hover:bg-gradient-to-br group-hover:from-[#FB430A]/10 group-hover:to-[#FB430A]/10 transition-colors duration-700" />
 
                   <div className="relative z-10 flex flex-col h-full">
                     <div className="mb-10 relative inline-flex h-20 w-20 items-center justify-center transition-transform duration-500 group-hover:scale-110">
-                      <div className="absolute inset-0 rounded-2xl bg-[#FAFAFA] ring-1 ring-[#E5E5E5] transition-colors duration-500 group-hover:ring-[#FE9417]/40" />
+                      <div className="absolute inset-0 rounded-2xl bg-[#FAFAFA] ring-1 ring-[#E5E5E5] transition-colors duration-500 group-hover:ring-[#FB430A]/40" />
                       <service.PrimaryIcon
                         size={36}
                         strokeWidth={1.4}
-                        className="relative z-10 text-[#111111] transition-all duration-500 group-hover:text-[#FE9417]"
+                        className="relative z-10 text-[#111111] transition-all duration-500 group-hover:text-[#FB430A]"
                         style={{
                           filter: "none",
                         }}
@@ -426,7 +426,7 @@ export default function AboutClientPage() {
                       <service.AccentIcon
                         size={16}
                         strokeWidth={2}
-                        className="absolute bottom-2 right-2 z-20 text-[#FE9417] transition-all duration-500 group-hover:text-[#FE9417]"
+                        className="absolute bottom-2 right-2 z-20 text-[#FB430A] transition-all duration-500 group-hover:text-[#FB430A]"
                       />
                     </div>
                     <h3 className="font-display text-2xl font-bold tracking-[-0.03em] text-[#111111] mb-4">
@@ -444,7 +444,7 @@ export default function AboutClientPage() {
       </section>
 
       {/* ── Strategic Partnerships (White Theme) ── */}
-      <section className="bg-[#FAFAFA] text-[#111111] py-16 md:py-24 border-t border-[#E5E5E5]">
+      <section className="bg-[#FB430A] text-white py-16 md:py-24 border-t border-white/20">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -454,19 +454,19 @@ export default function AboutClientPage() {
             className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between"
           >
             <div>
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/80">
                 / Stratejik İş Birlikleri
               </p>
-              <h2 className="mt-5 font-display text-[clamp(2rem,5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-[#111111]">
+              <h2 className="mt-5 font-display text-[clamp(2rem,5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-white">
                 Sektör Liderleriyle<br />Güçlü İş Birlikleri.
               </h2>
             </div>
-            <p className="max-w-sm text-sm leading-relaxed text-[#888888] md:text-base">
+            <p className="max-w-sm text-sm leading-relaxed text-white/90 md:text-base">
               E-ticaret, teknoloji, yaşam ve perakende kategorilerinde güçlü marka ve platform deneyimiyle çalışıyoruz.
             </p>
           </motion.div>
 
-          <div className="mt-12 grid grid-cols-2 gap-px border border-[#E5E5E5] bg-[#E5E5E5] md:grid-cols-4 rounded-xl overflow-hidden">
+          <div className="mt-12 grid grid-cols-2 gap-px border border-white/20 bg-white/20 md:grid-cols-4 rounded-xl overflow-hidden">
             {PARTNERS.map((p, i) => (
               <motion.div
                 key={p.name}
@@ -474,12 +474,12 @@ export default function AboutClientPage() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="group bg-white px-6 py-8 transition-colors duration-300 hover:bg-[#FAFAFA] md:px-8 md:py-10"
+                className="group bg-white/10 px-6 py-8 transition-colors duration-300 hover:bg-white/20 md:px-8 md:py-10"
               >
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#888888] transition-colors duration-300 group-hover:text-[#FE9417]">
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/60 transition-colors duration-300 group-hover:text-white">
                   {p.sector}
                 </p>
-                <p className="mt-3 font-display text-2xl font-bold tracking-[-0.03em] text-[#111111] md:text-3xl">
+                <p className="mt-3 font-display text-2xl font-bold tracking-[-0.03em] text-white md:text-3xl">
                   {p.name}
                 </p>
               </motion.div>
@@ -512,7 +512,7 @@ export default function AboutClientPage() {
             <div className="mt-8 grid grid-cols-1 gap-px border border-[#E5E5E5] bg-[#E5E5E5] sm:grid-cols-3 rounded-lg overflow-hidden">
               {["Creator Eşleşmesi", "Kampanya Modeli", "Performans Takibi"].map((item) => (
                 <div key={item} className="bg-white px-4 py-5 text-center">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#FE9417]">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#FB430A]">
                     {item}
                   </p>
                 </div>
@@ -523,7 +523,7 @@ export default function AboutClientPage() {
       </section>
 
       {/* ── Scale CTA (Sunset Gradient Theme) ── */}
-      <section className="bg-gradient-to-br from-[#FE9417] to-[#FF6B00] text-[#111111] py-24 md:py-36 border-t border-[#E5E5E5]">
+      <section className="bg-gradient-to-br from-[#FB430A] to-[#FF6B00] text-white py-24 md:py-36 border-t border-white/20">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -531,25 +531,25 @@ export default function AboutClientPage() {
           transition={{ duration: 0.7 }}
           className="mx-auto max-w-[1600px] px-6 md:px-10 text-center md:text-left"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#111111] font-bold">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/80 font-bold">
             / Hemen Başlayın
           </p>
-          <h2 className="mt-6 font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.045em] text-balance text-[#111111]">
+          <h2 className="mt-6 font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.045em] text-balance text-white">
             Etkinizi Büyütün.
           </h2>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#111111] md:text-xl font-medium mx-auto md:mx-0">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/90 md:text-xl font-medium mx-auto md:mx-0">
             Markanız veya içerik üretici profiliniz için doğru modeli birlikte netleştirelim.
           </p>
           <div className="mt-12 flex flex-wrap items-center justify-center md:justify-start gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-white px-10 py-5 text-base font-bold text-[#111111] transition-transform hover:scale-105 rounded-full"
+              className="inline-flex items-center gap-2 bg-white px-10 py-5 text-base font-bold text-[#FB430A] transition-transform hover:scale-105 rounded-full"
             >
               Teklif Al
             </Link>
             <Link
               href="/talent"
-              className="inline-flex items-center gap-2 border-2 border-[#111111] px-10 py-5 text-base font-bold text-[#111111] transition-all hover:bg-white hover:text-[#111111] rounded-full"
+              className="inline-flex items-center gap-2 border-2 border-white px-10 py-5 text-base font-bold text-white transition-all hover:bg-white hover:text-[#FB430A] rounded-full"
             >
               Başvuru Yap
             </Link>

@@ -56,7 +56,7 @@ export default function SiteNav() {
             classes.includes("bg-[#fafafa]") ||
             classes.includes("bg-gray-50") ||
             el.getAttribute("data-theme") === "light" ||
-            !classes.includes("bg-[#111111]") && !classes.includes("bg-black") && !classes.includes("bg-[#0a0a0a]") && el.tagName === "SECTION" // Default to light if not explicitly dark
+            (!classes.includes("bg-[#111111]") && !classes.includes("bg-black") && !classes.includes("bg-[#0a0a0a]") && !classes.includes("bg-[#FB430A]") && !classes.includes("bg-[#FE9417]") && el.tagName === "SECTION") // Default to light if not explicitly dark or orange
           setCurrentTheme(isLight ? "light" : "dark")
         }
       },
@@ -176,7 +176,7 @@ export default function SiteNav() {
                             href={subItem.href}
                             className="flex items-center justify-between px-4 py-3 rounded-lg text-sm text-[#666666] dark:text-white/70 hover:text-[#111111] dark:hover:text-white hover:bg-[#FFF3E0] dark:hover:bg-white/5 transition-colors group/sub"
                           >
-                            <span className="group-hover/sub:text-[#FE9417] transition-colors">{subItem.label}</span>
+                            <span className="group-hover/sub:text-[#FB430A] transition-colors">{subItem.label}</span>
                             <span className="text-sm opacity-80">{subItem.flags}</span>
                           </Link>
                         ))}
@@ -220,7 +220,7 @@ export default function SiteNav() {
               )}
             >
               {/* Fill layer */}
-              <span className="absolute inset-0 bg-gradient-to-r from-[#FE9417] to-[#FF6B00] translate-y-full group-hover:translate-y-0 transition-transform duration-[250ms] ease-out -z-10" />
+              <span className="absolute inset-0 bg-gradient-to-r from-[#FB430A] to-[#FF6B00] translate-y-full group-hover:translate-y-0 transition-transform duration-[250ms] ease-out -z-10" />
 
               <span className="relative z-10 group-hover:text-white transition-colors duration-[250ms]">Teklif Al</span>
               <span aria-hidden className="relative z-10 group-hover:text-white transition-all group-hover:translate-x-1 duration-[250ms]">→</span>
@@ -269,7 +269,7 @@ export default function SiteNav() {
             className="fixed inset-0 z-[100] flex flex-col bg-[#0a0a0a] px-6 overflow-y-auto min-[992px]:hidden"
           >
             {/* Ambient Glow Orb */}
-            <div className="fixed top-1/2 left-1/2 h-[60vh] w-[60vh] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#FE9417]/10 blur-[100px] pointer-events-none" />
+            <div className="fixed top-1/2 left-1/2 h-[60vh] w-[60vh] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#FB430A]/10 blur-[100px] pointer-events-none" />
 
             {/* Noise Texture */}
             <div className="fixed inset-0 opacity-[0.04] pointer-events-none mix-blend-overlay" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }} />
@@ -290,7 +290,7 @@ export default function SiteNav() {
                           <Link
                             href={item.href}
                             onClick={() => setOpen(false)}
-                            className="block py-1 text-[clamp(28px,8vw,48px)] font-bold uppercase leading-none tracking-tighter text-white hover:bg-gradient-to-r hover:from-[#FE9417] hover:via-[#FE9417] hover:to-[#FE9417] hover:bg-clip-text hover:text-transparent transition-all duration-300"
+                            className="block py-1 text-[clamp(28px,8vw,48px)] font-bold uppercase leading-none tracking-tighter text-white hover:bg-gradient-to-r hover:from-[#FB430A] hover:via-[#FB430A] hover:to-[#FB430A] hover:bg-clip-text hover:text-transparent transition-all duration-300"
                           >
                             {item.label}
                           </Link>
@@ -318,10 +318,10 @@ export default function SiteNav() {
                                     key={sub.href}
                                     href={sub.href}
                                     onClick={() => setOpen(false)}
-                                    className="text-lg font-medium text-white/60 hover:text-[#FE9417] transition-colors flex items-center justify-between pr-4 group/sublink"
+                                    className="text-lg font-medium text-white/60 hover:text-[#FB430A] transition-colors flex items-center justify-between pr-4 group/sublink"
                                   >
                                     <span className="flex items-center">
-                                      <span className="inline-block w-1.5 h-1.5 rounded-full bg-white/20 mr-3 group-hover/sublink:bg-[#FE9417] transition-colors" />
+                                      <span className="inline-block w-1.5 h-1.5 rounded-full bg-white/20 mr-3 group-hover/sublink:bg-[#FB430A] transition-colors" />
                                       {sub.label}
                                     </span>
                                     <span className="text-xl">{sub.flags}</span>
@@ -336,10 +336,10 @@ export default function SiteNav() {
                       <Link
                         href={item.href}
                         onClick={() => setOpen(false)}
-                        className="group block w-full py-3 text-[clamp(28px,8vw,48px)] font-bold uppercase leading-none tracking-tighter text-white hover:bg-gradient-to-r hover:from-[#FE9417] hover:via-[#FE9417] hover:to-[#FE9417] hover:bg-clip-text hover:text-transparent transition-all duration-300"
+                        className="group block w-full py-3 text-[clamp(28px,8vw,48px)] font-bold uppercase leading-none tracking-tighter text-white hover:bg-gradient-to-r hover:from-[#FB430A] hover:via-[#FB430A] hover:to-[#FB430A] hover:bg-clip-text hover:text-transparent transition-all duration-300"
                       >
                         {item.label}
-                        <span className="ml-4 inline-block opacity-0 -translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 bg-gradient-to-r from-[#FE9417] to-[#FF6B00] bg-clip-text text-transparent">
+                        <span className="ml-4 inline-block opacity-0 -translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 bg-gradient-to-r from-[#FB430A] to-[#FF6B00] bg-clip-text text-transparent">
                           →
                         </span>
                       </Link>
@@ -357,7 +357,7 @@ export default function SiteNav() {
                 <Link
                   href="/contact"
                   onClick={() => setOpen(false)}
-                  className="inline-flex items-center justify-center gap-2 w-full py-4 text-base font-bold uppercase tracking-widest text-black bg-gradient-to-r from-[#FE9417] to-[#FF6B00] rounded-none transition-transform hover:scale-[1.02]"
+                  className="inline-flex items-center justify-center gap-2 w-full py-4 text-base font-bold uppercase tracking-widest text-black bg-gradient-to-r from-[#FB430A] to-[#FF6B00] rounded-none transition-transform hover:scale-[1.02]"
                 >
                   Teklif Al
                 </Link>

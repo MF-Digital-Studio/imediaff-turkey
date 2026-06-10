@@ -11,19 +11,19 @@ const PILLARS = [
   {
     title: "Stratejik Eşleşme",
     description: "Markaları en doğru içerik üreticileriyle bir araya getiriyoruz. Her iş birliği kitle uyumu ve net sonuçlar üzerine inşa ediliyor.",
-    icon: <Target className="w-6 h-6 text-black" strokeWidth={1.5} />,
+    icon: <Target className="w-6 h-6 text-[#FB430A]" strokeWidth={1.5} />,
     glowColor: "rgba(37,99,235,0.15)",
   },
   {
     title: "Hızlı Operasyon",
     description: "Başvurudan ilk komisyona kadar yalnızca birkaç gün. TrendFam altyapımız ve kolaylaştırılmış onboarding sürecimizle içerik üreticileri hızlıca kazanmaya başlıyor.",
-    icon: <Zap className="w-6 h-6 text-black" strokeWidth={1.5} />,
+    icon: <Zap className="w-6 h-6 text-[#FB430A]" strokeWidth={1.5} />,
     glowColor: "rgba(255,138,30,0.15)",
   },
   {
     title: "Tam Şeffaflık",
     description: "Net sözleşmeler, anlık komisyon takipleri ve belgelenmiş ödemelerle tam güven ortamı sunuyoruz.",
-    icon: <ShieldCheck className="w-6 h-6 text-black" strokeWidth={1.5} />,
+    icon: <ShieldCheck className="w-6 h-6 text-[#FB430A]" strokeWidth={1.5} />,
     glowColor: "rgba(255,189,30,0.15)",
   },
 ]
@@ -35,7 +35,7 @@ export default function GlobalValue() {
   const inView = useInView(sectionRef, { once: true, margin: "-12% 0px" })
 
   return (
-    <section ref={sectionRef} className="relative bg-white py-24 md:py-32 overflow-hidden" aria-label="Global Value Proposition">
+    <section ref={sectionRef} className="relative bg-white py-24 md:py-32 overflow-hidden border-b border-[#E5E5E5]" aria-label="Global Value Proposition">
       <div className="relative z-10 mx-auto max-w-[1600px] px-6 md:px-10">
         {/* Header */}
         <div className="max-w-4xl mx-auto text-center mb-20 md:mb-28">
@@ -44,7 +44,7 @@ export default function GlobalValue() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <h2 className="font-sans text-[clamp(2.8rem,6vw,5.5rem)] font-bold text-black tracking-[-0.04em] leading-[0.95] mb-8">
+            <h2 className="font-sans text-[clamp(2.8rem,6vw,5.5rem)] font-bold text-[#111111] tracking-[-0.04em] leading-[0.95] mb-8">
               Tek Ekip. Net Süreç.
             </h2>
           </motion.div>
@@ -52,7 +52,7 @@ export default function GlobalValue() {
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            className="text-black/60 text-lg md:text-xl font-medium leading-relaxed max-w-3xl mx-auto"
+            className="text-[#666666] text-lg md:text-xl font-medium leading-relaxed max-w-3xl mx-auto"
           >
             Markalarla içerik üreticilerini buluşturmanın ötesine geçiyoruz; sürdürülebilir büyüme altyapısı kuruyoruz.
           </motion.p>
@@ -79,7 +79,7 @@ export default function GlobalValue() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.3 + i * 0.15, ease: [0.22, 1, 0.36, 1] }}
-                className="group relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center p-6 md:p-10 rounded-2xl bg-black/[0.02] border border-black/10 transition-all duration-500 hover:bg-white"
+                className="group relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center p-6 md:p-10 rounded-2xl bg-[#FAFAFA] border border-[#E5E5E5] transition-all duration-500 hover:border-[#FB430A]/50"
                 style={{
                   boxShadow: "0 0 0 rgba(0,0,0,0)",
                 }}
@@ -96,7 +96,7 @@ export default function GlobalValue() {
                 <div
                   className="absolute inset-0 rounded-2xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                   style={{
-                    background: "linear-gradient(135deg, #FE9417, #FF6B00)",
+                    background: "linear-gradient(135deg, rgba(251,67,10,0.1), transparent)",
                     padding: "1px",
                     WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
                     WebkitMaskComposite: "xor",
@@ -121,15 +121,15 @@ export default function GlobalValue() {
                   "flex flex-col justify-center",
                   isImageLeft ? "order-2" : "order-2 md:order-1"
                 )}>
-                  <div className="mb-6 w-14 h-14 rounded-full bg-black/[0.04] flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                  <div className="mb-6 w-14 h-14 rounded-full bg-white border border-[#E5E5E5] shadow-sm flex items-center justify-center group-hover:scale-110 group-hover:border-[#FB430A]/30 transition-all duration-500">
                     {pillar.icon}
                   </div>
 
-                  <h3 className="font-sans text-2xl md:text-3xl font-bold text-black mb-4 tracking-tight">
+                  <h3 className="font-sans text-2xl md:text-3xl font-bold text-[#111111] mb-4 tracking-tight">
                     {pillar.title}
                   </h3>
 
-                  <p className="text-black/60 text-[0.95rem] md:text-base leading-relaxed font-medium">
+                  <p className="text-[#555555] text-[0.95rem] md:text-base leading-relaxed font-medium">
                     {pillar.description}
                   </p>
                 </div>

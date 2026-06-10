@@ -12,7 +12,7 @@ export default function ClientMarquee() {
   return (
     <section className="relative border-y border-[#E5E5E5] py-20 overflow-hidden bg-white">
       {/* Background glow */}
-      <div className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gradient-to-l from-[#FE9417]/5 to-transparent blur-[100px] rounded-full opacity-60" />
+      <div className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gradient-to-l from-[#FB430A]/5 to-transparent blur-[100px] rounded-full opacity-60" />
 
 
 
@@ -26,10 +26,10 @@ export default function ClientMarquee() {
             <span
               key={`${c}-${i}`}
               aria-hidden={i >= CLIENTS.length ? "true" : undefined}
-              className="font-sans text-4xl md:text-6xl font-bold tracking-[-0.03em] text-[#111111]/20 hover:text-[#FE9417] transition-all duration-500 cursor-default"
+              className="font-sans text-4xl md:text-6xl font-bold tracking-[-0.03em] text-[#111111]/20 hover:text-[#FB430A] transition-all duration-500 cursor-default"
             >
               {c}
-              <span className="text-[#FE9417]">.</span>
+              <span className="text-[#FB430A]">.</span>
             </span>
           ))}
         </div>

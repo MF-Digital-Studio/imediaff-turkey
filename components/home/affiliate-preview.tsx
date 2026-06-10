@@ -18,7 +18,7 @@ export default function AffiliatePreview() {
     <section className="relative overflow-hidden bg-white flex flex-col">
 
       {/* TRENDYOL FULL SCREEN */}
-      <div className="w-full min-h-[80vh] flex flex-col justify-center bg-[#ffa101] text-[#111111] py-24 px-6 md:px-10 lg:px-20 relative overflow-hidden">
+      <div className="w-full min-h-[80vh] flex flex-col justify-center bg-[#FE9417] text-[#111111] py-24 px-6 md:px-10 lg:px-20 relative overflow-hidden">
         {/* Subtle background glows */}
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-white/10 blur-[120px] rounded-full pointer-events-none -translate-y-1/2 translate-x-1/3" />
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-black/10 blur-[100px] rounded-full pointer-events-none translate-y-1/3 -translate-x-1/3" />
@@ -64,15 +64,15 @@ export default function AffiliatePreview() {
               </p>
               <ul className="space-y-6 mb-12 text-white font-medium text-xl">
                 <li className="flex items-center gap-4">
-                  <span className="flex items-center justify-center shrink-0 w-7 h-7 rounded-full bg-white text-[#ffa101] text-sm font-bold shadow-sm">✓</span> 
+                  <span className="flex items-center justify-center shrink-0 w-7 h-7 rounded-full bg-white text-[#FE9417] text-sm font-bold shadow-sm">✓</span> 
                   Yüksek Komisyon Modelleri
                 </li>
                 <li className="flex items-center gap-4">
-                  <span className="flex items-center justify-center shrink-0 w-7 h-7 rounded-full bg-white text-[#ffa101] text-sm font-bold shadow-sm">✓</span> 
+                  <span className="flex items-center justify-center shrink-0 w-7 h-7 rounded-full bg-white text-[#FE9417] text-sm font-bold shadow-sm">✓</span> 
                   Teknik ve Operasyonel Destek
                 </li>
                 <li className="flex items-center gap-4">
-                  <span className="flex items-center justify-center shrink-0 w-7 h-7 rounded-full bg-white text-[#ffa101] text-sm font-bold shadow-sm">✓</span> 
+                  <span className="flex items-center justify-center shrink-0 w-7 h-7 rounded-full bg-white text-[#FE9417] text-sm font-bold shadow-sm">✓</span> 
                   Marka Kampanyalarına Erişim
                 </li>
               </ul>

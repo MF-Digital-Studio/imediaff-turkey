@@ -53,7 +53,7 @@ export default function SiteFooter() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="md:col-span-3"
         >
-          <Link href="/" className="font-display text-lg font-semibold tracking-tight text-[#111111]">imediaff<span className="text-[#FE9417]">.</span></Link>
+          <Link href="/" className="font-display text-lg font-semibold tracking-tight text-[#111111]">imediaff<span className="text-[#FB430A]">.</span></Link>
           <p className="mt-4 max-w-sm text-sm text-[#666666] leading-relaxed font-sans">Markalara ve içerik üreticilerine affiliate, prodüksiyon ve kampanya yönetimi çözümleri sunuyoruz.</p>
           <div className="mt-6 flex flex-wrap gap-2">
             {SOCIAL.map((s) => (
@@ -113,7 +113,7 @@ export default function SiteFooter() {
               aria-label="imediaff Global sitesini yeni sekmede aç"
               className="group flex flex-col gap-2"
             >
-              <span className="text-sm font-semibold text-[#111111] group-hover:text-[#FE9417] transition-colors inline-flex items-center gap-1">
+              <span className="text-sm font-semibold text-[#111111] group-hover:text-[#FB430A] transition-colors inline-flex items-center gap-1">
                 imediaff Global <span aria-hidden>↗</span>
               </span>
               <span className="text-xs text-[#666666] leading-relaxed font-sans mt-1">

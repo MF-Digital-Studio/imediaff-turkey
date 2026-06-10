@@ -24,14 +24,14 @@ export default function RegionsGrid() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="mb-16 md:mb-20 text-center md:text-left"
         >
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FE9417] mb-5">
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FB430A] mb-5">
             / OPERASYONLARIMIZ
           </p>
           <h2 className="font-sans text-[clamp(2.5rem,6vw,5rem)] font-bold text-[#111111] leading-[0.92] tracking-[-0.03em]">
             Geniş ve etkili{" "}
             <span
               style={{
-                backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
+                backgroundImage: "linear-gradient(135deg, #FB430A 0%, #FF6B00 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -65,7 +65,7 @@ export default function RegionsGrid() {
 
             {/* Content Side */}
             <div className="w-full lg:w-1/2 p-10 md:p-16 lg:p-20 flex flex-col justify-center">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#FE9417] mb-4">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#FB430A] mb-4">
                 KURUCU PAZAR
               </p>
               <h3 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-[#111111] tracking-tight mb-8">
@@ -79,7 +79,7 @@ export default function RegionsGrid() {
               {/* CTA */}
               <Link
                 href="/talent"
-                className="group inline-flex items-center gap-3 bg-[#FE9417] text-white rounded-full px-8 py-4 font-bold transition-transform hover:scale-105 w-fit"
+                className="group inline-flex items-center gap-3 bg-[#FB430A] text-white rounded-full px-8 py-4 font-bold transition-transform hover:scale-105 w-fit"
               >
                 Programı İncele
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />

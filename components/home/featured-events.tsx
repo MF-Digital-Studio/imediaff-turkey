@@ -9,7 +9,7 @@ export default function FeaturedEvents() {
   const featuredEvents = EVENTS.slice(0, 3)
 
   return (
-    <section className="relative border-b border-border bg-background">
+    <section className="relative border-b border-black/10 bg-white">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-24 md:py-32">
         <div className="flex items-end justify-between flex-wrap gap-6">
           <div>

@@ -186,8 +186,8 @@ export default function ContactClientPage() {
     }
   }
 
-  const inputClass = "bg-transparent border-b border-[#E5E5E5] px-2 py-4 text-[#111111] font-sans text-lg focus:outline-none focus:border-[#FE9417] transition-colors w-full"
-  const selectClass = "bg-white/50 border-b border-[#E5E5E5] px-2 py-4 text-[#111111] font-sans text-lg focus:outline-none focus:border-[#FE9417] transition-colors appearance-none cursor-pointer w-full"
+  const inputClass = "bg-transparent border-b border-[#E5E5E5] px-2 py-4 text-[#111111] font-sans text-lg focus:outline-none focus:border-[#FB430A] transition-colors w-full"
+  const selectClass = "bg-white/50 border-b border-[#E5E5E5] px-2 py-4 text-[#111111] font-sans text-lg focus:outline-none focus:border-[#FB430A] transition-colors appearance-none cursor-pointer w-full"
   const labelClass = "font-mono text-xs uppercase tracking-widest text-[#666666] ml-2"
 
   return (
@@ -195,14 +195,14 @@ export default function ContactClientPage() {
 
       {/* ── SECTION 1: HERO & BRIEF INTAKE (Black) ───────────────────────── */}
       <section className="bg-white text-[#111111] pt-32 pb-24 md:pt-48 md:pb-32 border-b border-[#E5E5E5] relative overflow-hidden">
-        <div className="pointer-events-none absolute left-0 bottom-0 w-[600px] h-[600px] bg-gradient-to-tr from-[#FE9417]/8 to-transparent blur-[120px] rounded-full -translate-x-1/3 translate-y-1/3" />
+        <div className="pointer-events-none absolute left-0 bottom-0 w-[600px] h-[600px] bg-gradient-to-tr from-[#FB430A]/8 to-transparent blur-[120px] rounded-full -translate-x-1/3 translate-y-1/3" />
 
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 relative z-10">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-16 lg:gap-24 items-start">
             
             {/* Left: Contact Info */}
             <motion.div {...fadeUp()} className="flex flex-col xl:sticky xl:top-32">
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-6">/ İletişime Geçin</p>
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FB430A] mb-6">/ İletişime Geçin</p>
               <h1 className="font-display text-[clamp(3.5rem,8vw,6.5rem)] font-bold leading-[0.88] tracking-[-0.04em] mb-8">
                 Hemen <br /> Başvurun.
               </h1>
@@ -213,7 +213,7 @@ export default function ContactClientPage() {
               <div className="flex flex-col gap-10">
                 <div>
                   <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#888888] mb-2">E-Posta</p>
-                  <a href="mailto:info@imediaff.com" className="font-display text-2xl md:text-3xl font-bold tracking-tight hover:text-[#FE9417] transition-colors">
+                  <a href="mailto:info@imediaff.com" className="font-display text-2xl md:text-3xl font-bold tracking-tight hover:text-[#FB430A] transition-colors">
                     info@imediaff.com
                   </a>
                 </div>
@@ -230,7 +230,7 @@ export default function ContactClientPage() {
                     href="https://wa.me/902166065359" 
                     target="_blank" 
                     rel="noreferrer"
-                    className="inline-flex items-center gap-3 rounded-full border border-[#E5E5E5] bg-white/5 px-6 py-3 font-mono text-xs uppercase tracking-widest hover:bg-white hover:text-[#FE9417] transition-colors"
+                    className="inline-flex items-center gap-3 rounded-full border border-[#E5E5E5] bg-white/5 px-6 py-3 font-mono text-xs uppercase tracking-widest hover:bg-white hover:text-[#FB430A] transition-colors"
                   >
                     WhatsApp Üzerinden İletişim
                     <span className="block h-2 w-2 rounded-full bg-[#25D366] animate-pulse" />
@@ -243,7 +243,7 @@ export default function ContactClientPage() {
             <motion.div {...fadeUp(0.15)} className="w-full max-w-2xl mx-auto xl:ml-auto" id="native-contact-form">
               <div className="bg-white border border-[#E5E5E5] rounded-[2rem] p-8 md:p-12 backdrop-blur-md relative overflow-hidden">
                 {/* Subtle gradient accent on top edge */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-br from-[#FE9417] to-[#FF6B00]" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-br from-[#FB430A] to-[#FF6B00]" />
                 
                 {/* Dynamic Selector Buttons */}
                 <div className="grid grid-cols-2 gap-3 mb-8">
@@ -259,12 +259,12 @@ export default function ContactClientPage() {
                         onClick={() => handleFormTypeChange(type.id as any)}
                         className={`flex flex-col text-left p-4 rounded-2xl border transition-all duration-300 cursor-pointer ${
                           isSelected
-                            ? "bg-white border-[#FE9417] shadow-[0_0_15px_rgba(254,148,23,0.15)]"
+                            ? "bg-white border-[#FB430A] shadow-[0_0_15px_rgba(254,148,23,0.15)]"
                             : "bg-[#FAFAFA] border-[#E5E5E5] hover:bg-white hover:border-[#E5E5E5]"
                         }`}
                       >
                         <span className={`font-mono text-xs uppercase tracking-wider font-bold mb-1 ${
-                          isSelected ? "text-[#FE9417]" : "text-[#666666]"
+                          isSelected ? "text-[#FB430A]" : "text-[#666666]"
                         }`}>
                           {type.label}
                         </span>
@@ -382,7 +382,7 @@ export default function ContactClientPage() {
                   {formType === "creator" && (
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                       <div className="flex flex-col gap-2">
-                        <label htmlFor="instagram-input" className={labelClass}>Instagram <span className="text-[#FE9417] text-[10px]">(Opsiyonel)</span></label>
+                        <label htmlFor="instagram-input" className={labelClass}>Instagram <span className="text-[#FB430A] text-[10px]">(Opsiyonel)</span></label>
                         <input 
                           id="instagram-input"
                           type="text" 
@@ -394,7 +394,7 @@ export default function ContactClientPage() {
                       </div>
 
                       <div className="flex flex-col gap-2">
-                        <label htmlFor="tiktok-input" className={labelClass}>TikTok <span className="text-[#FE9417] text-[10px]">(Opsiyonel)</span></label>
+                        <label htmlFor="tiktok-input" className={labelClass}>TikTok <span className="text-[#FB430A] text-[10px]">(Opsiyonel)</span></label>
                         <input 
                           id="tiktok-input"
                           type="text" 
@@ -406,7 +406,7 @@ export default function ContactClientPage() {
                       </div>
 
                       <div className="flex flex-col gap-2">
-                        <label htmlFor="youtube-input" className={labelClass}>YouTube <span className="text-[#FE9417] text-[10px]">(Opsiyonel)</span></label>
+                        <label htmlFor="youtube-input" className={labelClass}>YouTube <span className="text-[#FB430A] text-[10px]">(Opsiyonel)</span></label>
                         <input 
                           id="youtube-input"
                           type="text" 
@@ -451,7 +451,7 @@ export default function ContactClientPage() {
                       id="message-input"
                       rows={4}
                       required={formType === "brand"}
-                      className="bg-transparent border-b border-[#E5E5E5] px-2 py-4 text-[#111111] font-sans text-lg focus:outline-none focus:border-[#FE9417] transition-colors resize-none"
+                      className="bg-transparent border-b border-[#E5E5E5] px-2 py-4 text-[#111111] font-sans text-lg focus:outline-none focus:border-[#FB430A] transition-colors resize-none"
                       value={formState.message}
                       onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                     />
@@ -486,7 +486,7 @@ export default function ContactClientPage() {
                     disabled={isSubmitting}
                     className="group relative mt-4 inline-flex items-center justify-center overflow-hidden rounded-full px-8 py-5 font-mono text-sm font-bold uppercase tracking-widest text-[#111111] transition-transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 cursor-pointer"
                   >
-                    <span className="absolute inset-0 bg-gradient-to-br from-[#FE9417] to-[#FF6B00]" />
+                    <span className="absolute inset-0 bg-gradient-to-br from-[#FB430A] to-[#FF6B00]" />
                     <span className="relative z-10 flex items-center gap-3">
                       {isSubmitting 
                         ? "Gönderiliyor..." 
@@ -505,26 +505,26 @@ export default function ContactClientPage() {
       </section>
 
       {/* ── SECTION 2: GLOBAL OFFICE NETWORK (White) ───────────────────── */}
-      <section className="bg-white text-black py-24 md:py-36 border-b border-gray-200 overflow-hidden">
+      <section className="bg-[#FB430A] text-white py-24 md:py-36 border-b border-white/20 overflow-hidden">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
             {/* Titles & List */}
             <div className="lg:col-span-5 flex flex-col justify-center">
               <motion.div {...fadeUp()} className="mb-16">
-                <p className="font-mono text-xs uppercase tracking-[0.3em] text-gray-500 font-bold mb-4">/ Operasyon</p>
-                <h2 className="font-display text-[clamp(2.5rem,4vw,4rem)] font-bold tracking-[-0.03em] leading-[1.05] text-black">
+                <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/80 font-bold mb-4">/ Operasyon</p>
+                <h2 className="font-display text-[clamp(2.5rem,4vw,4rem)] font-bold tracking-[-0.03em] leading-[1.05] text-white">
                   Türkiye <br /> Ofislerimiz.
                 </h2>
               </motion.div>
 
               <div className="flex flex-col gap-10">
                 {OFFICES.map((office, i) => (
-                  <motion.div key={office.name} {...fadeUp(0.1 * i)} className="group border-l-2 border-gray-200 pl-6 hover:border-[#FE9417] transition-colors">
-                    <h3 className="font-display text-xl md:text-2xl font-bold tracking-[-0.02em] text-black mb-2 group-hover:text-[#FE9417] transition-colors">
+                  <motion.div key={office.name} {...fadeUp(0.1 * i)} className="group border-l-2 border-white/20 pl-6 hover:border-white transition-colors">
+                    <h3 className="font-display text-xl md:text-2xl font-bold tracking-[-0.02em] text-white mb-2 group-hover:text-white transition-colors">
                       {office.name}
                     </h3>
-                    <p className="font-mono text-[11px] md:text-xs uppercase tracking-[0.1em] leading-relaxed text-gray-500 max-w-[280px]">
+                    <p className="font-mono text-[11px] md:text-xs uppercase tracking-[0.1em] leading-relaxed text-white/80 max-w-[280px]">
                       {office.address}
                     </p>
                   </motion.div>
@@ -554,7 +554,7 @@ export default function ContactClientPage() {
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
             <motion.div {...fadeUp()} className="lg:col-span-5">
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] font-bold mb-4">/ S.S.S</p>
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FB430A] font-bold mb-4">/ S.S.S</p>
               <h2 className="font-display text-[clamp(2.5rem,4vw,4rem)] font-bold tracking-[-0.03em] leading-[1.05] text-[#111111]">
                 Sıkça Sorulan <br /> Sorular.
               </h2>

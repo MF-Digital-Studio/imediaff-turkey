@@ -9,8 +9,8 @@ export default function TalentClientPage() {
     <main className="bg-background text-foreground min-h-screen">
       {/* 1. HERO */}
       <section className="relative pt-32 md:pt-48 pb-20 md:pb-32 overflow-hidden border-border bg-white border-b border-[#E5E5E5]">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#FE9417]/10 blur-[120px] rounded-full pointer-events-none" />
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#FE9417]/5 blur-[100px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#FB430A]/10 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#FB430A]/5 blur-[100px] rounded-full pointer-events-none" />
         
         <motion.div 
           initial={{ opacity: 0, y: 30 }} 
@@ -18,11 +18,11 @@ export default function TalentClientPage() {
           transition={{ duration: 0.8, ease: "easeOut" }} 
           className="relative mx-auto max-w-[1600px] px-6 md:px-10 z-10"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-6">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FB430A] mb-6">
             / İÇERİK ÜRETİCİLERİ
           </p>
           <h1 className="font-display text-[clamp(3.5rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] max-w-5xl text-[#111111]">
-            <span className="bg-gradient-to-r from-[#FE9417] to-[#FF6B00] bg-clip-text text-transparent">Creator Ağına Katılın.</span>
+            <span className="bg-gradient-to-r from-[#FB430A] to-[#FF6B00] bg-clip-text text-transparent">Creator Ağına Katılın.</span>
           </h1>
           <p className="mt-8 max-w-2xl text-lg md:text-xl text-[#555555] leading-relaxed">
             Affiliate marketing'i hobi olmaktan çıkarıp profesyonel bir gelir modeline dönüştürüyoruz. Trendyol affiliate sistemini hobi olmaktan çıkarıp profesyonel bir gelir modeline dönüştürmek isteyen içerik üreticileri için uçtan uca destek sunuyoruz.
@@ -30,7 +30,7 @@ export default function TalentClientPage() {
           <div className="mt-12 flex flex-col sm:flex-row gap-4">
             <Link 
               href="/contact?type=creator"
-              className="inline-flex h-14 items-center justify-center rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] px-8 text-base font-bold text-[#111111] transition-all hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(254,148,23,0.3)]"
+              className="inline-flex h-14 items-center justify-center rounded-full bg-gradient-to-r from-[#FB430A] to-[#FF6B00] px-8 text-base font-bold text-[#111111] transition-all hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(254,148,23,0.3)]"
             >
               Başvuru Yap
             </Link>
@@ -45,7 +45,7 @@ export default function TalentClientPage() {
       </section>
 
       {/* 2. ABOUT iMEDIAFF */}
-      <section className="py-24 border-border bg-[#fafafa] border-b border-[#e5e7eb] relative">
+      <section className="py-24 border-border bg-[#FB430A] border-b border-white/20 relative">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -55,8 +55,8 @@ export default function TalentClientPage() {
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">iMediaff Ne Yapar?</h2>
-              <p className="text-xl text-[#374151] font-medium mb-8">Markalar, içerik üreticileri ve dijital ticaret platformları arasında profesyonel iş birlikleri kurarız.</p>
+              <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">iMediaff Ne Yapar?</h2>
+              <p className="text-xl text-white/90 font-medium mb-8">Markalar, içerik üreticileri ve dijital ticaret platformları arasında profesyonel iş birlikleri kurarız.</p>
               <ul className="space-y-4">
                 {[
                   "Influencer ve marka iş birliklerini yönetir.",
@@ -65,17 +65,17 @@ export default function TalentClientPage() {
                   "Prodüksiyon ve reklam içerikleri geliştirir.",
                   "Güven temelli iş ilişkisi modeliyle çalışır."
                 ].map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-4 text-[#555555] text-lg">
-                    <CheckCircle2 className="w-6 h-6 text-[#FE9417] flex-shrink-0 mt-0.5" />
+                  <li key={idx} className="flex items-start gap-4 text-white/80 text-lg">
+                    <CheckCircle2 className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="bg-white border border-[#FE9417]/20 shadow-xl p-10 rounded-3xl relative overflow-hidden">
-               <div className="absolute top-0 right-0 w-40 h-40 bg-[#FE9417]/10 blur-3xl rounded-full" />
-               <QuoteIcon className="w-12 h-12 text-[#FE9417]/30 mb-6" />
-               <p className="text-2xl font-medium text-[#111111] leading-relaxed relative z-10 italic">
+            <div className="bg-white/10 border border-white/20 shadow-xl p-10 rounded-3xl relative overflow-hidden">
+               <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 blur-3xl rounded-full" />
+               <QuoteIcon className="w-12 h-12 text-white/30 mb-6" />
+               <p className="text-2xl font-medium text-white leading-relaxed relative z-10 italic">
                  "Trendyol affiliate sistemine bireysel olarak katılabilirsiniz; imediaff ise bu süreci profesyonel, sürdürülebilir ve yönetilebilir bir gelir modeline dönüştürür."
                </p>
             </div>
@@ -107,8 +107,8 @@ export default function TalentClientPage() {
               { num: "06", title: "Resmi Form", desc: "Başvuru formunun eksiksiz ve doğru şekilde doldurulması." },
               { num: "07", title: "Sözleşme Onayı", desc: "Başvuru sonrası sözleşme ve panel onay sürecinin tamamlanması." }
             ].map((item, idx) => (
-              <div key={idx} className="bg-[#f9fafb] border border-[#e5e7eb] p-8 rounded-2xl hover:border-[#FE9417]/40 transition-colors">
-                <span className="text-[#FE9417] font-mono font-bold text-lg mb-4 block">{item.num}</span>
+              <div key={idx} className="bg-[#f9fafb] border border-[#e5e7eb] p-8 rounded-2xl hover:border-[#FB430A]/40 transition-colors">
+                <span className="text-[#FB430A] font-mono font-bold text-lg mb-4 block">{item.num}</span>
                 <h3 className="text-xl font-bold text-[#111111] mb-3">{item.title}</h3>
                 <p className="text-[#555555] text-sm leading-relaxed">{item.desc}</p>
               </div>
@@ -118,7 +118,7 @@ export default function TalentClientPage() {
       </section>
 
       {/* 4. NEDEN TRENDYOL? */}
-      <section className="py-24 border-border bg-[#fafafa] border-b border-[#e5e7eb] relative">
+      <section className="py-24 border-border bg-[#FE9417] border-b border-white/20 relative">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -127,8 +127,8 @@ export default function TalentClientPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Neden Trendyol?</h2>
-            <p className="text-xl text-[#555555]">Geniş ürün çeşitliliği, yüksek dönüşüm potansiyeli ve gelişmiş takip paneliyle creator'lar için güçlü bir affiliate alanı sunar.</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">Neden Trendyol?</h2>
+            <p className="text-xl text-white/90">Geniş ürün çeşitliliği, yüksek dönüşüm potansiyeli ve gelişmiş takip paneliyle creator'lar için güçlü bir affiliate alanı sunar.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -139,15 +139,15 @@ export default function TalentClientPage() {
             ].map((item, idx) => {
               const Icon = item.icon
               return (
-                <div key={idx} className="group bg-white border border-[#e5e7eb] shadow-sm p-8 rounded-3xl hover:shadow-md transition-all">
+                <div key={idx} className="group bg-white/10 border border-white/20 shadow-sm p-8 rounded-3xl hover:border-white/40 hover:bg-white/20 transition-all">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 rounded-xl bg-[#FE9417]/10 flex items-center justify-center text-[#FE9417]">
+                    <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-white">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="text-gray-300 font-mono font-bold text-2xl">{item.num}</span>
+                    <span className="text-white/30 font-mono font-bold text-2xl">{item.num}</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-[#111111] mb-4">{item.title}</h3>
-                  <p className="text-[#555555] leading-relaxed">{item.desc}</p>
+                  <h3 className="text-2xl font-bold text-white mb-4">{item.title}</h3>
+                  <p className="text-white/80 leading-relaxed">{item.desc}</p>
                 </div>
               )
             })}
@@ -174,7 +174,7 @@ export default function TalentClientPage() {
               { title: "Platinum", desc: "En yüksek performans segmenti. En güçlü komisyon oranları.", color: "from-gray-700 to-gray-900" },
               { title: "Gold", desc: "Yüksek satış hacmi ve güçlü performans.", color: "from-yellow-400 to-yellow-600" },
               { title: "Silver", desc: "Düzenli ve istikrarlı satış performansı.", color: "from-gray-300 to-gray-500" },
-              { title: "Starter", desc: "Yeni başlayan içerik üreticileri için giriş segmenti.", color: "from-[#FE9417] to-[#FF6B00]" }
+              { title: "Starter", desc: "Yeni başlayan içerik üreticileri için giriş segmenti.", color: "from-[#FB430A] to-[#FF6B00]" }
             ].map((item, idx) => (
               <div key={idx} className="relative p-[1px] rounded-2xl bg-gradient-to-br overflow-hidden group">
                 <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-20 group-hover:opacity-100 transition-opacity duration-500`} />
@@ -189,7 +189,7 @@ export default function TalentClientPage() {
           <div className="bg-[#f9fafb] border border-[#e5e7eb] rounded-2xl p-8 lg:p-10 flex flex-col lg:flex-row gap-8 items-start lg:items-center">
             <div className="flex-1">
               <h4 className="text-lg font-bold text-[#111111] mb-2 flex items-center gap-2">
-                <AlertCircle className="w-5 h-5 text-[#FE9417]" />
+                <AlertCircle className="w-5 h-5 text-[#FB430A]" />
                 Starter Segmenti Başlangıcı
               </h4>
               <p className="text-[#555555] text-sm">İlk ay için başlangıç oranları uygulanabilir. Sonraki dönemde segmentiniz gelir ve ziyaretçi performansınıza göre güncellenir.</p>
@@ -214,7 +214,7 @@ export default function TalentClientPage() {
       </section>
 
       {/* 6. IN-LINK VE OUT-LINK SATIŞLAR */}
-      <section id="nasil-isler" className="py-24 border-border bg-[#fafafa] border-b border-[#e5e7eb] relative">
+      <section id="nasil-isler" className="py-24 border-border bg-[#FB430A] border-b border-white/20 relative">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -223,48 +223,48 @@ export default function TalentClientPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">In-Link ve Out-Link Satışlar</h2>
-            <p className="text-xl text-[#555555]">Komisyon hesaplamasında bağlantının türü ve satın alınan ürün önemlidir.</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">In-Link ve Out-Link Satışlar</h2>
+            <p className="text-xl text-white/90">Komisyon hesaplamasında bağlantının türü ve satın alınan ürün önemlidir.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white border border-[#e5e7eb] p-10 rounded-3xl relative overflow-hidden">
+            <div className="bg-white/10 border border-white/20 p-10 rounded-3xl relative overflow-hidden">
               <div className="absolute top-0 right-0 p-4">
                 <span className="inline-flex items-center rounded-full bg-green-50 px-3 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Doğrudan Satış</span>
               </div>
-              <h3 className="text-3xl font-bold text-[#111111] mb-4">In-Link</h3>
-              <p className="text-[#555555] leading-relaxed text-lg">Takipçiniz paylaştığınız ürün linkinden aynı ürünü satın aldığında, segmentinize göre belirlenen komisyon oranı uygulanır.</p>
+              <h3 className="text-3xl font-bold text-white mb-4">In-Link</h3>
+              <p className="text-white/80 leading-relaxed text-lg">Takipçiniz paylaştığınız ürün linkinden aynı ürünü satın aldığında, segmentinize göre belirlenen komisyon oranı uygulanır.</p>
             </div>
             
-            <div className="bg-white border border-[#e5e7eb] p-10 rounded-3xl relative overflow-hidden">
+            <div className="bg-white/10 border border-white/20 p-10 rounded-3xl relative overflow-hidden">
               <div className="absolute top-0 right-0 p-4">
                 <span className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-600/20">Çapraz Satış</span>
               </div>
-              <h3 className="text-3xl font-bold text-[#111111] mb-4">Out-Link</h3>
-              <p className="text-[#555555] leading-relaxed text-lg">Takipçiniz linkinize tıklayıp farklı bir ürün satın aldığında, komisyon oranı segment ve kategoriye göre değişebilir.</p>
+              <h3 className="text-3xl font-bold text-white mb-4">Out-Link</h3>
+              <p className="text-white/80 leading-relaxed text-lg">Takipçiniz linkinize tıklayıp farklı bir ürün satın aldığında, komisyon oranı segment ve kategoriye göre değişebilir.</p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="flex items-center gap-4 bg-white p-6 rounded-2xl border border-[#e5e7eb]">
-              <Clock className="w-8 h-8 text-[#FE9417]" />
+            <div className="flex items-center gap-4 bg-white/10 p-6 rounded-2xl border border-white/20">
+              <Clock className="w-8 h-8 text-white" />
               <div>
-                <p className="text-sm text-gray-500">Çerez Süresi</p>
-                <p className="font-bold text-lg text-[#111111]">24 Saat</p>
+                <p className="text-sm text-white/60">Çerez Süresi</p>
+                <p className="font-bold text-lg text-white">24 Saat</p>
               </div>
             </div>
-            <div className="flex items-center gap-4 bg-white p-6 rounded-2xl border border-[#e5e7eb]">
-              <Target className="w-8 h-8 text-[#FE9417]" />
+            <div className="flex items-center gap-4 bg-white/10 p-6 rounded-2xl border border-white/20">
+              <Target className="w-8 h-8 text-white" />
               <div>
-                <p className="text-sm text-gray-500">Günlük Kazanç Limiti</p>
-                <p className="font-bold text-lg text-[#111111]">₺150.000</p>
+                <p className="text-sm text-white/60">Günlük Kazanç Limiti</p>
+                <p className="font-bold text-lg text-white">₺150.000</p>
               </div>
             </div>
-            <div className="flex items-center gap-4 bg-white p-6 rounded-2xl border border-[#e5e7eb]">
-              <CreditCard className="w-8 h-8 text-[#FE9417]" />
+            <div className="flex items-center gap-4 bg-white/10 p-6 rounded-2xl border border-white/20">
+              <CreditCard className="w-8 h-8 text-white" />
               <div>
-                <p className="text-sm text-gray-500">Minimum Aylık Ödeme</p>
-                <p className="font-bold text-lg text-[#111111]">₺1.000 <span className="text-xs font-normal text-gray-400">(Altı sonraki aya devreder)</span></p>
+                <p className="text-sm text-white/60">Minimum Aylık Ödeme</p>
+                <p className="font-bold text-lg text-white">₺1.000 <span className="text-xs font-normal text-white/50">(Altı sonraki aya devreder)</span></p>
               </div>
             </div>
           </div>
@@ -272,8 +272,8 @@ export default function TalentClientPage() {
       </section>
 
       {/* 7. KAZANÇ NASIL HESAPLANIR? */}
-      <section className="py-24 border-border bg-[#111111] border-b border-[#222] relative overflow-hidden text-white">
-        <div className="absolute top-0 left-0 w-full h-full bg-[#FE9417]/5 blur-[120px] pointer-events-none" />
+      <section className="py-24 border-border bg-white border-b border-[#e5e7eb] relative overflow-hidden text-[#111111]">
+        <div className="absolute top-0 left-0 w-full h-full bg-[#FB430A]/5 blur-[120px] pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -283,15 +283,15 @@ export default function TalentClientPage() {
         >
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="w-full lg:w-1/2">
-              <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">Kazancınız Nasıl Hesaplanır?</h2>
-              <p className="text-xl text-gray-400 mb-8">Net geliriniz, toplam komisyon üzerinden hizmet bedeli ve yasal kesintiler düşüldükten sonra hesaplanır.</p>
-              <p className="text-gray-400 leading-relaxed p-6 bg-white/5 border border-white/10 rounded-2xl">
+              <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Kazancınız Nasıl Hesaplanır?</h2>
+              <p className="text-xl text-[#555555] mb-8">Net geliriniz, toplam komisyon üzerinden hizmet bedeli ve yasal kesintiler düşüldükten sonra hesaplanır.</p>
+              <p className="text-[#555555] leading-relaxed p-6 bg-[#fafafa] border border-[#e5e7eb] rounded-2xl">
                 Ön ödeme veya üyelik ücreti yoktur. Hizmet bedeli yalnızca kazanç elde edildiğinde uygulanır. Satış yapılmadığında herhangi bir ödeme yükümlülüğü oluşmaz.
               </p>
             </div>
             
             <div className="w-full lg:w-1/2">
-              <div className="bg-white text-black p-8 md:p-10 rounded-3xl shadow-2xl">
+              <div className="bg-white border border-[#e5e7eb] text-[#111111] p-8 md:p-10 rounded-3xl shadow-xl">
                 <div className="inline-flex items-center rounded-full bg-gray-100 px-4 py-1.5 text-sm font-semibold text-gray-800 mb-6 border border-gray-200">
                   Örnek Senaryo: Bir ayda ₺10.000 toplam komisyon
                 </div>
@@ -311,7 +311,7 @@ export default function TalentClientPage() {
                   </div>
                 </div>
                 
-                <div className="bg-gradient-to-r from-[#FE9417] to-[#FF6B00] p-6 rounded-2xl flex justify-between items-center text-white">
+                <div className="bg-gradient-to-r from-[#FB430A] to-[#FF6B00] p-6 rounded-2xl flex justify-between items-center text-white">
                   <span className="text-lg font-bold">Size Ödenecek Net Tutar</span>
                   <span className="text-3xl font-black">₺7.000</span>
                 </div>
@@ -322,7 +322,7 @@ export default function TalentClientPage() {
       </section>
 
       {/* 8. LİNKLERİ ETKİLİ PAYLAŞMA */}
-      <section className="py-24 border-border bg-white border-b border-[#e5e7eb] relative">
+      <section className="py-24 border-border bg-[#FB430A] border-b border-white/20 relative">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -331,8 +331,8 @@ export default function TalentClientPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Linkleri Etkili Paylaşma</h2>
-            <p className="text-xl text-[#555555]">Başarılı affiliate içerikleri yalnızca link paylaşmaz; ürünün etrafında güven veren bir hikâye kurar.</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">Linkleri Etkili Paylaşma</h2>
+            <p className="text-xl text-white/90">Başarılı affiliate içerikleri yalnızca link paylaşmaz; ürünün etrafında güven veren bir hikâye kurar.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -343,15 +343,15 @@ export default function TalentClientPage() {
             ].map((item, idx) => {
               const Icon = item.icon
               return (
-                <div key={idx} className="group bg-[#f9fafb] border border-[#e5e7eb] p-8 rounded-3xl hover:bg-white hover:border-[#FE9417]/50 transition-all shadow-sm">
-                  <div className="mb-6 h-14 w-14 rounded-2xl bg-white border border-gray-200 shadow-sm flex items-center justify-center text-[#FE9417]">
+                <div key={idx} className="group bg-white/10 border border-white/20 p-8 rounded-3xl hover:bg-white/20 hover:border-white/40 transition-all shadow-sm">
+                  <div className="mb-6 h-14 w-14 rounded-2xl bg-white/20 border border-white/10 shadow-sm flex items-center justify-center text-white">
                     <Icon className="w-6 h-6" />
                   </div>
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-[#FE9417] font-mono text-sm font-bold">{item.num}</span>
-                    <h3 className="text-2xl font-bold text-[#111111]">{item.title}</h3>
+                    <span className="text-white/40 font-mono text-sm font-bold">{item.num}</span>
+                    <h3 className="text-2xl font-bold text-white">{item.title}</h3>
                   </div>
-                  <p className="text-[#555555] leading-relaxed">{item.desc}</p>
+                  <p className="text-white/80 leading-relaxed">{item.desc}</p>
                 </div>
               )
             })}
@@ -388,7 +388,7 @@ export default function TalentClientPage() {
                   "Kazanç yoksa kesinti yoktur."
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3 text-[#374151]">
-                    <Check className="w-5 h-5 text-[#FE9417] flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-[#FB430A] flex-shrink-0 mt-0.5" />
                     <span className="text-sm md:text-base">{item}</span>
                   </li>
                 ))}
@@ -427,7 +427,7 @@ export default function TalentClientPage() {
       </section>
 
       {/* 11. iMEDIAFF DESTEK SİSTEMİ & 12. KVKK */}
-      <section className="py-24 border-border bg-white border-b border-[#e5e7eb] relative">
+      <section className="py-24 border-border bg-[#FB430A] border-b border-white/20 relative">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -438,8 +438,8 @@ export default function TalentClientPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             
             <div className="lg:col-span-2">
-              <h2 className="font-display text-4xl font-bold tracking-tight mb-4 text-[#0a0a0a]">iMediaff Destek Sistemi</h2>
-              <p className="text-xl text-[#555555] mb-10">Sadece sisteme dahil etmekle kalmaz, performansınızı artırmanız için düzenli destek sunarız.</p>
+              <h2 className="font-display text-4xl font-bold tracking-tight mb-4 text-white">iMediaff Destek Sistemi</h2>
+              <p className="text-xl text-white/90 mb-10">Sadece sisteme dahil etmekle kalmaz, performansınızı artırmanız için düzenli destek sunarız.</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                  {[
@@ -451,12 +451,12 @@ export default function TalentClientPage() {
                    const Icon = item.icon
                    return (
                      <div key={idx} className="flex gap-4">
-                       <div className="w-12 h-12 rounded-xl bg-[#FE9417]/10 flex items-center justify-center text-[#FE9417] flex-shrink-0">
+                       <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-white flex-shrink-0">
                          <Icon className="w-6 h-6" />
                        </div>
                        <div>
-                         <h4 className="font-bold text-[#111111] text-lg mb-2">{item.title}</h4>
-                         <p className="text-sm text-[#555555] leading-relaxed">{item.desc}</p>
+                         <h4 className="font-bold text-white text-lg mb-2">{item.title}</h4>
+                         <p className="text-sm text-white/80 leading-relaxed">{item.desc}</p>
                        </div>
                      </div>
                    )
@@ -464,10 +464,10 @@ export default function TalentClientPage() {
               </div>
             </div>
 
-            <div className="bg-[#f9fafb] border border-[#e5e7eb] p-8 rounded-3xl h-fit">
-              <Shield className="w-8 h-8 text-[#111111] mb-4" />
-              <h3 className="font-display text-2xl font-bold mb-4 text-[#111111]">Verileriniz Güvende</h3>
-              <p className="text-sm text-[#555555] leading-relaxed">
+            <div className="bg-white/10 border border-white/20 p-8 rounded-3xl h-fit">
+              <Shield className="w-8 h-8 text-white mb-4" />
+              <h3 className="font-display text-2xl font-bold mb-4 text-white">Verileriniz Güvende</h3>
+              <p className="text-sm text-white/80 leading-relaxed">
                 iMediaff ile paylaştığınız kişisel, iletişim ve kazanç bilgileriniz KVKK kapsamında korunur. Bilgileriniz yalnızca yasal raporlama, vergi süreçleri ve Trendyol raporlaması gibi gerekli operasyonel süreçler için kullanılır; üçüncü kişilerle paylaşılmaz.
               </p>
             </div>
@@ -478,7 +478,7 @@ export default function TalentClientPage() {
 
       {/* 13. FINAL CTA */}
       <section className="py-32 relative overflow-hidden bg-white border-b border-[#E5E5E5]">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#FE9417]/10 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#FB430A]/10 pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -493,7 +493,7 @@ export default function TalentClientPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               href="/contact?type=creator"
-              className="inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] px-10 text-lg font-bold text-[#111111] transition-all hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(254,148,23,0.4)]"
+              className="inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-[#FB430A] to-[#FF6B00] px-10 text-lg font-bold text-[#111111] transition-all hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(254,148,23,0.4)]"
             >
               Başvuru Yap
             </Link>

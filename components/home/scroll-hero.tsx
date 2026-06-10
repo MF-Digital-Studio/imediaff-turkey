@@ -71,7 +71,7 @@ export default function ScrollHero() {
             </motion.div>
 
             {/* Premium Ambient Accent Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full bg-gradient-to-r from-[#FE9417]/20 to-[#FF6B00]/20 blur-[130px] opacity-[0.12] pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full bg-gradient-to-r from-[#FB430A]/20 to-[#FF6B00]/20 blur-[130px] opacity-[0.12] pointer-events-none" />
 
             {/* Central Anchor: iMediaff Logo */}
             <motion.div
@@ -105,7 +105,7 @@ export default function ScrollHero() {
           style={{ opacity: textOpacity, scale: textScale }}
         >
           <motion.p
-            className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-[#FE9417] mb-6"
+            className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-[#FB430A] mb-6"
             initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: easeCustom }}
@@ -124,7 +124,7 @@ export default function ScrollHero() {
             </motion.span>{" "}
             <br className="hidden md:block" />
             <motion.span
-              className="bg-gradient-to-br from-[#FE9417] to-[#FF6B00] bg-clip-text text-transparent inline-block"
+              className="bg-gradient-to-br from-[#FB430A] to-[#FF6B00] bg-clip-text text-transparent inline-block"
               initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.6, ease: easeCustom }}
@@ -150,7 +150,7 @@ export default function ScrollHero() {
           >
             <Link
               href="/contact?type=brand"
-              className="group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold text-[#111111] transition-all duration-300 hover:scale-105 active:scale-95 bg-gradient-to-br from-[#FE9417] to-[#FF6B00] shadow-[0_8px_20px_-6px_rgba(254,148,23,0.5)] hover:shadow-[0_14px_30px_-8px_rgba(254,148,23,0.7)] hover:brightness-110"
+              className="group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold text-[#111111] transition-all duration-300 hover:scale-105 active:scale-95 bg-gradient-to-br from-[#FB430A] to-[#FF6B00] shadow-[0_8px_20px_-6px_rgba(254,148,23,0.5)] hover:shadow-[0_14px_30px_-8px_rgba(254,148,23,0.7)] hover:brightness-110"
             >
               <span className="relative z-10 flex items-center gap-2">
                 Teklif Al

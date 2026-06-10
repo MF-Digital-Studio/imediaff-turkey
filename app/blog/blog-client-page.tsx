@@ -22,11 +22,11 @@ export default function BlogClientPage() {
     <main className="min-h-screen bg-white text-[#111111]">
       {/* ── HERO — Black ───────────────────────────────────────────── */}
       <section className="bg-white text-[#111111] pt-32 pb-16 md:pt-48 md:pb-24 border-b border-[#E5E5E5] relative overflow-hidden">
-        <div className="pointer-events-none absolute left-0 bottom-0 w-[600px] h-[600px] bg-gradient-to-tr from-[#FE9417]/8 to-transparent blur-[120px] rounded-full -translate-x-1/3 translate-y-1/3" />
+        <div className="pointer-events-none absolute left-0 bottom-0 w-[600px] h-[600px] bg-gradient-to-tr from-[#FB430A]/8 to-transparent blur-[120px] rounded-full -translate-x-1/3 translate-y-1/3" />
 
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 relative z-10">
           <motion.div {...fadeUp()}>
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">/ Blog</p>
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FB430A]">/ Blog</p>
             <h1 className="mt-6 font-display text-[clamp(3.5rem,9vw,9.5rem)] font-bold leading-[0.88] tracking-[-0.04em]">
               Sektörel <br /> İçgörüler.
             </h1>
@@ -62,12 +62,12 @@ export default function BlogClientPage() {
                 </Link>
                 <div className="flex flex-col flex-grow">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#FE9417] font-bold">{post.category}</span>
+                    <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#FB430A] font-bold">{post.category}</span>
                     <span className="h-px w-4 bg-gray-300" />
                     <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gray-500">{post.readTime}</span>
                   </div>
                   <Link href={`/blog/${post.slug}`}>
-                    <h3 className="font-display text-2xl md:text-[1.75rem] font-bold leading-[1.1] tracking-[-0.02em] text-black mb-4 group-hover:text-[#FE9417] transition-colors line-clamp-3">
+                    <h3 className="font-display text-2xl md:text-[1.75rem] font-bold leading-[1.1] tracking-[-0.02em] text-black mb-4 group-hover:text-[#FB430A] transition-colors line-clamp-3">
                       {post.title}
                     </h3>
                   </Link>
@@ -76,10 +76,10 @@ export default function BlogClientPage() {
                   </p>
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="inline-flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.15em] font-bold text-black group-hover:text-[#FE9417] transition-colors mt-auto w-fit"
+                    className="inline-flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.15em] font-bold text-black group-hover:text-[#FB430A] transition-colors mt-auto w-fit"
                   >
                     Yazıyı Oku
-                    <span className="block h-px w-6 bg-gradient-to-br from-[#FE9417] to-[#FF6B00] transition-all duration-300 group-hover:w-10" />
+                    <span className="block h-px w-6 bg-gradient-to-br from-[#FB430A] to-[#FF6B00] transition-all duration-300 group-hover:w-10" />
                   </Link>
                 </div>
               </motion.article>
@@ -92,7 +92,7 @@ export default function BlogClientPage() {
 
       {/* ── ROW 3: Featured Post (Sunset Gradient) ────────────────────────────── */}
       {featurePost && (
-        <section className="bg-gradient-to-br from-[#FE9417] to-[#FF6B00] text-[#111111] py-24 md:py-36 relative overflow-hidden">
+        <section className="bg-gradient-to-br from-[#FB430A] to-[#FF6B00] text-[#111111] py-24 md:py-36 relative overflow-hidden">
           <div className="mx-auto max-w-[1600px] px-6 md:px-10">
             <motion.div {...fadeUp()} className="mb-12">
               <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#555555] font-bold">/ Öne Çıkan Yazı</p>
@@ -122,13 +122,13 @@ export default function BlogClientPage() {
 
                 <div className="flex flex-col justify-center p-10 md:p-16 lg:p-20 relative z-10">
                   <div className="flex items-center gap-4 mb-6">
-                    <span className="inline-flex rounded-full bg-white/10 backdrop-blur-sm px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.2em] text-[#FE9417] font-bold border border-[#E5E5E5]">
+                    <span className="inline-flex rounded-full bg-white/10 backdrop-blur-sm px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.2em] text-[#FB430A] font-bold border border-[#E5E5E5]">
                       {featurePost.category}
                     </span>
                     <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#888888]">{featurePost.readTime}</span>
                   </div>
 
-                  <h2 className="font-display text-[clamp(2rem,3.5vw,3.5rem)] font-bold tracking-[-0.03em] leading-[1.05] text-[#111111] mb-6 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#FE9417] group-hover:to-[#FE9417] transition-all duration-300">
+                  <h2 className="font-display text-[clamp(2rem,3.5vw,3.5rem)] font-bold tracking-[-0.03em] leading-[1.05] text-[#111111] mb-6 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#FB430A] group-hover:to-[#FB430A] transition-all duration-300">
                     {featurePost.title}
                   </h2>
 
@@ -138,7 +138,7 @@ export default function BlogClientPage() {
 
                   <div className="inline-flex items-center gap-4 font-mono text-xs uppercase tracking-[0.15em] font-bold text-[#111111] w-fit">
                     Yazıyı Oku
-                    <span className="flex items-center justify-center w-10 h-10 rounded-full border border-[#E5E5E5] group-hover:border-[#E5E5E5] group-hover:bg-white group-hover:text-[#FE9417] transition-all duration-300">
+                    <span className="flex items-center justify-center w-10 h-10 rounded-full border border-[#E5E5E5] group-hover:border-[#E5E5E5] group-hover:bg-white group-hover:text-[#FB430A] transition-all duration-300">
                       →
                     </span>
                   </div>

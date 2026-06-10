@@ -182,14 +182,14 @@ export async function POST(request: Request) {
       }
     > = {
       brand: {
-        headerBg: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
+        headerBg: "linear-gradient(135deg, #FB430A 0%, #FF6B00 100%)",
         headerTextColor: "#ffffff",
-        accentColor: "#FE9417",
+        accentColor: "#FB430A",
       },
       creator: {
-        headerBg: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
+        headerBg: "linear-gradient(135deg, #FB430A 0%, #FF6B00 100%)",
         headerTextColor: "#ffffff",
-        accentColor: "#FE9417",
+        accentColor: "#FB430A",
       },
       trendyol: {
         headerBg: "#ffa101",
@@ -197,7 +197,7 @@ export async function POST(request: Request) {
         accentColor: "#ffa101",
       },
       noon: {
-        headerBg: "#FE9417",
+        headerBg: "#FB430A",
         headerTextColor: "#111827", // Dark text for readability on yellow
         accentColor: "#000000", // Legible black for highlights/links
       },

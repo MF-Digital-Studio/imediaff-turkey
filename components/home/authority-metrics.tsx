@@ -46,25 +46,25 @@ function MetricCard({
       initial={{ opacity: 0, y: 28 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.72, delay: index * 0.11, ease: [0.22, 1, 0.36, 1] }}
-      className="relative flex flex-col justify-center px-6 py-10 border-r border-black/[0.07] last:border-r-0 transition-colors duration-300"
+      className="relative flex flex-col justify-center px-6 py-10 border-r border-white/20 last:border-r-0 transition-colors duration-300"
     >
-      <p className="font-mono text-[10px] uppercase tracking-[0.35em] mb-4 text-[#FE9417]">
+      <p className="font-mono text-[10px] uppercase tracking-[0.35em] mb-4 text-white/80">
         0{index + 1}
       </p>
 
-      <p className="font-sans text-[clamp(2.8rem,6vw,5.5rem)] font-bold leading-[0.88] tracking-[-0.04em] text-[#111111]">
+      <p className="font-sans text-[clamp(2.8rem,6vw,5.5rem)] font-bold leading-[0.88] tracking-[-0.04em] text-white">
         {display}<span>{suffix}</span>
       </p>
 
-      <p className="mt-4 text-sm font-semibold leading-snug tracking-tight text-[#111111]">{label}</p>
-      <p className="mt-0.5 text-xs font-medium tracking-tight text-[#888888]">{sublabel}</p>
+      <p className="mt-4 text-sm font-semibold leading-snug tracking-tight text-white">{label}</p>
+      <p className="mt-0.5 text-xs font-medium tracking-tight text-white/80">{sublabel}</p>
 
       <motion.div
         initial={{ scaleX: 0 }}
         animate={inView ? { scaleX: 1 } : {}}
         transition={{ duration: 0.9, delay: index * 0.11 + 0.3, ease: [0.22, 1, 0.36, 1] }}
         style={{ originX: 0 }}
-        className="absolute bottom-0 left-6 right-6 h-[1.5px] bg-gradient-to-br from-[#FE9417] to-[#FF6B00] opacity-50"
+        className="absolute bottom-0 left-6 right-6 h-[1.5px] bg-white opacity-40"
       />
     </motion.div>
   )
@@ -146,7 +146,7 @@ export default function AuthorityMetrics() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-[#FFFFFF]"
+      className="relative overflow-hidden bg-[#FB430A]"
       aria-label="Authority Metrics"
     >
       {/* ── FOREGROUND ────────────────────────────────────────────────────── */}
@@ -161,7 +161,7 @@ export default function AuthorityMetrics() {
               initial={{ opacity: 0, y: 14 }}
               animate={contentInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FE9417] mb-6"
+              className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/90 mb-6"
             >
               / Güvenilir Veriler
             </motion.p>
@@ -170,12 +170,12 @@ export default function AuthorityMetrics() {
               initial={{ opacity: 0, y: 24 }}
               animate={contentInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.75, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-              className="font-sans font-bold text-[#111111] leading-[0.92] tracking-[-0.03em] text-[clamp(2.2rem,5.5vw,4.5rem)] text-balance"
+              className="font-sans font-bold text-white leading-[0.92] tracking-[-0.03em] text-[clamp(2.2rem,5.5vw,4.5rem)] text-balance"
             >
               Etkiyi{" "}
               <span
                 style={{
-                  backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
+                  backgroundImage: "linear-gradient(135deg, #FFF 0%, #FFE5C4 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -190,7 +190,7 @@ export default function AuthorityMetrics() {
               initial={{ opacity: 0, y: 20 }}
               animate={contentInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.72, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-7 max-w-lg text-base md:text-[1.05rem] text-[#555555] leading-relaxed font-sans"
+              className="mt-7 max-w-lg text-base md:text-[1.05rem] text-white/90 leading-relaxed font-sans"
             >
               İçerik üreticileriyle markalar arasında güçlü köprüler kurarak kalıcı, verimli ve ölçeklenebilir sonuçlar üretiyoruz.
             </motion.p>
@@ -204,7 +204,7 @@ export default function AuthorityMetrics() {
             >
               <Link
                 href="/about"
-                className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-br from-[#FE9417] to-[#FF6B00] px-10 py-4 text-sm font-bold uppercase tracking-widest text-[#111111] transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_8px_20px_-6px_rgba(254,148,23,0.5)] hover:shadow-[0_14px_30px_-8px_rgba(254,148,23,0.7)] hover:brightness-110"
+                className="group inline-flex items-center gap-3 rounded-full bg-white px-10 py-4 text-sm font-bold uppercase tracking-widest text-[#FB430A] transition-all duration-300 hover:scale-105 active:scale-95 shadow-xl"
               >
                 <span>Hizmetleri İncele</span>
                 <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1.5">→</span>
@@ -223,7 +223,7 @@ export default function AuthorityMetrics() {
         </div>
 
         {/* METRICS ROW */}
-        <div className="mt-20 border-t border-black/[0.07] grid grid-cols-2 md:grid-cols-4">
+        <div className="mt-20 border-t border-white/20 grid grid-cols-2 md:grid-cols-4">
           {METRICS.map((m, i) => (
             <MetricCard key={i} {...m} index={i} />
           ))}

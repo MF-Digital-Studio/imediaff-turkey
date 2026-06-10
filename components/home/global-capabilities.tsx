@@ -13,8 +13,8 @@ const CAPABILITIES = [
       "Markanızın DNA'sına uygun yüksek dönüşümlü içerik üreticisi stratejileri geliştiriyoruz.",
     glow: "rgba(37,99,235,0.22)",
     glowHover: "rgba(37,99,235,0.45)",
-    accentFrom: "#FE9417",
-    accentTo: "#FE9417",
+    accentFrom: "#FB430A",
+    accentTo: "#FB430A",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" className="w-7 h-7" aria-hidden>
         <circle cx="16" cy="11" r="5" stroke="currentColor" strokeWidth="1.3" />
@@ -30,8 +30,8 @@ const CAPABILITIES = [
       "Markanız için stratejik büyüme ortağınız. Geniş ağlarımız ve sektörel tecrübemiz ile hızlı ve güvenilir büyüme sağlıyoruz.",
     glow: "rgba(255,138,30,0.20)",
     glowHover: "rgba(255,138,30,0.42)",
-    accentFrom: "#FE9417",
-    accentTo: "#FE9417",
+    accentFrom: "#FB430A",
+    accentTo: "#FB430A",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" className="w-7 h-7" aria-hidden>
         <circle cx="16" cy="16" r="11" stroke="currentColor" strokeWidth="1.3" />
@@ -47,8 +47,8 @@ const CAPABILITIES = [
       "Şeffaf, gerçek zamanlı raporlama ve performans garantisi ile çok kanallı kampanyaların yönetimi.",
     glow: "rgba(255,189,30,0.18)",
     glowHover: "rgba(255,189,30,0.38)",
-    accentFrom: "#FE9417",
-    accentTo: "#FE9417",
+    accentFrom: "#FB430A",
+    accentTo: "#FB430A",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" className="w-7 h-7" aria-hidden>
         <rect x="4" y="4" width="24" height="24" rx="4" stroke="currentColor" strokeWidth="1.3" />
@@ -64,8 +64,8 @@ const CAPABILITIES = [
       "Operasyonel mükemmellik, hukuki sözleşmeler ve dijital büyüme konularında uzman danışmanlık.",
     glow: "rgba(37,99,235,0.20)",
     glowHover: "rgba(37,99,235,0.42)",
-    accentFrom: "#FE9417",
-    accentTo: "#FE9417",
+    accentFrom: "#FB430A",
+    accentTo: "#FB430A",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" className="w-7 h-7" aria-hidden>
         <path d="M16 4L4 10v6c0 7 5.4 13 12 14 6.6-1 12-7 12-14v-6L16 4z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" />
@@ -92,9 +92,9 @@ function LiteParticleCanvas() {
   const rafRef = useRef<number>(0)
 
   const PALETTE = [
-    { dot: "#FE9417", glow: "rgba(37,99,235," },
-    { dot: "#FE9417", glow: "rgba(255,138,30," },
-    { dot: "#FE9417", glow: "rgba(255,189,30," },
+    { dot: "#FB430A", glow: "rgba(37,99,235," },
+    { dot: "#FB430A", glow: "rgba(255,138,30," },
+    { dot: "#FB430A", glow: "rgba(255,189,30," },
   ]
 
   const mkP = useCallback((w: number, h: number): LiteParticle => {
@@ -255,11 +255,11 @@ function CapabilityCard({
       >
         {/* Index + Icon row */}
         <div className="flex items-start justify-between mb-8">
-          <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FE9417]">
+          <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FB430A]">
             {cap.index}
           </span>
           <div
-            className="text-[#FE9417] transition-all duration-300 group-hover:text-[#111111] group-hover:scale-110 group-hover:-translate-y-0.5"
+            className="text-[#FB430A] transition-all duration-300 group-hover:text-[#111111] group-hover:scale-110 group-hover:-translate-y-0.5"
           >
             {cap.icon}
           </div>
@@ -321,14 +321,14 @@ export default function GlobalCapabilities() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FE9417] mb-5">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FB430A] mb-5">
               / Yeteneklerimiz
             </p>
             <h2 className="font-sans text-[clamp(2.4rem,5vw,4.5rem)] font-bold text-[#111111] leading-[0.92] tracking-[-0.03em] text-balance">
               Her ölçekte{" "}
               <span
                 style={{
-                  backgroundImage: "linear-gradient(135deg, #FE9417 0%, #FF6B00 100%)",
+                  backgroundImage: "linear-gradient(135deg, #FB430A 0%, #FF6B00 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",

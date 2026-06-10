@@ -20,7 +20,7 @@ export default function EventsClientPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] font-bold">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FB430A] font-bold">
               / Etkinlikler
             </p>
             <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8.5rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance">
@@ -56,7 +56,7 @@ export default function EventsClientPage() {
               </div>
               <div className="flex flex-col justify-center p-8 md:p-16 lg:p-20 relative z-10 lg:bg-white/40 lg:backdrop-blur-sm">
                 <div className="flex flex-wrap items-center gap-4 mb-6">
-                  <span className="inline-flex items-center rounded-full border border-[#FE9417]/40 bg-[#FE9417]/10 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-[#FE9417]">
+                  <span className="inline-flex items-center rounded-full border border-[#FB430A]/40 bg-[#FB430A]/10 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-[#FB430A]">
                     Öne Çıkan
                   </span>
                   <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#888888]">
@@ -86,7 +86,7 @@ export default function EventsClientPage() {
                 </p>
                 <Link
                   href={`/events/${featuredEvent.slug}`}
-                  className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] px-10 py-5 text-base font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl w-fit"
+                  className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#FB430A] to-[#FF6B00] px-10 py-5 text-base font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl w-fit"
                 >
                   Etkinliği İncele ↗
                 </Link>
@@ -106,7 +106,7 @@ export default function EventsClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-14"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FB430A] mb-5">
               / Etkinlik Arşivi
             </p>
             <h2 className="font-display text-[clamp(2rem,4vw,3.5rem)] font-bold tracking-tight text-[#111111]">
@@ -158,7 +158,7 @@ export default function EventsClientPage() {
                   <div className="mt-auto pt-4 border-t border-[#E5E5E5]">
                     <Link
                       href={`/events/${event.slug}`}
-                      className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-[#111111] transition-colors group-hover:text-[#FE9417]"
+                      className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-[#111111] transition-colors group-hover:text-[#FB430A]"
                     >
                       Detayları Gör
                       <span aria-hidden className="ml-2 transition-transform duration-300 group-hover:translate-x-1">

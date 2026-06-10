@@ -47,7 +47,7 @@ export default function StrategicServices() {
           </p>
           <h2 className="font-sans text-[clamp(2.5rem,5vw,4.5rem)] font-bold leading-[0.95] tracking-[-0.03em] text-[#111111] max-w-3xl text-balance">
             Pazar liderliğini güçlendiren <br />
-            <span className="text-[#FE9417]">precision</span> and <span className="text-[#FE9417]">scale.</span>
+            <span className="text-[#FB430A]">precision</span> and <span className="text-[#FB430A]">scale.</span>
           </h2>
         </motion.div>
 
@@ -71,9 +71,9 @@ export default function StrategicServices() {
               }}
             >
               {/* Top Accent Line */}
-              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#FE9417] to-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#FB430A] to-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
-              <div className="mb-8 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/[0.05] text-[#111111] group-hover:bg-white group-hover:text-[#FE9417] transition-colors duration-500">
+              <div className="mb-8 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/[0.05] text-[#111111] group-hover:bg-white group-hover:text-[#FB430A] transition-colors duration-500">
                 <service.icon strokeWidth={1.5} className="h-5 w-5" />
               </div>
 
@@ -86,7 +86,7 @@ export default function StrategicServices() {
               </p>
               
               {/* Bottom Right Dot */}
-              <div className="absolute bottom-6 right-6 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute bottom-6 right-6 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#FB430A] to-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.div>
           ))}
         </div>

@@ -110,7 +110,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
               <span className="inline-flex items-center rounded-full border border-[#E5E5E5] bg-black/5 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-[#111111]">
                 {event.category}
               </span>
-              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#FE9417]">
+              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#FB430A]">
                 / {event.region}
               </span>
             </div>
@@ -158,11 +158,11 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
       </section>
 
       {/* ── Content & Stats ── */}
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-[#FB430A] text-white py-16 md:py-24 border-b border-white/20">
         <div className="mx-auto max-w-[1200px] px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
             {/* Main Content */}
-            <div className="lg:col-span-8 prose prose-invert max-w-none">
+            <div className="lg:col-span-8">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -171,7 +171,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
               >
                 {/* Parse the description and add paragraphs. Simple split by \n\n */}
                 {event.description.split("\n\n").map((paragraph, index) => (
-                  <p key={index} className="text-lg md:text-xl text-[#555555] leading-relaxed mb-6 font-sans">
+                  <p key={index} className="text-lg md:text-xl text-white/90 leading-relaxed mb-6 font-sans">
                     {paragraph}
                   </p>
                 ))}
@@ -186,19 +186,19 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-10% 0px" }}
                   transition={{ duration: 0.6 }}
-                  className="flex flex-col gap-8 sticky top-32 p-8 rounded-2xl bg-black/[0.02] border border-[#E5E5E5]"
+                  className="flex flex-col gap-8 sticky top-32 p-8 rounded-2xl bg-white/10 border border-white/20"
                 >
-                  <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#FE9417] border-b border-[#E5E5E5] pb-4">
+                  <p className="font-mono text-xs uppercase tracking-[0.2em] text-white/80 border-b border-white/20 pb-4">
                     Önemli Metrikler
                   </p>
                   {event.stats.map((stat, idx) => (
                     <div key={idx} className="flex flex-col">
-                      <p className="font-display text-4xl md:text-5xl font-bold bg-gradient-to-br from-[#FE9417] to-[#FF6B00] bg-clip-text text-transparent mb-2 flex items-baseline">
+                      <p className="font-display text-4xl md:text-5xl font-bold text-white mb-2 flex items-baseline">
                         {stat.prefix && <span>{stat.prefix}</span>}
                         <AnimatedCounter value={stat.value} />
                         {stat.suffix && <span>{stat.suffix}</span>}
                       </p>
-                      <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[#888888]">
+                      <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/80">
                         {stat.label}
                       </p>
                     </div>
@@ -222,7 +222,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
                 transition={{ duration: 0.7 }}
                 className="mb-12 md:mb-16"
               >
-                <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] font-bold mb-4">
+                <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FB430A] font-bold mb-4">
                   / Galeri
                 </p>
                 <h2 className="font-display text-3xl md:text-5xl font-bold tracking-tight text-[#111111] mb-6">
@@ -275,7 +275,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
       )}
 
       {/* ── CTA ── */}
-      <section className="bg-gradient-to-br from-[#FE9417] to-[#FF6B00] text-[#111111] py-24 md:py-32">
+      <section className="bg-gradient-to-br from-[#FB430A] to-[#FF6B00] text-white py-24 md:py-32 border-t border-white/20">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -291,7 +291,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
           </h2>
           <Link
             href="/contact?type=brand"
-            className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl"
+            className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#FB430A] transition-transform hover:scale-105 shadow-xl"
           >
             Teklif İste ↗
           </Link>

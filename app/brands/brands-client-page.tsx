@@ -60,10 +60,10 @@ export default function BrandsClientPage() {
 
       {/* ── Hero (Black Theme) ────────────────────────────────────────────────── */}
       <section className="bg-white text-[#111111] pt-32 pb-16 md:pt-48 md:pb-24 border-b border-[#E5E5E5] relative overflow-hidden">
-        <div className="pointer-events-none absolute right-0 top-0 w-full max-w-[800px] h-[800px] bg-gradient-to-bl from-[#FE9417]/10 to-transparent blur-[120px] rounded-full opacity-50 translate-x-1/3 -translate-y-1/3" />
+        <div className="pointer-events-none absolute right-0 top-0 w-full max-w-[800px] h-[800px] bg-gradient-to-bl from-[#FB430A]/10 to-transparent blur-[120px] rounded-full opacity-50 translate-x-1/3 -translate-y-1/3" />
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 relative z-10">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">/ Marka İş Birlikleri</p>
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FB430A]">/ Marka İş Birlikleri</p>
             <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8.5rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance">
               Creator Gücüyle Büyüyün.
             </h1>
@@ -106,7 +106,7 @@ export default function BrandsClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-14 md:mb-20"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">/ Marka Avantajları</p>
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FB430A] mb-5">/ Marka Avantajları</p>
             <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-[#111111] text-balance">
               Neden imediaff<br />İle Çalışmalısınız?
             </h2>
@@ -138,8 +138,8 @@ export default function BrandsClientPage() {
                 transition={{ duration: 0.6, delay: i * 0.12 }}
                 className="group relative flex flex-col p-8 md:p-10 rounded-2xl bg-white/[0.03] border border-white/[0.07] hover:border-[#E5E5E5] hover:-translate-y-1 transition-all duration-500 overflow-hidden"
               >
-                <div className="absolute top-0 inset-x-0 h-[1.5px] rounded-t-2xl bg-gradient-to-r from-[#FE9417] to-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-[#FE9417] mb-6">{card.num}</p>
+                <div className="absolute top-0 inset-x-0 h-[1.5px] rounded-t-2xl bg-gradient-to-r from-[#FB430A] to-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-[#FB430A] mb-6">{card.num}</p>
                 <h3 className="font-display text-2xl font-bold text-[#111111] mb-4 tracking-tight">{card.title}</h3>
                 <p className="text-[#555555] leading-relaxed text-sm font-medium">{card.desc}</p>
               </motion.div>
@@ -151,10 +151,10 @@ export default function BrandsClientPage() {
       {/* ── Infinite Marquee (White Theme) ─────────────────────────────────────── */}
       <section className="bg-white text-black py-20 md:py-28 overflow-hidden border-b border-gray-200 relative">
         {/* Sunset glow behind the marquee (subtle for white bg) */}
-        <div className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 h-32 bg-gradient-to-br from-[#FE9417]/5 to-[#FF6B00]/5 blur-3xl" />
+        <div className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 h-32 bg-gradient-to-br from-[#FB430A]/5 to-[#FF6B00]/5 blur-3xl" />
 
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 mb-12 relative z-10">
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417]">/ Ekosistemdeki Markalar</p>
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FB430A]">/ Ekosistemdeki Markalar</p>
         </div>
 
         {/* Fading edge masks for white background */}
@@ -169,7 +169,7 @@ export default function BrandsClientPage() {
           >
             {[...ALL_BRANDS, ...ALL_BRANDS].map((brand, i) => (
               <div key={`${brand}-${i}`} className="group cursor-default whitespace-nowrap" aria-hidden={i >= ALL_BRANDS.length ? "true" : undefined}>
-                <span className="font-display text-3xl md:text-5xl font-bold tracking-tight lowercase text-black/20 transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#FE9417] group-hover:to-[#FE9417]">
+                <span className="font-display text-3xl md:text-5xl font-bold tracking-tight lowercase text-black/20 transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#FB430A] group-hover:to-[#FB430A]">
                   {brand}
                 </span>
               </div>
@@ -189,12 +189,12 @@ export default function BrandsClientPage() {
             className="rounded-[2.5rem] bg-[#FAFAFA] border border-[#E5E5E5] p-8 md:p-14 lg:p-20 relative overflow-hidden"
           >
             {/* Subtle glow inside container */}
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-[#FE9417]/5 to-transparent blur-[80px] rounded-full pointer-events-none" />
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-[#FB430A]/5 to-transparent blur-[80px] rounded-full pointer-events-none" />
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 relative z-10">
               {/* Left Column: Title & CTA */}
               <div className="lg:col-span-5 flex flex-col justify-center">
-                <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-6 font-bold">
+                <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FB430A] mb-6 font-bold">
                   / MARKA TEKLİFLERİ
                 </p>
                 <h2 className="font-display text-[clamp(2.5rem,4.5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[1.05] text-[#111111] mb-6 text-balance">
@@ -207,7 +207,7 @@ export default function BrandsClientPage() {
                 <div className="flex flex-col items-start gap-4">
                   <Link
                     href="/contact?type=brand"
-                    className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] px-10 py-5 text-base font-bold text-[#111111] transition-transform hover:scale-105 shadow-lg shadow-[#FE9417]/20"
+                    className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#FB430A] to-[#FF6B00] px-10 py-5 text-base font-bold text-[#111111] transition-transform hover:scale-105 shadow-lg shadow-[#FB430A]/20"
                   >
                     Brief Gönder
                   </Link>
@@ -242,10 +242,10 @@ export default function BrandsClientPage() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-10% 0px" }}
                     transition={{ duration: 0.5, delay: i * 0.1 }}
-                    className="group bg-white rounded-2xl p-6 md:p-8 border border-[#E5E5E5] hover:border-[#FE9417]/50 transition-colors shadow-sm"
+                    className="group bg-white rounded-2xl p-6 md:p-8 border border-[#E5E5E5] hover:border-[#FB430A]/50 transition-colors shadow-sm"
                   >
                     <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-6">
-                      <div className="font-mono text-sm uppercase tracking-widest text-[#FE9417] font-bold shrink-0 pt-1">
+                      <div className="font-mono text-sm uppercase tracking-widest text-[#FB430A] font-bold shrink-0 pt-1">
                         {card.num}
                       </div>
                       <div>
@@ -288,7 +288,7 @@ export default function BrandsClientPage() {
                 ].map((s, i) => (
                   <div key={s.step} className="relative flex flex-col group">
                     <div className="flex items-center gap-4 mb-5">
-                      <div className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#E5E5E5] bg-white font-mono text-[11px] font-bold text-[#FE9417] group-hover:border-[#FE9417] transition-colors">
+                      <div className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#E5E5E5] bg-white font-mono text-[11px] font-bold text-[#FB430A] group-hover:border-[#FB430A] transition-colors">
                         {s.step}
                       </div>
                       <h4 className="font-display text-lg font-bold text-[#111111]">{s.title}</h4>
@@ -315,7 +315,7 @@ export default function BrandsClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-14"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE9417] mb-5">/ Sektör Kategorileri</p>
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FB430A] mb-5">/ Sektör Kategorileri</p>
             <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[0.95] text-[#111111] text-balance mb-6">
               Her Sektöre Uygun<br />Performans Çözümleri.
             </h2>
@@ -339,9 +339,9 @@ export default function BrandsClientPage() {
             ].map((cat) => (
               <span
                 key={cat}
-                className="inline-flex items-center gap-2 border border-[#E5E5E5] rounded-full px-5 py-2.5 text-sm font-semibold text-[#666666] hover:border-[#FE9417]/60 hover:text-[#111111] transition-all duration-300"
+                className="inline-flex items-center gap-2 border border-[#E5E5E5] rounded-full px-5 py-2.5 text-sm font-semibold text-[#666666] hover:border-[#FB430A]/60 hover:text-[#111111] transition-all duration-300"
               >
-                <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#FE9417] to-[#FF6B00] flex-shrink-0" />
+                <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#FB430A] to-[#FF6B00] flex-shrink-0" />
                 {cat}
               </span>
             ))}
@@ -352,7 +352,7 @@ export default function BrandsClientPage() {
 
 
       {/* ── Final CTA (Sunset Gradient Theme) ─────────────────────────────────── */}
-      <section className="bg-gradient-to-br from-[#FE9417] to-[#FF6B00] text-[#111111] py-24 md:py-36 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#FB430A] to-[#FF6B00] text-white py-24 md:py-36 relative overflow-hidden">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -360,18 +360,18 @@ export default function BrandsClientPage() {
           transition={{ duration: 0.8 }}
           className="mx-auto max-w-[1600px] px-6 md:px-10 text-center relative z-10"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#555555] font-bold mb-6">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/80 font-bold mb-6">
             / Markanızı Büyütün
           </p>
-          <h2 className="font-display text-[clamp(2.5rem,5.5vw,5.5rem)] font-bold tracking-[-0.03em] text-[#111111] mb-6 text-balance">
+          <h2 className="font-display text-[clamp(2.5rem,5.5vw,5.5rem)] font-bold tracking-[-0.03em] text-white mb-6 text-balance">
             iMediaff Creator & Affiliate <br /> Ekosistemine Katılın.
           </h2>
-          <p className="text-lg text-[#555555] leading-relaxed max-w-2xl mx-auto mb-10 font-sans">
+          <p className="text-lg text-white/90 leading-relaxed max-w-2xl mx-auto mb-10 font-sans">
             imediaff ile çalışarak satışlarınızı artırın, içerik üreticisi entegrasyonuyla markanızın dijital görünürlüğünü güçlendirin.
           </p>
           <Link
             href="/contact?type=brand"
-            className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#111111] transition-transform hover:scale-105 shadow-xl"
+            className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#FB430A] transition-transform hover:scale-105 shadow-xl"
           >
             Brief Gönder
           </Link>

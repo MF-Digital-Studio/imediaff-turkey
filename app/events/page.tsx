@@ -1,8 +1,8 @@
 import EventsClientPage from "./events-client-page"
 
 export const metadata = {
-  title: "Etkinlikler | imediaff Türkiye",
-  description: "imediaff Türkiye etkinliklerini, içerik üreticisi buluşmalarını, marka aktivasyonlarını ve trend buluşmalarını keşfedin.",
+  title: "Etkinlikler | iMediaff Türkiye",
+  description: "iMediaff Türkiye etkinliklerini, marka aktivasyonlarını, creator buluşmalarını ve kampanya anlarını keşfedin.",
 }
 
 export default function EventsPage() {

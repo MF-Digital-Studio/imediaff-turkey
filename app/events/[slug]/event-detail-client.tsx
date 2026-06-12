@@ -55,7 +55,7 @@ const GalleryItem = memo(({ image, index, title, onClick }: { image: string, ind
   const thumbPath = getOptimizedPath(image, 'thumb')
   return (
     <div
-      className="relative aspect-[4/3] w-full overflow-hidden rounded-xl md:rounded-2xl border border-[#E5E5E5] group bg-black/5 cursor-pointer"
+      className="relative aspect-[4/3] w-full overflow-hidden rounded-xl md:rounded-2xl border border-white/10 group bg-white/5 cursor-pointer"
       onClick={() => onClick(index)}
     >
       <Image
@@ -68,7 +68,7 @@ const GalleryItem = memo(({ image, index, title, onClick }: { image: string, ind
         blurDataURL={BLUR_DATA_URL}
         loading="lazy"
       />
-      <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-500" />
+      <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
     </div>
   )
 })
@@ -89,9 +89,11 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
   const lightboxImages = event.gallery?.map(img => getOptimizedPath(img, 'std')) || []
 
   return (
-    <main className="min-h-screen bg-white text-[#111111]">
+    <main className="min-h-screen bg-black text-white">
       {/* ── Header / Hero ── */}
-      <section className="relative overflow-hidden bg-white text-[#111111] pt-32 pb-16 md:pt-40 md:pb-20 border-b border-[#E5E5E5]">
+      <section className="relative overflow-hidden bg-black text-white pt-32 pb-16 md:pt-40 md:pb-20 border-b border-white/10">
+        <div className="absolute inset-0 hero-grid-overlay opacity-30" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-[#2563EB]/10 to-transparent blur-[120px] rounded-full opacity-50 translate-x-1/2 -translate-y-1/2 pointer-events-none" />
         
         <div className="mx-auto max-w-[1200px] px-6 md:px-10 relative z-10">
           <motion.div
@@ -101,25 +103,25 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
           >
             <Link
               href="/events"
-              className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-[#888888] hover:text-[#111111] transition-colors mb-10"
+              className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-white/50 hover:text-white transition-colors mb-10"
             >
               <span>←</span> Etkinliklere Dön
             </Link>
 
             <div className="flex flex-wrap items-center gap-4 mb-6">
-              <span className="inline-flex items-center rounded-full border border-[#E5E5E5] bg-black/5 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-[#111111]">
+              <span className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-white">
                 {event.category}
               </span>
-              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#FB430A]">
+              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#2563EB]">
                 / {event.region}
               </span>
             </div>
 
-            <h1 className="font-display text-[clamp(2.5rem,6vw,5.5rem)] font-bold tracking-tight text-balance leading-[1.05] text-[#111111] mb-8">
+            <h1 className="font-display text-[clamp(2.5rem,6vw,5.5rem)] font-bold tracking-tight text-balance leading-[1.05] text-white mb-8">
               {event.title}
             </h1>
 
-            <div className="flex flex-wrap items-center gap-x-8 gap-y-4 font-sans text-[#666666]">
+            <div className="flex flex-wrap items-center gap-x-8 gap-y-4 font-sans text-white/70">
               <div className="flex items-center gap-2">
                 <span className="text-xl">📅</span>
                 <span className="font-medium">{event.date}</span>
@@ -134,13 +136,13 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
       </section>
 
       {/* ── Cover Image ── */}
-      <section className="bg-white py-10 md:py-16 relative z-10 border-b border-[#E5E5E5]">
+      <section className="bg-black py-10 md:py-16 relative z-10 border-b border-white/10">
         <div className="mx-auto max-w-[1200px] px-6 md:px-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative aspect-[16/9] w-full overflow-hidden rounded-[2rem] border border-[#E5E5E5]"
+            className="relative aspect-[16/9] w-full overflow-hidden rounded-[2rem] border border-white/10"
           >
             <Image
               src={getOptimizedPath(event.coverImage, 'hero')}
@@ -158,11 +160,11 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
       </section>
 
       {/* ── Content & Stats ── */}
-      <section className="bg-[#FB430A] text-white py-16 md:py-24 border-b border-white/20">
+      <section className="bg-black py-16 md:py-24">
         <div className="mx-auto max-w-[1200px] px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
             {/* Main Content */}
-            <div className="lg:col-span-8">
+            <div className="lg:col-span-8 prose prose-invert max-w-none">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -171,7 +173,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
               >
                 {/* Parse the description and add paragraphs. Simple split by \n\n */}
                 {event.description.split("\n\n").map((paragraph, index) => (
-                  <p key={index} className="text-lg md:text-xl text-white/90 leading-relaxed mb-6 font-sans">
+                  <p key={index} className="text-lg md:text-xl text-white/80 leading-relaxed mb-6 font-sans">
                     {paragraph}
                   </p>
                 ))}
@@ -186,19 +188,19 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-10% 0px" }}
                   transition={{ duration: 0.6 }}
-                  className="flex flex-col gap-8 sticky top-32 p-8 rounded-2xl bg-white/10 border border-white/20"
+                  className="flex flex-col gap-8 sticky top-32 p-8 rounded-2xl bg-white/[0.03] border border-white/10"
                 >
-                  <p className="font-mono text-xs uppercase tracking-[0.2em] text-white/80 border-b border-white/20 pb-4">
+                  <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#2563EB] border-b border-white/10 pb-4">
                     Önemli Metrikler
                   </p>
                   {event.stats.map((stat, idx) => (
                     <div key={idx} className="flex flex-col">
-                      <p className="font-display text-4xl md:text-5xl font-bold text-white mb-2 flex items-baseline">
+                      <p className="font-display text-4xl md:text-5xl font-bold bg-gradient-to-br from-[#2563EB] to-[#16A34A] bg-clip-text text-transparent mb-2 flex items-baseline">
                         {stat.prefix && <span>{stat.prefix}</span>}
                         <AnimatedCounter value={stat.value} />
                         {stat.suffix && <span>{stat.suffix}</span>}
                       </p>
-                      <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/80">
+                      <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/50">
                         {stat.label}
                       </p>
                     </div>
@@ -212,7 +214,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
 
       {/* ── Gallery Section (Optional) ── */}
       {event.gallery && event.gallery.length > 0 && (
-        <section ref={galleryRef} className="bg-white py-16 md:py-24 border-t border-[#E5E5E5] min-h-[50vh]">
+        <section ref={galleryRef} className="bg-black py-16 md:py-24 border-t border-white/10 min-h-[50vh]">
           {isGalleryInView && (
             <div className="mx-auto max-w-[1200px] px-6 md:px-10">
               <motion.div
@@ -222,13 +224,13 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
                 transition={{ duration: 0.7 }}
                 className="mb-12 md:mb-16"
               >
-                <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FB430A] font-bold mb-4">
+                <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB] font-bold mb-4">
                   / Galeri
                 </p>
-                <h2 className="font-display text-3xl md:text-5xl font-bold tracking-tight text-[#111111] mb-6">
+                <h2 className="font-display text-3xl md:text-5xl font-bold tracking-tight text-white mb-6">
                   Etkinlik Galerisi
                 </h2>
-                <p className="text-lg text-[#666666] font-sans max-w-2xl">
+                <p className="text-lg text-white/60 font-sans max-w-2xl">
                   Bu etkinlikten seçilen anların görsel arşivi.
                 </p>
               </motion.div>
@@ -237,7 +239,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
                 {/* First Image Large */}
                 {event.gallery[0] && (
                   <div
-                    className="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden rounded-2xl md:rounded-[2rem] border border-[#E5E5E5] group cursor-pointer"
+                    className="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden rounded-2xl md:rounded-[2rem] border border-white/10 group cursor-pointer"
                     onClick={() => openLightbox(0)}
                   >
                     <Image
@@ -250,7 +252,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
                       blurDataURL={BLUR_DATA_URL}
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
                 )}
                 
@@ -275,7 +277,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
       )}
 
       {/* ── CTA ── */}
-      <section className="bg-gradient-to-br from-[#FB430A] to-[#FF6B00] text-white py-24 md:py-32 border-t border-white/20">
+      <section className="bg-gradient-to-br from-[#2563EB] to-[#16A34A] text-white py-24 md:py-32">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -291,7 +293,7 @@ export default function EventDetailClient({ event }: { event: EventItem }) {
           </h2>
           <Link
             href="/contact?type=brand"
-            className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#FB430A] transition-transform hover:scale-105 shadow-xl"
+            className="inline-flex items-center justify-center rounded-full bg-black px-12 py-6 text-lg font-bold text-white transition-transform hover:scale-105 shadow-xl"
           >
             Teklif İste ↗
           </Link>

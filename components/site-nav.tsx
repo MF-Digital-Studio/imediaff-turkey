@@ -133,7 +133,7 @@ export default function SiteNav() {
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="group flex items-center relative z-[60]">
               <img
-                src={isLightNav ? "/logo-black.png" : "/logo-white.png"}
+                src="/logo.png"
                 alt="imediaff"
                 className={cn(
                   "object-contain transition-all duration-300 ease-out",

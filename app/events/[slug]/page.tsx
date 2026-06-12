@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!event) return { title: "Event Not Found" }
 
   return {
-    title: `${event.title} | imediaff Türkiye Etkinlikleri`,
+    title: `${event.title} | iMediaff Türkiye Etkinlikleri`,
     description: event.excerpt,
   }
 }

@@ -17,10 +17,10 @@ export default function HomePage() {
       <RegionsGrid />
       <AffiliatePreview />
       <ClientMarquee />
+      <FeaturedEvents />
       <GlobalValue />
       <StickyManifesto />
       <ServicesPreview />
-      <FeaturedEvents />
       <CtaStrip />
     </>
   )

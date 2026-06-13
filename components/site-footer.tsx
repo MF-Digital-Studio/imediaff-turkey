@@ -134,7 +134,8 @@ export default function SiteFooter() {
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="font-mono text-[10px] uppercase tracking-widest text-[#888888]">© {new Date().getFullYear()} imediaff. Tüm hakları saklıdır.</p>
           <div className="flex items-center gap-6">
-            <Link href="#" className="font-mono text-[10px] uppercase tracking-widest text-[#888888] hover:text-[#111111] transition-colors">KVKK ve Gizlilik Politikası</Link>
+            <Link href="/kvkk" className="font-mono text-[10px] uppercase tracking-widest text-[#888888] hover:text-[#111111] transition-colors">KVKK</Link>
+            <Link href="#" className="font-mono text-[10px] uppercase tracking-widest text-[#888888] hover:text-[#111111] transition-colors">Gizlilik Politikası</Link>
             <a href="https://www.mfdigitalstudio.com" target="_blank" rel="noopener noreferrer" className="font-mono font-bold text-[10px] uppercase tracking-widest text-[#888888] hover:text-[#111111] transition-colors">Desıgned by MF Dıgıtal Studıo</a>
           </div>
         </div>

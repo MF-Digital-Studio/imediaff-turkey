@@ -12,8 +12,9 @@ interface ToggleProps {
 
 function Toggle({ checked, onChange, disabled = false }: ToggleProps) {
   return (
-    <div className="flex items-center gap-2 shrink-0">
-      <span className="font-mono text-[10px] uppercase tracking-widest text-[#888] w-6 text-right select-none">
+    <div className="flex items-center gap-3 shrink-0">
+      <span className="font-mono text-[11px] uppercase tracking-widest w-7 text-right select-none"
+        style={{ color: checked ? "#FB430A" : "#666" }}>
         {checked ? "ON" : "OFF"}
       </span>
       <button
@@ -21,16 +22,31 @@ function Toggle({ checked, onChange, disabled = false }: ToggleProps) {
         disabled={disabled}
         onClick={() => onChange?.(!checked)}
         aria-pressed={checked}
-        className={`relative inline-flex h-7 w-14 shrink-0 items-center transition-colors duration-300 focus:outline-none ${checked
-          ? disabled
-            ? "bg-[#555555]"
-            : "bg-[#FB430A]"
-          : "bg-[#2a2a2a]"
-          } ${disabled ? "cursor-not-allowed opacity-60" : "cursor-pointer"}`}
+        style={{
+          position: "relative",
+          display: "inline-flex",
+          alignItems: "center",
+          width: "52px",
+          height: "28px",
+          flexShrink: 0,
+          backgroundColor: checked ? (disabled ? "#555555" : "#FB430A") : "#2a2a2a",
+          border: "1px solid",
+          borderColor: checked ? (disabled ? "#555555" : "#FB430A") : "#444",
+          cursor: disabled ? "not-allowed" : "pointer",
+          opacity: disabled ? 0.6 : 1,
+          transition: "background-color 0.3s, border-color 0.3s",
+        }}
       >
         <span
-          className={`inline-block h-5 w-5 bg-white transition-transform duration-300 ${checked ? "translate-x-8" : "translate-x-1"
-            }`}
+          style={{
+            display: "inline-block",
+            width: "20px",
+            height: "20px",
+            backgroundColor: "white",
+            transform: checked ? "translateX(28px)" : "translateX(3px)",
+            transition: "transform 0.3s",
+            flexShrink: 0,
+          }}
         />
       </button>
     </div>
@@ -48,11 +64,11 @@ export default function CookieConsent() {
 
   useEffect(() => {
     setMounted(true)
-    const consent = localStorage.getItem("cookie-consent")
+    const consent = localStorage.getItem("cookie-consent-tr")
 
     if (consent === "custom") {
       try {
-        const savedPrefs = localStorage.getItem("cookie-preferences")
+        const savedPrefs = localStorage.getItem("cookie-preferences-tr")
         if (savedPrefs) {
           const parsed = JSON.parse(savedPrefs)
           setAnalytics(!!parsed.analytics)
@@ -91,20 +107,20 @@ export default function CookieConsent() {
   }, [isOpen, showPreferences])
 
   const handleAccept = () => {
-    localStorage.setItem("cookie-consent", "accepted")
-    localStorage.setItem("cookie-preferences", JSON.stringify({ essential: true, analytics: true, marketing: true }))
+    localStorage.setItem("cookie-consent-tr", "accepted")
+    localStorage.setItem("cookie-preferences-tr", JSON.stringify({ essential: true, analytics: true, marketing: true }))
     setIsOpen(false)
   }
 
   const handleReject = () => {
-    localStorage.setItem("cookie-consent", "rejected")
-    localStorage.setItem("cookie-preferences", JSON.stringify({ essential: true, analytics: false, marketing: false }))
+    localStorage.setItem("cookie-consent-tr", "rejected")
+    localStorage.setItem("cookie-preferences-tr", JSON.stringify({ essential: true, analytics: false, marketing: false }))
     setIsOpen(false)
   }
 
   const handleSavePreferences = () => {
-    localStorage.setItem("cookie-consent", "custom")
-    localStorage.setItem("cookie-preferences", JSON.stringify({ essential: true, analytics, marketing }))
+    localStorage.setItem("cookie-consent-tr", "custom")
+    localStorage.setItem("cookie-preferences-tr", JSON.stringify({ essential: true, analytics, marketing }))
     setIsOpen(false)
   }
 
@@ -146,17 +162,17 @@ export default function CookieConsent() {
                   {/* Header */}
                   <div className="flex justify-between items-start">
                     <div>
-                      <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#FB430A] font-bold">
+                      <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#FB430A] font-semibold">
                         / TERCİHLER
                       </span>
-                      <h3 className="font-sans text-base font-bold text-white tracking-tight mt-1 uppercase">
+                      <h3 className="font-sans text-sm font-bold text-white tracking-tight mt-1 uppercase">
                         Çerez Kategorileri
                       </h3>
                     </div>
                     <button
                       type="button"
                       onClick={() => setShowPreferences(false)}
-                      className="text-white/60 hover:text-white font-mono text-xs tracking-wider uppercase flex items-center gap-1 transition-colors cursor-pointer ml-4 shrink-0"
+                      className="text-white/60 hover:text-white font-mono text-[10px] tracking-widest uppercase flex items-center gap-1 transition-colors cursor-pointer ml-4 shrink-0 font-semibold"
                     >
                       ✕ GERİ
                     </button>
@@ -186,8 +202,8 @@ export default function CookieConsent() {
                     ].map((row) => (
                       <div key={row.title} className="flex items-center justify-between gap-8 py-4">
                         <div>
-                          <h4 className="text-white font-bold text-sm">{row.title}</h4>
-                          <p className="text-white text-xs mt-0.5 leading-relaxed">{row.desc}</p>
+                          <h4 className="text-white font-bold text-sm uppercase tracking-tight">{row.title}</h4>
+                          <p className="text-white/70 text-xs mt-0.5 leading-relaxed">{row.desc}</p>
                         </div>
                         <Toggle
                           checked={row.checked}
@@ -203,9 +219,9 @@ export default function CookieConsent() {
                     <button
                       type="button"
                       onClick={handleSavePreferences}
-                      className="px-6 py-3 bg-[#FB430A] border border-[#FB430A] text-black font-bold text-xs tracking-wider uppercase hover:bg-[#ff551f] cursor-pointer font-sans"
+                      className="px-6 py-3 bg-[#FB430A] border border-[#FB430A] text-black font-bold text-xs tracking-tight uppercase hover:bg-[#ff551f] hover:border-[#ff551f] transition-all duration-300 rounded-none cursor-pointer font-sans"
                     >
-                      Seçimi Kaydet
+                      SEÇİMİ KAYDET
                     </button>
                   </div>
                 </div>
@@ -215,11 +231,10 @@ export default function CookieConsent() {
 
           {/* Main Banner */}
           <div className="px-6 md:px-10 py-5">
-            <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#FB430A] font-bold mb-3 block">
+            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#FB430A] font-semibold mb-3 block">
               / ÇEREZLER
             </span>
 
-            {/* Single flex row — title | description | buttons */}
             <div className="flex flex-col lg:flex-row lg:items-center gap-4 md:gap-6">
               {/* Title */}
               <h3 className="font-sans text-sm font-bold text-white tracking-tight uppercase shrink-0">
@@ -227,40 +242,45 @@ export default function CookieConsent() {
               </h3>
 
               {/* Divider */}
-              <div className="hidden lg:block w-px h-5 bg-white shrink-0" />
+              <div className="hidden lg:block w-px h-5 bg-[#2a2a2a] shrink-0" />
 
               {/* Description */}
-              <p className="text-white text-xs md:text-sm leading-relaxed flex-1">
-                Deneyiminizi kişiselleştirmek ve siteyi iyileştirmek amacıyla çerezler kullanıyoruz.{" "}
-                Detaylar için{" "}
-                <Link href="/kvkk" className="text-[#FB430A] hover:underline font-semibold">
+              <p className="text-white/70 text-xs md:text-sm leading-relaxed flex-1">
+                Deneyiminizi kişiselleştirmek ve siteyi iyileştirmek amacıyla çerezler kullanıyoruz. Detaylar için{" "}
+                <Link href="/kvkk" className="text-[#FB430A] hover:underline font-semibold transition-colors duration-200">
                   KVKK
-                </Link>{" "}
-                metnimizi inceleyebilirsiniz.
+                </Link>
+                {" "}metnimizi inceleyebilirsiniz.
               </p>
 
               {/* Buttons */}
-              <div className="flex items-center gap-2 shrink-0">
+              <div className="flex flex-wrap items-center gap-2 shrink-0">
                 <button
                   type="button"
                   onClick={() => setShowPreferences((p) => !p)}
-                  className="px-4 py-2.5 border border-white text-white font-bold text-xs tracking-wider uppercase transition-colors cursor-pointer font-sans whitespace-nowrap"
+                  className="px-5 py-3 border border-white font-bold text-xs tracking-tight uppercase transition-all duration-300 rounded-none cursor-pointer font-sans whitespace-nowrap"
+                  style={{ color: "white" }}
+                  onMouseEnter={e => { e.currentTarget.style.backgroundColor = "white"; e.currentTarget.style.color = "black" }}
+                  onMouseLeave={e => { e.currentTarget.style.backgroundColor = "transparent"; e.currentTarget.style.color = "white" }}
                 >
                   TERCİHLERİ YÖNET
                 </button>
                 <button
                   type="button"
                   onClick={handleReject}
-                  className="px-4 py-2.5 border border-white text-white font-bold text-xs tracking-wider uppercase transition-colors cursor-pointer font-sans whitespace-nowrap"
+                  className="px-5 py-3 border border-white font-bold text-xs tracking-tight uppercase transition-all duration-300 rounded-none cursor-pointer font-sans whitespace-nowrap"
+                  style={{ color: "white" }}
+                  onMouseEnter={e => { e.currentTarget.style.backgroundColor = "white"; e.currentTarget.style.color = "black" }}
+                  onMouseLeave={e => { e.currentTarget.style.backgroundColor = "transparent"; e.currentTarget.style.color = "white" }}
                 >
-                  Reddet
+                  REDDET
                 </button>
                 <button
                   type="button"
                   onClick={handleAccept}
-                  className="px-5 py-2.5 bg-[#FB430A] border border-[#FB430A] text-black font-bold text-xs tracking-wider uppercase hover:bg-[#ff551f] transition-colors cursor-pointer font-sans whitespace-nowrap"
+                  className="px-6 py-3 bg-[#FB430A] border border-[#FB430A] text-black font-bold text-xs tracking-tight uppercase hover:bg-[#ff551f] hover:border-[#ff551f] transition-all duration-300 rounded-none cursor-pointer font-sans whitespace-nowrap"
                 >
-                  Kabul Et
+                  KABUL ET
                 </button>
               </div>
             </div>

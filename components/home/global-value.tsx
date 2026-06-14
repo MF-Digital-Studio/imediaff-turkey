@@ -7,22 +7,23 @@ import { cn } from "@/lib/utils"
 
 // ─── DATA ─────────────────────────────────────────────────────────────────────
 
+// UPDATED: Değer önerileri — 3 kart başlık ve açıklama
 const PILLARS = [
   {
-    title: "Stratejik Eşleşme",
-    description: "Markaları en doğru içerik üreticileriyle bir araya getiriyoruz. Her iş birliği kitle uyumu ve net sonuçlar üzerine inşa ediliyor.",
+    title: "Doğru Yaratıcı, İlk Seferinde",
+    description: "Creator seçimini sezgiye bırakmıyoruz. Kategoriye, takipçi kalitesine, içerik geçmişine ve marka uyumuna göre filtreliyoruz — sonra öneriyoruz. Yanlış eşleşme hem markyı hem yaratıcıyı yakar; biz ikisini de koruyoruz.",
     icon: <Target className="w-6 h-6 text-[#FB430A]" strokeWidth={1.5} />,
     glowColor: "rgba(37,99,235,0.15)",
   },
   {
-    title: "Hızlı Operasyon",
-    description: "Başvurudan ilk komisyona kadar yalnızca birkaç gün. TrendFam altyapımız ve kolaylaştırılmış onboarding sürecimizle içerik üreticileri hızlıca kazanmaya başlıyor.",
+    title: "Bekleme Yok, Gecikme Yok",
+    description: "Brief'ten içerik yayınına kadar her adımı biz yürütüyoruz. Onaylar, içerik teslimi, revizyon süreçleri — müşteri takip etmek zorunda değil, sonucu görüyor.",
     icon: <Zap className="w-6 h-6 text-[#FB430A]" strokeWidth={1.5} />,
     glowColor: "rgba(255,138,30,0.15)",
   },
   {
-    title: "Tam Şeffaflık",
-    description: "Net sözleşmeler, anlık komisyon takipleri ve belgelenmiş ödemelerle tam güven ortamı sunuyoruz.",
+    title: "Her Numara Açık",
+    description: "Erişim, etkileşim, dönüşüm — kampanya sonunda her metrik raporlanır, herhangi bir veriye itiraz etme hakkınız var. Güzel sunumlar değil, gerçek veriler gönderiyoruz.",
     icon: <ShieldCheck className="w-6 h-6 text-[#FB430A]" strokeWidth={1.5} />,
     glowColor: "rgba(255,189,30,0.15)",
   },
@@ -44,18 +45,15 @@ export default function GlobalValue() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
+            {/* UPDATED: Değer önerileri eyebrow */}
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FB430A] mb-6">
+              / Neden farklıyız
+            </p>
+            {/* UPDATED: Değer önerileri H2 */}
             <h2 className="font-sans text-[clamp(2.8rem,6vw,5.5rem)] font-bold text-[#111111] tracking-[-0.04em] leading-[0.95] mb-8">
-              Tek Ekip. Net Süreç.
+              İyi niyetten değil, süreçten geliyor.
             </h2>
           </motion.div>
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            className="text-[#666666] text-lg md:text-xl font-medium leading-relaxed max-w-3xl mx-auto"
-          >
-            Markalarla içerik üreticilerini buluşturmanın ötesine geçiyoruz; sürdürülebilir büyüme altyapısı kuruyoruz.
-          </motion.p>
         </div>
 
         {/* Pillars List */}

@@ -9,21 +9,22 @@ type ManifestoSection = {
   body: string
 }
 
+// UPDATED: Manifesto — 3 aşama başlık ve açıklama
 const SECTIONS: ManifestoSection[] = [
   {
     kicker: "01 - STRATEJİ",
-    title: "Doğru Creator. Doğru Kampanya.",
-    body: "Her kampanya için kitle analizi ve veri odaklı eşleştirmelerle en uygun içerik üreticilerini belirliyoruz.",
+    title: "Önce sor, sonra planla.",
+    body: "Marka hedefini, pazar konumunu ve hedef kitleyi anlamadan yaratıcı önerilmez. Her kampanya, dinlemekle başlar.",
   },
   {
     kicker: "02 - KÜLTÜR",
-    title: "Sektöre Yön Veren Trendler",
-    body: "Kültürel bağlamı derinlemesine anlıyor, markanızın sosyal medyadaki konuşmaların doğal bir parçası olmasını sağlıyoruz.",
+    title: "İçerik, kültürle uyuşmazsa çalışmaz.",
+    body: "Türkiye'de neyin işe yayıp neyin yaramadığını yıllarca gözlemledik. Trendler gelip geçer; biz kalıcı uyumu arıyoruz — marka ile yaratıcı arasında, içerik ile topluluk arasında.",
   },
   {
     kicker: "03 - BÜYÜME",
-    title: "Pazar Payı Yaratıyoruz",
-    body: "Sosyal medyadaki dijital ilgiyi satışa ve kalıcı pazar payına dönüştürüyoruz.",
+    title: "Sonuçlar kampanyadan sonra da devam eder.",
+    body: "Bir kampanya kapanır, verileri açılır. Ne öğrenildi, ne tekrarlanır, ne optimize edilir — bir sonraki hareket bu soruların cevabına göre şekillenir.",
   },
 ]
 
@@ -46,11 +47,13 @@ export default function StickyManifesto() {
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 pt-24 pb-10">
         <div className="flex items-end justify-between gap-6 flex-wrap">
           <div>
+            {/* UPDATED: Manifesto eyebrow */}
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-white font-bold">
-              / Manifesto
+              / Nasıl çalışıyoruz
             </p>
+            {/* UPDATED: Manifesto H2 */}
             <h2 className="mt-4 font-sans text-[clamp(2.5rem,7vw,6rem)] font-bold leading-[1.05] tracking-[-0.035em] text-balance max-w-4xl text-white">
-              Ne inşa ediyoruz?
+              Bir kampanya değil,
               <br />
               <span
                 style={{
@@ -60,7 +63,7 @@ export default function StickyManifesto() {
                   backgroundClip: "text",
                 }}
               >
-                Konuşulan Marka Anları.
+                bir sistem kuruyoruz.
               </span>
             </h2>
           </div>

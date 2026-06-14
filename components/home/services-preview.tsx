@@ -4,13 +4,14 @@ import Link from "next/link"
 import { motion } from "motion/react"
 import { Sparkles, Target, Users, LineChart, Globe2, LayoutDashboard } from "lucide-react"
 
+// UPDATED: Hizmetler — 6 kart açıklamaları
 const SERVICES = [
-  { icon: Users, title: "Affiliate Pazarlama", desc: "Trendyol TrendFam affiliate program yönetimi: onboarding, takip ve ödemeler." },
-  { icon: Globe2, title: "Influencer İş Birlikleri", desc: "Markalar ile doğrulanmış içerik üreticileri arasında 1 yıllık performans sözleşmeleriyle yapılandırılmış eşleştirme." },
-  { icon: Target, title: "Kampanya Prodüksiyonu", desc: "Ölçeklenen markalar için yüksek kaliteli içerik ve reklam prodüksiyonu." },
-  { icon: LayoutDashboard, title: "Pazar Stratejisi", desc: "Sürdürülebilir büyüme için veri odaklı strateji ve operasyonel altyapı." },
-  { icon: Sparkles, title: "Finansal Danışmanlık", desc: "Sözleşme mimarisi, KVKK uyumu ve ödeme yönetimi." },
-  { icon: LineChart, title: "Creator Danışmanlığı", desc: "Birebir danışmanlık, webinarlar ve performans analitiğiyle içerik üreticilerinin kazancını maksimize ediyoruz." },
+  { icon: Users, title: "Affiliate Pazarlama", desc: "TrendFam ve benzeri programları kurar, büyütür ve performansını izleriz." },
+  { icon: Globe2, title: "Influencer İş Birlikleri", desc: "Marka için doğru yaratıcıyı, yaratıcı için doğru markayı eşleştiriyoruz." },
+  { icon: Target, title: "Kampanya Prodüksiyonu", desc: "Brief'ten yayına kadar içerik üretim sürecinin tamamını yönetiyoruz." },
+  { icon: LayoutDashboard, title: "Pazar Stratejisi", desc: "Türkiye ve hedef pazarlarda influencer stratejisi geliştiriyor, konumlandırıyoruz." },
+  { icon: Sparkles, title: "Finansal Danışmanlık", desc: "Creator ödemeleri, vergi ve sözleşme süreçlerinde yasal ve mali destek sağlıyoruz." },
+  { icon: LineChart, title: "Creator Danışmanlığı", desc: "İçerik üreticilerinin marka iş birliği süreçlerini, gelir modellerini ve büyüme planlarını birlikte kuruyoruz." },
 ]
 
 export default function ServicesPreview() {
@@ -40,6 +41,11 @@ export default function ServicesPreview() {
             <span aria-hidden className="transition-transform group-hover:translate-x-1">-&gt;</span>
           </Link>
         </div>
+
+        {/* UPDATED: Hizmetler alt metin */}
+        <p className="mt-4 max-w-2xl text-base text-[#555555] leading-relaxed font-medium">
+          Affiliate programı kurulumundan kampanya prodüksiyonuna, creator danışmanlığından finansal süreçlere kadar — hepsi tek çatı altında.
+        </p>
 
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {SERVICES.map((service, index) => {

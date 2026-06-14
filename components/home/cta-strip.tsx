@@ -101,24 +101,35 @@ export default function CtaStrip() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto max-w-[1600px] px-6 md:px-10 text-center relative z-10 flex flex-col items-center"
         >
+          {/* UPDATED: CTA eyebrow */}
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/80 font-bold mb-6">
-            / Başlayalım
+            / Başlamak için bir neden yeter
           </p>
           
+          {/* UPDATED: CTA H2 */}
           <h2 className="font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance mb-6 text-white">
-            Kampanyanızı <br className="hidden md:block" /> Birlikte Kuralım
+            Sonraki kampanya <br className="hidden md:block" /> burada başlar.
           </h2>
           
+          {/* UPDATED: CTA alt metin + iki buton */}
           <p className="max-w-2xl text-lg md:text-xl font-medium leading-relaxed text-white/90 mb-10">
-            Fikir aşamasından raporlamaya kadar tüm süreçte markanızın gücünü içerik üreticileriyle birleştiriyoruz.
+            İster bir kampanya planlıyor olun, ister doğru markayı bulmaya çalışan bir içerik üreticisi olun — doğru adres burasıdır.
           </p>
-          
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center rounded-full bg-white px-12 py-6 text-lg font-bold text-[#FB430A] transition-transform hover:scale-105 shadow-xl"
-          >
-            Kampanya Başlat
-          </Link>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              href="/contact?type=brand"
+              className="inline-flex items-center justify-center rounded-full bg-white px-10 py-5 text-base font-bold text-[#FB430A] transition-all hover:scale-105 shadow-xl"
+            >
+              Kampanya Başlat
+            </Link>
+            <Link
+              href="/talent"
+              className="inline-flex items-center justify-center rounded-full border-2 border-white/60 bg-transparent px-10 py-5 text-base font-bold text-white transition-all hover:bg-white/10 hover:scale-105"
+            >
+              Creator Ağına Katıl
+            </Link>
+          </div>
         </motion.div>
       </section>
     </>

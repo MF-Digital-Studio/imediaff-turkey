@@ -110,7 +110,8 @@ export default function ScrollHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: easeCustom }}
           >
-            / Büyüme Ortağı
+            {/* UPDATED: Hero eyebrow */}
+            / Influencer & Affiliate Pazarlama
           </motion.p>
 
           <h1 className="font-display font-bold leading-[0.9] tracking-[-0.035em] text-balance text-[clamp(2.5rem,7vw,7rem)] max-w-6xl mx-auto pointer-events-auto">
@@ -139,7 +140,8 @@ export default function ScrollHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.0, delay: 0.8, ease: easeCustom }}
           >
-            Markalarla içerik üreticilerini bir araya getiriyor; kampanya, affiliate ve prodüksiyon süreçlerini şeffaflıkla yönetiyoruz.
+            {/* UPDATED: Hero alt metin */}
+            Markalar için doğru içerik üreticiyi, içerik üreticileri için doğru markayı buluyoruz. 2019&apos;dan bu yana Türkiye ve global pazarlarda — sonuçlarla konuşuyoruz.
           </motion.p>
 
           <motion.div
@@ -153,7 +155,8 @@ export default function ScrollHero() {
               className="group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold text-[#111111] transition-all duration-300 hover:scale-105 active:scale-95 bg-gradient-to-br from-[#FB430A] to-[#FF6B00] shadow-[0_8px_20px_-6px_rgba(254,148,23,0.5)] hover:shadow-[0_14px_30px_-8px_rgba(254,148,23,0.7)] hover:brightness-110"
             >
               <span className="relative z-10 flex items-center gap-2">
-                Teklif Al
+                {/* UPDATED: Hero CTA birincil buton */}
+                Markalar İçin
                 <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1.5">→</span>
               </span>
             </Link>
@@ -162,7 +165,8 @@ export default function ScrollHero() {
               href="/talent"
               className="inline-flex items-center justify-center rounded-full border-2 border-[#111111] bg-transparent px-8 py-4 font-semibold text-[#111111] transition-all duration-300 hover:bg-[#111111] hover:text-white hover:scale-105 active:scale-95 hover:shadow-[0_14px_30px_-8px_rgba(17,17,17,0.4)]"
             >
-              Başvuru Yap
+              {/* UPDATED: Hero CTA ikincil buton */}
+              Creators İçin
             </Link>
           </motion.div>
         </motion.div>

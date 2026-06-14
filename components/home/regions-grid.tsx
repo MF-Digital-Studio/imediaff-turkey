@@ -24,11 +24,13 @@ export default function RegionsGrid() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="mb-16 md:mb-20 text-center md:text-left"
         >
+          {/* UPDATED: Operasyonlar eyebrow */}
           <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#FB430A] mb-5">
-            / OPERASYONLARIMIZ
+            / Trendyol Resmi Partner Ajansı
           </p>
+          {/* UPDATED: Operasyonlar H2 */}
           <h2 className="font-sans text-[clamp(2.5rem,6vw,5rem)] font-bold text-[#111111] leading-[0.92] tracking-[-0.03em]">
-            Geniş ve etkili{" "}
+            Türkiye pazarını{" "}
             <span
               style={{
                 backgroundImage: "linear-gradient(135deg, #FB430A 0%, #FF6B00 100%)",
@@ -37,7 +39,7 @@ export default function RegionsGrid() {
                 backgroundClip: "text",
               }}
             >
-              influencer ağı.
+              içeriden yönetiyoruz.
             </span>
           </h2>
         </motion.div>
@@ -72,8 +74,9 @@ export default function RegionsGrid() {
                 Türkiye
               </h3>
               
+              {/* UPDATED: Operasyonlar Türkiye kartı açıklaması */}
               <p className="text-base md:text-lg text-[#666666] leading-relaxed font-medium mb-10">
-                Trendyol'un resmi partner ajansı. 10.000'den fazla influencer, tam hukuki, finansal ve stratejik destekle Trendyol affiliate programında aktif olarak çalışıyor.
+                imediaff, 2019&apos;da İstanbul&apos;da kuruldu — hem Trendyol&apos;un resmi partner ajansı hem de TrendFam affiliate programının yöneticisi olarak Türkiye e-ticaret ekosisteminin içinde büyüdü. Markalar için Türkiye&apos;nin influencer ortamını okuyabilmek bir avantaj değil, zorunluluktur; biz bunu başından beri yaptık.
               </p>
 
               {/* CTA */}
@@ -81,7 +84,8 @@ export default function RegionsGrid() {
                 href="/talent"
                 className="group inline-flex items-center gap-3 bg-[#FB430A] text-white rounded-full px-8 py-4 font-bold transition-transform hover:scale-105 w-fit"
               >
-                Programı İncele
+                {/* UPDATED: Operasyonlar CTA */}
+                Ağımıza Bakın
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>

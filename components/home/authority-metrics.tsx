@@ -7,11 +7,12 @@ import { motion, useInView, useSpring, useTransform, animate } from "motion/reac
 
 // ─── DATA ─────────────────────────────────────────────────────────────────────
 
+// UPDATED: Stats kartları — etiket ve açıklamalar
 const METRICS = [
-  { value: 10000, suffix: "+", label: "İçerik Üreticisi", sublabel: "Farklı kategorilerde aktif creator ağı." },
-  { value: 150,   suffix: "+", label: "Marka İşbirliği",         sublabel: "2019'dan bu yana" },
-  { value: 850,   suffix: "+", label: "Tamamlanan Proje",   sublabel: "Ajans kuruluşundan bu yana" },
-  { value: 7,     suffix: "+",  label: "Yıllık Deneyim",        sublabel: "Sektör tecrübesi" },
+  { value: 10000, suffix: "+", label: "İçerik Üreticisi", sublabel: "Nano'dan makro'ya, her segmentten aktif ve kampanyaya hazır yaratıcı." },
+  { value: 150,   suffix: "+", label: "Marka Ortağı",         sublabel: "Trendyol, L'Oréal ve Yemeksepeti dahil, Türkiye'nin önde gelen markalarıyla süregelen iş birlikleri." },
+  { value: 850,   suffix: "+", label: "Tamamlanan Kampanya",   sublabel: "Strateji masasından içerik yayınına kadar, her kampanya eksiksiz teslim edildi." },
+  { value: 7,     suffix: "+",  label: "Yıllık Sektör Deneyimi",        sublabel: "2019'dan bu yana piyasa koşulları değişti; biz büyüdük." },
 ]
 
 function formatDisplay(n: number, max: number): string {
@@ -163,7 +164,8 @@ export default function AuthorityMetrics() {
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/90 mb-6"
             >
-              / Güvenilir Veriler
+              {/* UPDATED: Stats eyebrow */}
+              / Rakamlar yalan söylemez
             </motion.p>
 
             <motion.h2
@@ -172,7 +174,8 @@ export default function AuthorityMetrics() {
               transition={{ duration: 0.75, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
               className="font-sans font-bold text-white leading-[0.92] tracking-[-0.03em] text-[clamp(2.2rem,5.5vw,4.5rem)] text-balance"
             >
-              Etkiyi{" "}
+              {/* UPDATED: Stats H2 */}
+              Ölçülmüş büyüme,{" "}
               <span
                 style={{
                   backgroundImage: "linear-gradient(135deg, #FFF 0%, #FFE5C4 100%)",
@@ -181,19 +184,9 @@ export default function AuthorityMetrics() {
                   backgroundClip: "text",
                 }}
               >
-                Ölçülebilir
-              </span>{" "}
-              Kılarız.
+                kanıtlanmış erişim.
+              </span>
             </motion.h2>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={contentInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.72, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-7 max-w-lg text-base md:text-[1.05rem] text-white/90 leading-relaxed font-sans"
-            >
-              İçerik üreticileriyle markalar arasında güçlü köprüler kurarak kalıcı, verimli ve ölçeklenebilir sonuçlar üretiyoruz.
-            </motion.p>
 
             {/* Learn More CTA */}
             <motion.div
